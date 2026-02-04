@@ -1,0 +1,77 @@
+{
+	"name": "c4dm-studios",
+	"version": "0.0.1",
+	"homepage": ".",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3",
+		"react-markdown": "^10.1.0",
+		"react-router-dom": "^7.13.0",
+		"rehype-raw": "^7.0.0",
+		"remark-gfm": "^4.0.1",
+		"sass-embedded": "^1.97.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.12",
+		"@eslint/js": "^9.39.2",
+		"@prettier/plugin-xml": "^3.4.2",
+		"@types/node": "^25.0.10",
+		"@types/react": "^19.2.9",
+		"@types/react-dom": "^19.2.3",
+		"@types/react-router-dom": "^5.3.3",
+		"@vitejs/plugin-react-swc": "^4.2.2",
+		"eslint": "^9.39.2",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"gh-pages": "^6.3.0",
+		"prettier": "^3.8.1",
+		"stylelint": "^17.0.0",
+		"stylelint-config-standard-scss": "^17.0.0",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.53.1",
+		"vite": "^7.3.1",
+		"vite-plugin-compression2": "^2.4.0"
+	},
+	"scripts": {
+		"build": "tsc && vite build",
+		"dev": "vite --host",
+		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
+		"format": "biome format --write ; prettier --write ./**/*.md ./**/*.scss",
+		"test": "tsc && biome lint ; eslint . ; stylelint **/*.scss"
+	},
+	"prettier": {
+		"arrowParens": "always",
+		"bracketSpacing": true,
+		"bracketSameLine": false,
+		"endOfLine": "lf",
+		"htmlWhitespaceSensitivity": "strict",
+		"jsxSingleQuote": true,
+		"plugins": [
+			"@prettier/plugin-xml"
+		],
+		"printWidth": 125,
+		"quoteProps": "as-needed",
+		"semi": false,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "all",
+		"useTabs": true,
+		"xmlQuoteAttributes": "single",
+		"xmlSortAttributesByKey": true,
+		"xmlWhitespaceSensitivity": "preserve"
+	},
+	"stylelint": {
+		"extends": "stylelint-config-standard-scss",
+		"rules": {
+			"declaration-empty-line-before": null,
+			"no-descending-specificity": null,
+			"no-invalid-position-at-import-rule": null,
+			"no-invalid-position-declaration": null,
+			"property-no-vendor-prefix": null,
+			"scss/double-slash-comment-empty-line-before": null
+		}
+	}
+}

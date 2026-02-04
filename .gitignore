@@ -1,0 +1,13 @@
+# project
+image-projects
+unused
+todo.md
+
+# dependencies
+node_modules
+
+# production
+dist
+
+# misc
+.DS_Store

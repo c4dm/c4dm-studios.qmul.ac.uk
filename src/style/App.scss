@@ -1,0 +1,27 @@
+// structure
+
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	// font-family: helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	text-size-adjust: 100%;
+	background-color: #303030;
+}
+
+#root {
+	display: grid;
+	gap: 0;
+	// grid-template: 'h' minmax(160px, auto) 'm' max-content / 100vw;
+}
