@@ -4,7 +4,7 @@ html {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	// font-family: helvetica, sans-serif;
+	font-family: inter, sans-serif;
 	font-size: 16px;
 	color: white;
 }
@@ -21,7 +21,8 @@ body {
 }
 
 #root {
+	height: 100%;
+	width: 100%;
 	display: grid;
-	gap: 0;
-	// grid-template: 'h' minmax(160px, auto) 'm' max-content / 100vw;
+	place-content: center;
 }
