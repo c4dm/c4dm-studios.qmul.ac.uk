@@ -16,7 +16,8 @@ Additionally, if you use VSCode, you will be prompted to install helpful plugins
 
 ## Contribute
 
-`/config`
+Studios resources are located in `/public/resources`.
+Dynamic markdown content are located in `/src/config`.
 
 ## Develop
 
