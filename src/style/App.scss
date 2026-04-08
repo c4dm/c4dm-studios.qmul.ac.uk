@@ -30,26 +30,16 @@ body {
 }
 
 header {
-	min-height: 100vh;
-	min-width: 100vw;
+	height: 300px;
+	width: 100vw;
+	margin-top: -20px;
+	margin-left: calc(-0.055 * 100vw);
+	margin-bottom: 20px;
 	display: grid;
-	// background-image: url('./images/header.jpeg');
+	background-image: url('./images/header.jpeg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	user-select: none;
-
-	p {
-		height: fit-content;
-		width: fit-content;
-		place-self: center;
-		margin: 0;
-		font-size: calc(0.6 * 20vw);
-		font-weight: 600;
-		font-style: italic;
-		color: white;
-		mix-blend-mode: difference;
-	}
 }
 
 main {
@@ -58,6 +48,7 @@ main {
 	padding: 20px calc(0.055 * 100vw);
 	overflow: hidden scroll;
 	white-space: normal;
+	display: grid;
 	overflow-wrap: break-word;
 	text-align: justify;
 

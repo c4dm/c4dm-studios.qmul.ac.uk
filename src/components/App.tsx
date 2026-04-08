@@ -57,14 +57,7 @@ export default function App(): JSX.Element {
 			<Navi pages={Object.keys(pages).map((page) => page.slice(1))} />
 			<main className={location.slice(1)}>
 				<Routes>
-					<Route
-						element={
-							<header>
-								<p>C4DM Studios</p>
-							</header>
-						}
-						path='/'
-					/>
+					<Route element={<header />} path='/' />
 					<Route element={<></>} path='/equipment' />
 					<Route element={<></>} path='/documentation' />
 					<Route
