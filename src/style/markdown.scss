@@ -1,0 +1,22 @@
+@use './utils.scss' as utils;
+
+@mixin markdown() {
+	h1 {
+		width: fit-content;
+		padding: 4px;
+		background-color: white;
+		color: utils.$qm-blue;
+		transform: skew(-20deg);
+
+		&:first-of-type {
+			margin-top: 10px;
+		}
+	}
+
+	summary {
+		font-size: x-large;
+		padding-block: 4px;
+		// padding-left: 20px;
+		// font-weight: bold;
+	}
+}

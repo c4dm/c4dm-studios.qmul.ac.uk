@@ -1,37 +1,16 @@
 // biome-ignore-all lint/nursery/noJsxPropsBind : here prop bindings are used alongside Aray.map()
 
 // dependencies
-import type { JSX } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import type { FC } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 // src
-// import '../scss/navi.scss'
+import '../style/navi.scss'
 
-export default function Navi(): JSX.Element {
-	const pages = ['', 'equipment', 'documentation', 'members', 'contact']
-	// const pages = ['', 'gallery', 'equipment', 'documentation', 'members', 'contact']
+export const Navi: FC<{
+	pages: string[]
+}> = ({ pages }) => {
 	const navigate = useNavigate()
-	const location = useLocation().pathname.slice(1)
-
-	// useEffect(() => {
-	// 	const scrollLocation = () => {
-	// 		// const scrollPos = window.scrollY + 100 // offset for header
-	// 		// for (const section of pages.slice(1)) {
-	// 		// 	const el = document.getElementById(section)
-	// 		// 	if (!el) continue
-	// 		// 	const { offsetTop, offsetHeight } = el
-	// 		// 	if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
-	// 		// 		navigate(`/${section}`, { replace: true })
-	// 		// 		break
-	// 		// 	}
-	// 		// }
-	// 	}
-
-	// 	window.addEventListener('scroll', scrollLocation)
-	// 	return (): void => {
-	// 		window.removeEventListener('scroll', scrollLocation)
-	// 	}
-	// }, [])
 
 	return (
 		<nav>
@@ -54,7 +33,7 @@ export default function Navi(): JSX.Element {
 				{pages.slice(1).map((section, i) => (
 					<>
 						<button
-							aria-label={`Navigation: ${location === section ? 'home' : section}`}
+							aria-label={`Navigation: ${section.slice(0, 1).toUpperCase()}${section.slice(1)}`}
 							key={section}
 							onClick={(): void => {
 								void navigate(`/${section}`)

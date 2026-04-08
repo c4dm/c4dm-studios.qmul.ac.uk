@@ -1,8 +1,5 @@
+@use './markdown.scss' as markdown;
 @use './utils.scss' as utils;
-
-// vars
-
-$navi-height: 60px;
 
 // structure
 
@@ -55,115 +52,8 @@ header {
 	}
 }
 
-nav {
-	height: $navi-height;
-	width: 100%;
-	display: grid;
-	grid-auto-flow: column;
-	grid-template-columns: auto 1fr auto;
-	background-color: white;
-	color: utils.$qm-blue;
-
-	.logo {
-		height: inherit;
-		width: fit-content;
-		background: inherit;
-		color: inherit;
-		outline: 0;
-		border: 0;
-		display: grid;
-		grid-auto-flow: column;
-		align-self: center;
-		padding-inline: 20px;
-		font-weight: 600;
-		font-size: max(calc(0.0175 * 100vw), 16px);
-
-		&:focus div,
-		&:hover div {
-			background-color: utils.$qm-compliment;
-
-			&:first-of-type {
-				color: utils.$qm-compliment;
-			}
-			&:last-of-type {
-				color: utils.$qm-blue;
-			}
-		}
-
-		div {
-			height: 60%;
-			display: grid;
-			place-self: center;
-			transform: skew(-20deg);
-
-			&:first-of-type {
-				background: utils.$qm-blue;
-				color: white;
-				justify-self: right;
-			}
-
-			&:last-of-type {
-				color: utils.$qm-blue;
-				justify-self: left;
-			}
-
-			p {
-				height: fit-content;
-				margin: auto 0;
-				text-align: center;
-				color: inherit;
-				padding-inline: 8px;
-				transform: skew(20deg);
-			}
-		}
-	}
-
-	.navi {
-		height: inherit;
-		width: fit-content;
-		padding-right: 20px;
-		display: grid;
-		grid-column: 3;
-		grid-auto-flow: column;
-
-		button {
-			height: fit-content;
-			width: fit-content;
-			background: inherit;
-			color: inherit;
-			outline: 0;
-			border: 0;
-			place-self: center;
-			font-size: large;
-			padding: 10px;
-			transform: skew(-20deg);
-
-			&:hover,
-			&:focus {
-				background-color: utils.$qm-compliment;
-				color: utils.$qm-blue;
-			}
-
-			p {
-				margin: 0;
-				transform: skew(20deg);
-			}
-		}
-
-		hr {
-			height: 40%;
-			width: 2px;
-			outline: 0;
-			border: 0;
-			place-self: center;
-			transform: skew(-20deg);
-			background-color: utils.$qm-blue;
-		}
-	}
-}
-
 main {
-	height: calc(100vh - 40px - $navi-height);
+	height: calc(100vh - 40px - utils.$navi-height);
 	width: calc(100vw * (1 - 0.11));
 	padding: 20px calc(0.055 * 100vw);
 	overflow: hidden scroll;
@@ -172,27 +62,22 @@ main {
 	text-align: justify;
 
 	@include utils.highlight-text;
-
-	h1 {
-		width: fit-content;
-		padding: 4px;
-		background-color: white;
-		color: utils.$qm-blue;
-		transform: skew(-20deg);
-	}
-
-	summary {
-		font-size: x-large;
-		padding-block: 4px;
-		// padding-left: 20px;
-		// font-weight: bold;
-	}
-
-	> :first-child {
-		margin-top: 0;
-	}
+	@include markdown.markdown;
 
 	> :last-child {
 		margin-bottom: 0;
+	}
+}
+
+.members {
+	button {
+		height: 100%;
+		width: 100%;
+		border: 0;
+		background: white;
+		color: utils.$qm-blue;
+		font-size: large;
+
+		@include utils.focus;
 	}
 }

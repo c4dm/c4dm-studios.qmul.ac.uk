@@ -1,15 +1,21 @@
-// vars
+// colors
 
 $qm-blue: rgb(9 35 80);
 $qm-compliment: rgb(239 220 178);
 $highlight: rgb(180 180 180);
+
+// sizes
+
+$navi-height: 60px;
 $iphone: 512px;
 
 // mixins
 
 @mixin focus() {
+	&:hover,
 	&:focus-visible {
-		outline: $qm-compliment solid 3px;
+		background-color: $qm-compliment;
+		color: $qm-blue;
 	}
 }
 
