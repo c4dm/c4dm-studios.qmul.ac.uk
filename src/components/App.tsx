@@ -2,6 +2,7 @@
 import { type JSX, useEffect, useState } from 'react'
 import Markdown from 'react-markdown'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import rehypeRaw from 'rehype-raw'
 
 // components
 import Navi from './navi.tsx'
@@ -67,7 +68,7 @@ export default function App(): JSX.Element {
 				<Route
 					element={
 						<main className='documentation'>
-							<Markdown>{markdown}</Markdown>
+							<Markdown rehypePlugins={[rehypeRaw]}>{markdown}</Markdown>
 						</main>
 					}
 					path='/documentation'

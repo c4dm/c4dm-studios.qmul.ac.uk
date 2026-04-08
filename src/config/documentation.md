@@ -24,7 +24,8 @@ Password: student
 
 It will be deleted...
 
-# Audio Network
+<details>
+<summary>Audio Network</summary>
 
 ## System Overview
 
@@ -65,6 +66,8 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 ## Troubleshoot
 
 \newpage
+
+</details>
 
 # Local Access Network (LAN)
 

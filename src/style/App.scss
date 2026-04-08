@@ -87,4 +87,20 @@ main {
 	overflow: hidden scroll;
 	white-space: normal;
 	overflow-wrap: break-word;
+	text-align: justify;
+
+	@include utils.highlight-text;
+
+	summary {
+		font-size: xx-large;
+		font-weight: bold;
+	}
+
+	> :first-child {
+		margin-top: 0;
+	}
+
+	> :last-child {
+		margin-bottom: 0;
+	}
 }
