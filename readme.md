@@ -16,8 +16,9 @@ Additionally, if you use VSCode, you will be prompted to install helpful plugins
 
 ## Contribute
 
-Studios resources are located in `/public/resources`.
-Dynamic markdown content is located in `/src/config`.
+- Studios resources are located in `/public/resources`.
+- Gallery images are stored in `/public/images/gallery` - do not clutter this folder with anything other than the images intended for publication.
+- Dynamic markdown content is located in `/src/config`.
 
 ## Develop
 

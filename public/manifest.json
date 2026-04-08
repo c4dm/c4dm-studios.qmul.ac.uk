@@ -1,5 +1,5 @@
 {
-	"background_color": "#303030",
+	"background_color": "#092350",
 	"description": "C4DM Studios is a sound and movement production facility, supporting both scientific and artistic research.",
 	"developer": [
 		{
@@ -41,5 +41,5 @@
 	"name": "C4DM Studios",
 	"short_name": "c4dm-studios",
 	"start_url": ".",
-	"theme_color": "#303030"
+	"theme_color": "#092350"
 }
