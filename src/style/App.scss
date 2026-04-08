@@ -77,8 +77,8 @@ nav {
 		padding-inline: 20px;
 		font-weight: 600;
 		font-size: max(calc(0.0175 * 100vw), 16px);
-		@include utils.focus;
 
+		&:focus div,
 		&:hover div {
 			background-color: utils.$qm-compliment;
 
@@ -137,9 +137,9 @@ nav {
 			font-size: large;
 			padding: 10px;
 			transform: skew(-20deg);
-			@include utils.focus;
 
-			&:hover {
+			&:hover,
+			&:focus {
 				background-color: utils.$qm-compliment;
 				color: utils.$qm-blue;
 			}
