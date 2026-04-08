@@ -25,7 +25,7 @@ Password: student
 It will be deleted...
 
 <details>
-<summary>Audio Network</summary>
+<summary>poop</summary>
 
 ## System Overview
 
