@@ -3,6 +3,7 @@ import { type JSX, useEffect, useState } from 'react'
 import Markdown from 'react-markdown'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import rehypeRaw from 'rehype-raw'
+import remarkGfm from 'remark-gfm'
 
 // components
 import Navi from './navi.tsx'
@@ -68,7 +69,9 @@ export default function App(): JSX.Element {
 				<Route
 					element={
 						<main className='documentation'>
-							<Markdown rehypePlugins={[rehypeRaw]}>{markdown}</Markdown>
+							<Markdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
+								{markdown}
+							</Markdown>
 						</main>
 					}
 					path='/documentation'

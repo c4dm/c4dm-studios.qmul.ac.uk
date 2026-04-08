@@ -9,7 +9,7 @@ $iphone: 512px;
 
 @mixin focus() {
 	&:focus-visible {
-		outline: $qm-highlight solid 3px;
+		outline: $qm-compliment solid 3px;
 	}
 }
 

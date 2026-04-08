@@ -58,52 +58,106 @@ header {
 nav {
 	height: $navi-height;
 	width: 100%;
-	// position: absolute;
-	// bottom: 0;
 	display: grid;
 	grid-auto-flow: column;
+	grid-template-columns: auto 1fr auto;
 	background-color: white;
 	color: utils.$qm-blue;
 
-	button {
-		height: 100%;
-		width: calc(60% / 4);
+	.logo {
+		height: inherit;
+		width: fit-content;
 		background: inherit;
 		color: inherit;
 		outline: 0;
 		border: 0;
-		// border-left: 4px solid white;
-		// border-right: 4px solid white;
+		display: grid;
+		grid-auto-flow: column;
+		align-self: center;
+		padding-inline: 20px;
 		font-weight: 600;
 		font-size: max(calc(0.0175 * 100vw), 16px);
-		// mix-blend-mode: normal;
+		@include utils.focus;
+
+		&:hover div {
+			background-color: utils.$qm-compliment;
+
+			&:first-of-type {
+				color: utils.$qm-compliment;
+			}
+			&:last-of-type {
+				color: utils.$qm-blue;
+			}
+		}
+
+		div {
+			height: 60%;
+			display: grid;
+			place-self: center;
+			transform: skew(-20deg);
+
+			&:first-of-type {
+				background: utils.$qm-blue;
+				color: white;
+				justify-self: right;
+			}
+
+			&:last-of-type {
+				color: utils.$qm-blue;
+				justify-self: left;
+			}
+
+			p {
+				height: fit-content;
+				margin: auto 0;
+				text-align: center;
+				color: inherit;
+				padding-inline: 8px;
+				transform: skew(20deg);
+			}
+		}
 	}
 
-	div {
-		height: 60%;
-		width: 70px;
+	.navi {
+		height: inherit;
+		width: fit-content;
+		padding-right: 20px;
 		display: grid;
-		align-self: center;
-		transform: skew(-20deg);
+		grid-column: 3;
+		grid-auto-flow: column;
 
-		&:first-of-type {
-			justify-self: right;
-		}
-		&:last-of-type {
-			justify-self: left;
+		button {
+			height: fit-content;
+			width: fit-content;
+			background: inherit;
+			color: inherit;
+			outline: 0;
+			border: 0;
+			place-self: center;
+			font-size: large;
+			padding: 10px;
+			transform: skew(-20deg);
+			@include utils.focus;
+
+			&:hover {
+				background-color: utils.$qm-compliment;
+				color: utils.$qm-blue;
+			}
+
+			p {
+				margin: 0;
+				transform: skew(20deg);
+			}
 		}
 
-		&:first-of-type {
-			background: utils.$qm-blue;
-			color: white;
-		}
-
-		p {
-			height: 100%;
-			align-self: bottom;
-			text-align: center;
-			padding-left: 8px;
-			transform: skew(20deg);
+		hr {
+			height: 40%;
+			width: 2px;
+			outline: 0;
+			border: 0;
+			place-self: center;
+			transform: skew(-20deg);
+			background-color: utils.$qm-blue;
 		}
 	}
 }
