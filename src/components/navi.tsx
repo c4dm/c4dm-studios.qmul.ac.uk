@@ -35,6 +35,12 @@ export default function Navi(): JSX.Element {
 
 	return (
 		<nav>
+			<div>
+				<p>C4DM</p>
+			</div>
+			<div>
+				<p>Studios</p>
+			</div>
 			{pages.slice(1).map((section) => (
 				<button
 					aria-label={`Navigation: ${location === section ? 'home' : section}`}

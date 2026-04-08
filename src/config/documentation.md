@@ -24,12 +24,12 @@ Password: student
 
 It will be deleted...
 
+# Audio Network (AVB)
+
+What is this bit?
+
 <details>
-<summary>poop</summary>
-
-## System Overview
-
-## RME Audio Driver
+<summary>RME Audio Driver</summary>
 
 To use our audio system with your own computer, you will need to install the following:
 
@@ -60,13 +60,14 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 - macOS: [https://rme-audio.de/rme-macos.html](https://rme-audio.de/rme-macos.html)
 
 - Windows: [https://rme-audio.de/rme-macos.html](https://rme-audio.de/rme-macos.html)
+    </details>
 
-## Configure
+<details>
+<summary>Configure</summary>
+</details>
 
-## Troubleshoot
-
-\newpage
-
+<details>
+<summary>Troubleshoot</summary>
 </details>
 
 # Local Access Network (LAN)

@@ -23,7 +23,8 @@ body {
 	font-size: inherit;
 	color: inherit;
 	text-size-adjust: 100%;
-	background-color: utils.$background;
+	background-color: utils.$qm-blue;
+	color: white;
 }
 
 #root {
@@ -35,7 +36,7 @@ header {
 	min-height: 100vh;
 	min-width: 100vw;
 	display: grid;
-	background-image: url('./images/header.jpeg');
+	// background-image: url('./images/header.jpeg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -57,12 +58,16 @@ header {
 nav {
 	height: $navi-height;
 	width: 100%;
-	position: absolute;
-	bottom: 0;
+	// position: absolute;
+	// bottom: 0;
+	display: grid;
+	grid-auto-flow: column;
+	background-color: white;
+	color: utils.$qm-blue;
 
 	button {
 		height: 100%;
-		width: calc(100vw / 5);
+		width: calc(60% / 4);
 		background: inherit;
 		color: inherit;
 		outline: 0;
@@ -71,12 +76,35 @@ nav {
 		// border-right: 4px solid white;
 		font-weight: 600;
 		font-size: max(calc(0.0175 * 100vw), 16px);
-		// opacity: 0.7;
-		// color: utils.$background;
-		// background-color: white;
-		// background-blend-mode: difference;
-		color: white;
-		// mix-blend-mode: difference;
+		// mix-blend-mode: normal;
+	}
+
+	div {
+		height: 60%;
+		width: 70px;
+		display: grid;
+		align-self: center;
+		transform: skew(-20deg);
+
+		&:first-of-type {
+			justify-self: right;
+		}
+		&:last-of-type {
+			justify-self: left;
+		}
+
+		&:first-of-type {
+			background: utils.$qm-blue;
+			color: white;
+		}
+
+		p {
+			height: 100%;
+			align-self: bottom;
+			text-align: center;
+			padding-left: 8px;
+			transform: skew(20deg);
+		}
 	}
 }
 
@@ -91,9 +119,19 @@ main {
 
 	@include utils.highlight-text;
 
+	h1 {
+		width: fit-content;
+		padding: 4px;
+		background-color: white;
+		color: utils.$qm-blue;
+		transform: skew(-20deg);
+	}
+
 	summary {
-		font-size: xx-large;
-		font-weight: bold;
+		font-size: x-large;
+		padding-block: 4px;
+		// padding-left: 20px;
+		// font-weight: bold;
 	}
 
 	> :first-child {

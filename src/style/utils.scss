@@ -1,20 +1,21 @@
 // vars
 
-$background: rgb(9 35 80);
-$iphone: 512px;
+$qm-blue: rgb(9 35 80);
+$qm-compliment: rgb(239 220 178);
 $highlight: rgb(180 180 180);
+$iphone: 512px;
 
 // mixins
 
 @mixin focus() {
 	&:focus-visible {
-		outline: $highlight solid 3px;
+		outline: $qm-highlight solid 3px;
 	}
 }
 
 @mixin highlight-text() {
 	::selection {
-		background-color: white;
-		color: $background;
+		background-color: $qm-compliment;
+		color: $qm-blue;
 	}
 }
