@@ -1,7 +1,7 @@
 // dependencies
 import { type JSX, useEffect, useState } from 'react'
 import Markdown from 'react-markdown'
-import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 
@@ -34,20 +34,25 @@ const pages: {
 }
 
 export default function App(): JSX.Element {
+	const navigate = useNavigate()
 	const location = useLocation().pathname
 	const [markdown, setMarkdown] = useState<string>('')
 
 	useEffect(() => {
-		if (pages[location]) {
-			void fetch(pages[location] as RequestInfo)
-				.then((res) => res.text())
-				.then((text) => {
-					setMarkdown(text)
-				})
+		if (Object.keys(pages).includes(location)) {
+			if (pages[location]) {
+				void fetch(pages[location] as RequestInfo)
+					.then((res) => res.text())
+					.then((text) => {
+						setMarkdown(text)
+					})
+			} else {
+				setMarkdown('')
+			}
 		} else {
-			setMarkdown('')
+			navigate('')
 		}
-	}, [location])
+	}, [location, navigate])
 
 	return (
 		<>
@@ -56,45 +61,47 @@ export default function App(): JSX.Element {
 			}`}</title>
 			<Navi pages={Object.keys(pages).map((page) => page.slice(1))} />
 			<main className={location.slice(1)}>
-				<Routes>
-					<Route element={<header />} path='/' />
-					<Route element={<></>} path='/equipment' />
-					<Route element={<></>} path='/documentation' />
-					<Route
-						element={
-							<>
-								<h1>Members Area</h1>
-								<p>Below are some links </p>
-								<GridFromJSON
-									json={links}
-									cell={(obj: MembersLink, i: number): JSX.Element => (
-										<button
-											aria-label={`Navigate to ${obj.text}.`}
-											key={i.toString()}
-											tabIndex={0}
-											type='button'
-											onClick={() => window.open(obj.link, '_blank')}
-											onKeyDown={(e) => {
-												if (e.key === 'Enter' || e.key === ' ') {
-													e.preventDefault()
-													window.open(obj.link, '_blank')
-												}
-											}}
-										>
-											{obj.text}
-										</button>
-									)}
-									maxHeight={100}
-									maxWidth={400}
+				<Markdown
+					components={{
+						script: () => (
+							<Routes>
+								<Route element={<header />} path='/' />
+								<Route element={<></>} path='/equipment' />
+								<Route element={<></>} path='/documentation' />
+								<Route
+									element={
+										<GridFromJSON
+											json={links}
+											cell={(obj: MembersLink, i: number): JSX.Element => (
+												<button
+													aria-label={`Navigate to ${obj.text}.`}
+													key={i.toString()}
+													tabIndex={0}
+													type='button'
+													onClick={() => window.open(obj.link, '_blank')}
+													onKeyDown={(e) => {
+														if (e.key === 'Enter' || e.key === ' ') {
+															e.preventDefault()
+															window.open(obj.link, '_blank')
+														}
+													}}
+												>
+													{obj.text}
+												</button>
+											)}
+											maxHeight={100}
+											maxWidth={400}
+										/>
+									}
+									path='/members'
 								/>
-							</>
-						}
-						path='/members'
-					/>
-					<Route element={<></>} path='/contact' />
-					<Route element={<Navigate to='/' />} path='*' />
-				</Routes>
-				<Markdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
+								<Route element={<></>} path='/contact' />
+							</Routes>
+						),
+					}}
+					rehypePlugins={[rehypeRaw]}
+					remarkPlugins={[remarkGfm]}
+				>
 					{markdown}
 				</Markdown>
 			</main>
