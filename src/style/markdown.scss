@@ -3,6 +3,9 @@
 @mixin markdown() {
 	a {
 		color: utils.$qm-compliment;
+		outline: 0;
+
+		@include utils.focus;
 	}
 
 	.h1 {

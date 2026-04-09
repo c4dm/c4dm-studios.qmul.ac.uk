@@ -4,66 +4,67 @@ nav {
 	height: utils.$navi-height;
 	width: 100%;
 	display: grid;
-	grid-auto-flow: column;
 	grid-template-columns: auto 1fr auto;
 	background-color: white;
 	color: utils.$qm-blue;
 
-	.logo {
-		height: inherit;
+	button {
 		width: fit-content;
-		background: inherit;
-		color: inherit;
 		outline: 0;
 		border: 0;
+		background: inherit;
+		color: inherit;
+	}
+
+	.logo {
+		height: calc(utils.$navi-height * 0.6);
+		padding-inline: 20px;
 		display: grid;
 		grid-auto-flow: column;
-		align-self: top;
-		padding-inline: 20px;
+		align-self: center;
 		font-weight: 600;
-		font-size: max(calc(0.0175 * 100vw), 16px);
-
-		&:focus-visible div,
-		&:hover div {
-			background-color: utils.$qm-compliment;
-
-			&:first-of-type {
-				color: utils.$qm-compliment;
-			}
-
-			&:last-of-type {
-				color: utils.$qm-blue;
-			}
-		}
+		font-size: large;
 
 		div {
-			height: 60%;
+			height: 100%;
 			display: grid;
 			place-self: center;
 			transform: skew(-20deg);
 
+			p {
+				height: fit-content;
+				margin: auto 0;
+				padding-inline: 8px;
+				text-align: center;
+				color: inherit;
+				transform: skew(20deg);
+			}
+
 			&:first-of-type {
+				justify-self: right;
 				background: utils.$qm-blue;
 				color: white;
-				justify-self: right;
 			}
 
 			&:last-of-type {
-				color: utils.$qm-blue;
 				justify-self: left;
+				background: inherit;
+				color: utils.$qm-blue;
 
 				p {
 					margin-left: -2px;
 				}
 			}
+		}
 
-			p {
-				height: fit-content;
-				margin: auto 0;
-				text-align: center;
-				color: inherit;
-				padding-inline: 8px;
-				transform: skew(20deg);
+		&:hover,
+		&:focus-visible {
+			div:first-of-type {
+				color: utils.$qm-compliment;
+			}
+
+			div:last-of-type {
+				background: utils.$qm-compliment;
 			}
 		}
 	}
@@ -72,29 +73,24 @@ nav {
 		height: fit-content;
 		width: fit-content;
 		padding-right: 20px;
-		display: grid;
-		align-self: center;
 		grid-column: 3;
+		display: grid;
 		grid-auto-flow: column;
+		align-self: center;
 
 		button {
 			height: fit-content;
-			width: fit-content;
-			background: inherit;
-			color: inherit;
-			outline: 0;
-			border: 0;
+			padding-inline: 8px;
 			border-right: solid 2px utils.$qm-blue;
 			place-self: center;
 			font-size: large;
-			padding-inline: 8px;
 			transform: skew(-20deg);
+
+			@include utils.focus;
 
 			&:last-of-type {
 				border: 0;
 			}
-
-			@include utils.focus;
 
 			p {
 				margin: 0;
@@ -106,17 +102,9 @@ nav {
 	@media (width < utils.$ipad) {
 		height: fit-content;
 
-		.logo {
-			height: 100%;
-
-			> div {
-				height: calc(utils.$navi-height * 0.6);
-			}
-		}
-
 		.navi {
-			grid-auto-flow: row;
 			margin-block: 8px;
+			grid-auto-flow: row;
 
 			button {
 				border: 0;
