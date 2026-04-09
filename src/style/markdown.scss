@@ -1,15 +1,24 @@
 @use './utils.scss' as utils;
 
 @mixin markdown() {
-	h1 {
+	.h1 {
+		height: fit-content;
 		width: fit-content;
-		padding: 4px;
+		display: grid;
 		background-color: white;
 		color: utils.$qm-blue;
 		transform: skew(-20deg);
 
 		&:first-of-type {
 			margin-top: 10px;
+		}
+
+		h1 {
+			place-self: center;
+			margin: 0 0 1px 0;
+			width: fit-content;
+			transform: skew(20deg);
+			padding-inline: 8px;
 		}
 	}
 

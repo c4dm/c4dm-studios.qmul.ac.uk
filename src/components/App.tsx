@@ -63,6 +63,11 @@ export default function App(): JSX.Element {
 			<main className={location.slice(1)}>
 				<Markdown
 					components={{
+						h1: ({ children }) => (
+							<div className='h1'>
+								<h1>{children}</h1>
+							</div>
+						),
 						script: () => (
 							<Routes>
 								<Route element={<header />} path='/' />

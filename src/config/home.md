@@ -1,4 +1,4 @@
-<script></script> <!-- comment -->
+<script></script> <!-- this corresponds to an app defined using typescript -->
 
 # Description
 
