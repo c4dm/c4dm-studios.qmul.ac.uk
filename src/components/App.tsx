@@ -60,7 +60,11 @@ export default function App(): JSX.Element {
 				location === '/' ? '' : ` | ${location.slice(1, 2).toUpperCase()}${location.slice(2)}`
 			}`}</title>
 			<Navi pages={Object.keys(pages).map((page) => page.slice(1))} />
-			<main className={location.slice(1)}>
+			<main
+				{...(location !== '/' && {
+					className: location.slice(1),
+				})}
+			>
 				<Markdown
 					components={{
 						h1: ({ children }) => (
@@ -92,7 +96,7 @@ export default function App(): JSX.Element {
 												</button>
 											)}
 											maxHeight={100}
-											maxWidth={400}
+											maxWidth={320}
 										/>
 									}
 									path='/members'

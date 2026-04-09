@@ -1,6 +1,5 @@
-![the performance lab](/images/header.jpeg)
-
-<img alt='the performance lab' src='/images/header.jpeg' style='height: 300px;'/>
+<img alt='the performance lab' src='/images/header.jpeg' style='max-height: 300px; width: 100vw; max-width: 100vw; object-fit: cover; margin-block: -20px 20px;'/>
+<div class='markdown'> <!-- lew stuff -->
 
 # Description
 
@@ -18,3 +17,5 @@ Established by the Centre for Digital Music (C4DM) and Cognitive Science (CogSci
 **Facilities Manager**: Edward Hoskins
 <br/>
 **C4DM Director**: Mark Sandler
+
+</div> <!-- lew stuff -->

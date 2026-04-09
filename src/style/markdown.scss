@@ -1,48 +1,62 @@
 @use './utils.scss' as utils;
 
 @mixin markdown() {
-	a {
-		color: utils.$qm-compliment;
-		outline: 0;
-
-		@include utils.focus;
-	}
-
-	.h1 {
-		height: fit-content;
-		width: fit-content;
+	.markdown {
+		width: 1000px;
+		max-width: calc(100vw - 40px);
+		margin-inline: auto;
 		display: grid;
-		background-color: white;
-		color: utils.$qm-blue;
-		transform: skew(-20deg);
-		margin-block: 10px;
+		text-align: justify;
 
-		h1 {
-			place-self: center;
-			margin: 0 0 1px;
-			width: fit-content;
-			transform: skew(20deg);
-			padding-inline: 8px;
+		> :last-child {
+			margin-bottom: 0;
 		}
-	}
 
-	details {
-		margin-bottom: 10px;
-	}
+		a {
+			outline: 0;
+			color: utils.$qm-compliment;
 
-	iframe {
-		place-self: center;
-	}
+			@include utils.focus;
+		}
 
-	img {
-		max-width: 100%;
-	}
+		.h1 {
+			height: fit-content;
+			width: fit-content;
+			margin: 10px 8px;
+			display: grid;
+			background-color: white;
+			color: utils.$qm-blue;
+			transform: skew(-20deg);
 
-	summary {
-		font-size: x-large;
-		padding-block: 4px;
-		outline: 0;
+			h1 {
+				width: fit-content;
+				margin: 0 0 1px;
+				padding-inline: 8px;
+				place-self: center;
+				text-align: left;
+				transform: skew(20deg);
+			}
+		}
 
-		@include utils.focus;
+		details {
+			margin-bottom: 10px;
+		}
+
+		iframe {
+			max-width: 100%;
+			place-self: center;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		summary {
+			font-size: x-large;
+			padding-block: 4px;
+			outline: 0;
+
+			@include utils.focus;
+		}
 	}
 }

@@ -1,3 +1,5 @@
+<div class='markdown'> <!-- lew stuff -->
+
 # Description
 
 C4DM Studios is a high-end university recording studio and research facility operating from within the School of Electronic Engineering and Computer Science (EECS) at Queen Mary University of London.
@@ -16,3 +18,5 @@ Established by the Centre for Digital Music (C4DM) and Cognitive Science (CogSci
 **Facilities Manager**: Edward Hoskins
 <br/>
 **C4DM Director**: Mark Sandler
+
+</div> <!-- lew stuff -->

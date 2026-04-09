@@ -31,20 +31,16 @@ body {
 
 main {
 	height: calc(100vh - 40px - utils.$navi-height);
-	width: calc(100vw * (1 - 0.11));
-	padding: 20px calc(0.055 * 100vw);
+	width: 100%;
+	max-width: 100%;
+	padding-block: 20px;
 	overflow: hidden scroll;
+	overflow-wrap: break-word;
 	white-space: normal;
 	display: grid;
-	overflow-wrap: break-word;
-	text-align: justify;
 
 	@include utils.highlight-text;
 	@include markdown.markdown;
-
-	> :last-child {
-		margin-bottom: 0;
-	}
 }
 
 .members {

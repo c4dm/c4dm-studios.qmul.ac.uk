@@ -1,3 +1,5 @@
+<div class='markdown'> <!-- lew stuff -->
+
 # Overview
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -228,3 +230,5 @@ https://eigenmike.com/downloads
 ## Troubleshooting: GRAS Acoustics
 
 ## Troubleshooting: EM64 Eigenmike
+
+</div> <!-- lew stuff -->
