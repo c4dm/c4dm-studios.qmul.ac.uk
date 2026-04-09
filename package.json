@@ -5,16 +5,15 @@
 	"private": true,
 	"type": "module",
 	"dependencies": {
-		"react": "^19.2.4",
-		"react-dom": "^19.2.4",
+		"react": "^19.2.5",
+		"react-dom": "^19.2.5",
 		"react-markdown": "^10.1.0",
 		"react-router-dom": "^7.14.0",
 		"rehype-raw": "^7.0.0",
-		"remark-gfm": "^4.0.1",
 		"sass-embedded": "^1.99.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.10",
+		"@biomejs/biome": "^2.4.11",
 		"@eslint/js": "^10.0.1",
 		"@prettier/plugin-xml": "^3.4.2",
 		"@types/node": "^25.5.2",
@@ -31,7 +30,7 @@
 		"stylelint-config-standard-scss": "^17.0.0",
 		"typescript": "^6.0.2",
 		"typescript-eslint": "^8.58.1",
-		"vite": "^8.0.7",
+		"vite": "^8.0.8",
 		"vite-plugin-compression2": "^2.5.3"
 	},
 	"scripts": {

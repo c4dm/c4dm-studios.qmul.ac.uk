@@ -34,24 +34,19 @@ main {
 	width: 100%;
 	max-width: 100%;
 	padding-block: 20px;
+	display: grid;
+	align-content: flex-start;
+	text-align: justify;
 	overflow: hidden scroll;
 	overflow-wrap: break-word;
 	white-space: normal;
-	display: grid;
 
 	@include utils.highlight-text;
 	@include markdown.markdown;
-}
 
-.members {
-	button {
-		height: 100%;
-		width: 100%;
-		border: 0;
-		background: white;
-		color: utils.$qm-blue;
-		font-size: large;
-
-		@include utils.focus;
+	@media (width < utils.$ipad) {
+		height: fit-content;
+		overflow: unset;
+		text-align: left;
 	}
 }

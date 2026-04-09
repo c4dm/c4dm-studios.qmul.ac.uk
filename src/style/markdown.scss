@@ -6,17 +6,10 @@
 		max-width: calc(100vw - 40px);
 		margin-inline: auto;
 		display: grid;
-		text-align: justify;
+		text-align: inherit;
 
 		> :last-child {
 			margin-bottom: 0;
-		}
-
-		a {
-			outline: 0;
-			color: utils.$qm-compliment;
-
-			@include utils.focus;
 		}
 
 		.h1 {
@@ -30,20 +23,44 @@
 
 			h1 {
 				width: fit-content;
-				margin: 0 0 1px;
-				padding-inline: 8px;
+				margin: 0;
+				padding-inline: 7px;
 				place-self: center;
 				text-align: left;
 				transform: skew(20deg);
 			}
 		}
 
+		a {
+			@include utils.focus;
+			outline: 0;
+			color: utils.$qm-compliment;
+		}
+
+		button {
+			@include utils.focus;
+			height: 100%;
+			width: 100%;
+			border: 0;
+			background: white;
+			color: utils.$qm-blue;
+			font-size: large;
+		}
+
 		details {
 			margin-bottom: 10px;
+			border-bottom: 2px solid white;
+
+			&[open] summary {
+				@include utils.focus;
+				background: white;
+				color: utils.$qm-blue;
+			}
 		}
 
 		iframe {
-			max-width: 100%;
+			width: 100%;
+			border: 0;
 			place-self: center;
 		}
 
@@ -52,11 +69,10 @@
 		}
 
 		summary {
+			@include utils.focus;
 			font-size: x-large;
 			padding-block: 4px;
 			outline: 0;
-
-			@include utils.focus;
 		}
 	}
 }

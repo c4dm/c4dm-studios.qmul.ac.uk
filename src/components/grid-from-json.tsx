@@ -79,7 +79,7 @@ export const GridFromJSON: FC<{
 		// Add and remove event listeners
 		window.addEventListener('resize', gridResponse)
 		gridResponse()
-		return () => {
+		return (): void => {
 			window.removeEventListener('resize', gridResponse)
 		}
 	}, [content.length, gridSpacer, maxHeight, maxWidth])
