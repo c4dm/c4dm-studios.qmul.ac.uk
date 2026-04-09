@@ -1,7 +1,7 @@
 // biome-ignore-all lint/nursery/noJsxPropsBind : here prop bindings are used alongside Aray.map()
 
 // dependencies
-import { type FC, Fragment } from 'react'
+import type { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // src
@@ -30,19 +30,17 @@ export const Navi: FC<{
 				</div>
 			</button>
 			<div className='navi'>
-				{pages.slice(1).map((section, i) => (
-					<Fragment key={section}>
-						<button
-							aria-label={`Navigation: ${section.slice(0, 1).toUpperCase()}${section.slice(1)}`}
-							onClick={(): void => {
-								void navigate(`/${section}`)
-							}}
-							type='button'
-						>
-							<p>{`${section.slice(0, 1).toUpperCase()}${section.slice(1)}`}</p>
-						</button>
-						{i === pages.length - 2 ? <></> : <hr />}
-					</Fragment>
+				{pages.slice(1).map((section) => (
+					<button
+						aria-label={`Navigation: ${section.slice(0, 1).toUpperCase()}${section.slice(1)}`}
+						key={section}
+						onClick={(): void => {
+							void navigate(`/${section}`)
+						}}
+						type='button'
+					>
+						<p>{`${section.slice(0, 1).toUpperCase()}${section.slice(1)}`}</p>
+					</button>
 				))}
 			</div>
 		</nav>

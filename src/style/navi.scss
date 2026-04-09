@@ -51,7 +51,10 @@ nav {
 			&:last-of-type {
 				color: utils.$qm-blue;
 				justify-self: left;
-				margin: 2px 0 0 -2px;
+
+				p {
+					margin-left: -2px;
+				}
 			}
 
 			p {
@@ -81,10 +84,15 @@ nav {
 			color: inherit;
 			outline: 0;
 			border: 0;
+			border-right: solid 2px utils.$qm-blue;
 			place-self: center;
 			font-size: large;
 			padding-inline: 8px;
 			transform: skew(-20deg);
+
+			&:last-of-type {
+				border: 0;
+			}
 
 			@include utils.focus;
 
@@ -92,16 +100,6 @@ nav {
 				margin: 0;
 				transform: skew(20deg);
 			}
-		}
-
-		hr {
-			min-height: 100%;
-			width: 2px;
-			outline: 0;
-			border: 0;
-			place-self: center;
-			transform: skew(-20deg);
-			background-color: utils.$qm-blue;
 		}
 	}
 
@@ -120,8 +118,8 @@ nav {
 			grid-auto-flow: row;
 			margin-block: 8px;
 
-			hr {
-				display: none;
+			button {
+				border: 0;
 			}
 		}
 	}
