@@ -276,7 +276,7 @@
 				"useExpect": "error",
 				"useExplicitType": "error",
 				"useFind": "error",
-				"useGlobalThis": "error",
+				"useGlobalThis": "off",
 				"useImportsFirst": "error",
 				"useInlineScriptId": "error",
 				"useInputName": "error",

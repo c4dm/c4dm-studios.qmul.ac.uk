@@ -60,7 +60,7 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 - macOS: [https://rme-audio.de/rme-macos.html](https://rme-audio.de/rme-macos.html)
 
 - Windows: [https://rme-audio.de/rme-macos.html](https://rme-audio.de/rme-macos.html)
-    </details>
+      </details>
 
 <details>
 <summary>Configure</summary>

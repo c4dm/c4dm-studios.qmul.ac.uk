@@ -10,6 +10,7 @@ html {
 	font-family: inter, sans-serif;
 	font-size: 16px;
 	color: white;
+	background-color: utils.$qm-blue;
 }
 
 body {
@@ -19,27 +20,13 @@ body {
 	font-family: inherit;
 	font-size: inherit;
 	color: inherit;
+	background-color: inherit;
 	text-size-adjust: 100%;
-	background-color: utils.$qm-blue;
-	color: white;
 }
 
 #root {
 	height: 100%;
 	width: 100%;
-}
-
-header {
-	height: 300px;
-	width: 100vw;
-	margin-top: -20px;
-	margin-left: calc(-0.055 * 100vw);
-	margin-bottom: 20px;
-	display: grid;
-	background-image: url('./images/header.jpeg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 main {

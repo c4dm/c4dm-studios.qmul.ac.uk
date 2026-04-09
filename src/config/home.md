@@ -1,4 +1,6 @@
-<script></script> <!-- this corresponds to an app defined using typescript -->
+![the performance lab](/images/header.jpeg)
+
+<img alt='the performance lab' src='/images/header.jpeg' style='height: 300px;'/>
 
 # Description
 
