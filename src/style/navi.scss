@@ -86,11 +86,7 @@ nav {
 			padding-inline: 8px;
 			transform: skew(-20deg);
 
-			&:focus-visible,
-			&:hover {
-				background-color: utils.$qm-compliment;
-				color: utils.$qm-blue;
-			}
+			@include utils.focus;
 
 			p {
 				margin: 0;
