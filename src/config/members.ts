@@ -5,20 +5,20 @@ export type MembersLink = {
 
 export const links: readonly MembersLink[] = [
 	{
-		link: 'https://google.com',
-		text: 'Performance Lab Calendar',
+		link: 'https://qmulprod.sharepoint.com/sites/Studio/Lists/Studio%20Calendar/AllItems.aspx?e=EaViRw&CID=d589f6ad-eee5-4f53-ad57-8fc7ce094b08&env=WebViewList',
+		text: 'Studio Calendar',
+	},
+	{
+		link: 'https://qmulprod.sharepoint.com/sites/Studio/Lists/MGMT%20%20Inventory/AllItems.aspx?viewid=0526cffc%2D1617%2D48f2%2D87f2%2De546828b2116&env=WebViewList',
+		text: 'Studio Inventory',
 	},
 	{
 		link: 'https://google.com',
-		text: 'Control Room Calendar',
+		text: 'Studio Policy',
 	},
 	{
 		link: 'https://google.com',
-		text: 'Live Room Calendar',
-	},
-	{
-		link: 'https://google.com',
-		text: 'Inventory',
+		text: 'Equipment Loans',
 	},
 	{
 		link: 'https://google.com',
