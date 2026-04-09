@@ -34,8 +34,8 @@ const pages: {
 }
 
 export default function App(): JSX.Element {
-	const navigate = useNavigate()
 	const location = useLocation().pathname
+	const navigate = useNavigate()
 	const [markdown, setMarkdown] = useState<string>('')
 
 	useEffect(() => {
@@ -70,9 +70,6 @@ export default function App(): JSX.Element {
 						),
 						script: () => (
 							<Routes>
-								<Route element={<header />} path='/' />
-								<Route element={<></>} path='/equipment' />
-								<Route element={<></>} path='/documentation' />
 								<Route
 									element={
 										<GridFromJSON
@@ -100,7 +97,6 @@ export default function App(): JSX.Element {
 									}
 									path='/members'
 								/>
-								<Route element={<></>} path='/contact' />
 							</Routes>
 						),
 					}}
