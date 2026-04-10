@@ -4,13 +4,20 @@
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
 
-## Power On/Off Procedures
+<details>
+<summary>Power On/Off Procedures</summary>
+</details>
 
-## Movement around the Studios
+<details>
+<summary>Movement around the Studios</summary>
+</details>
 
-## How to Use Sharepoint
+<details>
+<summary>How to Use Sharepoint</summary>
+</details>
 
-## Our Computers
+<details>
+<summary>Our Computers</summary>
 
 We have two desktop computers that are pre-configured for a range of studio tasks...
 
@@ -25,6 +32,8 @@ Password: student
 ### Saving Your Work
 
 It will be deleted...
+
+</details>
 
 # Audio Network (AVB)
 
@@ -75,13 +84,21 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 
 # Local Access Network (LAN)
 
-## System Overview
+<details>
+<summary>System Overview</summary>
+</details>
 
-## How to LAN
+<details>
+<summary>How to LAN</summary>
+</details>
 
-## File Sharing
+<details>
+<summary>File Sharing</summary>
+</details>
 
-## Other Uses
+<details>
+<summary>Other Uses</summary>
+</details>
 
 # MIDI
 
