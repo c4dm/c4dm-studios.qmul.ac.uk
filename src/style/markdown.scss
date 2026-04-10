@@ -50,10 +50,21 @@
 		details {
 			border-bottom: 2px solid utils.$qm-white;
 
-			&[open] summary {
-				@include utils.focus;
-				background: utils.$qm-compliment;
-				color: utils.$qm-blue;
+			&:hover,
+			&:focus-visible {
+				border-bottom: 2px solid utils.$qm-blue;
+				summary {
+					background: utils.$qm-compliment;
+					color: utils.$qm-blue;
+				}
+			}
+
+			&[open] {
+				border-bottom: 2px solid utils.$qm-white;
+				summary {
+					background: utils.$qm-compliment;
+					color: utils.$qm-blue;
+				}
 			}
 		}
 
@@ -69,7 +80,7 @@
 
 		summary {
 			@include utils.focus;
-			font-size: x-large;
+			font-size: larger;
 			padding-block: 4px;
 			outline: 0;
 		}
