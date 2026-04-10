@@ -8,16 +8,16 @@
 		display: grid;
 		text-align: inherit;
 
-		> :last-child {
-			margin-bottom: 0;
+		> * {
+			margin-block: 10px;
 		}
 
 		.h1 {
 			height: fit-content;
 			width: fit-content;
-			margin: 10px 8px;
+			margin: 50px 8px 10px;
 			display: grid;
-			background-color: white;
+			background-color: utils.$qm-white;
 			color: utils.$qm-blue;
 			transform: skew(-20deg);
 
@@ -42,18 +42,17 @@
 			height: 100%;
 			width: 100%;
 			border: 0;
-			background: white;
+			background: utils.$qm-white;
 			color: utils.$qm-blue;
 			font-size: large;
 		}
 
 		details {
-			margin-bottom: 10px;
-			border-bottom: 2px solid white;
+			border-bottom: 2px solid utils.$qm-white;
 
 			&[open] summary {
 				@include utils.focus;
-				background: white;
+				background: utils.$qm-compliment;
 				color: utils.$qm-blue;
 			}
 		}
@@ -73,6 +72,14 @@
 			font-size: x-large;
 			padding-block: 4px;
 			outline: 0;
+		}
+
+		> :first-child {
+			margin-top: 0;
+		}
+
+		> :last-child {
+			margin-bottom: 0;
 		}
 	}
 }

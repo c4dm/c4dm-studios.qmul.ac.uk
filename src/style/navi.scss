@@ -5,8 +5,9 @@ nav {
 	width: 100%;
 	display: grid;
 	grid-template-columns: auto 1fr auto;
-	background-color: white;
+	background-color: utils.$qm-white;
 	color: utils.$qm-blue;
+	user-select: none;
 
 	button {
 		width: fit-content;
@@ -43,7 +44,7 @@ nav {
 			&:first-of-type {
 				justify-self: right;
 				background: utils.$qm-blue;
-				color: white;
+				color: utils.$qm-white;
 			}
 
 			&:last-of-type {

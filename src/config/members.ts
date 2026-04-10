@@ -1,3 +1,5 @@
+// biome-ignore-all lint/security/noSecrets : qm sharepoint links only are set to private
+
 export type MembersLink = {
 	link: string
 	text: string
