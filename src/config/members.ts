@@ -8,27 +8,27 @@ export type MembersLink = {
 export const links: readonly MembersLink[] = [
 	{
 		link: 'https://qmulprod.sharepoint.com/sites/Studio/Lists/Studio%20Calendar/AllItems.aspx?e=EaViRw&CID=d589f6ad-eee5-4f53-ad57-8fc7ce094b08&env=WebViewList',
-		text: 'Studio Calendar',
+		text: 'Book a Session',
 	},
 	{
 		link: 'https://qmulprod.sharepoint.com/sites/Studio/Lists/MGMT%20%20Inventory/AllItems.aspx?viewid=0526cffc%2D1617%2D48f2%2D87f2%2De546828b2116&env=WebViewList',
-		text: 'Studio Inventory',
+		text: 'View Inventory',
 	},
 	{
 		link: 'https://google.com',
-		text: 'Studio Policy',
+		text: 'Equipment Loans Portal',
 	},
 	{
 		link: 'https://google.com',
-		text: 'Equipment Loans',
+		text: 'Totalmix Templates',
 	},
 	{
 		link: 'https://google.com',
-		text: 'Equipment Loans',
+		text: 'Spatial Audio Files',
 	},
 	{
 		link: 'https://google.com',
-		text: 'Equipment Returns',
+		text: 'Motion Capture Files',
 	},
 	{
 		link: 'https://google.com',
@@ -39,7 +39,7 @@ export const links: readonly MembersLink[] = [
 		text: 'Event Hire',
 	},
 	{
-		link: 'https://google.com',
-		text: 'Studio Policy?? Am I really real.',
+		link: 'https://qmulprod.sharepoint.com/sites/Studio/SitePages/Management.aspx',
+		text: 'Management Portal',
 	},
 ] as const
