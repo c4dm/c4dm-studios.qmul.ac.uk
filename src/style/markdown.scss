@@ -53,6 +53,7 @@
 			&:hover,
 			&:focus-visible {
 				border-bottom: 2px solid utils.$qm-blue;
+
 				summary {
 					background: utils.$qm-compliment;
 					color: utils.$qm-blue;
@@ -61,8 +62,10 @@
 
 			&[open] {
 				border-bottom: 2px solid utils.$qm-white;
+
 				summary {
-					background: utils.$qm-compliment;
+					@include utils.focus;
+					background: utils.$qm-white;
 					color: utils.$qm-blue;
 				}
 			}
