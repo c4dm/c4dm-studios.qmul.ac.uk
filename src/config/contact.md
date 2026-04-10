@@ -13,6 +13,10 @@ School of Electronic Engineering & Computer Science <br/>
 Queen Mary University of London <br/>
 Mile End Road, London, E1 4NS
 
+Bancroft Rd Entrance:
+51°31'21.5"N 0°02'30.5"W
+///often.liability.bound
+
 </div>
 </span>
 
