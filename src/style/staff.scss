@@ -1,4 +1,4 @@
-.contact-headshots {
+.contact-staff {
 	height: 100%;
 	width: 100%;
 	display: grid;
@@ -6,7 +6,7 @@
 	grid-template:
 		't i' 1fr
 		't i' 1fr / 1fr 1.25fr;
-	align-items: center;
+	place-items: center;
 	text-align: center;
 
 	img {

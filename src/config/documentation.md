@@ -1,8 +1,8 @@
-<div class='markdown'> <!-- lew stuff -->
-
-# Overview
+<div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
+
+# Overview
 
 <details>
 <summary>Power On/Off Procedures</summary>
@@ -100,7 +100,7 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 <summary>Other Uses</summary>
 </details>
 
-# MIDI
+<!-- <!-- # MIDI
 
 ## System Overview
 
@@ -246,6 +246,6 @@ https://eigenmike.com/downloads
 
 ## Troubleshooting: GRAS Acoustics
 
-## Troubleshooting: EM64 Eigenmike
+## Troubleshooting: EM64 Eigenmike -->
 
-</div> <!-- lew stuff -->
+</div> <!-- for applying scss styling -->

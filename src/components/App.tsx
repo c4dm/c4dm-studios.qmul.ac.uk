@@ -1,41 +1,42 @@
-// biome-ignore-all lint/nursery/noJsxPropsBind : here prop bindings are used alongside Aray.map()
 /* eslint-disable sort-keys */
 
 // dependencies
 import { type JSX, useEffect } from 'react'
 import Markdown from 'react-markdown'
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
-import rehypeRaw from 'rehype-raw'
+import { useLocation, useNavigate } from 'react-router-dom'
+import rehype from 'rehype-raw'
 
-// components
+// components & scss
+import { GridFromJSON } from './modules/grid-from-json.tsx'
 import { Navi } from './navi.tsx'
-import { GridFromJSON } from './grid-from-json.tsx'
+import { Staff } from './staff.tsx'
 import '../style/App.scss'
-import '../style/contact.scss'
 
-// markdown
+// config - markdown
 import contact from '../config/contact.md?raw'
-import home from '../config/home.md?raw'
 import documentation from '../config/documentation.md?raw'
-import members from '../config/members.md?raw'
 import equipment from '../config/equipment.md?raw'
+import home from '../config/home.md?raw'
+import services from '../config/services.md?raw'
 
-// config
-import { type MembersLink, links } from '../config/members.ts'
-import { type C4DMEmployee, Staff } from '../config/staff.ts'
+// config - data
+import { type MembersLink, links } from '../config/services-buttons.ts'
 
-// routes
+// routes (this is _ordered_)
 const pages: Record<string, string> = {
 	'/': home,
 	'/equipment': equipment,
 	'/documentation': documentation,
-	'/members': members,
+	'/services': services,
 	'/contact': contact,
 }
+const NULL: JSX.Element = <></>
 
 export default function App(): JSX.Element {
-	// redirect
+	// get current path
 	const location = useLocation().pathname
+
+	// redirect if !pages[location]
 	const navigate = useNavigate()
 	useEffect(() => {
 		if (!Object.keys(pages).includes(location)) {
@@ -43,12 +44,13 @@ export default function App(): JSX.Element {
 		}
 	}, [location, navigate])
 
+	// render dynamic content
 	return (
 		<>
 			<title>{`C4DM Studios${
 				location === '/' ? '' : ` | ${location.slice(1, 2).toUpperCase()}${location.slice(2)}`
 			}`}</title>
-			<Navi pages={Object.keys(pages).map((page) => page.slice(1))} />
+			<Navi pages={Object.keys(pages)} />
 			<main>
 				<Markdown
 					components={{
@@ -57,10 +59,12 @@ export default function App(): JSX.Element {
 								<h1>{children}</h1>
 							</div>
 						),
-						script: (): JSX.Element => (
-							<Routes>
-								<Route
-									element={
+						script: ({ ...props }): JSX.Element => {
+							switch (props.className) {
+								case 'contact-staff':
+									return <Staff />
+								case 'services-buttons':
+									return (
 										<GridFromJSON
 											cell={(obj: MembersLink, i: number): JSX.Element => (
 												<button
@@ -83,35 +87,13 @@ export default function App(): JSX.Element {
 											maxHeight={100}
 											maxWidth={320}
 										/>
-									}
-									path='/members'
-								/>
-								<Route
-									element={
-										<GridFromJSON
-											cell={(obj: C4DMEmployee, i: number): JSX.Element => (
-												<div className='contact-headshots' key={i}>
-													<img
-														alt={obj.name}
-														height={200}
-														src={obj.image ?? '/images/edward-hoskins.jpeg'}
-														width={200}
-													/>
-													{obj.link ? <a href={obj.link.href}>{obj.name}</a> : <p>{obj.name}</p>}
-													<i>{obj.role}</i>
-												</div>
-											)}
-											json={Staff}
-											maxHeight={200}
-											maxWidth={320}
-										/>
-									}
-									path='/contact'
-								/>
-							</Routes>
-						),
+									)
+								default:
+									return NULL
+							}
+						},
 					}}
-					rehypePlugins={[rehypeRaw]}
+					rehypePlugins={[rehype]}
 				>
 					{pages[location]}
 				</Markdown>

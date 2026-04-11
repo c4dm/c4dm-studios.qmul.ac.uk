@@ -32,14 +32,14 @@ export const Navi: FC<{
 			<div className='navi'>
 				{pages.slice(1).map((section) => (
 					<button
-						aria-label={`Navigation: ${section.slice(0, 1).toUpperCase()}${section.slice(1)}`}
+						aria-label={`Navigation: ${section.slice(1, 2).toUpperCase()}${section.slice(2)}`}
 						key={section}
 						onClick={(): void => {
-							void navigate(`/${section}`)
+							void navigate(section)
 						}}
 						type='button'
 					>
-						<p>{`${section.slice(0, 1).toUpperCase()}${section.slice(1)}`}</p>
+						<p>{`${section.slice(1, 2).toUpperCase()}${section.slice(2)}`}</p>
 					</button>
 				))}
 			</div>

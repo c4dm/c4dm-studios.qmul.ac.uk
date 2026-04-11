@@ -1,5 +1,5 @@
-<div class='markdown'> <!-- lew stuff -->
+<div class='markdown'> <!-- for applying scss styling -->
 
 <p style='text-align: center;'>...coming soon...</p>
 
-</div> <!-- lew stuff -->
+</div> <!-- for applying scss styling -->

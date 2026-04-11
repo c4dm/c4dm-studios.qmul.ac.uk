@@ -33,6 +33,7 @@
 
 		a {
 			@include utils.focus;
+			width: fit-content;
 			outline: 0;
 			color: utils.$qm-compliment;
 		}
@@ -84,7 +85,7 @@
 		span {
 			display: grid;
 			grid-auto-flow: column;
-			gap: 10px;
+			gap: 20px;
 			align-items: center;
 
 			@media (width < utils.$ipad) {

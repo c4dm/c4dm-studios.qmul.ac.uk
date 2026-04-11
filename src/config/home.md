@@ -1,5 +1,5 @@
 <img alt='the performance lab' src='/images/header.jpeg' style='max-height: 300px; width: 100vw; max-width: 100vw; object-fit: cover; margin-block: -20px 20px;'/>
-<div class='markdown'> <!-- lew stuff -->
+<div class='markdown'> <!-- for applying scss styling -->
 
 # Description
 
@@ -11,4 +11,4 @@ Established by the Centre for Digital Music (C4DM) and Cognitive Science (CogSci
 ++ Include the research group for clout -->> https://c4dm.eecs.qmul.ac.uk/
 ++ And even other research groups we might support for more clout? Multi-modal etc...
 
-</div> <!-- lew stuff -->
+</div> <!-- for applying scss styling -->
