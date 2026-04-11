@@ -13,9 +13,12 @@ School of Electronic Engineering & Computer Science <br/>
 Queen Mary University of London <br/>
 Mile End Road, London, E1 4NS
 
-Bancroft Rd Entrance:
+Bancroft Road Entrance: <br/>
 51°31'21.5"N 0°02'30.5"W
-///often.liability.bound
+
+<!-- often.liability.bound -->
+
+Parking available upon request.
 
 </div>
 </span>
@@ -32,35 +35,7 @@ Are you an active student or member of staff at Queen Mary, and what do run your
 
 # Staff
 
-<span style='grid-template-columns: 50% 50%; text-align: center;'>
-<div>
-<!-- <image alt='Mr. Edward Hoskins' src='/images/edward-hoskins.jpeg' height=300 style='aspect-ratio: 1/1; object-fit: cover;'> -->
-
-**Studio Managers**: Ciarán Corr & [Lewis Wolstanholme](https://lewiswolstanholme.co.uk)
-
-</div>
-<div>
-<!-- <image alt='Mr. Edward Hoskins' src='/images/edward-hoskins.jpeg' height=300 style='aspect-ratio: 1/1; object-fit: cover;'> -->
-
-**Technical Directors**: [Johan Pauwels](https://www.qmul.ac.uk/eecs/people/profiles/pauwelsjohan.html) & [Anna Xambo Sedo](https://annaxambo.me/)
-
-</div>
-</span>
-
-<span style='grid-template-columns: 50% 50%; text-align: center;'>
-<div>
-<image alt='Mr. Edward Hoskins' src='/images/edward-hoskins.jpeg' height=300 style='aspect-ratio: 1/1; object-fit: cover;'>
-
-**Facilities Manager**: [Edward Hoskins](https://www.qmul.ac.uk/eecs/people/profiles/hoskinsedward.html)
-
-</div>
-<div>
-<image alt='Prof. Mark Sandler' src='/images/mark-sandler.png' height=300 style='aspect-ratio: 1/1; object-fit: cover;'>
-
-**C4DM Director**: [Mark Sandler](https://www.qmul.ac.uk/eecs/people/profiles/sandlermark.html)
-
-</div>
-
-</span>
+<!-- this tag creates a responsive grid off staff cards -->
+<script></script>
 
 </div> <!-- lew stuff -->
