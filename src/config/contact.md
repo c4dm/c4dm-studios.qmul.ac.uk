@@ -36,6 +36,7 @@ Are you an active student or member of staff at Queen Mary, and what do run your
 # Staff
 
 <!-- this tag creates a responsive grid off staff cards -->
+<!-- to edit this section, please see `staff.ts` -->
 <script></script>
 
 </div> <!-- lew stuff -->

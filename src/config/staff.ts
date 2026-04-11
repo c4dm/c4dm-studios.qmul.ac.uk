@@ -11,30 +11,30 @@ export const Staff: readonly C4DMEmployee[] = [
 		role: 'Studio Manager',
 	},
 	{
-		name: 'Lewis Wolstanholme',
 		link: new URL('https://lewiswolstanholme.co.uk'),
+		name: 'Lewis Wolstanholme',
 		role: 'Studio Manager',
 	},
 	{
-		name: 'Edward Hoskins',
 		image: '/images/edward-hoskins.jpeg',
 		link: new URL('https://lewiswolstanholme.co.uk'),
+		name: 'Edward Hoskins',
 		role: 'Facilities Manager',
 	},
 	{
-		name: 'Johan Pauwels',
 		link: new URL('https://lewiswolstanholme.co.uk'),
+		name: 'Johan Pauwels',
 		role: 'Technical Director',
 	},
 	{
-		name: 'Anna Xambo Sedo',
 		link: new URL('https://annaxambo.me/'),
+		name: 'Anna Xambo Sedo',
 		role: 'Technical Director',
 	},
 	{
-		name: 'Mark Sandler',
 		image: '/images/mark-sandler.png',
 		link: new URL('https://www.qmul.ac.uk/eecs/people/profiles/sandlermark.html'),
+		name: 'Mark Sandler',
 		role: 'Director',
 	},
 ] as const

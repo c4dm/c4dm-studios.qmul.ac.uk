@@ -91,7 +91,12 @@ export default function App(): JSX.Element {
 										<GridFromJSON
 											cell={(obj: C4DMEmployee, i: number): JSX.Element => (
 												<div className='contact-headshots' key={i}>
-													<img alt={obj.name} src={obj.image ?? '/images/edward-hoskins.jpeg'} />
+													<img
+														alt={obj.name}
+														height={200}
+														src={obj.image ?? '/images/edward-hoskins.jpeg'}
+														width={200}
+													/>
 													{obj.link ? <a href={obj.link.href}>{obj.name}</a> : <p>{obj.name}</p>}
 													<i>{obj.role}</i>
 												</div>

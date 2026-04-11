@@ -2,13 +2,10 @@
 	height: 100%;
 	width: 100%;
 	display: grid;
-	gap: 10px;
-	grid-template-columns: 1fr 1.25fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas:
-		't i'
-		't i';
-
+	gap: 10px 0;
+	grid-template:
+		't i' 1fr
+		't i' 1fr / 1fr 1.25fr;
 	align-items: center;
 	text-align: center;
 
@@ -21,14 +18,14 @@
 	}
 
 	a,
+	i,
 	p {
 		margin: 0;
 		align-self: flex-end;
 		font-size: small;
-	}
 
-	i {
-		align-self: baseline;
-		font-size: small;
+		&:is(i) {
+			align-self: baseline;
+		}
 	}
 }
