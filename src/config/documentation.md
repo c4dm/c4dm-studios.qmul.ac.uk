@@ -46,13 +46,13 @@ We operate an integrated audio network across our studios spaces, spanning 128 i
 ### Download the latest versions of our TotalMix templates below!
 
 <span>
-	<a class='button' download href='/resources/Performance Lab.tmws'>
+	<a class='button' download href='/resources/Performance Lab (24263718).tmws'>
 		Performance Lab Template
 	</a>
-	<a class='button' download href='/resources/Control Room.tmws'>
+	<a class='button' download href='/resources/Control Room (24251471).tmws'>
 		Control Room Template
 	</a>
-	<a class='button' download href='/resources/Live Room.tmws'>
+	<a class='button' download href='/resources/Live Room (24261706).tmws'>
 		Live Room Template
 	</a>
 </span>
