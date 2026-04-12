@@ -21,9 +21,9 @@ import services from '../config/services.md?raw'
 // routes (this is _ordered_)
 const pages: Record<string, string> = {
 	'/': home,
+	'/services': services,
 	'/equipment': equipment,
 	'/documentation': documentation,
-	'/services': services,
 	'/contact': contact,
 }
 const NULL: JSX.Element = <></>

@@ -12,25 +12,6 @@
 			margin-block: 10px;
 		}
 
-		.h1 {
-			height: fit-content;
-			width: fit-content;
-			margin: 50px 8px 10px;
-			display: grid;
-			background-color: utils.$qm-white;
-			color: utils.$qm-blue;
-			transform: skew(-20deg);
-
-			h1 {
-				width: fit-content;
-				margin: 0;
-				padding-inline: 7px;
-				place-self: center;
-				text-align: left;
-				transform: skew(20deg);
-			}
-		}
-
 		a {
 			@include utils.focus;
 			width: fit-content;
@@ -40,7 +21,7 @@
 
 		a.button,
 		button {
-			height: 60px;
+			height: 40px;
 			width: 100%;
 			max-width: 400px;
 			background: utils.$qm-white;
@@ -88,6 +69,32 @@
 			}
 		}
 
+		.h1 {
+			height: fit-content;
+			width: fit-content;
+			margin: 50px 8px 20px;
+			display: grid;
+			background-color: utils.$qm-white;
+			color: utils.$qm-blue;
+			transform: skew(-20deg);
+
+			h1 {
+				width: fit-content;
+				margin: 0;
+				padding-inline: 7px;
+				place-self: center;
+				text-align: left;
+				transform: skew(20deg);
+			}
+		}
+
+		h2,
+		h3,
+		h4,
+		h5 {
+			margin-top: 20px;
+		}
+
 		iframe {
 			width: 100%;
 			border: 0;
@@ -112,7 +119,6 @@
 				grid-auto-flow: row;
 				grid-template: unset !important;
 				place-items: initial;
-				text-align: left !important;
 			}
 		}
 

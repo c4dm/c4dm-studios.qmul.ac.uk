@@ -1,3 +1,4 @@
+<!-- cspell:ignore Digicheck Digiface Disklavier Eigenmike MADIFace tmws Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -37,11 +38,7 @@ It will be deleted...
 
 # Audio Network (AVB)
 
-<br/>
-
 We operate an integrated audio network across our studios spaces, spanning 128 input and output channels distributed throughout.
-
-<br/>
 
 ### Download the latest versions of our TotalMix templates below!
 
@@ -103,9 +100,7 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 
 # Local Access Network (LAN)
 
-<details>
-<summary>System Overview</summary>
-</details>
+System Overview
 
 <details>
 <summary>How to LAN</summary>
@@ -132,8 +127,6 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 ## Downloads
 
 ## Configuration
-
-\newpage
 
 # Motion Capture
 
@@ -215,8 +208,6 @@ Each connector allows for up to 8 channels. The top row of the connector is GND.
 
 # DMX Lighting
 
-\newpage
-
 # Misc Research Equipment
 
 ## GRAS Acoustics: Kemar Head
@@ -232,8 +223,6 @@ https://eigenmike.com/downloads
 ## Zoom H8: Multi-channel / B-Format Field Recorder
 
 ## TSL B-Format Microphone...
-
-\newpage
 
 # Other Equipment (by Studio Room)
 

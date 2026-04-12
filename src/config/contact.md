@@ -3,7 +3,7 @@
 # Where to Find Us
 
 <!-- prettier-ignore-start -->
-<span style='grid-template-columns: 1fr auto;'>
+<span style='grid-template-columns: 1fr auto; text-align: center;'>
 	<!-- if we get our own google maps address, it would be wise to switch this out for the Google Maps API -->
 	<iframe 
 		allowfullscreen=""
@@ -22,20 +22,10 @@
 		51°31'21.5"N 0°02'30.5"W <br/>
 		<!-- /// often.liability.bound -->
 		<br/>
-		Parking available upon request.
+		<a href='mailto:c4dm-studios@qmul.ac.uk' style='text-decoration: none;'>c4dm-studios@qmul.ac.uk</a>
 	</div>
 </span>
 <!-- prettier-ignore-end -->
-
-# Contact Us
-
-<!-- For all general and external inquiries, please get in touch at -->
-
-<p style='text-align: center; font-size: larger;'>c4dm-studios@qmul.ac.uk</p>
-
-# Become a Member
-
-Are you an active student or member of staff at Queen Mary, and what do run your own sessions within the studios?
 
 # Staff
 
