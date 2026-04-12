@@ -7,7 +7,6 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import rehype from 'rehype-raw'
 
 // components & scss
-import { GridFromJSON } from './modules/grid-from-json.tsx'
 import { Navi } from './navi.tsx'
 import { Staff } from './staff.tsx'
 import '../style/App.scss'
@@ -18,9 +17,6 @@ import documentation from '../config/documentation.md?raw'
 import equipment from '../config/equipment.md?raw'
 import home from '../config/home.md?raw'
 import services from '../config/services.md?raw'
-
-// config - data
-import { type MembersLink, links } from '../config/services-buttons.ts'
 
 // routes (this is _ordered_)
 const pages: Record<string, string> = {
@@ -63,31 +59,6 @@ export default function App(): JSX.Element {
 							switch (props.className) {
 								case 'contact-staff':
 									return <Staff />
-								case 'services-buttons':
-									return (
-										<GridFromJSON
-											cell={(obj: MembersLink, i: number): JSX.Element => (
-												<button
-													aria-label={`Navigate to ${obj.text}.`}
-													key={i.toString()}
-													onClick={(): Window | null => window.open(obj.link, '_blank')}
-													onKeyDown={(e): void => {
-														if (e.key === 'Enter' || e.key === ' ') {
-															e.preventDefault()
-															window.open(obj.link, '_blank')
-														}
-													}}
-													tabIndex={0}
-													type='button'
-												>
-													{obj.text}
-												</button>
-											)}
-											json={links}
-											maxHeight={100}
-											maxWidth={320}
-										/>
-									)
 								default:
 									return NULL
 							}

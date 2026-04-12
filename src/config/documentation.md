@@ -37,7 +37,26 @@ It will be deleted...
 
 # Audio Network (AVB)
 
-What is this bit?
+<br/>
+
+We operate an integrated audio network across our studios spaces, spanning 128 input and output channels distributed throughout.
+
+<br/>
+
+### Download the latest versions of our TotalMix templates below!
+
+<span>
+	<a class='button' download href='/resources/Performance Lab.tmws'>
+		Performance Lab Template
+	</a>
+	<a class='button' download href='/resources/Control Room.tmws'>
+		Control Room Template
+	</a>
+	<a class='button' download href='/resources/Live Room.tmws'>
+		Live Room Template
+	</a>
+</span>
+<br/>
 
 <details>
 <summary>RME Audio Driver</summary>
@@ -54,15 +73,15 @@ To use our audio system with your own computer, you will need to install the fol
 
 1. Go to [https://rme-audio.de/downloads.html](https://rme-audio.de/downloads.html)
 
-2. Select Digiface AVB from the left menu, followed by your operating system
+1. Select Digiface AVB from the left menu, followed by your operating system
 
-3. Download the latest driver _(driver_usbdk_mac_xxx.zip, driver_madiface_win_xxx.zip)_
+1. Download the latest driver _(driver_usbdk_mac_xxx.zip, driver_madiface_win_xxx.zip)_
 
-4. Windows Only: Download the RME Windows Network Driver _(driver_win_net_xxx.zip)_
+1. Windows Only: Download the RME Windows Network Driver _(driver_win_net_xxx.zip)_
 
-5. Refresh and select RME Connector from the menu on the right
+1. Refresh and select RME Connector from the menu on the right
 
-6. Download the latest version of RME Connector for your operating system
+1. Download the latest version of RME Connector for your operating system
 
 _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 

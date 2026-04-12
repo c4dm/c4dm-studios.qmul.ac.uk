@@ -4,15 +4,15 @@
 	display: grid;
 	gap: 10px 0;
 	grid-template:
-		't i' 1fr
-		't i' 1fr / 1fr 1.25fr;
+		'text image' 1fr
+		'text image' 1fr / 1fr 1.25fr;
 	place-items: center;
 	text-align: center;
 
 	img {
 		height: 100%;
 		width: 100%;
-		grid-area: i;
+		grid-area: image;
 		aspect-ratio: 1/2;
 		object-fit: cover;
 	}
