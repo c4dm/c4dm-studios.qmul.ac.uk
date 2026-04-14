@@ -19,13 +19,13 @@ export const staff: readonly C4DMEmployee[] = [
 	},
 	{
 		image: '/images/edward-hoskins.jpeg',
-		link: new URL('https://lewiswolstanholme.co.uk'),
+		link: new URL('https://www.qmul.ac.uk/eecs/people/profiles/hoskinsedward.html'),
 		name: 'Edward Hoskins',
 		role: 'Facilities Manager',
 	},
 	{
 		image: '/images/edward-hoskins.jpeg',
-		link: new URL('https://lewiswolstanholme.co.uk'),
+		link: new URL('https://www.qmul.ac.uk/eecs/people/profiles/pauwelsjohan.html'),
 		name: 'Johan Pauwels',
 		role: 'Technical Director',
 	},

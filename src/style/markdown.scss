@@ -8,15 +8,12 @@
 		display: grid;
 		text-align: inherit;
 
-		> * {
-			margin-block: 10px;
-		}
-
 		a {
 			@include utils.focus;
 			width: fit-content;
 			outline: 0;
 			color: utils.$qm-compliment;
+			text-decoration: none;
 		}
 
 		a.button,
@@ -24,8 +21,9 @@
 			height: 40px;
 			width: 100%;
 			max-width: 400px;
-			background: utils.$qm-white;
-			color: utils.$qm-blue;
+			margin-block: 10px;
+			background: utils.$qm-blue;
+			color: utils.$qm-white;
 			border: 3px solid utils.$qm-white;
 			border-radius: 4px;
 			outline: 3px solid utils.$qm-blue;
@@ -35,7 +33,6 @@
 			text-align: center;
 			text-decoration: none;
 			font-size: large;
-			font-weight: bold;
 
 			&:hover,
 			&:focus-visible {
@@ -46,6 +43,7 @@
 		}
 
 		details {
+			margin-block: 5px;
 			border-bottom: 2px solid utils.$qm-white;
 
 			&:hover,
@@ -72,7 +70,7 @@
 		.h1 {
 			height: fit-content;
 			width: fit-content;
-			margin: 50px 8px 20px;
+			margin: 60px 8px 20px;
 			display: grid;
 			background-color: utils.$qm-white;
 			color: utils.$qm-blue;
@@ -83,16 +81,15 @@
 				margin: 0;
 				padding-inline: 7px;
 				place-self: center;
-				text-align: left;
+				text-align: center;
+				font-size: xx-large;
 				transform: skew(20deg);
 			}
 		}
 
-		h2,
-		h3,
-		h4,
-		h5 {
-			margin-top: 20px;
+		h3 {
+			text-align: center;
+			font-weight: normal;
 		}
 
 		iframe {
@@ -107,6 +104,10 @@
 			user-select: none;
 		}
 
+		p {
+			margin-block: 10px;
+		}
+
 		span {
 			width: 100%;
 			display: grid;
@@ -115,7 +116,7 @@
 			gap: 20px;
 			align-items: center;
 
-			@media (width < utils.$ipad) {
+			@media (width < utils.$iphone) {
 				grid-auto-flow: row;
 				grid-template: unset !important;
 				place-items: initial;
@@ -127,6 +128,7 @@
 			font-size: larger;
 			padding-block: 4px;
 			outline: 0;
+			cursor: pointer;
 		}
 
 		> :first-child {

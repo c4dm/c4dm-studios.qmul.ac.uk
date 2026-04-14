@@ -8,7 +8,7 @@ html {
 	width: 100%;
 	margin: 0;
 	font-family: inter, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	color: utils.$qm-white;
 	background-color: utils.$qm-blue;
 }
@@ -44,7 +44,7 @@ main {
 	@include utils.highlight-text;
 	@include markdown.markdown;
 
-	@media (width < utils.$ipad) {
+	@media (width < utils.$iphone) {
 		height: fit-content;
 		padding-block: 20px;
 		overflow: unset;

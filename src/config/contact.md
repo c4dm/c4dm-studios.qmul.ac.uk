@@ -2,8 +2,7 @@
 
 # Where to Find Us
 
-<!-- prettier-ignore-start -->
-<span style='grid-template-columns: 1fr auto; text-align: center;'>
+<span style='grid-template-columns: 1fr auto; margin-block: 10px; text-align: center;'>
 	<!-- if we get our own google maps address, it would be wise to switch this out for the Google Maps API -->
 	<iframe 
 		allowfullscreen=""
@@ -22,10 +21,9 @@
 		51°31'21.5"N 0°02'30.5"W <br/>
 		<!-- /// often.liability.bound -->
 		<br/>
-		<a href='mailto:c4dm-studios@qmul.ac.uk' style='text-decoration: none;'>c4dm-studios@qmul.ac.uk</a>
+		<a href='mailto:c4dm-studios@qmul.ac.uk'>c4dm-studios@qmul.ac.uk</a>
 	</div>
 </span>
-<!-- prettier-ignore-end -->
 
 # Staff
 

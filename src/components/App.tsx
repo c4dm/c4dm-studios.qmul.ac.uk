@@ -31,8 +31,11 @@ const NULL: JSX.Element = <></>
 export default function App(): JSX.Element {
 	// get current path
 	const location = useLocation().pathname
-
-	// redirect if !pages[location]
+	// custom redirects (before render cycle)
+	if (location === '/management') {
+		window.location.href = 'https://qmulprod.sharepoint.com/sites/Studio/SitePages/Management.aspx'
+	}
+	// redirect to home if !pages[location]
 	const navigate = useNavigate()
 	useEffect(() => {
 		if (!Object.keys(pages).includes(location)) {

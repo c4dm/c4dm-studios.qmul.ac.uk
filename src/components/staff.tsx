@@ -16,7 +16,13 @@ export function Staff(): JSX.Element {
 			cell={(obj: C4DMEmployee, i: number): JSX.Element => (
 				<div className='contact-staff' key={i}>
 					<img alt={obj.name} height={200} src={obj.image} width={200} />
-					{obj.link ? <a href={obj.link.href}>{obj.name}</a> : <p>{obj.name}</p>}
+					{obj.link ? (
+						<a href={obj.link.href} target='_blank'>
+							{obj.name}
+						</a>
+					) : (
+						<p>{obj.name}</p>
+					)}
 					<i>{obj.role}</i>
 				</div>
 			)}

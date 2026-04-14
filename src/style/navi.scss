@@ -79,7 +79,7 @@ nav {
 
 		button {
 			height: fit-content;
-			padding-inline: 8px;
+			padding-inline: 7px;
 			border-right: solid 2px utils.$qm-blue;
 			place-self: center;
 			font-size: large;
@@ -98,7 +98,7 @@ nav {
 		}
 	}
 
-	@media (width < utils.$ipad) {
+	@media (width < utils.$iphone) {
 		height: fit-content;
 
 		.navi {
