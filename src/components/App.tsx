@@ -46,9 +46,9 @@ export default function App(): JSX.Element {
 	// render dynamic content
 	return (
 		<>
-			<title>{`C4DM Studios${
-				location === '/' ? '' : ` | ${location.slice(1, 2).toUpperCase()}${location.slice(2)}`
-			}`}</title>
+			<title>
+				{`C4DM Studios${location === '/' ? '' : ` | ${location.charAt(1).toUpperCase() + location.slice(2)}`}`}
+			</title>
 			<Navi pages={Object.keys(pages)} />
 			<main>
 				<Markdown

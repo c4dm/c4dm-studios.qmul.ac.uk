@@ -17,7 +17,7 @@ export function Staff(): JSX.Element {
 				<div className='contact-staff' key={i}>
 					<img alt={obj.name} height={200} src={obj.image} width={200} />
 					{obj.link ? (
-						<a href={obj.link.href} target='_blank'>
+						<a href={obj.link.href} rel='noopener' target='_blank'>
 							{obj.name}
 						</a>
 					) : (

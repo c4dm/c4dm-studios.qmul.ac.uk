@@ -7,11 +7,8 @@ import { useNavigate } from 'react-router-dom'
 // src
 import '../style/navi.scss'
 
-export const Navi: FC<{
-	pages: string[]
-}> = ({ pages }) => {
+export const Navi: FC<{ pages: string[] }> = ({ pages }) => {
 	const navigate = useNavigate()
-
 	return (
 		<nav>
 			<button
