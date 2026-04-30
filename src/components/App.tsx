@@ -53,11 +53,34 @@ export default function App(): JSX.Element {
 			<main>
 				<Markdown
 					components={{
+						// default link behaviour
+						a: ({ ...props }): JSX.Element => {
+							return (
+								<a
+									{...(props.className && {
+										className: props.className,
+									})}
+									{...(props.download
+										? {
+												download: true,
+											}
+										: {
+												rel: 'noopener',
+												target: '_blank',
+											})}
+									href={props.href}
+								>
+									{props.children}
+								</a>
+							)
+						},
+						// styled headers
 						h1: ({ children }): JSX.Element => (
 							<div className='h1'>
 								<h1>{children}</h1>
 							</div>
 						),
+						// JSX replacement / insertion
 						script: ({ ...props }): JSX.Element => {
 							switch (props.className) {
 								case 'contact-staff':
