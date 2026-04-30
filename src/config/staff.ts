@@ -24,13 +24,13 @@ export const staff: readonly C4DMEmployee[] = [
 		role: 'Facilities Manager',
 	},
 	{
-		image: '/images/edward-hoskins.jpeg',
+		image: '/images/johan-pauwels.jpeg',
 		link: new URL('https://www.qmul.ac.uk/eecs/people/profiles/pauwelsjohan.html'),
 		name: 'Johan Pauwels',
 		role: 'Technical Director',
 	},
 	{
-		image: '/images/edward-hoskins.jpeg',
+		image: '/images/anna-xambo.jpeg',
 		link: new URL('https://annaxambo.me/'),
 		name: 'Anna Xambo Sedo',
 		role: 'Technical Director',
