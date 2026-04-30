@@ -229,7 +229,7 @@ As a basic overview of the software, each light is defined as a virtually positi
 These fixtures are controlled in the bottom right of the screen, where general brightness is controlled in the _Basic_ tab, whilst the rest of the controls are distributed across _Colour_, _Beam_, and _Extra_.
 Multiple lights can be controlled simultaneously by selecting items from the **Groups** tab in the top left of the screen, and similarly presets can be stored and recalled via the **Scenes** tab.
 
-Add a screenshot!
+![dmx screenshot](/images/documentation/dmXLAN.png)
 
 </details>
 

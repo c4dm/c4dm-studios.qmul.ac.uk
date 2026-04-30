@@ -99,13 +99,19 @@
 			user-select: none;
 		}
 
-		img {
-			max-width: 100%;
-			user-select: none;
-		}
-
 		p {
 			margin-block: 10px;
+
+			> img {
+				max-width: 60%;
+				margin: 0 20%;
+				user-select: none;
+
+				@media (width < utils.$iphone) {
+					max-width: 100%;
+					margin: 0;
+				}
+			}
 		}
 
 		span {
