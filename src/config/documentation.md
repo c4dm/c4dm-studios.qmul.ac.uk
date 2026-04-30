@@ -1,4 +1,4 @@
-<!-- cspell:ignore Digicheck Digiface Disklavier Eigenmike MADIFace tmws Totalmix usbdk Vicon -->
+<!-- cspell:ignore Digicheck Digiface Disklavier dmXLAN Eigenmike MADIFace tmws Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -206,7 +206,54 @@ Each connector allows for up to 8 channels. The top row of the connector is GND.
 
 ## Vicon Tutorials & Other Resources
 
+-->
+
 # DMX Lighting
+
+Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over our LAN network.
+
+<details>
+<summary>Our System</summary>
+
+The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
+The Windows computer at the back of the room has been preconfigured for ease of use, and once the software is opened, only the default template for the space needs to be loaded (either click 'yes' when prompted to load the most recent file, or `File > Open Recent`).
+Similarly, if you wish to run this software from your own computer, simply install the dmXLAN software and download the Performance Lab template below.
+
+<span>
+	<a class='button' download href='/resources/Performance-Lab.dxl'>
+	Performance Lab Template
+	</a>
+</span>
+
+As a basic overview of the software, each light is defined as a virtually positioned **Fixture**, and has been made addressable as part of a single DMX universe.
+These fixtures are controlled in the bottom right of the screen, where general brightness is controlled in the _Basic_ tab, whilst the rest of the controls are distributed across _Colour_, _Beam_, and _Extra_.
+Multiple lights can be controlled simultaneously by selecting items from the **Groups** tab in the top left of the screen, and similarly presets can be stored and recalled via the **Scenes** tab.
+
+Add a screenshot!
+
+</details>
+
+<details>
+<summary>Advanced</summary>
+
+If you wish to experiment with other lighting designs, such as those using floor lighting, or lights for special effect, our custom Fixture Library can be downloaded below.
+This library contains all of our most common lighting equipment, and can be used either alongside the dmXLAN software, or ported to another piece of DMX compatible software.
+
+<span>
+	<a class='button' download href='/resources/dmx/C4DM-Fixture-Library.zip'>
+		C4DM Fixture Library
+	</a>
+</span>
+
+<!--
+still to learn!
+- time code
+- max msp
+-->
+
+</details>
+
+<!--
 
 # Misc Research Equipment
 
