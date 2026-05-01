@@ -1,0 +1,66 @@
+IPMSW COMMANDS
+
+Ping IP address if unsure of connection.
+
+MAC:
+
+
+	PERFORMANCE LAB:
+
+	
+		MOTION CAPTURE
+	
+			echo -n "KMS ON1" | nc -w1 192.168.0.9 65432
+
+			echo -n "KMS OFF1" | nc -w1 192.168.0.9 65432
+
+		PL SPAT 1-16
+
+			echo -n "KMS ON2" | nc -w1 192.168.0.9 65432
+
+			echo -n "KMS OFF2" | nc -w1 192.168.0.9 65432
+
+
+	LIVE ROOM:
+
+
+		LR SPAT 1-12
+
+			echo -n "KMS ON1" | nc -w1 192.168.0.21 65432
+
+			echo -n "KMS OFF1" | nc -w1 192.168.0.21 65432
+
+
+
+WINDOWS:
+
+
+Install nmap to send UDP - https://nmap.org/download.html
+
+
+	PERFORMANCE LAB:
+
+
+		MOTION CAPTURE
+
+			echo|set /p="KMS ON1" | ncat -u -w 1 192.168.0.9 65432
+
+			echo|set /p="KMS OFF1" | ncat -u -w 1 192.168.0.9 65432
+
+		PL SPAT 1-16
+	
+			echo|set /p="KMS ON2" | ncat -u -w 1 192.168.0.9 65432
+	
+			echo|set /p="KMS OFF2" | ncat -u -w 1 192.168.0.9 65432
+
+
+	LIVE ROOM:
+
+
+		LR SPAT 1-12
+	
+			echo|set /p="KMS ON1" | ncat -u -w 1 192.168.0.21 65432
+	
+			echo|set /p="KMS OFF1" | ncat -u -w 1 192.168.0.21 65432
+
+
