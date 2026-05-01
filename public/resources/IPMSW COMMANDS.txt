@@ -2,6 +2,10 @@ IPMSW COMMANDS
 
 Ping IP address if unsure of connection.
 
+The Vicon cameras (motion capture) and the Meyer speakers (spatial audio) are switched on/off remotely via the following UDP commands...
+
+(Is the config password protected?)
+
 MAC:
 
 
