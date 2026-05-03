@@ -7,7 +7,7 @@ export type C4DMEmployee = {
 
 export const staff: readonly C4DMEmployee[] = [
 	{
-		image: '/images/ciaran-corr.JPG',
+		image: '/images/ciaran-corr.jpeg',
 		name: 'Ciarán Corr',
 		role: 'Studio Manager',
 	},

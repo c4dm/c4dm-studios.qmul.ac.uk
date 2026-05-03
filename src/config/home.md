@@ -1,6 +1,6 @@
 <!-- cspell:ignore CMAI EECS -->
 
-<img alt='the performance lab' src='/images/header.jpeg' style='max-height: 300px; width: 100vw; max-width: 100vw; object-fit: cover; margin-block: -50px 20px; order: 0'/>
+<img alt='the performance lab' src='/images/header.jpeg' style='max-height: 300px; width: 100vw; max-width: 100vw; object-fit: cover; margin-block: -50px 20px; order: 0; user-select: none;'/>
 <div class='markdown'> <!-- for applying scss styling -->
 
 # Description

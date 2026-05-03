@@ -1,4 +1,4 @@
-<!-- cspell:ignore Digicheck Digiface Disklavier dmXLAN Eigenmike MADIFace tmws Totalmix usbdk Vicon -->
+<!-- cspell:ignore Audiotechnik Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW MADIFace Netgear tmws Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -100,21 +100,88 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 
 # Local Access Network (LAN)
 
-System Overview
+We operate a private network across our studios, allowing for interaction and configuration with numerous hardware devices.
+This network is accessible throughout the studios, and can be connected to via ethernet from various wall ports, or using several of our preconfigured devices.
 
 <details>
 <summary>How to LAN</summary>
+
+At C4DM we support a local access network, connecting together and making accessible numerous devices throughout facility.
+This network has been preconfigured by our staff, and so all devices on our network may be accessed from within the browser, or supported applications.
+Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to an OWC docks, located at every studio desk / modular workstation.
+
+Upon connecting to the LAN, you should have DHCP enabled in your network settings, and you will be assigned an IP within the range `192.168.0.101` - `192.168.0.254`.
+All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
+Our LAN is **not** connected to the internet in any way, and so all remote connections via this network are unavailable.
+
+If you are running MacOS on a personal computer, you must manually change the network order in your system settings to maintain a simultaneous internet connection via WiFi.
+If you are using our in house Mac Mini, all necessary network setting have already been configured, and you should contact staff if you encounter an issue here.
+
+</details>
+
+<details>
+<summary>Device Address Book</summary>
+
+### Performance Lab / Plant Room
+
+<table><tbody>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> d&b Audiotechnik - D20 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> ELC Lighting - dmXLAN node3 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> super windows pc </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> Vicon - Lock+ </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - 1620 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - 12Mic </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - Digiface Dante </td></tr>
+</tbody></table>
+
+### Control Room
+
+<table><tbody>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> dbx - DriverRack PA 2 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> Apple - Mac Mini </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - 12Mic </td></tr>
+</tbody></table>
+
+### Live Room
+
+<table><tbody>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - 12Mic </td></tr>
+</tbody></table>
+
+### Management Only
+
+These network devices are maintained by our staff, and in many cases are password protected.
+If you feel that you have good reason to access to these devices, please contact a member of staff.
+
+<table><tbody>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> TP Link Router </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> D-Link - DGS-3120-24PC </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Extreme </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Performance Lab - Desk Rack) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Performance Lab - Stage Rack) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Performance Lab - System Rack) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Control Room - Desk) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Live Room - Desk) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.9 </td><td> Keene Electronics - IPMSW1 Plus (Plant Room) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.21 </td><td> Keene Electronics - IPMSW1 Plus (Undercroft) </td></tr>
+</tbody></table>
+
 </details>
 
 <details>
 <summary>File Sharing</summary>
+
+Both the Windows PC in the Performance Lab and the Apple Mac Mini in the Control Room have been configured with a Samba server for file sharing.
+To share files between a personal device and one of these machines, simply make sure both devices are connected over LAN, and navigate to the desired machine from your file manager.
+Please note, **these folders are not to be viewed as permanent storage**, and may on occasion be purged without warning.
+
 </details>
 
-<details>
-<summary>Other Uses</summary>
-</details>
-
-<!-- <!-- # MIDI
+<!--
+# MIDI
 
 ## System Overview
 
@@ -211,17 +278,18 @@ Each connector allows for up to 8 channels. The top row of the connector is GND.
 # DMX Lighting
 
 Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over our LAN network.
+The power for these lights is controlled using the labelled fuses in the Plant Room, whilst the power for the network hardware is located in the Performance Lab stage rack.
 
 <details>
 <summary>Our System</summary>
 
-The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
+The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC Lighting](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
 The Windows computer at the back of the room has been preconfigured for ease of use, and once the software is opened, only the default template for the space needs to be loaded (either click 'yes' when prompted to load the most recent file, or `File > Open Recent`).
 Similarly, if you wish to run this software from your own computer, simply install the dmXLAN software and download the Performance Lab template below.
 
 <span>
 	<a class='button' download href='/resources/Performance-Lab.dxl'>
-	Performance Lab Template
+		Performance Lab Template
 	</a>
 </span>
 
@@ -229,7 +297,7 @@ As a basic overview of the software, each light is defined as a virtually positi
 These fixtures are controlled in the bottom right of the screen, where general brightness is controlled in the _Basic_ tab, whilst the rest of the controls are distributed across _Colour_, _Beam_, and _Extra_.
 Multiple lights can be controlled simultaneously by selecting items from the **Groups** tab in the top left of the screen, and similarly presets can be stored and recalled via the **Scenes** tab.
 
-![dmx screenshot](/images/documentation/dmXLAN.png)
+![dmXLAN screenshot showing the Performance Lab template](/images/documentation/dmXLAN.png)
 
 </details>
 
@@ -247,7 +315,7 @@ This library contains all of our most common lighting equipment, and can be used
 
 <!--
 still to learn!
-- time code
+- time code (an alternative software to dmXLAN is needed for this)
 - max msp
 -->
 

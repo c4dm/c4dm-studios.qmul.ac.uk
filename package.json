@@ -13,7 +13,7 @@
 		"sass-embedded": "^1.99.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.4.13",
+		"@biomejs/biome": "^2.4.14",
 		"@eslint/js": "^10.0.1",
 		"@prettier/plugin-xml": "^3.4.2",
 		"@types/node": "^25.6.0",
@@ -22,12 +22,12 @@
 		"@types/react-router-dom": "^5.3.3",
 		"@vitejs/plugin-react": "^6.0.1",
 		"cspell": "^10.0.0",
-		"eslint": "^10.2.1",
+		"eslint": "^10.3.0",
 		"eslint-plugin-react-refresh": "^0.5.2",
 		"gh-pages": "^6.3.0",
-		"globals": "^17.5.0",
+		"globals": "^17.6.0",
 		"prettier": "^3.8.3",
-		"stylelint": "^17.9.1",
+		"stylelint": "^17.10.0",
 		"stylelint-config-standard-scss": "^17.0.0",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.59.1",
@@ -71,10 +71,6 @@
 		"extends": "stylelint-config-standard-scss",
 		"rules": {
 			"declaration-empty-line-before": null,
-			"no-descending-specificity": null,
-			"no-invalid-position-at-import-rule": null,
-			"no-invalid-position-declaration": null,
-			"property-no-vendor-prefix": null,
 			"scss/double-slash-comment-empty-line-before": null
 		}
 	}

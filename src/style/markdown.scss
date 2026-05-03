@@ -43,7 +43,7 @@
 		}
 
 		details {
-			margin-block: 5px;
+			margin-block: 10px;
 			border-bottom: 2px solid utils.$qm-white;
 
 			&:hover,
@@ -87,15 +87,14 @@
 			}
 		}
 
-		h3 {
-			text-align: center;
-			font-weight: normal;
-		}
-
 		iframe {
 			width: 100%;
 			border: 0;
 			place-self: center;
+			user-select: none;
+		}
+
+		img {
 			user-select: none;
 		}
 
@@ -105,7 +104,6 @@
 			> img {
 				max-width: 60%;
 				margin: 0 20%;
-				user-select: none;
 
 				@media (width < utils.$iphone) {
 					max-width: 100%;
@@ -135,6 +133,23 @@
 			padding-block: 4px;
 			outline: 0;
 			cursor: pointer;
+		}
+
+		table {
+			width: 60%;
+			min-width: fit-content;
+			margin: 10px auto;
+			text-align: center;
+
+			@media (width < utils.$iphone) {
+				width: 100%;
+				margin: 20px 0;
+			}
+
+			td {
+				padding: 4px 0;
+				outline: 2px solid utils.$qm-compliment;
+			}
 		}
 
 		> :first-child {

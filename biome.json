@@ -218,6 +218,7 @@
 				"noEqualsToNull": "error",
 				"noExcessiveClassesPerFile": "off",
 				"noExcessiveLinesPerFile": "off",
+				"noExcessiveNestedCallbacks": "error",
 				"noExcessiveSelectorClasses": "error",
 				"noFloatingClasses": "error",
 				"noFloatingPromises": "error",
@@ -252,6 +253,7 @@
 				"noReactNativeDeepImports": "off",
 				"noReactNativeLiteralColors": "off",
 				"noReactNativeRawText": "off",
+				"noReactStringRefs": "error",
 				"noRedundantDefaultExport": "error",
 				"noReturnAssign": "error",
 				"noRootType": "error",
@@ -287,9 +289,9 @@
 				"useConsistentTestIt": "error",
 				"useDestructuring": "error",
 				"useDisposables": "error",
-				"useErrorCause": "error",
 				"useDomNodeTextContent": "error",
 				"useDomQuerySelector": "error",
+				"useErrorCause": "error",
 				"useExhaustiveSwitchCases": "error",
 				"useExpect": "error",
 				"useExplicitReturnType": "error",
@@ -302,6 +304,7 @@
 				"useInputName": "error",
 				"useLoneAnonymousOperation": "error",
 				"useLoneExecutableDefinition": "error",
+				"useMathMinMax": "error",
 				"useNamedCaptureGroup": "error",
 				"useNullishCoalescing": "error",
 				"usePlaywrightValidDescribeCallback": "off",
@@ -316,6 +319,7 @@
 				"useSortedClasses": "error",
 				"useSpread": "error",
 				"useStringStartsEndsWith": "error",
+				"useTestHooksOnTop": "error",
 				"useUnicodeRegex": "error",
 				"useVarsOnTop": "error",
 				"useVueConsistentDefinePropsDeclaration": "off",
@@ -539,6 +543,7 @@
 		"indentWidth": 4,
 		"lineEnding": "lf",
 		"lineWidth": 125,
+		"trailingNewline": true,
 		"useEditorconfig": false
 	},
 	"css": {
@@ -558,7 +563,9 @@
 	},
 	"javascript": {
 		"formatter": {
+			"arrowParentheses": "always",
 			"jsxQuoteStyle": "single",
+			"operatorLinebreak": "after",
 			"quoteProperties": "asNeeded",
 			"quoteStyle": "single",
 			"semicolons": "asNeeded",
@@ -567,6 +574,7 @@
 	},
 	"json": {
 		"formatter": {
+			"trailingCommas": "none",
 			"lineWidth": 100
 		}
 	}
