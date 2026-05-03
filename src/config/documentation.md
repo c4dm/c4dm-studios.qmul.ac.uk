@@ -100,7 +100,7 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 
 # Local Access Network (LAN)
 
-We operate a private network across our studios, allowing for interaction and configuration with numerous hardware devices.
+We operate a local access network across our studios, allowing for interaction and configuration with numerous hardware devices.
 This network is accessible throughout the studios, and can be connected to via ethernet from various wall ports, or using several of our preconfigured devices.
 
 <details>
@@ -114,8 +114,10 @@ Upon connecting to the LAN, you should have DHCP enabled in your network setting
 All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
 Our LAN is **not** connected to the internet in any way, and so all remote connections via this network are unavailable.
 
+### Mac
+
 If you are running MacOS on a personal computer, you must manually change the network order in your system settings to maintain a simultaneous internet connection via WiFi.
-If you are using our in house Mac Mini, all necessary network setting have already been configured, and you should contact staff if you encounter an issue here.
+If you are using our in house Mac Mini, all necessary network settings have been configured, and you should contact staff if you encounter an issue with this machine.
 
 </details>
 
@@ -180,12 +182,55 @@ Please note, **these folders are not to be viewed as permanent storage**, and ma
 
 </details>
 
-<!--
 # MIDI
 
-## System Overview
+Throughout our studios, we have integrated RTP-MIDI interfaces which allow for the remote connection of MIDI devices over LAN, supporting both modular session designs and experimental configurations.
 
-## RTP-MIDI
+<details>
+<summary>Connecting a MIDI Device</summary>
+
+We have installed the RTP-MIDI interface [mioXL by iConnectivity](https://www.iconnectivity.com/s/mio-X-Series-User-Guide-v20220503-g9g8.pdf) in each of our studio rooms, and all front ports of the devices have been preconfigured and made accessible.
+The power for these devices is located in the Performance Lab stage rack, the Control Room main switch, and the Live Room system rack.
+These accessible ports include:
+
+<table><tbody>
+	<tr><td style='width: 50%;'> DIN 7 </td><td> DIN In/Out </td></tr>
+	<tr><td style='width: 50%;'> DIN 8 </td><td> DIN In/Out </td></tr>
+	<tr><td style='width: 50%;'> DIN 9 </td><td> DIN Out </td></tr>
+	<tr><td style='width: 50%;'> DIN 10 </td><td> DIN Out </td></tr>
+	<tr><td style='width: 50%;'> DIN 11 </td><td> DIN Out </td></tr>
+	<tr><td style='width: 50%;'> DIN 12 </td><td> DIN Out </td></tr>
+	<tr><td style='width: 50%;'> USB 1 </td><td> USB 2.0 In/Out </td></tr>
+	<tr><td style='width: 50%;'> USB 2 </td><td> USB 2.0 In/Out </td></tr>
+	<tr><td style='width: 50%;'> USB 3 </td><td> USB 2.0 In/Out </td></tr>
+	<tr><td style='width: 50%;'> USB 4 </td><td> USB 2.0 In/Out </td></tr>
+	<tr><td style='width: 50%;'> USB Host </td><td> Direct computer connection </td></tr>
+</tbody></table>
+
+Upon connecting a MIDI device to one of these ports, these ports may be accessed over LAN by following the steps relevant to your computer's operating system.
+
+### Mac
+
+![Audio MIDI Setup window, demonstrating how to activate an RTP-MIDI port]()
+
+![Ableton Live window, demonstrating how to activate a MIDI device for input / output]()
+
+### Windows
+
+...coming soon...
+
+</details>
+
+<details>
+<summary>Installed MIDI Devices</summary>
+
+### Yamaha Disklavier
+
+### Control Room Keyboard??
+
+</details>
+
+<!--
 
 # Spatial Audio
 
@@ -277,7 +322,7 @@ Each connector allows for up to 8 channels. The top row of the connector is GND.
 
 # DMX Lighting
 
-Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over our LAN network.
+Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over LAN.
 The power for these lights is controlled using the labelled fuses in the Plant Room, whilst the power for the network hardware is located in the Performance Lab stage rack.
 
 <details>
