@@ -70,7 +70,7 @@
 	"stylelint": {
 		"extends": "stylelint-config-standard-scss",
 		"rules": {
-			"declaration-empty-line-before": null,
+			"property-no-vendor-prefix": null,
 			"scss/double-slash-comment-empty-line-before": null
 		}
 	}

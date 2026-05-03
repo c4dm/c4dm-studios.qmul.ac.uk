@@ -9,11 +9,12 @@
 		text-align: inherit;
 
 		a {
-			@include utils.focus;
 			width: fit-content;
 			outline: 0;
 			color: utils.$qm-compliment;
 			text-decoration: none;
+
+			@include utils.focus;
 		}
 
 		a.button,
@@ -60,9 +61,10 @@
 				border-bottom: 2px solid utils.$qm-white;
 
 				summary {
-					@include utils.focus;
 					background: utils.$qm-white;
 					color: utils.$qm-blue;
+
+					@include utils.focus;
 				}
 			}
 		}
@@ -92,10 +94,12 @@
 			border: 0;
 			place-self: center;
 			user-select: none;
+			-webkit-user-select: none;
 		}
 
 		img {
 			user-select: none;
+			-webkit-user-select: none;
 		}
 
 		p {
@@ -128,11 +132,12 @@
 		}
 
 		summary {
-			@include utils.focus;
 			font-size: larger;
 			padding-block: 4px;
 			outline: 0;
 			cursor: pointer;
+
+			@include utils.focus;
 		}
 
 		table {

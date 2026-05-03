@@ -8,6 +8,7 @@ nav {
 	background-color: utils.$qm-white;
 	color: utils.$qm-blue;
 	user-select: none;
+	-webkit-user-select: none;
 
 	button {
 		width: fit-content;
