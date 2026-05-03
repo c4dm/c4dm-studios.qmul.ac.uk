@@ -106,8 +106,8 @@ This network is accessible throughout the studios, and can be connected to via e
 <details>
 <summary>How to LAN</summary>
 
-At C4DM we support a local access network, connecting together and making accessible numerous devices throughout facility.
-This network has been preconfigured by our staff, and so all devices on our network may be accessed from within the browser, or supported applications.
+At C4DM we support a local access network, connecting together and making accessible numerous devices throughout our facility.
+This network has been preconfigured by our staff, so that all devices on our network may be easily accessed from within supported applications or a web browser.
 Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to an OWC docks, located at every studio desk / modular workstation.
 
 Upon connecting to the LAN, you should have DHCP enabled in your network settings, and you will be assigned an IP within the range `192.168.0.101` - `192.168.0.254`.
@@ -116,7 +116,7 @@ Our LAN is **not** connected to the internet in any way, and so all remote conne
 
 ### Mac
 
-If you are running MacOS on a personal computer, you must manually change the network order in your system settings to maintain a simultaneous internet connection via WiFi.
+If you are running MacOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to maintain a simultaneous internet connection via WiFi.
 If you are using our in house Mac Mini, all necessary network settings have been configured, and you should contact staff if you encounter an issue with this machine.
 
 </details>
@@ -234,11 +234,15 @@ Upon connecting a MIDI device to one of these ports, these ports may be accessed
 
 # Spatial Audio
 
-## System Overview
+System Overview
 
-## Downloads
+## Cycling '74 Max
 
-## Configuration
+## Ableton Live
+
+## Dolby Atmos
+
+...coming soon...
 
 # Motion Capture
 
