@@ -193,7 +193,9 @@ We have installed the RTP-MIDI interface [mioXL by iConnectivity](https://www.ic
 The power for these devices is located in the Performance Lab stage rack, the Control Room main switch, and the Live Room system rack.
 These accessible ports include:
 
-<table><tbody>
+![Picture of a mioXL by iConnectivity, showing the preconfigured MIDI ports](/images/documentation/mioXL.png)
+
+<!-- <table><tbody>
 	<tr><td style='width: 50%;'> DIN 7 </td><td> DIN In/Out </td></tr>
 	<tr><td style='width: 50%;'> DIN 8 </td><td> DIN In/Out </td></tr>
 	<tr><td style='width: 50%;'> DIN 9 </td><td> DIN Out </td></tr>
@@ -205,7 +207,7 @@ These accessible ports include:
 	<tr><td style='width: 50%;'> USB 3 </td><td> USB 2.0 In/Out </td></tr>
 	<tr><td style='width: 50%;'> USB 4 </td><td> USB 2.0 In/Out </td></tr>
 	<tr><td style='width: 50%;'> USB Host </td><td> Direct computer connection </td></tr>
-</tbody></table>
+</tbody></table> -->
 
 Upon connecting a MIDI device to one of these ports, these ports may be accessed over LAN by following the steps relevant to your computer's operating system.
 
