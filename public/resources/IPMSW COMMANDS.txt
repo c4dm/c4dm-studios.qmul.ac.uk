@@ -14,15 +14,15 @@ MAC:
 	
 		MOTION CAPTURE
 	
-			echo -n "KMS ON1" | nc -w1 192.168.0.9 65432
+			echo -n "KMS ON1" | nc -u 192.168.0.9 65432
 
-			echo -n "KMS OFF1" | nc -w1 192.168.0.9 65432
+			echo -n "KMS OFF1" | nc -u 192.168.0.9 65432
 
 		PL SPAT 1-16
 
-			echo -n "KMS ON2" | nc -w1 192.168.0.9 65432
+			echo -n "KMS ON2" | nc -u 192.168.0.9 65432
 
-			echo -n "KMS OFF2" | nc -w1 192.168.0.9 65432
+			echo -n "KMS OFF2" | nc -u 192.168.0.9 65432
 
 
 	LIVE ROOM:
@@ -30,9 +30,9 @@ MAC:
 
 		LR SPAT 1-12
 
-			echo -n "KMS ON1" | nc -w1 192.168.0.21 65432
+			echo -n "KMS ON1" | nc -u 192.168.0.21 65432
 
-			echo -n "KMS OFF1" | nc -w1 192.168.0.21 65432
+			echo -n "KMS OFF1" | nc -u 192.168.0.21 65432
 
 
 
