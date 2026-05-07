@@ -40,7 +40,7 @@ It will be deleted...
 
 We operate an integrated audio network across our studios spaces, spanning 128 input and output channels distributed throughout.
 
-### Download the latest versions of our TotalMix templates below!
+<!-- ### Download the latest versions of our TotalMix templates below!
 
 <span>
 	<a class='button' download href='/resources/Performance Lab (24263718).tmws'>
@@ -53,7 +53,7 @@ We operate an integrated audio network across our studios spaces, spanning 128 i
 		Live Room Template
 	</a>
 </span>
-<br/>
+<br/> -->
 
 <details>
 <summary>RME Audio Driver</summary>
@@ -108,68 +108,16 @@ This network is accessible throughout the studios, and can be connected to via e
 
 At C4DM we support a local access network, connecting together and making accessible numerous devices throughout our facility.
 This network has been preconfigured by our staff, so that all devices on our network may be easily accessed from within supported applications or a web browser.
-Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to an OWC docks, located at every studio desk / modular workstation.
+Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to an OWC dock, located at every studio desk / modular workstation.
 
 Upon connecting to the LAN, you should have DHCP enabled in your network settings, and you will be assigned an IP within the range `192.168.0.101` - `192.168.0.254`.
 All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
 Our LAN is **not** connected to the internet in any way, and so all remote connections via this network are unavailable.
 
-### Mac
+### MacOS
 
 If you are running MacOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to maintain a simultaneous internet connection via WiFi.
-If you are using our in house Mac Mini, all necessary network settings have been configured, and you should contact staff if you encounter an issue with this machine.
-
-</details>
-
-<details>
-<summary>Device Address Book</summary>
-
-### Performance Lab / Plant Room
-
-<table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> iConnectivity - mioXL </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> d&b Audiotechnik - D20 </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> ELC Lighting - dmXLAN node3 </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> super windows pc </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> Vicon - Lock+ </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - 1620 </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - 12Mic </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - Digiface Dante </td></tr>
-</tbody></table>
-
-### Control Room
-
-<table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> iConnectivity - mioXL </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> dbx - DriverRack PA 2 </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> Apple - Mac Mini </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - 12Mic </td></tr>
-</tbody></table>
-
-### Live Room
-
-<table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> iConnectivity - mioXL </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> RME - 12Mic </td></tr>
-</tbody></table>
-
-### Management Only
-
-These network devices are maintained by our staff, and in many cases are password protected.
-If you feel that you have good reason to access to these devices, please contact a member of staff.
-
-<table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> TP Link Router </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> D-Link - DGS-3120-24PC </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Extreme </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Performance Lab - Desk Rack) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Performance Lab - Stage Rack) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Performance Lab - System Rack) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Control Room - Desk) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Netgear - GS305E (Live Room - Desk) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.9 </td><td> Keene Electronics - IPMSW1 Plus (Plant Room) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.21 </td><td> Keene Electronics - IPMSW1 Plus (Undercroft) </td></tr>
-</tbody></table>
+If you are using our in house Mac Mini, all necessary network settings have been preconfigured, and you should contact staff if you encounter an issue with this machine.
 
 </details>
 
@@ -177,8 +125,56 @@ If you feel that you have good reason to access to these devices, please contact
 <summary>File Sharing</summary>
 
 Both the Windows PC in the Performance Lab and the Apple Mac Mini in the Control Room have been configured with a Samba server for file sharing.
+
+Network attached storage ([NAS](https://en.wikipedia.org/wiki/Network-attached_storage)) and can be accessed with your using the student login credentials used across our computers.
+
 To share files between a personal device and one of these machines, simply make sure both devices are connected over LAN, and navigate to the desired machine from your file manager.
 Please note, **these folders are not to be viewed as permanent storage**, and may on occasion be purged without warning.
+
+</details>
+
+<details>
+<summary>Device Address Book</summary>
+
+This section acts as a reference for our network enabled devices, with all pieces of hardware listed here having been preconfigured by our staff.
+Many of these device addresses are only accessible through software, and in the case of our network infrastructure, many of these devices are also password protected.
+If you are facing an issue with one of these protected devices, please contact a member of staff.
+
+### Plant Room
+
+<table><tbody>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> TP Link - TL-R480T+ </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Extreme Networks - X440-G2-24P </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.3 </td><td> D-Link - DGS-3120-24PC </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.9 </td><td> Keene Electronics - IPMSW1 Plus </td></tr>
+</tbody></table>
+
+### Control Room
+
+<table><tbody>
+	<tr><td style='width: 130px;'> 192.168.0.10 </td><td> Netgear - GS305E (Control Room - Desk) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.11 </td><td> Apple - Mac Mini </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.12 </td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.13 </td><td> dbx - DriverRack PA 2 </td></tr>
+</tbody></table>
+
+### Live Room
+
+<table><tbody>
+	<tr><td style='width: 130px;'> 192.168.0.20 </td><td> Netgear - GS305E (Live Room - Desk) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.21 </td><td> Keene Electronics - IPMSW1 Plus (Undercroft) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.22 </td><td> iConnectivity - mioXL </td></tr>
+</tbody></table>
+
+### Performance Lab
+
+<table><tbody>
+	<tr><td style='width: 130px;'> 192.168.0.30 </td><td> Netgear - GS305E (Performance Lab - Stage Rack) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.31 </td><td> Netgear - GS305E (Performance Lab - System Rack) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.32 </td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.33 </td><td> d&b Audiotechnik - D20 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.34 </td><td> ELC Lighting - dmXLAN node3 </td></tr>
+</tbody></table>
 
 </details>
 
@@ -193,33 +189,26 @@ We have installed the RTP-MIDI interface [mioXL by iConnectivity](https://www.ic
 The power for these devices is located in the Performance Lab stage rack, the Control Room main switch, and the Live Room system rack.
 These accessible ports include:
 
-![Picture of a mioXL by iConnectivity, showing the preconfigured MIDI ports](/images/documentation/mioXL.png)
-
-<!-- <table><tbody>
-	<tr><td style='width: 50%;'> DIN 7 </td><td> DIN In/Out </td></tr>
-	<tr><td style='width: 50%;'> DIN 8 </td><td> DIN In/Out </td></tr>
-	<tr><td style='width: 50%;'> DIN 9 </td><td> DIN Out </td></tr>
-	<tr><td style='width: 50%;'> DIN 10 </td><td> DIN Out </td></tr>
-	<tr><td style='width: 50%;'> DIN 11 </td><td> DIN Out </td></tr>
-	<tr><td style='width: 50%;'> DIN 12 </td><td> DIN Out </td></tr>
-	<tr><td style='width: 50%;'> USB 1 </td><td> USB 2.0 In/Out </td></tr>
-	<tr><td style='width: 50%;'> USB 2 </td><td> USB 2.0 In/Out </td></tr>
-	<tr><td style='width: 50%;'> USB 3 </td><td> USB 2.0 In/Out </td></tr>
-	<tr><td style='width: 50%;'> USB 4 </td><td> USB 2.0 In/Out </td></tr>
-	<tr><td style='width: 50%;'> USB Host </td><td> Direct computer connection </td></tr>
-</tbody></table> -->
+![Picture of a mioXL by iConnectivity, showing the preconfigured MIDI ports](/images/documentation/midi-mioXL.png)
 
 Upon connecting a MIDI device to one of these ports, these ports may be accessed over LAN by following the steps relevant to your computer's operating system.
 
-### Mac
+### MacOS
 
-![Audio MIDI Setup window, demonstrating how to activate an RTP-MIDI port]()
+To connect to an RTP-MIDI port on a MacOS computer, simply navigate to [the MIDI Network Settings within the Audio MIDI Setup application](https://support.apple.com/en-gb/guide/audio-midi-setup/ams1012/mac).
+Here you should see a list of available devices and MIDI ports, labelled according to their room and function - simply create a `Session`, add the MIDI ports you wish to use by pressing `Connect`, add them to
 
-![Ableton Live window, demonstrating how to activate a MIDI device for input / output]()
+![Audio MIDI Setup window, demonstrating how to activate an RTP-MIDI port](/images/documentation/midi-mac-settings.png)
+
+[Connecting this device to Ableton Live](https://help.ableton.com/hc/en-us/articles/209071169-Setting-up-a-virtual-MIDI-network)
+
+![Ableton Live window, demonstrating how to activate a MIDI device for input / output](/images/documentation/midi-ableton-mac.png)
 
 ### Windows
 
 ...coming soon...
+
+<!-- [rtpMIDI by Tobias Erichsen](https://www.tobias-erichsen.de/software/rtpmidi.html) -->
 
 </details>
 
@@ -237,6 +226,11 @@ Upon connecting a MIDI device to one of these ports, these ports may be accessed
 # Spatial Audio
 
 System Overview
+
+```bash
+echo -n "KMS ON2" | nc -u -w1 192.168.0.9 65432
+echo -n "KMS OFF2" | nc -u -w1 192.168.0.9 65432
+```
 
 ## Cycling '74 Max
 
@@ -339,7 +333,7 @@ The Windows computer at the back of the room has been preconfigured for ease of 
 Similarly, if you wish to run this software from your own computer, simply install the dmXLAN software and download the Performance Lab template below.
 
 <span>
-	<a class='button' download href='/resources/Performance-Lab.dxl'>
+	<a class='button' download href='/resources/dmx/Performance-Lab.dxl'>
 		Performance Lab Template
 	</a>
 </span>
@@ -348,7 +342,7 @@ As a basic overview of the software, each light is defined as a virtually positi
 These fixtures are controlled in the bottom right of the screen, where general brightness is controlled in the _Basic_ tab, whilst the rest of the controls are distributed across _Colour_, _Beam_, and _Extra_.
 Multiple lights can be controlled simultaneously by selecting items from the **Groups** tab in the top left of the screen, and similarly presets can be stored and recalled via the **Scenes** tab.
 
-![dmXLAN screenshot showing the Performance Lab template](/images/documentation/dmXLAN.png)
+![dmXLAN screenshot showing the Performance Lab template](/images/documentation/dmx-dmXLAN.png)
 
 </details>
 

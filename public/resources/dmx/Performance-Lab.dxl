@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmXLAN version="4.0">
+  <Universes>
+    <Universe>
+      <Generic ID="1" Name="1 sACN" Universe_Type="0" Location="" Description="Universe" Universe_Color="(255,0,0)"/>
+      <Plan_view Color="(80,73,177)">
+        <Position x="-225.41" y="-323.33"/>
+      </Plan_view>
+      <Universe_Logging Enable_Logging="True" Minimum_Log_Time="300"/>
+      <Muliple_Senders Expected_Senders="1"/>
+    </Universe>
+  </Universes>
+  <NetworkItems>
+    <NetworkItem>
+      <Generic ID="0" Name="dmXLAN node3" IP_Address="192.168.0.34" Description="Network Item" Item_Type="ELC dmXLAN node3" Note=""/>
+      <Plan_view Color="(34,34,150)">
+        <Position x="-223.63" y="-25.36"/>
+      </Plan_view>
+      <Node_Information Lock="False" Node_Generation="3" Backlight="6"/>
+      <Port>
+        <Port_3 Type="Disabled"/>
+        <Port_2 Type="Disabled"/>
+        <Port_1 Type="Output" Mode="Single" Rate="30" RDM="1">
+          <Primary UniverseID="1" UniverseType="sACN"/>
+        </Port_1>
+      </Port>
+    </NetworkItem>
+  </NetworkItems>
+  <UsedFixtures>
+    <LibFixture manufacturer="Prism Projection" type="RevEAL CW" mode="Simple RGB" blob="color = 35,157,50&#xA;parameter = Red&#xA;default = 0&#xA;parameter = Green&#xA;default = 0&#xA;parameter = Blue&#xA;default = 0&#xA;parameter = Intensity&#xA;default = 0&#xA;"/>
+    <LibFixture manufacturer="Coemar" type="LEDko VariWhite" mode="5Ch" blob="color = 54,109,154&#xA;parameter = Intensity&#xA;default = 0&#xA;parameter = Intensity&#xA;default = 0&#xA;parameter = White Tone&#xA;default = 0&#xA;parameter = Strobe&#xA;parameter = Special Functions&#xA;"/>
+    <LibFixture manufacturer="" type="" mode="" blob="fixture = Desk Channel&#xA;color = 128,128,128&#xA;parameter = Intensity&#xA;default = 205&#xA;highlight = 205&#xA;"/>
+    <LibFixture manufacturer="Generic" type="Desk Channel" mode="" blob="color = 128,128,128&#xA;parameter = Intensity&#xA;default = 205&#xA;highlight = 205&#xA;"/>
+    <LibFixture manufacturer="Generic" type="RGB + Intensity" mode="" blob="color = 150,150,150&#xA;parameter = Red&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Green&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Blue&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Intensity&#xA;default = 255&#xA;highlight = 255&#xA;"/>
+    <LibFixture manufacturer="Chauvet" type="COLORade Batten 144 Tour" mode="ARC1" blob="color = 234,239,0&#xA;parameter = Red&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Green&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Blue&#xA;default = 255&#xA;highlight = 255&#xA;"/>
+    <LibFixture manufacturer="Chauvet" type="SlimPAR Pro QZ12" mode="6Ch" blob="color = 247,0,16&#xA;parameter = Intensity&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Red&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Green&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Blue&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Amber&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Zoom&#xA;"/>
+    <LibFixture manufacturer="Generic" type="RGB Led" mode="" blob="color = 150,150,150&#xA;parameter = Red&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Green&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Blue&#xA;default = 255&#xA;highlight = 255&#xA;"/>
+    <LibFixture manufacturer="Generic" type="Intensity + RGB" mode="" blob="color = 150,150,150&#xA;parameter = Intensity&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Red&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Green&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Blue&#xA;default = 255&#xA;highlight = 255&#xA;"/>
+    <LibFixture manufacturer="Coemar" type="Prospot 150 LX" mode="" blob="color = 150,150,150&#xA;parameter = Pan&#xA;default = 128&#xA;parameter = Pan, fine&#xA;option = skip&#xA;parameter = Tilt&#xA;default = 128&#xA;parameter = Tilt, fine&#xA;option = skip&#xA;parameter = Speed 1&#xA;option = skip&#xA;parameter = Shutter&#xA;default = 254&#xA;highlight = 254&#xA;parameter = Focus&#xA;default = 127&#xA;parameter = Gobo 1&#xA;parameter = not used&#xA;option = skip&#xA;parameter = not used&#xA;option = skip&#xA;parameter = Colour 1&#xA;highlight = 0&#xA;parameter = Shake&#xA;option = skip&#xA;parameter = Control&#xA;option = skip&#xA;macro = Reset&#xA;step = set, Control, 135&#xA;step = delay, 6&#xA;step = set, Control, 25&#xA;"/>
+    <LibFixture manufacturer="Coemar" type="Reflection LEDKo P" mode="5 Chnl" blob="color = 150,150,150&#xA;parameter = Intensity&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Spare&#xA;option = skip&#xA;parameter = Intensity, fine&#xA;option = skip&#xA;parameter = Strobe&#xA;highlight = 0&#xA;range = 0, 9, No Effect&#xA;range = 10, 57, Strobe&#xA;range = 58, 59, Stop Strobe&#xA;range = 60, 108, Slow Closing&#xA;range = 109, 110, Stop Strobe&#xA;range = 111, 159, Fast Closing&#xA;range = 160, 161, Stop Strobe&#xA;range = 162, 207, Random Strobe&#xA;range = 208, 209, Stop Strobe&#xA;range = 210, 255, Random Strobe&#xA;parameter = Special&#xA;option = skip&#xA;range = 0, 9, No Effect&#xA;range = 10, 84, &quot;600 Hz&quot;&#xA;range = 85, 96, Fan At Low-Noise Speed&#xA;range = 97, 108, Fan At Auto-Silent Speed&#xA;range = 109, 120, Fan Speed Control&#xA;range = 121, 133, Fan Speed Max&#xA;range = 134, 185, Enable Automatic Display Blackout&#xA;range = 186, 199, Disable Automatic Display Blackout&#xA;range = 200, 205, LED Control Freq 1000 Hz&#xA;range = 206, 211, LED Control Freq 3000 Hz&#xA;range = 212, 217, LED Control Freq 6000 Hz&#xA;range = 218, 223, LED Control Freq 8000 Hz&#xA;range = 224, 229, LED Control Freq 10000 Hz&#xA;range = 230, 235, LED Control Freq 12000 Hz&#xA;range = 236, 241, LED Control Freq 14000 Hz&#xA;range = 242, 247, LED Control Freq 16000 Hz&#xA;range = 248, 255, LED Control Freq 19000 Hz&#xA;"/>
+    <LibFixture manufacturer="Chauvet" type="SlimPAR Pro QZ12" mode="11Ch" blob="color = 247,0,16&#xA;parameter = Intensity&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Red&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Green&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Blue&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Amber&#xA;default = 255&#xA;highlight = 255&#xA;parameter = Color Macro&#xA;option = skip&#xA;parameter = Shutter&#xA;range = 0, 10, Open&#xA;range = 11, 255, Strobe&#xA;parameter = Program&#xA;option = skip&#xA;parameter = Program Speed&#xA;option = skip&#xA;parameter = Intensity Speed&#xA;option = skip&#xA;parameter = Zoom&#xA;"/>
+    <LibFixture manufacturer="Chauvet" type="SlimPAR Pro Tri" mode="9ch" blob="color = 250,42,77&#xA;parameter = Intensity&#xA;default = 0&#xA;parameter = Red&#xA;default = 0&#xA;parameter = Green&#xA;default = 0&#xA;parameter = Blue&#xA;default = 0&#xA;parameter = Macro&#xA;range = 0, 10, No Function&#xA;range = 11, 30, Red 100%, Green (0~100%), Blue 0%&#xA;"/>
+  </UsedFixtures>
+  <Fixtures>
+    <Fixture>
+      <Generic ID="1" Name="Spotlight" Location="Front" Note="" Info="" Description="Fixture" Manufacturer="Prism Projection" Type="RevEAL CW" Mode="Simple RGB" Partner="" MVR_UID=""/>
+      <Plan_view Color="(35,157,50)">
+        <Position x="-224.68" y="24.90"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="1"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+    <Fixture>
+      <Generic ID="2" Name="Spotlight" Location="Back" Note="" Info="" Description="Fixture" Manufacturer="Prism Projection" Type="RevEAL CW" Mode="Simple RGB" Partner="" MVR_UID=""/>
+      <Plan_view Color="(35,157,50)">
+        <Position x="226.03" y="-324.80"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="56"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+    <Fixture>
+      <Generic ID="91" Name="LEDko VariWhite" Location="Left" Note="" Info="" Description="Fixture" Manufacturer="Coemar" Type="LEDko VariWhite" Mode="5Ch" Partner="" MVR_UID=""/>
+      <Plan_view Color="(54,109,154)">
+        <Position x="-150.00" y="-373.98"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="36"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+    <Fixture>
+      <Generic ID="92" Name="LEDko VariWhite" Location="Center Left" Note="" Info="" Description="Fixture" Manufacturer="Coemar" Type="LEDko VariWhite" Mode="5Ch" Partner="" MVR_UID=""/>
+      <Plan_view Color="(54,109,154)">
+        <Position x="-50.00" y="-375.00"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="41"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+    <Fixture>
+      <Generic ID="93" Name="LEDko VariWhite" Location="Center Right" Note="" Info="" Description="Fixture" Manufacturer="Coemar" Type="LEDko VariWhite" Mode="5Ch" Partner="" MVR_UID=""/>
+      <Plan_view Color="(54,109,154)">
+        <Position x="50.00" y="-375.00"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="46"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+    <Fixture>
+      <Generic ID="94" Name="LEDko VariWhite" Location="Right" Note="" Info="" Description="Fixture" Manufacturer="Coemar" Type="LEDko VariWhite" Mode="5Ch" Partner="" MVR_UID=""/>
+      <Plan_view Color="(54,109,154)">
+        <Position x="150.00" y="-376.90"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="51"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+    <Fixture>
+      <Generic ID="101" Name="SlimPAR Pro Tri" Location="Left" Note="" Info="" Description="Fixture" Manufacturer="Chauvet" Type="SlimPAR Pro Tri" Mode="9ch" Partner="" MVR_UID=""/>
+      <Plan_view Color="(250,42,77)">
+        <Position x="-126.13" y="-174.79"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="5"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+    <Fixture>
+      <Generic ID="102" Name="SlimPAR Pro Tri" Location="Center" Note="" Info="" Description="Fixture" Manufacturer="Chauvet" Type="SlimPAR Pro Tri" Mode="9ch" Partner="" MVR_UID=""/>
+      <Plan_view Color="(250,42,77)">
+        <Position x="0.00" y="-173.77"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="14"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+    <Fixture>
+      <Generic ID="103" Name="SlimPAR Pro Tri" Location="Right" Note="" Info="" Description="Fixture" Manufacturer="Chauvet" Type="SlimPAR Pro Tri" Mode="9ch" Partner="" MVR_UID=""/>
+      <Plan_view Color="(250,42,77)">
+        <Position x="125.52" y="-174.93"/>
+      </Plan_view>
+      <Patch_Information>
+        <Patch>
+          <All Patch_Mode="0" Universe="1" Universe_Type="0" Address="23"/>
+        </Patch>
+      </Patch_Information>
+    </Fixture>
+  </Fixtures>
+  <Groups>
+    <Group>
+      <Generic ID="4" Name="SlimPAR Pro Tri (3x)" Description="Group"/>
+      <FixtureIDs>
+        <Fixture ID="101"/>
+        <Fixture ID="102"/>
+        <Fixture ID="103"/>
+      </FixtureIDs>
+    </Group>
+    <Group>
+      <Generic ID="5" Name="LEDko VariWhite (Outer)" Description="Group"/>
+      <FixtureIDs>
+        <Fixture ID="91"/>
+        <Fixture ID="94"/>
+      </FixtureIDs>
+    </Group>
+    <Group>
+      <Generic ID="6" Name="LEDko VariWhite (Inner)" Description="Group"/>
+      <FixtureIDs>
+        <Fixture ID="92"/>
+        <Fixture ID="93"/>
+      </FixtureIDs>
+    </Group>
+    <Group>
+      <Generic ID="8" Name="Back Row (All White)" Description="Group"/>
+      <FixtureIDs>
+        <Fixture ID="91"/>
+        <Fixture ID="92"/>
+        <Fixture ID="94"/>
+      </FixtureIDs>
+    </Group>
+  </Groups>
+  <Scenes>
+    <Scene>
+      <Generic ID="2" Name="Cold FOH" Description="Scene" Only_Controlled_Parameters="False"/>
+      <SceneFixtures>
+        <SceneFixture ID="103" ParameterCount="5" Val1="148" Val2="171" Val3="212" Val4="255" Val5="-1"/>
+        <SceneFixture ID="102" ParameterCount="5" Val1="148" Val2="171" Val3="212" Val4="255" Val5="-1"/>
+        <SceneFixture ID="101" ParameterCount="5" Val1="148" Val2="171" Val3="212" Val4="255" Val5="-1"/>
+        <SceneFixture ID="94" ParameterCount="5" Val1="-1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="93" ParameterCount="5" Val1="-1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="92" ParameterCount="5" Val1="-1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="91" ParameterCount="5" Val1="-1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="2" ParameterCount="4" Val1="-1" Val2="-1" Val3="-1" Val4="-1"/>
+        <SceneFixture ID="1" ParameterCount="4" Val1="-1" Val2="-1" Val3="-1" Val4="-1"/>
+      </SceneFixtures>
+    </Scene>
+    <Scene>
+      <Generic ID="5" Name="Warm FOH" Description="Scene" Only_Controlled_Parameters="False"/>
+      <SceneFixtures>
+        <SceneFixture ID="103" ParameterCount="5" Val1="111" Val2="233" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="102" ParameterCount="5" Val1="111" Val2="233" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="101" ParameterCount="5" Val1="111" Val2="233" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="94" ParameterCount="5" Val1="-1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="93" ParameterCount="5" Val1="-1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="92" ParameterCount="5" Val1="-1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="91" ParameterCount="5" Val1="-1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="2" ParameterCount="4" Val1="237" Val2="116" Val3="-1" Val4="95"/>
+        <SceneFixture ID="1" ParameterCount="4" Val1="-1" Val2="-1" Val3="-1" Val4="-1"/>
+      </SceneFixtures>
+    </Scene>
+    <Scene>
+      <Generic ID="6" Name="Mood Lighting" Description="Scene" Only_Controlled_Parameters="False"/>
+      <SceneFixtures>
+        <SceneFixture ID="103" ParameterCount="5" Val1="111" Val2="233" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="102" ParameterCount="5" Val1="111" Val2="233" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="101" ParameterCount="5" Val1="111" Val2="233" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="94" ParameterCount="5" Val1="74" Val2="-1" Val3="0" Val4="5" Val5="0"/>
+        <SceneFixture ID="93" ParameterCount="5" Val1="1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="92" ParameterCount="5" Val1="74" Val2="-1" Val3="0" Val4="5" Val5="0"/>
+        <SceneFixture ID="91" ParameterCount="5" Val1="74" Val2="-1" Val3="0" Val4="5" Val5="0"/>
+        <SceneFixture ID="2" ParameterCount="4" Val1="237" Val2="116" Val3="-1" Val4="0"/>
+        <SceneFixture ID="1" ParameterCount="4" Val1="-1" Val2="-1" Val3="-1" Val4="-1"/>
+      </SceneFixtures>
+    </Scene>
+    <Scene>
+      <Generic ID="7" Name="Strobe" Description="Scene" Only_Controlled_Parameters="False"/>
+      <SceneFixtures>
+        <SceneFixture ID="103" ParameterCount="5" Val1="0" Val2="0" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="102" ParameterCount="5" Val1="0" Val2="0" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="101" ParameterCount="5" Val1="0" Val2="0" Val3="53" Val4="0" Val5="-1"/>
+        <SceneFixture ID="94" ParameterCount="5" Val1="74" Val2="-1" Val3="0" Val4="46" Val5="0"/>
+        <SceneFixture ID="93" ParameterCount="5" Val1="1" Val2="-1" Val3="-1" Val4="-1" Val5="-1"/>
+        <SceneFixture ID="92" ParameterCount="5" Val1="74" Val2="-1" Val3="0" Val4="46" Val5="0"/>
+        <SceneFixture ID="91" ParameterCount="5" Val1="74" Val2="-1" Val3="0" Val4="46" Val5="0"/>
+        <SceneFixture ID="2" ParameterCount="4" Val1="237" Val2="116" Val3="-1" Val4="0"/>
+        <SceneFixture ID="1" ParameterCount="4" Val1="-1" Val2="-1" Val3="-1" Val4="-1"/>
+      </SceneFixtures>
+    </Scene>
+  </Scenes>
+  <DrawObjects/>
+  <Tools/>
+  <Layouts/>
+  <CurrentLayout>
+    <Layout>
+      <Generic Name="Current" Description="Layout" Shortcut="0"/>
+      <TabbedPanel>
+        <AuiInfo Name="0" SelectedTab="4" FlexTab="4" Floating="0" DisplayNr="0" PositionX="0" PositionY="25" SizeX="1440" SizeY="875"/>
+        <Tabs>
+          <TabInfo Name="Plan View" Filter="" Type="dxFilterCanvas" PositionX="-5.91" PositionY="-73.02" Zoom="1.02" GridSize="50.00" Options="381"/>
+          <TabInfo Name="Fixtures" Filter="GenericDescription==Fixture" Type="dxFilterList">
+            <Column Name="Patch" Size="100"/>
+            <Column Name="Status" Size="100"/>
+            <Column Name="RDM UID" Size="16"/>
+            <Column Name="Mode" Size="100"/>
+            <Column Name="Type" Size="109"/>
+            <Column Name="Manufacturer" Size="78"/>
+            <Column Name="Info" Size="16"/>
+            <Column Name="Note" Size="16"/>
+            <Column Name="Location" Size="57"/>
+            <Column Name="Name" Size="109"/>
+            <Column Name="ID" Size="79"/>
+          </TabInfo>
+          <TabInfo Name="Universes" Filter="GenericDescription==Universe" Type="dxFilterList">
+            <Column Name="Info" Size="88"/>
+            <Column Name="Sender" Size="104"/>
+            <Column Name="Location" Size="112"/>
+            <Column Name="Universe Type" Size="141"/>
+            <Column Name="Name" Size="100"/>
+            <Column Name="ID" Size="79"/>
+          </TabInfo>
+          <TabInfo Name="Network Items" Filter="GenericDescription==Network Item" Type="dxFilterList">
+            <Column Name="Note" Size="93"/>
+            <Column Name="Item Type" Size="118"/>
+            <Column Name="IP Address" Size="125"/>
+            <Column Name="Name" Size="100"/>
+            <Column Name="ID" Size="79"/>
+          </TabInfo>
+          <TabInfo Name="Scenes" Filter="GenericDescription==Scene" Type="dxFilterList">
+            <Column Name="Name" Size="102"/>
+            <Column Name="ID" Size="83"/>
+          </TabInfo>
+        </Tabs>
+      </TabbedPanel>
+      <Perspective Info="layout2|name=Resource Tree;caption=Resource Tree;state=2099196;dir=4;layer=0;row=1;pos=0;prop=100000;bestw=250;besth=50;minw=250;minh=50;maxw=-1;maxh=-1;floatx=283;floaty=82;floatw=500;floath=300|name=ControlPanel;caption=Control;state=2099196;dir=2;layer=1;row=0;pos=1;prop=117047;bestw=300;besth=60;minw=150;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=500;floath=300|name=PropertyGrid;caption=Properties;state=2115580;dir=2;layer=1;row=0;pos=2;prop=127851;bestw=300;besth=60;minw=150;minh=150;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=300;floath=300|name=ToolBar;caption=ToolBar;state=2099196;dir=2;layer=1;row=0;pos=0;prop=55102;bestw=70;besth=80;minw=15;minh=80;maxw=70;maxh=80;floatx=921;floaty=132;floatw=200;floath=80|name=Log;caption=Log;state=2099198;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=80;besth=80;minw=80;minh=80;maxw=80;maxh=80;floatx=-1;floaty=-1;floatw=200;floath=80|name=Chat;caption=Chat;state=2099198;dir=3;layer=0;row=0;pos=1;prop=100000;bestw=80;besth=80;minw=80;minh=80;maxw=80;maxh=80;floatx=-1;floaty=-1;floatw=200;floath=80|name=0;caption=;state=2044;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=150;besth=50;minw=150;minh=50;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=500;floath=300|dock_size(5,0,0)=152|dock_size(2,1,0)=400|dock_size(4,0,1)=252|"/>
+    </Layout>
+  </CurrentLayout>
+  <VLANs/>
+  <PSNTrackers/>
+</dmXLAN>
