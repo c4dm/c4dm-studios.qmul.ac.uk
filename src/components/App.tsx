@@ -33,6 +33,7 @@ export default function App(): JSX.Element {
 	const location = useLocation().pathname
 	// custom redirects (before render cycle)
 	if (location === '/management') {
+		/* eslint-disable-next-line react-hooks/immutability */
 		window.location.href = 'https://qmulprod.sharepoint.com/sites/Studio/SitePages/Management.aspx'
 	}
 	// redirect to home if !pages[location]
@@ -70,8 +71,8 @@ export default function App(): JSX.Element {
 							</div>
 						),
 						// JSX replacement / insertion
-						script: ({ ...props }): JSX.Element => {
-							switch (props.className) {
+						script: ({ className }): JSX.Element => {
+							switch (className) {
 								case 'contact-staff':
 									return <Staff />
 								default:

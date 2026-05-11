@@ -1,4 +1,4 @@
-<!-- cspell:ignore Audiotechnik Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW MADIFace Netgear tmws Totalmix usbdk Vicon -->
+<!-- cspell:ignore Audiotechnik Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW MADIFace ncat Netgear nmap tmws Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -152,7 +152,7 @@ If you are facing an issue with one of these protected devices, please contact a
 ### Control Room
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.10 </td><td> Netgear - GS305E (Control Room - Desk) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.10 </td><td> Netgear - GS305E </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.11 </td><td> Apple - Mac Mini </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.12 </td><td> iConnectivity - mioXL </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.13 </td><td> dbx - DriverRack PA 2 </td></tr>
@@ -161,7 +161,7 @@ If you are facing an issue with one of these protected devices, please contact a
 ### Live Room
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.20 </td><td> Netgear - GS305E (Live Room - Desk) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.20 </td><td> Netgear - GS305E </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.21 </td><td> Keene Electronics - IPMSW1 Plus (Undercroft) </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.22 </td><td> iConnectivity - mioXL </td></tr>
 </tbody></table>
@@ -169,8 +169,8 @@ If you are facing an issue with one of these protected devices, please contact a
 ### Performance Lab
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.30 </td><td> Netgear - GS305E (Performance Lab - Stage Rack) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.31 </td><td> Netgear - GS305E (Performance Lab - System Rack) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.30 </td><td> Netgear - GS305E (Desk) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.31 </td><td> Netgear - GS305E (System Rack) </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.32 </td><td> iConnectivity - mioXL </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.33 </td><td> d&b Audiotechnik - D20 </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.34 </td><td> ELC Lighting - dmXLAN node3 </td></tr>
@@ -221,17 +221,59 @@ Here you should see a list of available devices and MIDI ports, labelled accordi
 
 </details>
 
-<!--
-
 # Spatial Audio
 
 System Overview
+16.2 performance lab 12.1 live room
+
+<details>
+<summary>Powering our Speaker Systems</summary>
+
+Connect to the LAN! Ping IP address if unsure of connection.
+
+If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send commands via UDP.
+
+<!-- (Is the config password protected?) -->
+
+### Performance Lab (16.2)
+
+plus d&b subs
+
+##### MacOS
 
 ```bash
 echo -n "KMS ON2" | nc -u -w1 192.168.0.9 65432
 echo -n "KMS OFF2" | nc -u -w1 192.168.0.9 65432
 ```
 
+##### Windows
+
+```powershell
+echo|set /p="KMS ON2" | ncat -u -w1 192.168.0.9 65432
+echo|set /p="KMS OFF2" | ncat -u -w1 192.168.0.9 65432
+```
+
+### Live Room (12.1)
+
+plus meyer sub
+
+##### MacOS
+
+```bash
+echo -n "KMS ON2" | nc -u -w1 192.168.0.21 65432
+echo -n "KMS OFF2" | nc -u -w1 192.168.0.21 65432
+```
+
+##### Windows
+
+```powershell
+echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.21 65432
+echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
+```
+
+</details>
+
+<!--
 ## Cycling '74 Max
 
 ## Ableton Live
@@ -267,6 +309,19 @@ We have licenses for Blade, Nexus and Tracker.
 - **1 x** Vicon Lock+
 
 ## How to Motion Capture
+
+If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send commands via UDP.
+
+power on commands - macos
+```bash
+$ echo -n "KMS ON1" | nc -u -w1 192.168.0.9 65432
+$ echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 65432
+```
+power on commands - windows
+```powershell
+$ echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 65432
+$ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
+```
 
 ### Basic Operation
 

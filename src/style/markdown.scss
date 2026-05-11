@@ -116,6 +116,14 @@
 			}
 		}
 
+		pre {
+			background: utils.$qm-black;
+			width: max-content;
+			padding: 8px;
+			border: solid utils.$qm-compliment 2px;
+			border-radius: 4px;
+		}
+
 		span {
 			width: 100%;
 			display: grid;
