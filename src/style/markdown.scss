@@ -96,9 +96,11 @@
 
 			&:is(.h3) {
 				margin: 20px 8px;
+				padding-block: 2px;
 				font-size: large;
-				background-color: utils.$qm-compliment;
-				color: utils.$qm-blue;
+				background-color: utils.$qm-blue;
+				color: utils.$qm-white;
+				border: 2px solid utils.$qm-white;
 			}
 		}
 
