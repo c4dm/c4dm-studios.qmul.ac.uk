@@ -70,6 +70,11 @@ export default function App(): JSX.Element {
 								<h1>{children}</h1>
 							</div>
 						),
+						h3: ({ children }): JSX.Element => (
+							<div className='h3'>
+								<h3>{children}</h3>
+							</div>
+						),
 						// JSX replacement / insertion
 						script: ({ className }): JSX.Element => {
 							switch (className) {

@@ -223,21 +223,21 @@ Here you should see a list of available devices and MIDI ports, labelled accordi
 
 # Spatial Audio
 
-System Overview
-16.2 performance lab 12.1 live room
+In the Performance Lab, we operate a 16.2 hemispherical speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
+These surround sound systems are largely used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
 <details>
 <summary>Powering our Speaker Systems</summary>
 
-Connect to the LAN! Ping IP address if unsure of connection.
-
+For the most part, powering out speaker systems is controlled via UDP commands sent over the LAN.
 If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send commands via UDP.
+And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
 
-<!-- (Is the config password protected?) -->
+<!-- (Is the IPSMW config password protected?) -->
 
 ### Performance Lab (16.2)
 
-plus d&b subs
+To power the d&b subwoofers, switch on the [d&b D20](https://www.dbaudio.com/global/en/products/amplifiers/d20/) located in the Performance Lab system rack, whilst the Meyer satellites can be powered on or off with the following terminal commands.
 
 ##### MacOS
 
@@ -255,7 +255,7 @@ echo|set /p="KMS OFF2" | ncat -u -w1 192.168.0.9 65432
 
 ### Live Room (12.1)
 
-plus meyer sub
+Power for the Meyer subwoofer is located on the wall, whilst the Meyer satellites can be powered on or off with the following terminal commands.
 
 ##### MacOS
 
@@ -412,6 +412,10 @@ This library contains all of our most common lighting equipment, and can be used
 		C4DM Fixture Library
 	</a>
 </span>
+
+When using this fixture library with dmXLAN, you will need to manually set the library path, as in the preferences window pictured below.
+
+![dmXLAN screenshot showing the Fixture Library path in preferences.](/images/documentation/dmx-fixture-library.png)
 
 <!--
 still to learn!

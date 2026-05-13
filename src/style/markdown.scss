@@ -69,23 +69,36 @@
 			}
 		}
 
-		.h1 {
+		.h1,
+		.h3 {
 			height: fit-content;
 			width: fit-content;
-			margin: 60px 8px 20px;
 			display: grid;
-			background-color: utils.$qm-white;
-			color: utils.$qm-blue;
 			transform: skew(-20deg);
 
-			h1 {
+			h1,
+			h3 {
 				width: fit-content;
 				margin: 0;
 				padding-inline: 7px;
 				place-self: center;
 				text-align: center;
-				font-size: xx-large;
+				font-size: inherit;
 				transform: skew(20deg);
+			}
+
+			&:is(.h1) {
+				margin: 60px 8px 20px;
+				font-size: xx-large;
+				background-color: utils.$qm-white;
+				color: utils.$qm-blue;
+			}
+
+			&:is(.h3) {
+				margin: 20px 8px;
+				font-size: large;
+				background-color: utils.$qm-compliment;
+				color: utils.$qm-blue;
 			}
 		}
 
@@ -122,6 +135,11 @@
 			padding: 8px;
 			border: solid utils.$qm-compliment 2px;
 			border-radius: 4px;
+
+			code::selection {
+				background-color: utils.$qm-white;
+				color: utils.$qm-black;
+			}
 		}
 
 		span {
