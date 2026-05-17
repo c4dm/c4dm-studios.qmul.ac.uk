@@ -114,8 +114,6 @@ Upon connecting to the LAN, you should have DHCP enabled in your network setting
 All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
 Our LAN is **not** connected to the internet in any way, and so all remote connections via this network are unavailable.
 
-### MacOS
-
 If you are running MacOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to maintain a simultaneous internet connection via WiFi.
 If you are using our in house Mac Mini, all necessary network settings have been preconfigured, and you should contact staff if you encounter an issue with this machine.
 
@@ -229,15 +227,13 @@ These surround sound systems are largely used for research into spatial audio an
 <details>
 <summary>Powering our Speaker Systems</summary>
 
-For the most part, powering out speaker systems is controlled via UDP commands sent over the LAN.
+For the most part, powering our speaker systems is controlled via UDP commands sent over the LAN.
 If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send commands via UDP.
 And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
 
-<!-- (Is the IPSMW config password protected?) -->
-
 ### Performance Lab (16.2)
 
-To power the d&b subwoofers, switch on the [d&b D20](https://www.dbaudio.com/global/en/products/amplifiers/d20/) located in the Performance Lab system rack, whilst the Meyer satellites can be powered on or off with the following terminal commands.
+To power the d&b subwoofers, switch on the [d&b D20](https://www.dbaudio.com/global/en/products/amplifiers/d20/) located in the Performance Lab System Rack, whilst the Meyer satellites can be powered on or off with the following terminal commands.
 
 ##### MacOS
 

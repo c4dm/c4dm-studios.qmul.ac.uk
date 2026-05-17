@@ -1,13 +1,13 @@
 // biome-ignore-all lint/nursery/noJsxPropsBind : here prop bindings are used alongside Aray.map()
 
 // dependencies
-import type { FC } from 'react'
+import type { JSX } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // src
 import '../style/navi.scss'
 
-export const Navi: FC<{ pages: string[] }> = ({ pages }) => {
+export function Navi({ pages }: { pages: string[] }): JSX.Element {
 	const navigate = useNavigate()
 	return (
 		<nav>

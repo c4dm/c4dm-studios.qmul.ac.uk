@@ -76,8 +76,7 @@
 			display: grid;
 			transform: skew(-20deg);
 
-			h1,
-			h3 {
+			> * {
 				width: fit-content;
 				margin: 0;
 				padding-inline: 7px;
@@ -102,6 +101,10 @@
 				color: utils.$qm-white;
 				border: 2px solid utils.$qm-white;
 			}
+		}
+
+		h5 {
+			margin: 10px 0;
 		}
 
 		iframe {
