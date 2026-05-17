@@ -8,6 +8,7 @@ import rehype from 'rehype-raw'
 
 // components & scss
 import { Navi } from './navi.tsx'
+import { Gallery } from './gallery.tsx'
 import { Staff } from './staff.tsx'
 import '../style/App.scss'
 
@@ -80,6 +81,8 @@ export default function App(): JSX.Element {
 							switch (className) {
 								case 'contact-staff':
 									return <Staff />
+								case 'home-gallery':
+									return <Gallery />
 								default:
 									return NULL
 							}

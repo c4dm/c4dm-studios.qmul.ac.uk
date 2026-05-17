@@ -29,22 +29,22 @@
 		"prettier": "^3.8.3",
 		"stylelint": "^17.11.1",
 		"stylelint-config-standard-scss": "^17.0.0",
+		"tsx": "^4.22.0",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.59.3",
 		"vite": "^8.0.13",
-		"vite-plugin-compression2": "^2.5.3"
+		"vite-plugin-compression2": "^2.5.3",
+		"vite-plugin-svgr": "^5.2.0"
 	},
 	"scripts": {
-		"build": "tsc && vite build",
-		"dev": "vite --host",
-		"preview": "vite preview",
-		"predeploy": "npm run build",
+		"build": "npm run pre-build && tsc && vite build",
 		"deploy": "gh-pages -d dist",
+		"dev": "npm run pre-build && vite --host",
 		"format": "biome format --write ; prettier --write ./**/*.md ./**/*.scss ; cspell ./**/*.md",
+		"preview": "vite preview",
+		"pre-build": "tsx ./src/build/generate-gallery.ts",
+		"predeploy": "npm run build",
 		"test": "tsc ; biome lint ; eslint . ; stylelint **/*.scss"
-	},
-	"cspell": {
-		"language": "en-GB"
 	},
 	"prettier": {
 		"arrowParens": "always",

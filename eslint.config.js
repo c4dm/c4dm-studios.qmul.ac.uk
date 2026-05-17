@@ -36,6 +36,7 @@ export default defineConfig(
 			'max-lines-per-function': 'off',
 			'max-statements': 'off',
 			'new-cap': 'off',
+			'no-console': ['error', { allow: ['error', 'info'] }],
 			'no-magic-numbers': 'off',
 			'no-ternary': 'off',
 			'no-underscore-dangle': 'off',

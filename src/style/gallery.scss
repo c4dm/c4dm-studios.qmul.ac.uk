@@ -1,0 +1,55 @@
+@use './utils.scss' as utils;
+
+.gallery {
+	height: 400px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 80px 1fr 80px;
+	grid-template-rows: 100%;
+
+	button {
+		height: 100%;
+		width: 80px;
+		padding: 0;
+		border: 0;
+		background: transparent;
+		display: grid;
+		place-items: center;
+		cursor: pointer;
+
+		svg {
+			height: 40px;
+			stroke: utils.$qm-white;
+		}
+
+		&:focus-visible svg,
+		&:hover svg {
+			stroke: utils.$qm-compliment;
+		}
+	}
+
+	figure {
+		opacity: 1;
+		transition: opacity 300ms ease-in-out;
+
+		&.transition {
+			opacity: 0;
+		}
+
+		figcaption {
+			display: none;
+		}
+
+		img {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			max-height: 100%;
+			max-width: 100%;
+			place-self: center;
+			object-fit: contain;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+	}
+}
