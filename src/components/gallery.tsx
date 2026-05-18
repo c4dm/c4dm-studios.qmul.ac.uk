@@ -1,4 +1,8 @@
+// biome-ignore-all lint/a11y/noNoninteractiveElementInteractions : unable to find a more meanignful element / role combination than div / application
+// biome-ignore-all lint/a11y/noNoninteractiveTabindex : unable to find a more meanignful element / role combination than div / application
+
 import {
+	type FC,
 	type JSX,
 	type KeyboardEvent as ReactKeyboardEvent,
 	type MouseEvent as ReactMouseEvent,
@@ -19,11 +23,9 @@ const gallery_dir = '/images/gallery'
 const slideshow_interval = 5000
 const transition_duration = 300
 
-function Arrow(direction: 1 | -1, onChange?: (direction: 1 | -1) => void): JSX.Element {
+const Arrow: FC<{ direction: 1 | -1; onClick: (direction: 1 | -1) => void }> = ({ direction, onClick }) => {
 	const _onClick = (): void => {
-		if (onChange) {
-			onChange(direction)
-		}
+		onClick(direction)
 	}
 	return (
 		<button
@@ -53,7 +55,7 @@ function Image({ file }: { file: string | undefined }): JSX.Element {
 	return NULL
 }
 
-export function Gallery(): JSX.Element {
+export const Gallery: FC = () => {
 	// load images
 	const [slideshow, setSlideshow] = useState<boolean>(true)
 	const [gallery, setGallery] = useState<string[]>([])
@@ -150,8 +152,8 @@ export function Gallery(): JSX.Element {
 						Image {imageVisible + 1} of {gallery.length}
 					</figcaption>
 				</figure>
-				{Arrow(-1, _onArrow)}
-				{Arrow(1, _onArrow)}
+				<Arrow direction={-1} onClick={_onArrow} />
+				<Arrow direction={1} onClick={_onArrow} />
 			</div>
 		)
 	}
