@@ -1,5 +1,6 @@
 // biome-ignore-all lint/a11y/noNoninteractiveElementInteractions : unable to find a more meanignful element / role combination than div / application
 // biome-ignore-all lint/a11y/noNoninteractiveTabindex : unable to find a more meanignful element / role combination than div / application
+// lint/nursery/noInlineStyles : used for dynamic styling of <Arrow /
 
 import {
 	type FC,
@@ -14,7 +15,6 @@ import {
 
 // src
 import '../style/gallery.scss'
-import ArrowSVG from './svg/arrow.svg?react'
 
 // import images
 const gallery_dir = '/images/gallery'
@@ -39,7 +39,14 @@ const Arrow: FC<{ direction: 1 | -1; onClick: (direction: 1 | -1) => void }> = (
 			tabIndex={-1}
 			type='button'
 		>
-			<ArrowSVG style={{ transform: `scaleX(${direction.toString()})` }} />
+			<svg
+				style={{ transform: `scaleX(${direction.toString()})` }}
+				xmlSpace='preserve'
+				version='1.1'
+				viewBox='0 0 22 42'
+			>
+				<path d='M2 2 L20 21 L2 40' />
+			</svg>
 		</button>
 	)
 }
