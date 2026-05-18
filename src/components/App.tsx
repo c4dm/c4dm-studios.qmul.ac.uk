@@ -19,7 +19,7 @@ import equipment from '../config/equipment.md?raw'
 import home from '../config/home.md?raw'
 import services from '../config/services.md?raw'
 
-// routes (this is _ordered_)
+// routes - this is an _ordered_ set in the form {path: markdown}
 const pages: Record<string, string> = {
 	'/': home,
 	'/services': services,
@@ -30,9 +30,8 @@ const pages: Record<string, string> = {
 const NULL: JSX.Element = <></>
 
 export default function App(): JSX.Element {
-	// get current path
+	// get current path and redirect to home if !pages[location]
 	const location = useLocation().pathname
-	// redirect to home if !pages[location]
 	const navigate = useNavigate()
 	useEffect((): void => {
 		if (!Object.keys(pages).includes(location)) {

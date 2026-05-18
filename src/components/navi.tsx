@@ -1,24 +1,23 @@
 // biome-ignore-all lint/nursery/noJsxPropsBind : here prop bindings are used alongside Aray.map()
 
 // dependencies
-import type { JSX } from 'react'
+import type { FC } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 // src
 import '../style/navi.scss'
 
-export function Navi({ pages }: { pages: string[] }): JSX.Element {
+export const Navi: FC<{ pages: string[] }> = ({ pages }) => {
+	// event handlers
 	const navigate = useNavigate()
+	const _homeButton = (): void => {
+		void navigate('')
+	}
+
+	// render dynamic content
 	return (
 		<nav>
-			<button
-				aria-label='Navigation: Home'
-				className='logo'
-				onClick={(): void => {
-					void navigate('')
-				}}
-				type='button'
-			>
+			<button aria-label='Navigation: Home' className='logo' onClick={_homeButton} type='button'>
 				<div>
 					<p>C4DM</p>
 				</div>

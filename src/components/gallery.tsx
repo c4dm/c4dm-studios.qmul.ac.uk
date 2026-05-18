@@ -129,6 +129,7 @@ export const Gallery: FC = () => {
 		}
 	}
 
+	// render dynamic content
 	if (gallery.length > 0) {
 		return (
 			<div
