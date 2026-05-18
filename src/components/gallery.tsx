@@ -1,6 +1,6 @@
 // biome-ignore-all lint/a11y/noNoninteractiveElementInteractions : unable to find a more meanignful element / role combination than div / application
 // biome-ignore-all lint/a11y/noNoninteractiveTabindex : unable to find a more meanignful element / role combination than div / application
-// lint/nursery/noInlineStyles : used for dynamic styling of <Arrow /
+// biome-ignore-all lint/nursery/noInlineStyles : used for dynamic styling of <Arrow />
 
 import {
 	type FC,
@@ -41,9 +41,9 @@ const Arrow: FC<{ direction: 1 | -1; onClick: (direction: 1 | -1) => void }> = (
 		>
 			<svg
 				style={{ transform: `scaleX(${direction.toString()})` }}
-				xmlSpace='preserve'
 				version='1.1'
 				viewBox='0 0 22 42'
+				xmlSpace='preserve'
 			>
 				<path d='M2 2 L20 21 L2 40' />
 			</svg>
@@ -51,17 +51,23 @@ const Arrow: FC<{ direction: 1 | -1; onClick: (direction: 1 | -1) => void }> = (
 	)
 }
 
-function Image({ file }: { file: string | undefined }): JSX.Element {
+function Image({ index }: { index: number }): JSX.Element {
+	const file: string | undefined = gallery[index]
 	if (file) {
 		const img_title = file.replace(regex.file_extension, '')
 		return (
-			<img
-				aria-label={`View ${img_title} in full screen gallery mode.`}
-				alt={img_title}
-				height={400}
-				src={`${gallery_dir}/${file}`}
-				width={1000}
-			/>
+			<>
+				<img
+					alt={img_title}
+					aria-label={`View ${img_title} in full screen gallery mode.`}
+					height={400}
+					src={`${gallery_dir}/${file}`}
+					width={1000}
+				/>
+				<figcaption>
+					Image {index + 1} of {gallery.length}: {img_title}
+				</figcaption>
+			</>
 		)
 	}
 	return NULL
@@ -149,10 +155,7 @@ export const Gallery: FC = () => {
 				tabIndex={0}
 			>
 				<figure className={transition ? 'transition' : ''} tabIndex={-1}>
-					<Image file={gallery[imageVisible]} />
-					<figcaption>
-						Image {imageVisible + 1} of {gallery.length}
-					</figcaption>
+					<Image index={imageVisible} />
 				</figure>
 				{gallery.length > 1 && (
 					<>
