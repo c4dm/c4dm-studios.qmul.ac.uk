@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <svg xml:space='preserve' version='1.1' viewBox='0 0 22 42'>
-	<line style='stroke-linecap:round; stroke-width:4px;' x1='20' x2='2' y1='21' y2='2' />
-	<line style='stroke-linecap:round; stroke-width:4px;' x1='20' x2='2' y1='21' y2='40' />
+	<path d='M2 2 L20 21 L2 40' stroke-linecap='butt' stroke-linejoin='arcs' stroke-width='4' />
 </svg>

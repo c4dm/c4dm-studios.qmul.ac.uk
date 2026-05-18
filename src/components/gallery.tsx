@@ -4,6 +4,7 @@ import {
 	type MouseEvent as ReactMouseEvent,
 	useCallback,
 	useEffect,
+	useRef,
 	useState,
 } from 'react'
 
@@ -11,15 +12,15 @@ import {
 import '../style/gallery.scss'
 import ArrowSVG from './svg/arrow.svg?react'
 
+// gloabls
 const NULL: JSX.Element = <></>
 const regex = { file_extension: /\.[^.]*$/u }
-const root = '/images/gallery'
+const gallery_dir = '/images/gallery'
 const slideshow_interval = 5000
-const transition_duration = 200
+const transition_duration = 300
 
 function Arrow(direction: 1 | -1, onChange?: (direction: 1 | -1) => void): JSX.Element {
-	const _onClick = (e: ReactMouseEvent): void => {
-		e.stopPropagation()
+	const _onClick = (): void => {
 		if (onChange) {
 			onChange(direction)
 		}
@@ -28,8 +29,8 @@ function Arrow(direction: 1 | -1, onChange?: (direction: 1 | -1) => void): JSX.E
 		<button
 			aria-label={`View the ${direction === 1 ? 'next' : 'previous'} image.`}
 			onClick={_onClick}
-			type='button'
 			tabIndex={-1}
+			type='button'
 		>
 			<ArrowSVG style={{ transform: `scaleX(${direction.toString()})` }} />
 		</button>
@@ -44,7 +45,7 @@ function Image({ file }: { file: string | undefined }): JSX.Element {
 				aria-label={`View ${img_title} in full screen gallery mode.`}
 				alt={img_title}
 				height={400}
-				src={`${root}/${file}`}
+				src={`${gallery_dir}/${file}`}
 				width={1000}
 			/>
 		)
@@ -58,7 +59,7 @@ export function Gallery(): JSX.Element {
 	const [gallery, setGallery] = useState<string[]>([])
 	const [imageVisible, setVisible] = useState<number>(0)
 	useEffect((): void => {
-		void fetch(`${root}/images.json`)
+		void fetch(`${gallery_dir}/images.json`)
 			.then((res: Response) => res.json())
 			.then((json: string[]) => {
 				setGallery(json.sort(() => Math.random() - 0.5))
@@ -110,39 +111,49 @@ export function Gallery(): JSX.Element {
 	const _onContextMenu = (e: ReactMouseEvent<HTMLDivElement>): void => {
 		e.preventDefault()
 	}
+	const self = useRef<HTMLDivElement>(null)
 	const _onKeyDown = (e: ReactKeyboardEvent<HTMLDivElement>): void => {
-		switch (e.key) {
-			case 'ArrowLeft':
-			case 'Left':
-				setSlideshow(false)
-				changeImage(-1)
-				break
-			case 'ArrowRight':
-			case 'Right':
-				setSlideshow(false)
-				changeImage(1)
-				break
-			default:
-				break
+		if (self.current) {
+			switch (e.key) {
+				case 'ArrowLeft':
+				case 'Left':
+					self.current.focus()
+					setSlideshow(false)
+					changeImage(-1)
+					break
+				case 'ArrowRight':
+				case 'Right':
+					self.current.focus()
+					setSlideshow(false)
+					changeImage(1)
+					break
+				default:
+					break
+			}
 		}
 	}
 
-	return (
-		<section
-			aria-label='Image gallery'
-			className='gallery'
-			onContextMenu={_onContextMenu}
-			onKeyDown={_onKeyDown}
-			tabIndex={0}
-		>
-			{Arrow(-1, _onArrow)}
-			<figure className={transition ? 'transition' : ''}>
-				<Image file={gallery[imageVisible]} />
-				<figcaption className='sr-only'>
-					Image {imageVisible + 1} of {gallery.length}
-				</figcaption>
-			</figure>
-			{Arrow(1, _onArrow)}
-		</section>
-	)
+	if (gallery.length > 0) {
+		return (
+			<div
+				aria-label='Gallery of Images from C4DM Studios'
+				className='gallery'
+				onContextMenu={_onContextMenu}
+				onKeyDown={_onKeyDown}
+				ref={self}
+				role='application'
+				tabIndex={0}
+			>
+				<figure className={transition ? 'transition' : ''} tabIndex={-1}>
+					<Image file={gallery[imageVisible]} />
+					<figcaption>
+						Image {imageVisible + 1} of {gallery.length}
+					</figcaption>
+				</figure>
+				{Arrow(-1, _onArrow)}
+				{Arrow(1, _onArrow)}
+			</div>
+		)
+	}
+	return NULL
 }
