@@ -16,10 +16,15 @@ import {
 import '../style/gallery.scss'
 import ArrowSVG from './svg/arrow.svg?react'
 
+// import images
+const gallery_dir = '/images/gallery'
+const gallery = Object.entries(import.meta.glob('/public/images/gallery/*.{jpg,jpeg,png,webp}'))
+	.map(([path]) => path.split('/').pop() ?? '')
+	.sort((a, b) => a.localeCompare(b))
+
 // gloabls
 const NULL: JSX.Element = <></>
 const regex = { file_extension: /\.[^.]*$/u }
-const gallery_dir = '/images/gallery'
 const slideshow_interval = 5000
 const transition_duration = 300
 
@@ -56,21 +61,9 @@ function Image({ file }: { file: string | undefined }): JSX.Element {
 }
 
 export const Gallery: FC = () => {
-	// load images
-	const [slideshow, setSlideshow] = useState<boolean>(true)
-	const [gallery, setGallery] = useState<string[]>([])
-	const [imageVisible, setVisible] = useState<number>(0)
-	useEffect((): void => {
-		void fetch(`${gallery_dir}/images.json`)
-			.then((res: Response) => res.json())
-			.then((json: string[]) => {
-				setGallery(json.sort(() => Math.random() - 0.5))
-			})
-			.catch()
-	}, [])
-
 	// image transition
 	const [transition, setTransition] = useState<boolean>(false)
+	const [imageVisible, setVisible] = useState<number>(0)
 	const changeImage = useCallback(
 		(direction: -1 | 1): void => {
 			if (transition || gallery.length === 0) {
@@ -82,10 +75,11 @@ export const Gallery: FC = () => {
 				setTransition(false)
 			}, transition_duration)
 		},
-		[transition, gallery.length],
+		[transition],
 	)
 
 	// slideshow
+	const [slideshow, setSlideshow] = useState<boolean>(true)
 	useEffect((): (() => void) | undefined => {
 		if (gallery.length === 0) {
 			return (): void => {
@@ -103,7 +97,7 @@ export const Gallery: FC = () => {
 				window.clearInterval(interval)
 			}
 		}
-	}, [gallery, slideshow, changeImage])
+	}, [slideshow, changeImage])
 
 	// event handlers
 	const _onArrow = (direction: -1 | 1): void => {
@@ -152,8 +146,12 @@ export const Gallery: FC = () => {
 						Image {imageVisible + 1} of {gallery.length}
 					</figcaption>
 				</figure>
-				<Arrow direction={-1} onClick={_onArrow} />
-				<Arrow direction={1} onClick={_onArrow} />
+				{gallery.length > 1 && (
+					<>
+						<Arrow direction={-1} onClick={_onArrow} />
+						<Arrow direction={1} onClick={_onArrow} />
+					</>
+				)}
 			</div>
 		)
 	}
