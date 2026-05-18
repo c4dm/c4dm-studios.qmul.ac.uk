@@ -15,31 +15,30 @@
 			text-decoration: none;
 
 			@include utils.focus;
-		}
 
-		a.button,
-		> button {
-			height: 40px;
-			width: 100%;
-			max-width: 400px;
-			margin-block: 10px;
-			background: utils.$qm-blue;
-			color: utils.$qm-white;
-			border: 3px solid utils.$qm-white;
-			border-radius: 4px;
-			outline: 3px solid utils.$qm-blue;
-			outline-offset: -6px;
-			place-self: center;
-			place-content: center;
-			text-align: center;
-			text-decoration: none;
-			font-size: large;
+			&.button {
+				height: 40px;
+				width: 100%;
+				max-width: 400px;
+				margin-block: 10px;
+				background: utils.$qm-blue;
+				color: utils.$qm-white;
+				border: 3px solid utils.$qm-white;
+				border-radius: 4px;
+				outline: 3px solid utils.$qm-blue;
+				outline-offset: -6px;
+				place-self: center;
+				place-content: center;
+				text-align: center;
+				text-decoration: none;
+				font-size: large;
 
-			&:hover,
-			&:focus-visible {
-				background-color: utils.$qm-compliment;
-				border: 3px solid utils.$qm-compliment;
-				color: utils.$qm-blue;
+				&:hover,
+				&:focus-visible {
+					background-color: utils.$qm-compliment;
+					border: 3px solid utils.$qm-compliment;
+					color: utils.$qm-blue;
+				}
 			}
 		}
 
@@ -91,6 +90,10 @@
 				font-size: xx-large;
 				background-color: utils.$qm-white;
 				color: utils.$qm-blue;
+
+				@media (width < utils.$iphone) {
+					font-size: x-large;
+				}
 			}
 
 			&:is(.h3) {
@@ -189,11 +192,11 @@
 		}
 
 		> :first-child {
-			margin-top: 0;
+			margin-top: 0 !important;
 		}
 
 		> :last-child {
-			margin-bottom: 0;
+			margin-bottom: 0 !important;
 		}
 	}
 }
