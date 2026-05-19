@@ -40,6 +40,8 @@ const Arrow: FC<{ direction: 1 | -1; onClick: (direction: 1 | -1) => void }> = (
 			type='button'
 		>
 			<svg
+				aria-label='Arrow Button'
+				role='img'
 				style={{ transform: `scaleX(${direction.toString()})` }}
 				version='1.1'
 				viewBox='0 0 22 42'

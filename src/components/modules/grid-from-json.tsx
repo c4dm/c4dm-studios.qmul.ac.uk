@@ -27,12 +27,11 @@ export const GridFromJSON: FC<{
 		width: '',
 	})
 
-	useEffect(() => {
+	useEffect((): void => {
 		/*
 		This effect is used to dyanmically load the content either as a raw json file
 		from the public folder, or update the content using the prop itself.
 		*/
-
 		const loadJSON = async (): Promise<void> => {
 			if (typeof json === 'string') {
 				try {
@@ -49,7 +48,7 @@ export const GridFromJSON: FC<{
 		void loadJSON()
 	}, [json])
 
-	useEffect(() => {
+	useEffect((): (() => void) => {
 		/*
 		This effect is used in conjunction with the 'resize' window event listener.
 		When the window is resized, the size of the parent element is queried, from
