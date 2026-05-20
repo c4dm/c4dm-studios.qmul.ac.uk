@@ -99,7 +99,7 @@ export const GridFromJSON: FC<{
 				gridTemplateColumns: gridState.gridTemplateColumns,
 				justifyContent: 'space-evenly',
 				justifyItems: 'center',
-				margin: '10px auto 28px',
+				margin: '0 auto',
 				width: gridState.width,
 			}}
 		>

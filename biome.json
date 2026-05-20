@@ -18,9 +18,11 @@
 	"assist": {
 		"actions": {
 			"source": {
+				"noDuplicateClasses": "off",
 				"organizeImports": "on",
-				"useSortedKeys": "on",
 				"useSortedAttributes": "on",
+				"useSortedInterfaceMembers": "on",
+				"useSortedKeys": "on",
 				"useSortedProperties": "on"
 			}
 		}
@@ -236,9 +238,9 @@
 				"noVueArrowFuncInWatch": "off",
 				"noVueImportCompilerMacros": "off",
 				"noVueOptionsApi": "off",
+				"noVueRefAsOperand": "off",
 				"noVueVIfWithVFor": "off",
 				"noVueVOnNumberValues": "off",
-				"noVueRefAsOperand": "off",
 				"useArraySortCompare": "error",
 				"useArraySome": "error",
 				"useAwaitThenable": "error",
@@ -504,8 +506,8 @@
 	"formatter": {
 		"enabled": true,
 		"attributePosition": "auto",
-		"bracketSpacing": true,
 		"bracketSameLine": false,
+		"bracketSpacing": true,
 		"expand": null,
 		"formatWithErrors": false,
 		"indentStyle": "tab",
