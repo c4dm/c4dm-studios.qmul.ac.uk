@@ -88,6 +88,10 @@ _Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
 
 - Windows: [https://rme-audio.de/rme-macos.html](https://rme-audio.de/rme-macos.html)
 
+### Linux
+
+Unfortunately, our audio network is not software widely support on Linux, though an operable framework can be configured using [ALSA]() to interface with out AVB hardware devices, and [Hive]() to control our audio network via a matrix.
+
 </details>
 
 <details>
@@ -128,6 +132,8 @@ Network attached storage ([NAS](https://en.wikipedia.org/wiki/Network-attached_s
 
 To share files between a personal device and one of these machines, simply make sure both devices are connected over LAN, and navigate to the desired machine from your file manager.
 Please note, **these folders are not to be viewed as permanent storage**, and may on occasion be purged without warning.
+
+![MacOS Finder window demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas.png)
 
 </details>
 
@@ -172,6 +178,7 @@ If you are facing an issue with one of these protected devices, please contact a
 	<tr><td style='width: 130px;'> 192.168.0.32 </td><td> iConnectivity - mioXL </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.33 </td><td> d&b Audiotechnik - D20 </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.34 </td><td> ELC Lighting - dmXLAN node3 </td></tr>
+	<!-- <tr><td style='width: 130px;'> 192.168.0.35 </td><td> Dell - PowerEdge T630 </td></tr> -->
 </tbody></table>
 
 </details>
@@ -269,15 +276,136 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 
 </details>
 
+<details>
+<summary>Speaker Positions</summary>
+
+### Performance Lab
+
+##### Satellites - [Meyer]()
+
+<table><tbody>
+	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Radial </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
+	<tr><td> -1.4 </td><td> 0.0 </td><td> 3.4</td></tr>
+	<tr><td> -45.4 </td><td> 0.0 </td><td> 3.25</td></tr>
+	<tr><td> -90.0 </td><td> 0.0 </td><td> 2.36</td></tr>
+	<tr><td> -136.5 </td><td> 0.0 </td><td> 2.92</td></tr>
+	<tr><td> -174.0 </td><td> 0.0 </td><td> 3.33</td></tr>
+	<tr><td> 131.8 </td><td> 0.0 </td><td> 3.15</td></tr>
+	<tr><td> 90.0 </td><td> 0.0 </td><td> 2.34</td></tr>
+	<tr><td> 48.1 </td><td> 0.0 </td><td> 3.2</td></tr>
+	<tr><td> -22.3 </td><td> 29.2 </td><td> 3.72</td></tr>
+	<tr><td> -67.0 </td><td> 31.7 </td><td> 2.81</td></tr>
+	<tr><td> -115.0 </td><td> 31.6 </td><td> 2.8</td></tr>
+	<tr><td> -158.0 </td><td> 25.1 </td><td> 3.54</td></tr>
+	<tr><td> 158.3 </td><td> 25.0 </td><td> 3.58</td></tr>
+	<tr><td> 112.7 </td><td> 33.3 </td><td> 3.03</td></tr>
+	<tr><td> 68.7 </td><td> 33.3 </td><td> 3.06</td></tr>
+	<tr><td> 22.5 </td><td> 29.3 </td><td> 3.7</td></tr>
+</tbody></table>
+
+##### Subwoofers - [E20 by d&b Audiotechnik]()
+
+<table><tbody>
+	<tr><td><b> Azimuth </b></td><td><b> Radial </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
+    <tr><td> -85.0 </td><td> 2.14 </td></tr>
+	<tr><td> 85.0 </td><td> 2.14 </td></tr>
+</tbody></table>
+
+### Live Room
+
+##### Satellites - [Meyer]()
+
+<table><tbody>
+	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Radial </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
+    <tr><td> 0.0 </td><td> 0.0 </td><td> 2.45 </td></tr>
+    <tr><td> 50.0 </td><td> 0.0 </td><td> 2.73 </td></tr>
+    <tr><td> 95.0 </td><td> 0.0 </td><td> 1.8 </td></tr>
+    <tr><td> 150.0 </td><td> 0.0 </td><td> 2.26 </td></tr>
+    <tr><td> 210.0 </td><td> 0.0 </td><td> 2.1 </td></tr>
+    <tr><td> 265.0 </td><td> 0.0 </td><td> 1.74 </td></tr>
+    <tr><td> 310.0 </td><td> 0.0 </td><td> 2.6 </td></tr>
+    <tr><td> 0.0 </td><td> 27.5 </td><td> 2.0 </td></tr>
+    <tr><td> 90.0 </td><td> 27.5 </td><td> 2.08 </td></tr>
+    <tr><td> 180.0 </td><td> 27.5 </td><td> 1.98 </td></tr>
+    <tr><td> 270.0 </td><td> 27.5 </td><td> 2.01 </td></tr>
+    <tr><td> 0.0 </td><td> 90.0 </td><td> 0.89 </td></tr>
+</tbody></table>
+
+##### Subwoofers - [Meyer]()
+
+<table><tbody>
+	<tr><td><b> Azimuth </b></td><td><b> Radial </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
+</tbody></table>
+
+</details>
+
 <!--
-## Cycling '74 Max
+<details>
+<summary>Project Templates</summary>
 
-## Ableton Live
+### Cycling '74 Max
 
-## Dolby Atmos
+### Ableton Live
+
+### Dolby Atmos
 
 ...coming soon...
+</details>
+-->
 
+# DMX Lighting
+
+Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over LAN.
+The power for these lights is controlled using the labelled fuses in the Plant Room, whilst the power for the network hardware is located in the Performance Lab stage rack.
+
+<details>
+<summary>Our System</summary>
+
+The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC Lighting](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
+The Windows computer at the back of the room has been preconfigured for ease of use, and once the software is opened, only the default template for the space needs to be loaded (either click 'yes' when prompted to load the most recent file, or `File > Open Recent`).
+Similarly, if you wish to run this software from your own computer, simply install the dmXLAN software and download the Performance Lab template below.
+
+<span>
+	<a class='button' download href='/resources/dmx/Performance-Lab.dxl'>
+		Performance Lab Template
+	</a>
+</span>
+
+As a basic overview of the software, each light is defined as a virtually positioned **Fixture**, and has been made addressable as part of a single DMX universe.
+These fixtures are controlled in the bottom right of the screen, where general brightness is controlled in the _Basic_ tab, whilst the rest of the controls are distributed across _Colour_, _Beam_, and _Extra_.
+Multiple lights can be controlled simultaneously by selecting items from the **Groups** tab in the top left of the screen, and similarly presets can be stored and recalled via the **Scenes** tab.
+
+![dmXLAN screenshot showing the Performance Lab template](/images/documentation/dmx-dmXLAN.png)
+
+</details>
+
+<details>
+<summary>Advanced</summary>
+
+<!-- I think you can stream DMX over the audio network also to put lights wherever -->
+
+If you wish to experiment with other lighting designs, such as those using floor lighting, or lights for special effect, our custom Fixture Library can be downloaded below.
+This library contains all of our most common lighting equipment, and can be used either alongside the dmXLAN software, or ported to another piece of DMX compatible software.
+
+<span>
+	<a class='button' download href='/resources/dmx/C4DM-Fixture-Library.zip'>
+		C4DM Fixture Library
+	</a>
+</span>
+
+When using this fixture library with dmXLAN, you will need to manually set the library path, as in the preferences window pictured below.
+
+![dmXLAN screenshot showing the Fixture Library path in preferences.](/images/documentation/dmx-fixture-library.png)
+
+<!--
+still to learn!
+- time code (an alternative software to dmXLAN is needed for this)
+- max msp
+-->
+
+</details>
+
+<!--
 # Motion Capture
 
 ## System Overview
@@ -368,60 +496,6 @@ Each connector allows for up to 8 channels. The top row of the connector is GND.
 ### Advanced: Bonita 720C Video Cameras
 
 ## Vicon Tutorials & Other Resources
-
--->
-
-# DMX Lighting
-
-Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over LAN.
-The power for these lights is controlled using the labelled fuses in the Plant Room, whilst the power for the network hardware is located in the Performance Lab stage rack.
-
-<details>
-<summary>Our System</summary>
-
-The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC Lighting](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
-The Windows computer at the back of the room has been preconfigured for ease of use, and once the software is opened, only the default template for the space needs to be loaded (either click 'yes' when prompted to load the most recent file, or `File > Open Recent`).
-Similarly, if you wish to run this software from your own computer, simply install the dmXLAN software and download the Performance Lab template below.
-
-<span>
-	<a class='button' download href='/resources/dmx/Performance-Lab.dxl'>
-		Performance Lab Template
-	</a>
-</span>
-
-As a basic overview of the software, each light is defined as a virtually positioned **Fixture**, and has been made addressable as part of a single DMX universe.
-These fixtures are controlled in the bottom right of the screen, where general brightness is controlled in the _Basic_ tab, whilst the rest of the controls are distributed across _Colour_, _Beam_, and _Extra_.
-Multiple lights can be controlled simultaneously by selecting items from the **Groups** tab in the top left of the screen, and similarly presets can be stored and recalled via the **Scenes** tab.
-
-![dmXLAN screenshot showing the Performance Lab template](/images/documentation/dmx-dmXLAN.png)
-
-</details>
-
-<details>
-<summary>Advanced</summary>
-
-If you wish to experiment with other lighting designs, such as those using floor lighting, or lights for special effect, our custom Fixture Library can be downloaded below.
-This library contains all of our most common lighting equipment, and can be used either alongside the dmXLAN software, or ported to another piece of DMX compatible software.
-
-<span>
-	<a class='button' download href='/resources/dmx/C4DM-Fixture-Library.zip'>
-		C4DM Fixture Library
-	</a>
-</span>
-
-When using this fixture library with dmXLAN, you will need to manually set the library path, as in the preferences window pictured below.
-
-![dmXLAN screenshot showing the Fixture Library path in preferences.](/images/documentation/dmx-fixture-library.png)
-
-<!--
-still to learn!
-- time code (an alternative software to dmXLAN is needed for this)
-- max msp
--->
-
-</details>
-
-<!--
 
 # Misc Research Equipment
 
