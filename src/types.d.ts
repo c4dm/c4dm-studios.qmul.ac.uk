@@ -7,7 +7,7 @@ declare module '*.md?raw' {
 	export default content
 }
 
-// virtual gallery suppoer
+// fileames within /public/images/gallery
 declare module 'virtual:gallery' {
 	const gallery: string[]
 	export default gallery

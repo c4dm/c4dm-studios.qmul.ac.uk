@@ -1,4 +1,5 @@
-// biome-ignore-all lint/correctness/noNodejsModules : this script is ran by node js at build time
+// biome-ignore-all lint/complexity/noUselessUndefined : this use of undefined is consistent with the typing of the vite plugin API
+// biome-ignore-all lint/correctness/noNodejsModules : this script is ran by nodejs at build time
 // biome-ignore-all lint/nursery/useExplicitReturnType : vite plugin methods are typed internally, and cannot be imported
 /* eslint-disable no-undefined */
 
@@ -19,21 +20,19 @@ const regex = {
 
 // custom plugins
 const galleryManifestPlugin = (): Plugin => ({
-	load(id) {
-		if (id !== '\0virtual:gallery') {
-			return null
+	// used to declare `import gallery from virtual:gallery`
+	load: (id) => {
+		if (id === '\0virtual:gallery') {
+			const files = fs
+				.readdirSync(path.resolve('public/images/gallery'))
+				.filter((f: string): boolean => regex.image_filetypes.test(f))
+				.sort()
+			return `export default ${JSON.stringify(files)}`
 		}
-		const dir = path.resolve('public/images/gallery')
-		const files = fs
-			.readdirSync(dir)
-			.filter((f) => regex.image_filetypes.test(f))
-			.sort()
-		return `export default ${JSON.stringify(files)}`
+		return undefined
 	},
 	name: 'gallery-manifest',
-	resolveId(id) {
-		return id === 'virtual:gallery' ? '\0virtual:gallery' : undefined
-	},
+	resolveId: (id) => (id === 'virtual:gallery' ? '\0virtual:gallery' : undefined),
 })
 
 // https://vitejs.dev/config/
