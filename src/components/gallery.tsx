@@ -17,10 +17,8 @@ import {
 import '../style/gallery.scss'
 
 // import images
+import gallery from 'virtual:gallery'
 const gallery_dir = '/images/gallery'
-const gallery = Object.entries(import.meta.glob('/public/images/gallery/*.{jpg,jpeg,png,webp}'))
-	.map(([path]) => path.split('/').pop() ?? '')
-	.sort((a, b) => a.localeCompare(b))
 
 // gloabls
 const NULL: JSX.Element = <></>

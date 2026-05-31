@@ -5,20 +5,16 @@
 
 # Overview
 
-<details>
-<summary>Power On/Off Procedures</summary>
+<details><summary>Power On/Off Procedures</summary>
 </details>
 
-<details>
-<summary>Movement around the Studios</summary>
+<details><summary>Movement around the Studios</summary>
 </details>
 
-<details>
-<summary>How to Use Sharepoint</summary>
+<details><summary>How to Use Sharepoint</summary>
 </details>
 
-<details>
-<summary>Our Computers</summary>
+<details><summary>Our Computers</summary>
 
 We have two desktop computers that are pre-configured for a range of studio tasks...
 
@@ -55,8 +51,7 @@ We operate an integrated audio network across our studios spaces, spanning 128 i
 </span>
 <br/> -->
 
-<details>
-<summary>RME Audio Driver</summary>
+<details><summary>RME Audio Driver</summary>
 
 To use our audio system with your own computer, you will need to install the following:
 
@@ -94,12 +89,10 @@ Unfortunately, our audio network is not software widely support on Linux, though
 
 </details>
 
-<details>
-<summary>Configure</summary>
+<details><summary>Configure</summary>
 </details>
 
-<details>
-<summary>Troubleshoot</summary>
+<details><summary>Troubleshoot</summary>
 </details>
 
 # Local Access Network (LAN)
@@ -107,8 +100,7 @@ Unfortunately, our audio network is not software widely support on Linux, though
 We operate a local access network across our studios, allowing for interaction and configuration with numerous hardware devices.
 This network is accessible throughout the studios, and can be connected to via ethernet from various wall ports, or using several of our preconfigured devices.
 
-<details>
-<summary>How to LAN</summary>
+<details><summary>How to LAN</summary>
 
 At C4DM we support a local access network, connecting together and making accessible numerous devices throughout our facility.
 This network has been preconfigured by our staff, so that all devices on our network may be easily accessed from within supported applications or a web browser.
@@ -123,8 +115,7 @@ If you are using our in house Mac Mini, all necessary network settings have been
 
 </details>
 
-<details>
-<summary>File Sharing</summary>
+<details><summary>File Sharing</summary>
 
 Both the Windows PC in the Performance Lab and the Apple Mac Mini in the Control Room have been configured with a Samba server for file sharing.
 
@@ -137,12 +128,11 @@ Please note, **these folders are not to be viewed as permanent storage**, and ma
 
 </details>
 
-<details>
-<summary>Device Address Book</summary>
+<details><summary>Device Address Book</summary>
 
 This section acts as a reference for our network enabled devices, with all pieces of hardware listed here having been preconfigured by our staff.
-Many of these device addresses are only accessible through software, and in the case of our network infrastructure, many of these devices are also password protected.
-If you are facing an issue with one of these protected devices, please contact a member of staff.
+Many of these device addresses are only accessible through dedicated software, and in the case of our network infrastructure, are also password protected.
+If you are facing an issue with one on the devices on our network, please contact a member of staff.
 
 ### Plant Room
 
@@ -178,7 +168,7 @@ If you are facing an issue with one of these protected devices, please contact a
 	<tr><td style='width: 130px;'> 192.168.0.32 </td><td> iConnectivity - mioXL </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.33 </td><td> d&b Audiotechnik - D20 </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.34 </td><td> ELC Lighting - dmXLAN node3 </td></tr>
-	<!-- <tr><td style='width: 130px;'> 192.168.0.35 </td><td> Dell - PowerEdge T630 </td></tr> -->
+	<tr><td style='width: 130px;'> 192.168.0.35 </td><td> Dell - PowerEdge T630 </td></tr>
 </tbody></table>
 
 </details>
@@ -187,8 +177,7 @@ If you are facing an issue with one of these protected devices, please contact a
 
 Throughout our studios, we have integrated RTP-MIDI interfaces which allow for the remote connection of MIDI devices over LAN, supporting both modular session designs and experimental configurations.
 
-<details>
-<summary>Connecting a MIDI Device</summary>
+<details><summary>Connecting a MIDI Device</summary>
 
 We have installed the RTP-MIDI interface [mioXL by iConnectivity](https://www.iconnectivity.com/s/mio-X-Series-User-Guide-v20220503-g9g8.pdf) in each of our studio rooms, and all front ports of the devices have been preconfigured and made accessible.
 The power for these devices is located in the Performance Lab stage rack, the Control Room main switch, and the Live Room system rack.
@@ -217,8 +206,7 @@ Here you should see a list of available devices and MIDI ports, labelled accordi
 
 </details>
 
-<details>
-<summary>Installed MIDI Devices</summary>
+<details><summary>Installed MIDI Devices</summary>
 
 ### Yamaha Disklavier
 
@@ -231,8 +219,7 @@ Here you should see a list of available devices and MIDI ports, labelled accordi
 In the Performance Lab, we operate a 16.2 hemispherical speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
 These surround sound systems are largely used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
-<details>
-<summary>Powering our Speaker Systems</summary>
+<details><summary>Powering our Speaker Systems</summary>
 
 For the most part, powering our speaker systems is controlled via UDP commands sent over the LAN.
 If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send commands via UDP.
@@ -276,8 +263,7 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 
 </details>
 
-<details>
-<summary>Speaker Positions</summary>
+<details><summary>Speaker Positions</summary>
 
 ### Performance Lab
 
@@ -340,8 +326,7 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 </details>
 
 <!--
-<details>
-<summary>Project Templates</summary>
+<details><summary>Project Templates</summary>
 
 ### Cycling '74 Max
 
@@ -358,8 +343,7 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over LAN.
 The power for these lights is controlled using the labelled fuses in the Plant Room, whilst the power for the network hardware is located in the Performance Lab stage rack.
 
-<details>
-<summary>Our System</summary>
+<details><summary>Our System</summary>
 
 The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC Lighting](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
 The Windows computer at the back of the room has been preconfigured for ease of use, and once the software is opened, only the default template for the space needs to be loaded (either click 'yes' when prompted to load the most recent file, or `File > Open Recent`).
@@ -379,8 +363,7 @@ Multiple lights can be controlled simultaneously by selecting items from the **G
 
 </details>
 
-<details>
-<summary>Advanced</summary>
+<details><summary>Advanced</summary>
 
 <!-- I think you can stream DMX over the audio network also to put lights wherever -->
 
