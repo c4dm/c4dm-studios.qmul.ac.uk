@@ -110,6 +110,8 @@ Upon connecting to the LAN, you should have DHCP enabled in your network setting
 All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
 Our LAN is **not** connected to the internet in any way, and so all remote connections via this network are unavailable.
 
+### Known Issues
+
 If you are running MacOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to maintain a simultaneous internet connection via WiFi.
 If you are using our in house Mac Mini, all necessary network settings have been preconfigured, and you should contact staff if you encounter an issue with this machine.
 
@@ -117,14 +119,22 @@ If you are using our in house Mac Mini, all necessary network settings have been
 
 <details><summary>File Sharing</summary>
 
-Both the Windows PC in the Performance Lab and the Apple Mac Mini in the Control Room have been configured with a Samba server for file sharing.
+Within the studios, we maintain a Network Attached Storage ([NAS](https://en.wikipedia.org/wiki/Network-attached_storage)), which can be
+accessed over the LAN using the studio wide student login credentials.
+This filer server is also accessible from both the Windows PC in the Performance Lab and the Apple Mac Mini in the Control Room, which have been preconfigured for simple file sharing.
+Please note, **these folders are not to be used for permanent storage, and will on occasion be purged without warning**.
 
-Network attached storage ([NAS](https://en.wikipedia.org/wiki/Network-attached_storage)) and can be accessed with your using the student login credentials used across our computers.
+### MacOS
 
-To share files between a personal device and one of these machines, simply make sure both devices are connected over LAN, and navigate to the desired machine from your file manager.
-Please note, **these folders are not to be viewed as permanent storage**, and may on occasion be purged without warning.
+To share files between using our NAS, navigate to the `Network` section in a Finder window.
+You should then see a network device called `studio-files`, which will prompt you for a login upon trying to connect to it.
+Once logged in, your can treat this like any other file system within Finder, as pictured below.
 
 ![MacOS Finder window demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas.png)
+
+### Windows
+
+...coming soon...
 
 </details>
 
@@ -180,21 +190,24 @@ Throughout our studios, we have integrated RTP-MIDI interfaces which allow for t
 <details><summary>Connecting a MIDI Device</summary>
 
 We have installed the RTP-MIDI interface [mioXL by iConnectivity](https://www.iconnectivity.com/s/mio-X-Series-User-Guide-v20220503-g9g8.pdf) in each of our studio rooms, and all front ports of the devices have been preconfigured and made accessible.
-The power for these devices is located in the Performance Lab stage rack, the Control Room main switch, and the Live Room system rack.
+The power for these devices is located in the Performance Lab System Rack, the Control Room main switch, and the Live Room System Rack.
 These accessible ports include:
 
 ![Picture of a mioXL by iConnectivity, showing the preconfigured MIDI ports](/images/documentation/midi-mioXL.png)
 
-Upon connecting a MIDI device to one of these ports, these ports may be accessed over LAN by following the steps relevant to your computer's operating system.
+Upon connecting a MIDI device to one of these ports, you can then connect to that device over the LAN according to the following the steps, relevant to your computer's operating system.
 
 ### MacOS
 
 To connect to an RTP-MIDI port on a MacOS computer, simply navigate to [the MIDI Network Settings within the Audio MIDI Setup application](https://support.apple.com/en-gb/guide/audio-midi-setup/ams1012/mac).
-Here you should see a list of available devices and MIDI ports, labelled according to their room and function - simply create a `Session`, add the MIDI ports you wish to use by pressing `Connect`, add them to
+Here you should see a list of available devices and MIDI ports, labelled according to their room and function - simply create a `Session`, and add the MIDI ports you wish to use by pressing `Connect`.
+If you use this session to connect to multiple MIDI ports, this will collapse all of these ports down to a single MIDI bus.
+If you wish to use multiple devices across and use them independently within your work, you should create multiple sessions, one for each MIDI port.
 
 ![Audio MIDI Setup window, demonstrating how to activate an RTP-MIDI port](/images/documentation/midi-mac-settings.png)
 
-[Connecting this device to Ableton Live](https://help.ableton.com/hc/en-us/articles/209071169-Setting-up-a-virtual-MIDI-network)
+Each of these sessions will have a name, which for the example above is 'MIDI Demonstration'.
+You should now see these named sessions appear in your DAW - for example, you can [connect to a network MIDI device in Ableton Live](https://help.ableton.com/hc/en-us/articles/209071169-Setting-up-a-virtual-MIDI-network), by using the Live preferences window as shown in the image below.
 
 ![Ableton Live window, demonstrating how to activate a MIDI device for input / output](/images/documentation/midi-ableton-mac.png)
 
@@ -208,9 +221,13 @@ Here you should see a list of available devices and MIDI ports, labelled accordi
 
 <details><summary>Installed MIDI Devices</summary>
 
+Throughout our studios, we have various MIDI devices that are permanently installed, and made accessible to use throughout the studios by connecting to the LAN.
+
 ### Yamaha Disklavier
 
-### Control Room Keyboard??
+Within the Performance Lab, we have a [Yamaha Disklavier HQ3000SX]()
+
+<!-- ### Control Room Keyboard?? -->
 
 </details>
 
@@ -221,22 +238,22 @@ These surround sound systems are largely used for research into spatial audio an
 
 <details><summary>Powering our Speaker Systems</summary>
 
-For the most part, powering our speaker systems is controlled via UDP commands sent over the LAN.
-If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send commands via UDP.
+For the most part, the power for our speaker systems is controlled via UDP commands sent over the LAN.
+If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send such commands via UDP.
 And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
 
 ### Performance Lab (16.2)
 
 To power the d&b subwoofers, switch on the [d&b D20](https://www.dbaudio.com/global/en/products/amplifiers/d20/) located in the Performance Lab System Rack, whilst the Meyer satellites can be powered on or off with the following terminal commands.
 
-##### MacOS
+#### MacOS
 
 ```bash
 echo -n "KMS ON2" | nc -u -w1 192.168.0.9 65432
 echo -n "KMS OFF2" | nc -u -w1 192.168.0.9 65432
 ```
 
-##### Windows
+#### Windows
 
 ```powershell
 echo|set /p="KMS ON2" | ncat -u -w1 192.168.0.9 65432
@@ -247,14 +264,14 @@ echo|set /p="KMS OFF2" | ncat -u -w1 192.168.0.9 65432
 
 Power for the Meyer subwoofer is located on the wall, whilst the Meyer satellites can be powered on or off with the following terminal commands.
 
-##### MacOS
+#### MacOS
 
 ```bash
 echo -n "KMS ON2" | nc -u -w1 192.168.0.21 65432
 echo -n "KMS OFF2" | nc -u -w1 192.168.0.21 65432
 ```
 
-##### Windows
+#### Windows
 
 ```powershell
 echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.21 65432
@@ -265,78 +282,91 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 
 <details><summary>Speaker Positions</summary>
 
-### Performance Lab
+### Performance Lab (16.2)
 
-##### Satellites - [Meyer]()
+Within the Performance Lab, we operate a 16.2 system arranged in a rectangular cuboid, consisting of two rings of 8 speakers.
 
-<table><tbody>
-	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Radial </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
-	<tr><td> -1.4 </td><td> 0.0 </td><td> 3.4</td></tr>
-	<tr><td> -45.4 </td><td> 0.0 </td><td> 3.25</td></tr>
-	<tr><td> -90.0 </td><td> 0.0 </td><td> 2.36</td></tr>
-	<tr><td> -136.5 </td><td> 0.0 </td><td> 2.92</td></tr>
-	<tr><td> -174.0 </td><td> 0.0 </td><td> 3.33</td></tr>
-	<tr><td> 131.8 </td><td> 0.0 </td><td> 3.15</td></tr>
-	<tr><td> 90.0 </td><td> 0.0 </td><td> 2.34</td></tr>
-	<tr><td> 48.1 </td><td> 0.0 </td><td> 3.2</td></tr>
-	<tr><td> -22.3 </td><td> 29.2 </td><td> 3.72</td></tr>
-	<tr><td> -67.0 </td><td> 31.7 </td><td> 2.81</td></tr>
-	<tr><td> -115.0 </td><td> 31.6 </td><td> 2.8</td></tr>
-	<tr><td> -158.0 </td><td> 25.1 </td><td> 3.54</td></tr>
-	<tr><td> 158.3 </td><td> 25.0 </td><td> 3.58</td></tr>
-	<tr><td> 112.7 </td><td> 33.3 </td><td> 3.03</td></tr>
-	<tr><td> 68.7 </td><td> 33.3 </td><td> 3.06</td></tr>
-	<tr><td> 22.5 </td><td> 29.3 </td><td> 3.7</td></tr>
-</tbody></table>
-
-##### Subwoofers - [E20 by d&b Audiotechnik]()
+#### Satellites - [Meyer]()
 
 <table><tbody>
-	<tr><td><b> Azimuth </b></td><td><b> Radial </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
-    <tr><td> -85.0 </td><td> 2.14 </td></tr>
-	<tr><td> 85.0 </td><td> 2.14 </td></tr>
+	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
+	<tr><td> -1.4 </td><td> 0.0 </td><td> 3.4 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> -45.4 </td><td> 0.0 </td><td> 3.25 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> -90.0 </td><td> 0.0 </td><td> 2.36 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> -136.5 </td><td> 0.0 </td><td> 2.92 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> -174.0 </td><td> 0.0 </td><td> 3.33 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> 131.8 </td><td> 0.0 </td><td> 3.15 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> 90.0 </td><td> 0.0 </td><td> 2.34 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> 48.1 </td><td> 0.0 </td><td> 3.2 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> -22.3 </td><td> 29.2 </td><td> 3.72 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> -67.0 </td><td> 31.7 </td><td> 2.81 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> -115.0 </td><td> 31.6 </td><td> 2.8 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> -158.0 </td><td> 25.1 </td><td> 3.54 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> 158.3 </td><td> 25.0 </td><td> 3.58 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> 112.7 </td><td> 33.3 </td><td> 3.03 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> 68.7 </td><td> 33.3 </td><td> 3.06 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td> 22.5 </td><td> 29.3 </td><td> 3.7 </td><td> </td><td> </td><td> </td></tr>
 </tbody></table>
 
-### Live Room
-
-##### Satellites - [Meyer]()
+#### Subwoofers - [E20 by d&b Audiotechnik]()
 
 <table><tbody>
-	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Radial </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
-    <tr><td> 0.0 </td><td> 0.0 </td><td> 2.45 </td></tr>
-    <tr><td> 50.0 </td><td> 0.0 </td><td> 2.73 </td></tr>
-    <tr><td> 95.0 </td><td> 0.0 </td><td> 1.8 </td></tr>
-    <tr><td> 150.0 </td><td> 0.0 </td><td> 2.26 </td></tr>
-    <tr><td> 210.0 </td><td> 0.0 </td><td> 2.1 </td></tr>
-    <tr><td> 265.0 </td><td> 0.0 </td><td> 1.74 </td></tr>
-    <tr><td> 310.0 </td><td> 0.0 </td><td> 2.6 </td></tr>
-    <tr><td> 0.0 </td><td> 27.5 </td><td> 2.0 </td></tr>
-    <tr><td> 90.0 </td><td> 27.5 </td><td> 2.08 </td></tr>
-    <tr><td> 180.0 </td><td> 27.5 </td><td> 1.98 </td></tr>
-    <tr><td> 270.0 </td><td> 27.5 </td><td> 2.01 </td></tr>
-    <tr><td> 0.0 </td><td> 90.0 </td><td> 0.89 </td></tr>
+	<tr><td><b> Azimuth </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
+    <tr><td> -85.0 </td><td> 2.14 </td><td> 0.187 </td><td> -2.132 </td></tr>
+	<tr><td> 85.0 </td><td> 2.14 </td><td> 0.187 </td><td> 2.132 </td></tr>
 </tbody></table>
 
-##### Subwoofers - [Meyer]()
+### Live Room (12.1)
+
+Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere, comprising of a lower ring of 7 speakers, an upper ring of 4 speakers, and a speaker at the zenith.
+
+#### Satellites - [Meyer]()
 
 <table><tbody>
-	<tr><td><b> Azimuth </b></td><td><b> Radial </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
+	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
+    <tr><td> 0.0 </td><td> 0.0 </td><td> 2.45 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 50.0 </td><td> 0.0 </td><td> 2.73 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 95.0 </td><td> 0.0 </td><td> 1.8 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 150.0 </td><td> 0.0 </td><td> 2.26 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 210.0 </td><td> 0.0 </td><td> 2.1 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 265.0 </td><td> 0.0 </td><td> 1.74 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 310.0 </td><td> 0.0 </td><td> 2.6 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 0.0 </td><td> 27.5 </td><td> 2.0 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 90.0 </td><td> 27.5 </td><td> 2.08 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 180.0 </td><td> 27.5 </td><td> 1.98 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 270.0 </td><td> 27.5 </td><td> 2.01 </td><td> </td><td> </td><td> </td></tr>
+    <tr><td> 0.0 </td><td> 90.0 </td><td> 0.89 </td><td> </td><td> </td><td> </td></tr>
 </tbody></table>
+
+#### Subwoofers - [Meyer]()
+
+<table><tbody>
+	<tr><td><b> Azimuth </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
+</tbody></table>
+
+### Performance Lab (Portable Line Array)
+
+...coming soon...
 
 </details>
 
-<!--
 <details><summary>Project Templates</summary>
-
-### Cycling '74 Max
 
 ### Ableton Live
 
-### Dolby Atmos
+...coming soon...
+
+### Cycling '74 Max
 
 ...coming soon...
+
+<!-- [Spat~ by IRCAM Forum]() -->
+
+<!-- ### Dolby Atmos
+
+...coming soon... -->
+
 </details>
--->
 
 # DMX Lighting
 
