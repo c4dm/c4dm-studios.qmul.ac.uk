@@ -21,7 +21,7 @@ const regex = {
 // custom plugins
 const galleryManifestPlugin = (): Plugin => ({
 	// used to declare `import gallery from virtual:gallery`
-	load: (id) => {
+	load: (id: string) => {
 		if (id === '\0virtual:gallery') {
 			const files = fs
 				.readdirSync(path.resolve('public/images/gallery'))
@@ -32,7 +32,7 @@ const galleryManifestPlugin = (): Plugin => ({
 		return undefined
 	},
 	name: 'gallery-manifest',
-	resolveId: (id) => (id === 'virtual:gallery' ? '\0virtual:gallery' : undefined),
+	resolveId: (id: string) => (id === 'virtual:gallery' ? '\0virtual:gallery' : undefined),
 })
 
 // https://vitejs.dev/config/
