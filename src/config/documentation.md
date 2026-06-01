@@ -1,4 +1,4 @@
-<!-- cspell:ignore ALSA Audiotechnik Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW MADIFace ncat Netgear nmap tmws Totalmix usbdk Vicon -->
+<!-- cspell:ignore ALSA Audiotechnik Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW Korg MADIFace ncat Netgear nmap tmws Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**

@@ -23,11 +23,15 @@ const galleryManifestPlugin = (): Plugin => ({
 	// used to declare `import gallery from virtual:gallery`
 	load: (id: string) => {
 		if (id === '\0virtual:gallery') {
-			const files = fs
-				.readdirSync(path.resolve('public/images/gallery'))
-				.filter((f: string): boolean => regex.image_filetypes.test(f))
-				.sort()
-			return `export default ${JSON.stringify(files)}`
+			try {
+				const files = fs
+					.readdirSync(path.resolve('public/images/gallery'))
+					.filter((f: string): boolean => regex.image_filetypes.test(f))
+					.sort()
+				return `export default ${JSON.stringify(files)}`
+			} catch {
+				return `export default ${JSON.stringify([])}`
+			}
 		}
 		return undefined
 	},
