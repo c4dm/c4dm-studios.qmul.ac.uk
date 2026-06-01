@@ -1,4 +1,4 @@
-<!-- cspell:ignore Audiotechnik Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW MADIFace ncat Netgear nmap tmws Totalmix usbdk Vicon -->
+<!-- cspell:ignore ALSA Audiotechnik Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW MADIFace ncat Netgear nmap tmws Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -225,9 +225,16 @@ Throughout our studios, we have various MIDI devices that are permanently instal
 
 ### Yamaha Disklavier
 
-Within the Performance Lab, we have a [Yamaha Disklavier HQ3000SX]()
+Within the Performance Lab, we have a Yamaha Disklavier HQ300SX permanently connected over RTP-MIDI.
+This piano can have MIDI sent to it, and will produce acoustic sound as a response, as well as being able to transmit MIDI whilst being played.
+To power this instrument, typically all you need to do is use the switch underneath the keyboard.
+If it is however turned off at the wall, make sure to turn on the wall switch before turning on the switch underneath the keyboard.
+And for powering down, you do not need to power it down at the wall, but in the event that this is necessary, the power switch under the keyboard should be switched off before turning off power at the wall.
 
-<!-- ### Control Room Keyboard?? -->
+### Control Room Keyboards
+
+There are two MIDI keyboard installed in the Control Room - a [MicroKey by Korg](https://www.korg.co.uk/products/microkey-2?variant=41114187006120) and an [Axiom by M-Audio](https://www.m-audio.com/legacy/axiom-61.html).
+These devices have been setup for local connections only, via the [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), but can easily be connected to the network by switching the USB connection on the desk over to the mioXL.
 
 </details>
 
@@ -286,7 +293,7 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 
 Within the Performance Lab, we operate a 16.2 system arranged in a rectangular cuboid, consisting of two rings of 8 speakers.
 
-#### Satellites - [Meyer]()
+#### Satellites - [MM-4XP by Meyer Sound]()
 
 <table><tbody>
 	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
@@ -320,7 +327,7 @@ Within the Performance Lab, we operate a 16.2 system arranged in a rectangular c
 
 Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere, comprising of a lower ring of 7 speakers, an upper ring of 4 speakers, and a speaker at the zenith.
 
-#### Satellites - [Meyer]()
+#### Satellites - [MM-4XP by Meyer Sound]()
 
 <table><tbody>
 	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
@@ -338,7 +345,7 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
     <tr><td> 0.0 </td><td> 90.0 </td><td> 0.89 </td><td> </td><td> </td><td> </td></tr>
 </tbody></table>
 
-#### Subwoofers - [Meyer]()
+#### Subwoofers - [USW 1P by Meyer Sound]()
 
 <table><tbody>
 	<tr><td><b> Azimuth </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
