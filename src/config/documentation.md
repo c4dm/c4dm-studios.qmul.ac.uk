@@ -34,13 +34,13 @@ It will be deleted...
 
 # Audio Network (AVB)
 
-We operate an integrated audio network across our studios, spanning 128 input and output channels distributed throughout each of our spaces.
+We operate an integrated audio network across our studios, spanning 128 input channels and 128 output channels distributed throughout each of our spaces.
 
 <details><summary>Audio Driver Installation</summary>
 
 Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed, connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock) for ease of use.
 These Digiface AVB devices act as hardware endpoints across our audio network, and once connected to, can be used to receive and send audio from anywhere within the studios.
-These audio interfaces have been preconfigured on all of our in house computers, and can also be configured for use on a personal laptop according to the following instructions.
+These audio interfaces have been preconfigured on all of our in house computers, and can also be configured for use on a personal laptop.
 
 ### Required Software
 
@@ -110,7 +110,7 @@ This network is accessible throughout the studios, and can be connected to via e
 
 At C4DM we support a local access network, connecting together and making accessible numerous devices throughout our facility.
 This network has been preconfigured by our staff, so that all devices on our network may be easily accessed from within supported applications or a web browser.
-Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to a [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), located at every studio desk / modular workstation.
+Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), located at every studio desk / modular workstation.
 
 Upon connecting to the LAN, you should have DHCP enabled in your network settings, and you will be assigned an IP within the range `192.168.0.101` - `192.168.0.254`.
 All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
