@@ -293,70 +293,71 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 
 Within the Performance Lab, we operate a 16.2 system arranged in a rectangular cuboid, consisting of two rings of 8 speakers.
 
-#### Satellites - [MM-4XP by Meyer Sound]()
+#### Satellites - [MM-4XP by Meyer Sound](https://meyersound.com/product/mm-4xp/)
 
 <table><tbody>
-	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
-	<tr><td> -1.4 </td><td> 0.0 </td><td> 3.4 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> -45.4 </td><td> 0.0 </td><td> 3.25 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> -90.0 </td><td> 0.0 </td><td> 2.36 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> -136.5 </td><td> 0.0 </td><td> 2.92 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> -174.0 </td><td> 0.0 </td><td> 3.33 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> 131.8 </td><td> 0.0 </td><td> 3.15 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> 90.0 </td><td> 0.0 </td><td> 2.34 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> 48.1 </td><td> 0.0 </td><td> 3.2 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> -22.3 </td><td> 29.2 </td><td> 3.72 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> -67.0 </td><td> 31.7 </td><td> 2.81 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> -115.0 </td><td> 31.6 </td><td> 2.8 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> -158.0 </td><td> 25.1 </td><td> 3.54 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> 158.3 </td><td> 25.0 </td><td> 3.58 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> 112.7 </td><td> 33.3 </td><td> 3.03 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> 68.7 </td><td> 33.3 </td><td> 3.06 </td><td> </td><td> </td><td> </td></tr>
-	<tr><td> 22.5 </td><td> 29.3 </td><td> 3.7 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> ϕ </b></td><td><b> x </b></td><td><b> y </b></td><td><b> z </b></td></tr>
+	<tr><td> 3.4 </td><td> -1.4 </td><td> 0.0 </td><td> -0.08 </td><td> 3.4 </td><td> 0.0 </td></tr>
+	<tr><td> 3.25 </td><td> -45.4 </td><td> 0.0 </td><td> -2.31 </td><td> 2.28 </td><td> 0.0 </td></tr>
+	<tr><td> 2.36 </td><td> -90.0 </td><td> 0.0 </td><td> -2.36 </td><td> 0.0 </td><td> 0.0 </td></tr>
+	<tr><td> 2.92 </td><td> -136.5 </td><td> 0.0 </td><td> -2.01 </td><td> -2.12 </td><td> 0.0 </td></tr>
+	<tr><td> 3.33 </td><td> -174.0 </td><td> 0.0 </td><td> -0.35 </td><td> -3.31 </td><td> 0.0 </td></tr>
+	<tr><td> 3.15 </td><td> 131.8 </td><td> 0.0 </td><td> 2.35 </td><td> -2.1 </td><td> 0.0 </td></tr>
+	<tr><td> 2.34 </td><td> 90.0 </td><td> 0.0 </td><td> 2.34 </td><td> 0. </td><td> 0.0 </td></tr>
+	<tr><td> 3.2 </td><td> 48.1 </td><td> 0.0 </td><td> 2.38 </td><td> 2.14 </td><td> 0.0 </td></tr>
+	<tr><td> 3.72 </td><td> -22.3 </td><td> 29.2 </td><td> -1.23 </td><td> 3.0 </td><td> 1.81 </td></tr>
+	<tr><td> 2.81 </td><td> -67.0 </td><td> 31.7 </td><td> -2.2 </td><td> 0.93 </td><td> 1.48 </td></tr>
+	<tr><td> 2.8 </td><td> -115.0 </td><td> 31.6 </td><td> -2.16 </td><td> -1.0 </td><td> 1.47 </td></tr>
+	<tr><td> 3.54 </td><td> -158.0 </td><td> 25.1 </td><td> -1.2 </td><td> -2.97 </td><td> 1.5 </td></tr>
+	<tr><td> 3.58 </td><td> 158.3 </td><td> 25.0 </td><td> 1.2 </td><td> -3.01 </td><td> 1.51 </td></tr>
+	<tr><td> 3.03 </td><td> 112.7 </td><td> 33.3 </td><td> 2.34 </td><td> -0.98 </td><td> 1.66 </td></tr>
+	<tr><td> 3.06 </td><td> 68.7 </td><td> 33.3 </td><td> 2.38 </td><td> 0.93 </td><td> 1.68 </td></tr>
+	<tr><td> 3.7 </td><td> 22.5 </td><td> 29.3 </td><td> 1.23 </td><td> 2.98 </td><td> 1.81 </td></tr>
 </tbody></table>
 
-#### Subwoofers - [E20 by d&b Audiotechnik]()
+#### Subwoofers - [B4 by d&b Audiotechnik](https://www.dbaudio.com/global/en/products/series/t-series/b4-sub/)
 
 <table><tbody>
-	<tr><td><b> Azimuth </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
-    <tr><td> -85.0 </td><td> 2.14 </td><td> 0.187 </td><td> -2.132 </td></tr>
-	<tr><td> 85.0 </td><td> 2.14 </td><td> 0.187 </td><td> 2.132 </td></tr>
+	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> x </b></td><td><b> y </b></td></tr>
+    <tr><td> 2.14 </td><td> -85.0 </td><td> -2.132 </td><td> 0.187 </td></tr>
+	<tr><td> 2.14 </td><td> 85.0 </td><td> 2.132 </td><td> 0.187 </td></tr>
 </tbody></table>
+
+<!-- ### Performance Lab (Portable Line Array)
+
+...coming soon... -->
 
 ### Live Room (12.1)
 
 Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere, comprising of a lower ring of 7 speakers, an upper ring of 4 speakers, and a speaker at the zenith.
 
-#### Satellites - [MM-4XP by Meyer Sound]()
+#### Satellites - [MM-4XP by Meyer Sound](https://meyersound.com/product/mm-4xp/)
 
 <table><tbody>
-	<tr><td><b> Azimuth </b></td><td><b> Elevation </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td><td><b> Z </b></td></tr>
-    <tr><td> 0.0 </td><td> 0.0 </td><td> 2.45 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 50.0 </td><td> 0.0 </td><td> 2.73 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 95.0 </td><td> 0.0 </td><td> 1.8 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 150.0 </td><td> 0.0 </td><td> 2.26 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 210.0 </td><td> 0.0 </td><td> 2.1 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 265.0 </td><td> 0.0 </td><td> 1.74 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 310.0 </td><td> 0.0 </td><td> 2.6 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 0.0 </td><td> 27.5 </td><td> 2.0 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 90.0 </td><td> 27.5 </td><td> 2.08 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 180.0 </td><td> 27.5 </td><td> 1.98 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 270.0 </td><td> 27.5 </td><td> 2.01 </td><td> </td><td> </td><td> </td></tr>
-    <tr><td> 0.0 </td><td> 90.0 </td><td> 0.89 </td><td> </td><td> </td><td> </td></tr>
+	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> ϕ </b></td><td><b> x </b></td><td><b> y </b></td><td><b> z </b></td></tr>
+    <tr><td> 2.45 </td><td> 0.0 </td><td> 0.0 </td><td> 0.0 </td><td> 2.45 </td><td> 0.0 </td></tr>
+    <tr><td> 2.73 </td><td> 50.0 </td><td> 0.0 </td><td> -2.09 </td><td> 1.75 </td><td> 0.0 </td></tr>
+    <tr><td> 1.8 </td><td> 95.0 </td><td> 0.0 </td><td> -1.79 </td><td> -0.16 </td><td> 0.0 </td></tr>
+    <tr><td> 2.26 </td><td> 150.0 </td><td> 0.0 </td><td> -1.13 </td><td> -1.96 </td><td> 0.0 </td></tr>
+    <tr><td> 2.1 </td><td> 210.0 </td><td> 0.0 </td><td> 1.05 </td><td> -1.82 </td><td> 0.0 </td></tr>
+    <tr><td> 1.74 </td><td> 265.0 </td><td> 0.0 </td><td> 1.73 </td><td> -0.15</td><td> 0.0 </td></tr>
+    <tr><td> 2.6 </td><td> 310.0 </td><td> 0.0 </td><td> 1.99 </td><td> 1.67 </td><td> 0.0 </td></tr>
+    <tr><td> 2.0 </td><td> 0.0 </td><td> 27.5 </td><td> 0.0 </td><td> 1.77 </td><td> 0.9 </td></tr>
+    <tr><td> 2.08 </td><td> 90.0 </td><td> 27.5 </td><td> -1.84 </td><td> 0.0 </td><td> 0.96 </td></tr>
+    <tr><td> 1.98 </td><td> 180.0 </td><td> 27.5 </td><td> 0.0 </td><td> -1.76 </td><td> 0.91 </td></tr>
+    <tr><td> 2.01 </td><td> 270.0 </td><td> 27.5 </td><td> 1.78 </td><td> 0.0 </td><td> 0.93 </td></tr>
+    <tr><td> 0.89 </td><td> 0.0 </td><td> 90.0 </td><td> 0.0 </td><td> 0.0 </td><td> 0.89 </td></tr>
 </tbody></table>
 
-#### Subwoofers - [USW 1P by Meyer Sound]()
+#### Subwoofer - [USW 1P by Meyer Sound](http://www.sotsound.com/fileserver/Equipment%20Information/usw-1p_resources/usw-1p_ds_c.pdf)
 
 <table><tbody>
-	<tr><td><b> Azimuth </b></td><td><b> Magnitude </b></td><td><b> X </b></td><td><b> Y </b></td></tr>
+	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> x </b></td><td><b> y </b></td></tr>
 </tbody></table>
-
-### Performance Lab (Portable Line Array)
-
-...coming soon...
 
 </details>
 
+<!--
 <details><summary>Project Templates</summary>
 
 ### Ableton Live
@@ -367,13 +368,14 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 
 ...coming soon...
 
-<!-- [Spat~ by IRCAM Forum]() -->
+[Spat~ by IRCAM Forum]()
 
-<!-- ### Dolby Atmos
+### Dolby Atmos
 
-...coming soon... -->
+...coming soon...
 
 </details>
+-->
 
 # DMX Lighting
 

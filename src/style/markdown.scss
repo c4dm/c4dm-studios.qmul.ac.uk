@@ -8,6 +8,10 @@
 		display: grid;
 		text-align: inherit;
 
+		> * {
+			min-width: 0;
+		}
+
 		a {
 			width: fit-content;
 			outline: 0;
@@ -138,11 +142,20 @@
 		}
 
 		pre {
-			background: utils.$qm-black;
 			width: max-content;
+			max-width: 100%;
 			padding: 8px;
+			box-sizing: border-box;
+			overflow-x: auto;
 			border: solid utils.$qm-compliment 2px;
 			border-radius: 4px;
+			background: utils.$qm-black;
+
+			code {
+				display: block;
+				width: fit-content;
+				min-width: 100%;
+			}
 
 			code::selection {
 				background-color: utils.$qm-white;

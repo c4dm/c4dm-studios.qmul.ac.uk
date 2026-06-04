@@ -30,7 +30,7 @@ const galleryManifestPlugin = (): Plugin => ({
 					.sort()
 				return `export default ${JSON.stringify(files)}`
 			} catch {
-				return `export default ${JSON.stringify([])}`
+				return `export default '[]'`
 			}
 		}
 		return undefined
