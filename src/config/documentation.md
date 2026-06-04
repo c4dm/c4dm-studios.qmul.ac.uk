@@ -34,7 +34,49 @@ It will be deleted...
 
 # Audio Network (AVB)
 
-We operate an integrated audio network across our studios spaces, spanning 128 input and output channels distributed throughout.
+We operate an integrated audio network across our studios, spanning 128 input and output channels distributed throughout each of our spaces.
+
+<details><summary>Audio Driver Installation</summary>
+
+Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed, connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock) for ease of use.
+These Digiface AVB devices act as hardware endpoints across our audio network, and once connected to, can be used to receive and send audio from anywhere within the studios.
+These audio interfaces have been preconfigured on all of our in house computers, and can also be configured for use on a personal laptop according to the following instructions.
+
+### Required Software
+
+- [RME DriverKit for Digiface AVB](https://rme-audio.de/downloads.html) - Audio Interface Driver & AVB Protocol Support
+- [Milan Manager](https://milanmanager.com/#downloads) - Audio Matrix Control
+
+To correctly install the required software, please follow the step by step instructions below.
+
+- Go to [https://rme-audio.de/downloads.html](https://rme-audio.de/downloads.html) to download the RME DriverKit.
+- Select Digiface AVB from the left menu, followed by your operating system.
+- Download the latest audio driver (_driver_usbdk_mac_xxx.zip_ for MacOS or _driver_madiface_win_xxx.zip_ for Windows).
+- (MacOS) Download the RME AVB Controller ???. <!-- NEEDS FIXING -->
+- (Windows) Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
+- Finally, download and install [Milan Manager](https://milanmanager.com/#downloads).
+
+### Optional Software
+
+- [RME TotalMix](https://rme-audio.de/totalmix-fx.html) - Virtual Mixing Console
+- [RME Connector](https://rme-audio.de/rme-connector.html) - Remote Hardware Control
+- [RME DigiCheck NG](https://rme-audio.de/digicheck.html) - Real-Time Signal Analyser
+
+### Linux Support
+
+Unfortunately, our audio network has limited software compatibility on Linux.
+An operable framework can however be configured using [ALSA](https://www.alsa-project.org/wiki/Main_Page) to interface directly with our AVB hardware devices, by declaring your Linux machine as a Milan compatible AVB endpoint.
+You can then use the software [Hive](https://github.com/christophe-calmejane/Hive) to configure our AVB audio matrix.
+
+</details>
+
+<details><summary>Configuring Your Device</summary>
+
+### RME Digiface AVB
+
+### Milan Manager
+
+### RME Total Mix
 
 <!-- ### Download the latest versions of our TotalMix templates below!
 
@@ -51,48 +93,12 @@ We operate an integrated audio network across our studios spaces, spanning 128 i
 </span>
 <br/> -->
 
-<details><summary>RME Audio Driver</summary>
-
-To use our audio system with your own computer, you will need to install the following:
-
-- RME DriverKit for Digiface AVB
-
-- RME Network Driver (Windows Only)
-
-- RME Connector
-
-**Download**
-
-1. Go to [https://rme-audio.de/downloads.html](https://rme-audio.de/downloads.html)
-
-1. Select Digiface AVB from the left menu, followed by your operating system
-
-1. Download the latest driver _(driver_usbdk_mac_xxx.zip, driver_madiface_win_xxx.zip)_
-
-1. Windows Only: Download the RME Windows Network Driver _(driver_win_net_xxx.zip)_
-
-1. Refresh and select RME Connector from the menu on the right
-
-1. Download the latest version of RME Connector for your operating system
-
-_Optional: Download RME Digicheck NG for studio-wide Real-Time Analyser (RTA)_
-
-**Install**
-
-- macOS: [https://rme-audio.de/rme-macos.html](https://rme-audio.de/rme-macos.html)
-
-- Windows: [https://rme-audio.de/rme-macos.html](https://rme-audio.de/rme-macos.html)
-
-### Linux
-
-Unfortunately, our audio network is not software widely support on Linux, though an operable framework can be configured using [ALSA]() to interface with out AVB hardware devices, and [Hive]() to control our audio network via a matrix.
-
 </details>
 
-<details><summary>Configure</summary>
+<details><summary>Audio Channel Map</summary>
 </details>
 
-<details><summary>Troubleshoot</summary>
+<details><summary>Dante Interoperability</summary>
 </details>
 
 # Local Access Network (LAN)
@@ -104,7 +110,7 @@ This network is accessible throughout the studios, and can be connected to via e
 
 At C4DM we support a local access network, connecting together and making accessible numerous devices throughout our facility.
 This network has been preconfigured by our staff, so that all devices on our network may be easily accessed from within supported applications or a web browser.
-Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to an OWC dock, located at every studio desk / modular workstation.
+Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to a [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), located at every studio desk / modular workstation.
 
 Upon connecting to the LAN, you should have DHCP enabled in your network settings, and you will be assigned an IP within the range `192.168.0.101` - `192.168.0.254`.
 All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
@@ -377,6 +383,10 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 </details>
 -->
 
+# Motion Capture
+
+...coming soon...
+
 # DMX Lighting
 
 Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over LAN.
@@ -428,7 +438,6 @@ still to learn!
 </details>
 
 <!--
-# Motion Capture
 
 ## System Overview
 
