@@ -35,6 +35,11 @@ It will be deleted...
 # Audio Network (AVB)
 
 We operate an integrated audio network across our studios, spanning 128 input channels and 128 output channels distributed throughout each of our spaces.
+This audio network is accessible from every modular work station within the studios, and is used to record or stream audio from across all of our hardware devices.
+
+<details><summary>Network Design & Topology</summary>
+
+</details>
 
 <details><summary>Audio Driver Installation</summary>
 
@@ -65,7 +70,7 @@ To correctly install the required software, please follow the step by step instr
 ### Linux Support
 
 Unfortunately, our audio network has limited software compatibility on Linux.
-An operable framework can however be configured using [ALSA](https://www.alsa-project.org/wiki/Main_Page) to interface directly with our AVB hardware devices, by declaring your Linux machine as a Milan compatible AVB endpoint.
+An operable framework can however be configured using [ALSA](https://www.alsa-project.org/wiki/Main_Page) to interface directly with our AVB hardware devices, by declaring your Linux machine as a [Milan compatible](https://avnu.org/resource/milan-specification/) AVB endpoint.
 You can then use the software [Hive](https://github.com/christophe-calmejane/Hive) to configure our AVB audio matrix.
 
 </details>
@@ -73,6 +78,8 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 <details><summary>Configuring Your Device</summary>
 
 ### RME Digiface AVB
+
+<p style='text-decoration: underline; font-weight: bold;'>The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps.</p>
 
 ### Milan Manager
 
@@ -294,6 +301,9 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 </details>
 
 <details><summary>Speaker Positions</summary>
+
+The following speaker positions are described in meters for all cartesian coordinates, x, y, z.
+For all spherical coordinates, the radius r is specified in meters, whilst the azimuth and elevation angles, θ and ϕ, are specified in degrees.
 
 ### Performance Lab (16.2)
 
