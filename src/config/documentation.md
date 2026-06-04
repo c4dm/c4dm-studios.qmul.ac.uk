@@ -240,7 +240,7 @@ These devices have been setup for local connections only, via the [OWC Thunderbo
 
 # Spatial Audio
 
-In the Performance Lab, we operate a 16.2 hemispherical speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
+In the Performance Lab, we operate a 16.2 rectangular speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
 These surround sound systems are largely used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
 <details><summary>Powering our Speaker Systems</summary>
