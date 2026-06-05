@@ -54,7 +54,7 @@ These audio interfaces have been preconfigured on all of our in house computers,
 
 To correctly install the required software, please follow the step by step instructions below.
 
-- Go to [https://rme-audio.de/downloads.html](https://rme-audio.de/downloads.html) to download the RME DriverKit.
+- Navigate to [RME's website](https://rme-audio.de/downloads.html) to download the RME DriverKit.
 - Select Digiface AVB from the left menu, followed by your operating system.
 - Download the latest audio driver (_driver_usbdk_mac_xxx.zip_ for MacOS or _driver_madiface_win_xxx.zip_ for Windows).
 - (MacOS) Download the RME AVB Controller ???. <!-- NEEDS FIXING -->
