@@ -1,0 +1,55 @@
+<div class='markdown'> <!-- for applying scss styling -->
+
+<!-- # Our Services
+
+At C4DM studios, we offer...
+
+C4DM Studios is composed of three spaces: the Performance Lab (G2B), the Control Room (G2C), and the Live Room (G4).
+
+<p style='text-align: center;'>If you are interested in working with us, but are not affiliated with Queen Mary, please get in touch at </p> -->
+
+# Members
+
+<span>
+	<a href='https://qmulprod.sharepoint.com/sites/Studio/SitePages/Management.aspx' class='button'>
+		Become a Member
+	</a>
+	<a href='https://qmulprod.sharepoint.com/sites/Studio/Lists/Studio%20Calendar/AllItems.aspx?e=EaViRw&CID=d589f6ad-eee5-4f53-ad57-8fc7ce094b08&env=WebViewList' class='button'>
+		Studio Calendar
+	</a>
+	<a href='https://qmulprod.sharepoint.com/sites/Studio/Lists/MGMT%20%20Inventory/AllItems.aspx?viewid=0526cffc%2D1617%2D48f2%2D87f2%2De546828b2116&env=WebViewList' class='button'>
+		Inventory
+	</a>
+</span>
+<br/>
+<span>
+	<a class='button'>
+		Equipment Loans
+	</a>
+	<a class='button'>
+		Event Hire
+	</a>
+	<a class='button'>
+		aesthetics
+	</a>
+</span>
+
+# FAQs
+
+<details><summary>
+What times are you open?
+</summary></details>
+<details><summary>
+Why can I not get through the black door?
+</summary></details>
+<details><summary>
+When I become a member, how soon can I start booking sessions?
+</summary></details>
+<details><summary>
+Can visiting students use our spaces?
+</summary></details>
+<details><summary>
+Can I borrow equipment loan without being inducted?
+</summary></details>
+
+</div> <!-- for applying scss styling -->

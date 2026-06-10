@@ -1,4 +1,4 @@
-<!-- cspell:ignore ALSA Audiotechnik Behringer Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW Korg MADIFace ncat Netgear nmap tmws Totalmix usbdk Vicon -->
+<!-- cspell:ignore ALSA Audiotechnik Behringer Digicheck Digiface Disklavier dmXLAN Drawmer Eigenmike IPMSW Korg MADIFace MKII ncat Netgear nmap tmws Soundfield Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -6,12 +6,6 @@
 # Overview
 
 <details><summary>Power On/Off Procedures</summary>
-</details>
-
-<details><summary>Movement around the Studios</summary>
-</details>
-
-<details><summary>How to Use Sharepoint</summary>
 </details>
 
 <details><summary>Our Computers</summary>
@@ -37,7 +31,7 @@ It will be deleted...
 We operate an integrated audio network across our studios, spanning 128 input channels and 128 output channels distributed throughout each of our spaces.
 This audio network is accessible from every modular work station within the studios, and is used to record or stream audio from across all of our hardware devices.
 
-<details><summary>Network Design & Topology</summary>
+<details><summary>Network Topology</summary>
 
 </details>
 
@@ -83,7 +77,7 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 ### Milan Manager
 
-### RME Total Mix
+<!-- ### RME Total Mix -->
 
 <!-- ### Download the latest versions of our TotalMix templates below!
 
@@ -108,9 +102,8 @@ This section acts as a reference for our audio network, describing per room whic
 
 ### Control Room
 
-#### Inputs
-
 <table><tbody>
+	<tr><td colspan='4'><b> Input Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
 	<tr><td rowspan='3'> 2 </td><td> 9 - 12 </td></tr>
@@ -120,10 +113,9 @@ This section acts as a reference for our audio network, describing per room whic
 	<tr><td> 4 </td><td> 25 - 32 </td></tr>
 	<tr><td> 5 </td><td> 33 - 36 </td></tr>
 </tbody></table>
-
-#### Outputs
-
+<br/>
 <table><tbody>
+	<tr><td colspan='4'><b> Output Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
 	<tr><td> 3 - 8 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> DA Converter </td></tr>
@@ -135,9 +127,8 @@ This section acts as a reference for our audio network, describing per room whic
 
 ### Live Room
 
-#### Inputs
-
 <table><tbody>
+	<tr><td colspan='4'><b> Input Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
 	<tr><td rowspan='3'> 2 </td><td> 9 - 12 </td></tr>
@@ -147,10 +138,9 @@ This section acts as a reference for our audio network, describing per room whic
 	<tr><td> 4 </td><td> 25 - 32 </td></tr>
 	<tr><td> 5 </td><td> 33 - 36 </td></tr>
 </tbody></table>
-
-#### Outputs
-
+<br/>
 <table><tbody>
+	<tr><td colspan='4'><b> Output Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
 	<tr><td> 3 - 8 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> DA Converter </td></tr>
@@ -164,9 +154,8 @@ This section acts as a reference for our audio network, describing per room whic
 
 ### Performance Lab
 
-#### Inputs
-
 <table><tbody>
+	<tr><td colspan='4'><b> Input Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
 	<tr><td rowspan='2'> 2 </td><td> 9 - 12 </td></tr>
@@ -176,10 +165,9 @@ This section acts as a reference for our audio network, describing per room whic
 	<tr><td> 29 - 32 </td><td rowspan='2'> TSL Soundfield - SPS422B </td><td rowspan='2'> Microphone </td></tr>
 	<tr><td> 5 </td><td> 33 - 34 </td></tr>
 </tbody></table>
-
-#### Outputs
-
+<br/>
 <table><tbody>
+	<tr><td colspan='4'><b> Output Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
 	<tr><td> 3 - 8 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> DA Converter </td></tr>
@@ -193,6 +181,9 @@ This section acts as a reference for our audio network, describing per room whic
 </details>
 
 <details><summary>Dante Interoperability</summary>
+
+...coming soon...
+
 </details>
 
 # Local Access Network (LAN)

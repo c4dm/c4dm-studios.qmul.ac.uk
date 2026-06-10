@@ -15,15 +15,13 @@ import '../style/App.scss'
 // config - markdown
 import contact from '../config/contact.md?raw'
 import documentation from '../config/documentation.md?raw'
-import equipment from '../config/equipment.md?raw'
 import home from '../config/home.md?raw'
-import services from '../config/services.md?raw'
+import members from '../config/members.md?raw'
 
 // routes - this is an _ordered_ set in the form {path: markdown}
 const pages: Record<string, string> = {
 	'/': home,
-	'/services': services,
-	'/equipment': equipment,
+	'/members': members,
 	'/documentation': documentation,
 	'/contact': contact,
 }
