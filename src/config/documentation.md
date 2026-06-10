@@ -1,4 +1,4 @@
-<!-- cspell:ignore ALSA Audiotechnik Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW Korg MADIFace ncat Netgear nmap tmws Totalmix usbdk Vicon -->
+<!-- cspell:ignore ALSA Audiotechnik Behringer Digicheck Digiface Disklavier dmXLAN Eigenmike IPMSW Korg MADIFace ncat Netgear nmap tmws Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -103,6 +103,91 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 </details>
 
 <details><summary>Audio Channel Map</summary>
+
+### Control Room
+
+#### Inputs
+
+<table><tbody>
+	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
+	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
+	<tr><td rowspan='3'> 2 </td><td> 9 - 12 </td></tr>
+	<tr><td> 13 - 14 </td><td> XLR Patch Bay </td><td> AD Converter </td></tr>
+	<tr><td> 15 - 16 </td><td> Rode - NT2-A (with foot switch) </td><td> Microphone </td></tr>
+	<tr><td> 3 </td><td> 17 - 24 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> AD Converter </td></tr>
+	<tr><td> 4 </td><td> 25 - 32 </td></tr>
+	<tr><td> 5 </td><td> 33 - 36 </td></tr>
+</tbody></table>
+
+#### Outputs
+
+<table><tbody>
+	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
+	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
+	<tr><td> 3 - 8 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> DA Converter </td></tr>
+	<tr><td> 2 </td><td> 9 - 16 </td></tr>
+	<tr><td> 3 </td><td> 17 - 24 </td></tr>
+	<tr><td> 4 </td><td> 25 - 32 </td><td rowspan='2'> Behringer - P16-I </td><td rowspan='2'> Headphone Controller </td></tr>
+	<tr><td> 5 </td><td> 33 - 40 </td></tr>
+</tbody></table>
+
+### Live Room
+
+#### Inputs
+
+<table><tbody>
+	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
+	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
+	<tr><td rowspan='3'> 2 </td><td> 9 - 12 </td></tr>
+	<tr><td> 13 - 14 </td><td> XLR Patch Bay </td><td> AD Converter </td></tr>
+	<tr><td> 15 - 16 </td><td> TSL Soundfield - ST450 MKII </td><td> Microphone </td></tr>
+	<tr><td> 3 </td><td> 17 - 24 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> AD Converter </td></tr>
+	<tr><td> 4 </td><td> 25 - 32 </td></tr>
+	<tr><td> 5 </td><td> 33 - 36 </td></tr>
+</tbody></table>
+
+#### Outputs
+
+<table><tbody>
+	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
+	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
+	<tr><td> 3 - 8 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> DA Converter </td></tr>
+	<tr><td> 2 </td><td> 9 - 16 </td></tr>
+	<tr><td> 3 </td><td> 17 - 24 </td></tr>
+	<tr><td> 4 </td><td> 25 - 32 </td><td rowspan='2'> Behringer - P16-I </td><td rowspan='2'> Headphone Controller </td></tr>
+	<tr><td> 5 </td><td> 33 - 40 </td></tr>
+	<tr><td> 6 </td><td> 41 - 48 </td></td><td rowspan='2'> Meyer Sound - MPS488E </td><td rowspan='2'> Ambisonic Speakers </td></tr>
+	<tr><td> 7 </td><td> 49 - 52 </td></tr>
+</tbody></table>
+
+### Performance Lab
+
+#### Inputs
+
+<table><tbody>
+	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
+	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
+	<tr><td rowspan='2'> 2 </td><td> 9 - 12 </td></tr>
+	<tr><td> 13 - 16 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> AD Converter </td></tr>
+	<tr><td> 3 </td><td> 17 - 24 </td>
+	<tr><td rowspan='2'> 4 </td><td> 25 - 28 </td></tr>
+	<tr><td> 29 - 32 </td><td rowspan='2'> TSL Soundfield - SPS422B </td><td rowspan='2'> Microphone </td></tr>
+	<tr><td> 5 </td><td> 33 - 34 </td></tr>
+</tbody></table>
+
+#### Outputs
+
+<table><tbody>
+	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
+	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
+	<tr><td> 3 - 8 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> DA Converter </td></tr>
+	<tr><td> 2 </td><td> 9 - 16 </td></tr>
+	<tr><td> 3 </td><td> 17 - 24 </td><td rowspan='2'> Behringer - P16-I </td><td rowspan='2'> Headphone Controller </td></tr>
+	<tr><td> 4 </td><td> 25 - 32 </td></tr>
+	<tr><td> 5 </td><td> 33 - 40 </td></td><td rowspan='2'> Meyer Sound - MPS488E </td><td rowspan='2'> Ambisonic Speakers </td></tr>
+	<tr><td> 6 </td><td> 41 - 48 </td></tr>
+</tbody></table>
+
 </details>
 
 <details><summary>Dante Interoperability</summary>
@@ -215,7 +300,7 @@ Upon connecting a MIDI device to one of these ports, you can then connect to tha
 To connect to an RTP-MIDI port on a MacOS computer, simply navigate to [the MIDI Network Settings within the Audio MIDI Setup application](https://support.apple.com/en-gb/guide/audio-midi-setup/ams1012/mac).
 Here you should see a list of available devices and MIDI ports, labelled according to their room and function - simply create a `Session`, and add the MIDI ports you wish to use by pressing `Connect`.
 If you use this session to connect to multiple MIDI ports, this will collapse all of these ports down to a single MIDI bus.
-If you wish to use multiple devices across and use them independently within your work, you should create multiple sessions, one for each MIDI port.
+If you wish to use multiple devices independently within your work, you should create multiple sessions, one for each MIDI port.
 
 ![Audio MIDI Setup window, demonstrating how to activate an RTP-MIDI port](/images/documentation/midi-mac-settings.png)
 
