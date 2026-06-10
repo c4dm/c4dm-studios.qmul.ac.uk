@@ -104,6 +104,8 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 <details><summary>Audio Channel Map</summary>
 
+This section acts as a reference for our audio network, describing per room which AVB streams have been connected to our various input and output devices.
+
 ### Control Room
 
 #### Inputs
@@ -156,7 +158,7 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 	<tr><td> 3 </td><td> 17 - 24 </td></tr>
 	<tr><td> 4 </td><td> 25 - 32 </td><td rowspan='2'> Behringer - P16-I </td><td rowspan='2'> Headphone Controller </td></tr>
 	<tr><td> 5 </td><td> 33 - 40 </td></tr>
-	<tr><td> 6 </td><td> 41 - 48 </td></td><td rowspan='2'> Meyer Sound - MPS488E </td><td rowspan='2'> Ambisonic Speakers </td></tr>
+	<tr><td> 6 </td><td> 41 - 48 </td></td><td rowspan='2'> Meyer Sound - MM-4XP </td><td rowspan='2'> Ambisonic Speakers </td></tr>
 	<tr><td> 7 </td><td> 49 - 52 </td></tr>
 </tbody></table>
 
@@ -184,7 +186,7 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 	<tr><td> 2 </td><td> 9 - 16 </td></tr>
 	<tr><td> 3 </td><td> 17 - 24 </td><td rowspan='2'> Behringer - P16-I </td><td rowspan='2'> Headphone Controller </td></tr>
 	<tr><td> 4 </td><td> 25 - 32 </td></tr>
-	<tr><td> 5 </td><td> 33 - 40 </td></td><td rowspan='2'> Meyer Sound - MPS488E </td><td rowspan='2'> Ambisonic Speakers </td></tr>
+	<tr><td> 5 </td><td> 33 - 40 </td></td><td rowspan='2'> Meyer Sound - MM-4XP </td><td rowspan='2'> Ambisonic Speakers </td></tr>
 	<tr><td> 6 </td><td> 41 - 48 </td></tr>
 </tbody></table>
 
