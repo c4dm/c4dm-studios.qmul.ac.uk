@@ -106,13 +106,30 @@ Each stream is 16 channels.
 
 <table><tbody>
 	<tr><td colspan='4'><b> Input Streams </b></td></tr>
-	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
+	<!-- <tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td rowspan='2'> 1 </td><td> 1 - 12 </td><td> RME - 12 Mic </td><td> Pre-Amp </td></tr>
 	<tr><td> 13 - 16 </td><td colspan='2'> Unused </td></tr>
 	<tr><td rowspan='2'> 2 </td><td> 1 - 2 </td><td> Rode - NT2-A </td><td> Microphone </td></tr>
 	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> AD Converter </td></tr>
 	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td></tr>
-	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr>
+	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr> -->
+	<tr><td><b> Stream </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td><</tr>
+	<tr><td rowspan='2'> 1 - RME 12MIC </td><td> 1 - 12 </td><td> 12Mic Preamp Inputs</td></tr>
+	<tr><td> 13 - 16 </td><td> - </td></tr>
+	<tr><td rowspan='2'> 2 - A/D 1-16 </td><td> 1 - 2 </td><td> Desk Microphone </td></tr>
+	<tr><td> 3 - 16 </td><td> XLR Patch Bay </td></tr>
+	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td><td> XLR Patch Bay </td></tr>
+	<tr><td> 9 - 16 </td><td> - </td></tr> -->
+	<tr><td> 4 </td><td> - </td><td> - </td></tr>
+	<tr><td> 5 </td><td> - </td><td> - </td></tr>
+	<tr><td> 6 </td><td> - </td><td> - </td></tr>
+	<tr><td> 7 </td><td> - </td><td> - </td></tr>
+	<tr><td rowspan='2'> 8 NAME </td><td> 1 </td><td> Talkback </td></tr>
+	<tr><td> 2 - 16 </td><td> - </td></tr>
+	<!-- <tr><td rowspan='2'> 2 </td><td> 1 - 2 </td><td> Rode - NT2-A </td><td> Microphone </td></tr>
+	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> AD Converter </td></tr>
+	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td></tr>
+	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr> -->
 </tbody></table>
 <br/>
 <table><tbody>
