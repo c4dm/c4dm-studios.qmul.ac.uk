@@ -31,7 +31,7 @@ It will be deleted...
 We operate an integrated audio network across our studios, spanning 128 input channels and 128 output channels distributed throughout each of our spaces.
 This audio network is accessible from every modular work station within the studios, and is used to record or stream audio from across all of our hardware devices.
 
-<details><summary>Network Topology</summary>
+<details><summary>Network Overview</summary>
 
 </details>
 
@@ -100,29 +100,29 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 This section acts as a reference for our audio network, describing per room which AVB streams have been connected to our various input and output devices.
 
+Each stream is 16 channels.
+
 ### Control Room
 
 <table><tbody>
 	<tr><td colspan='4'><b> Input Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
-	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
-	<tr><td rowspan='3'> 2 </td><td> 9 - 12 </td></tr>
-	<tr><td> 13 - 14 </td><td> XLR Patch Bay </td><td> AD Converter </td></tr>
-	<tr><td> 15 - 16 </td><td> Rode - NT2-A (with foot switch) </td><td> Microphone </td></tr>
-	<tr><td> 3 </td><td> 17 - 24 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> AD Converter </td></tr>
-	<tr><td> 4 </td><td> 25 - 32 </td></tr>
-	<tr><td> 5 </td><td> 33 - 36 </td></tr>
+	<tr><td rowspan='2'> 1 </td><td> 1 - 12 </td><td> RME - 12 Mic </td><td> Pre-Amp </td></tr>
+	<tr><td> 13 - 16 </td><td colspan='2'> Unused </td></tr>
+	<tr><td rowspan='2'> 2 </td><td> 1 - 2 </td><td> Rode - NT2-A </td><td> Microphone </td></tr>
+	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> AD Converter </td></tr>
+	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td></tr>
+	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr>
 </tbody></table>
 <br/>
 <table><tbody>
 	<tr><td colspan='4'><b> Output Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
-	<tr><td> 3 - 8 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> DA Converter </td></tr>
-	<tr><td> 2 </td><td> 9 - 16 </td></tr>
-	<tr><td> 3 </td><td> 17 - 24 </td></tr>
-	<tr><td> 4 </td><td> 25 - 32 </td><td rowspan='2'> Behringer - P16-I </td><td rowspan='2'> Headphone Controller </td></tr>
-	<tr><td> 5 </td><td> 33 - 40 </td></tr>
+	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> DA Converter </td></tr>
+	<tr><td rowspan='2'> 2 </td><td> 1 - 8 </td></tr>
+	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr>
+	<tr><td> 3 </td><td> 1 - 16 </td><td> Behringer - P16-I </td><td> Headphone Controller </td></tr>
 </tbody></table>
 
 ### Live Room
@@ -130,26 +130,24 @@ This section acts as a reference for our audio network, describing per room whic
 <table><tbody>
 	<tr><td colspan='4'><b> Input Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
-	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
-	<tr><td rowspan='3'> 2 </td><td> 9 - 12 </td></tr>
-	<tr><td> 13 - 14 </td><td> XLR Patch Bay </td><td> AD Converter </td></tr>
-	<tr><td> 15 - 16 </td><td> TSL Soundfield - ST450 MKII </td><td> Microphone </td></tr>
-	<tr><td> 3 </td><td> 17 - 24 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> AD Converter </td></tr>
-	<tr><td> 4 </td><td> 25 - 32 </td></tr>
-	<tr><td> 5 </td><td> 33 - 36 </td></tr>
+	<tr><td rowspan='2'> 1 </td><td> 1 - 12 </td><td> RME - 12 Mic </td><td> Pre-Amp </td></tr>
+	<tr><td> 13 - 16 </td><td colspan='2'> Unused </td></tr>
+	<tr><td rowspan='2'> 2 </td><td> 1 - 2 </td><td> TSL Soundfield - ST450 MKII </td><td> Microphone </td></tr>
+	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> AD Converter </td></tr>
+	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td></tr>
+	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr>
 </tbody></table>
 <br/>
 <table><tbody>
 	<tr><td colspan='4'><b> Output Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
-	<tr><td> 3 - 8 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> DA Converter </td></tr>
-	<tr><td> 2 </td><td> 9 - 16 </td></tr>
-	<tr><td> 3 </td><td> 17 - 24 </td></tr>
-	<tr><td> 4 </td><td> 25 - 32 </td><td rowspan='2'> Behringer - P16-I </td><td rowspan='2'> Headphone Controller </td></tr>
-	<tr><td> 5 </td><td> 33 - 40 </td></tr>
-	<tr><td> 6 </td><td> 41 - 48 </td></td><td rowspan='2'> Meyer Sound - MM-4XP </td><td rowspan='2'> Ambisonic Speakers </td></tr>
-	<tr><td> 7 </td><td> 49 - 52 </td></tr>
+	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> DA Converter </td></tr>
+	<tr><td rowspan='2'> 2 </td><td> 1 - 8 </td></tr>
+	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr>
+	<tr><td> 3 </td><td> 1 - 16 </td><td> Behringer - P16-I </td><td> Headphone Controller </td></tr>
+	<tr><td rowspan='2'> 4 </td><td> 1 - 12 </td></td><td> Meyer Sound - MM-4XP </td><td> Ambisonic Speakers </td></tr>
+	<tr><td> 13 - 16 </td><td colspan='2'> Unused </td></tr>
 </tbody></table>
 
 ### Performance Lab
@@ -157,25 +155,22 @@ This section acts as a reference for our audio network, describing per room whic
 <table><tbody>
 	<tr><td colspan='4'><b> Input Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
-	<tr><td> 1 </td><td> 1 - 8 </td><td rowspan='2'> RME - 12 Mic </td><td rowspan='2'> Pre-Amp </td></tr>
-	<tr><td rowspan='2'> 2 </td><td> 9 - 12 </td></tr>
-	<tr><td> 13 - 16 </td><td rowspan='3'> XLR Patch Bay </td><td rowspan='3'> AD Converter </td></tr>
-	<tr><td> 3 </td><td> 17 - 24 </td>
-	<tr><td rowspan='2'> 4 </td><td> 25 - 28 </td></tr>
-	<tr><td> 29 - 32 </td><td rowspan='2'> TSL Soundfield - SPS422B </td><td rowspan='2'> Microphone </td></tr>
-	<tr><td> 5 </td><td> 33 - 34 </td></tr>
+	<tr><td rowspan='2'> 1 </td><td> 1 - 12 </td><td> RME - 12 Mic </td><td> Pre-Amp </td></tr>
+	<tr><td> 13 - 16 </td><td colspan='2'> Unused </td></tr>
+	<tr><td> 2 </td><td> 1 - 16 </td><td> XLR Patch Bay </td><td> AD Converter </td></tr>
+	<tr><td rowspan='2'> 3 </td><td> 1 - 6 </td><td> TSL Soundfield - ST450 MKII </td><td> Microphone </td></tr>
+	<tr><td> 7 - 16 </td><td colspan='2'> Unused </td></tr>
 </tbody></table>
 <br/>
 <table><tbody>
 	<tr><td colspan='4'><b> Output Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
 	<tr><td rowspan='2'> 1 </td><td> 1 - 2 </td><td> Drawmer - MC2.1 </td><td> Monitor Controller </td></tr>
-	<tr><td> 3 - 8 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> DA Converter </td></tr>
-	<tr><td> 2 </td><td> 9 - 16 </td></tr>
-	<tr><td> 3 </td><td> 17 - 24 </td><td rowspan='2'> Behringer - P16-I </td><td rowspan='2'> Headphone Controller </td></tr>
-	<tr><td> 4 </td><td> 25 - 32 </td></tr>
-	<tr><td> 5 </td><td> 33 - 40 </td></td><td rowspan='2'> Meyer Sound - MM-4XP </td><td rowspan='2'> Ambisonic Speakers </td></tr>
-	<tr><td> 6 </td><td> 41 - 48 </td></tr>
+	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> DA Converter </td></tr>
+	<tr><td rowspan='2'> 2 </td><td> 1 - 8 </td></tr>
+	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr>
+	<tr><td> 3 </td><td> 1 - 16 </td><td> Behringer - P16-I </td><td> Headphone Controller </td></tr>
+	<tr><td> 4 </td><td> 1 - 16 </td></td><td> Meyer Sound - MM-4XP </td><td> Ambisonic Speakers </td></tr>
 </tbody></table>
 
 </details>
