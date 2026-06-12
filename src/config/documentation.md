@@ -28,14 +28,20 @@ It will be deleted...
 
 # Audio Network (AVB)
 
-We operate an integrated audio network across our studios, spanning 128 input channels and 128 output channels distributed throughout each of our spaces.
-This audio network is accessible from every modular work station within the studios, and is used to record or stream audio from across all of our hardware devices.
+Our audio system is powered by AVB, but hosts both Dante and MADI bridges for maximum flexibility.
+
+<!We operate an integrated audio network across our studios, spanning 128 input channels and 128 output channels distributed throughout each of our spaces.
+This audio network is accessible from every modular work station within the studios, and is used to record or stream audio from across all of our hardware devices.>
 
 <details><summary>Network Overview</summary>
+<br>
 
+![diagram of audio matrix representing milan and all network endpoints](/images/documentation/audio-network-overview.png)
+
+<br>
 </details>
 
-<details><summary>Audio Driver Installation</summary>
+<details><summary>AVB Driver Installation</summary>
 
 Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed, connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock) for ease of use.
 These Digiface AVB devices act as hardware endpoints across our audio network, and once connected to, can be used to receive and send audio from anywhere within the studios.
@@ -69,7 +75,7 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 </details>
 
-<details><summary>Configuring Your Device</summary>
+<details><summary>Digiface AVB Configuration</summary>
 
 ### RME Digiface AVB
 
@@ -96,7 +102,7 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 </details>
 
-<details><summary>Audio Channel Map</summary>
+<details><summary>AVB Stream Map</summary>
 
 This section acts as a reference for our audio network, describing per room which AVB streams have been connected to our various input and output devices.
 
@@ -240,7 +246,7 @@ DANTE
 
 </details>
 
-<details><summary>Dante Interoperability</summary>
+<details><summary>AVB / Dante / MADI Bridge </summary>
 
 ...coming soon...
 
