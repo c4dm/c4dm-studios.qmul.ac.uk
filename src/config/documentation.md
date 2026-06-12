@@ -107,25 +107,24 @@ Each stream is 16 channels.
 <table><tbody>
 	<tr><td colspan='4'><b> Input Streams </b></td></tr>
 	<!-- <tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
-	<tr><td rowspan='2'> 1 </td><td> 1 - 12 </td><td> RME - 12 Mic </td><td> Pre-Amp </td></tr>
+	<tr><td rowspan='2'> 1 </td><td> 0 - 12 </td><td> RME - 12 Mic </td><td> Pre-Amp </td></tr>
 	<tr><td> 13 - 16 </td><td colspan='2'> Unused </td></tr>
-	<tr><td rowspan='2'> 2 </td><td> 1 - 2 </td><td> Rode - NT2-A </td><td> Microphone </td></tr>
-	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> AD Converter </td></tr>
-	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td></tr>
-	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr> -->
-	<tr><td><b> Stream </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td><</tr>
-	<tr><td rowspan='2'> 1 - RME 12MIC </td><td> 1 - 12 </td><td> 12Mic Preamp Inputs</td></tr>
-	<tr><td> 13 - 16 </td><td> - </td></tr>
-	<tr><td rowspan='2'> 2 - A/D 1-16 </td><td> 1 - 2 </td><td> Desk Microphone </td></tr>
-	<tr><td> 3 - 16 </td><td> XLR Patch Bay </td></tr>
-	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td><td> XLR Patch Bay </td></tr>
-	<tr><td> 9 - 16 </td><td> - </td></tr> -->
+	<tr><td rowspan='2'> 2 </td><td> 0 - 02 </td><td> Rode - NT2-A </td><td> Microphone </td></tr>
+	<tr><td> 03 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> AD Converter </td></tr>
+	<tr><td rowspan='2'> 3 </td><td> 01 - 08 </td></tr>
+	<tr><td> 09 - 16 </td><td colspan='2'> Unused </td></tr> -->
+	<tr><td><b> Stream </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
+	<tr><td rowspan='2'> 1. RME 12MIC 1-16 * </td><td> 1 - 12 </td><td> 12Mic Inputs</td></tr>
+	<tr><td> 13 - 16 </td><td> * N.C </td></tr>
+	<tr><td rowspan='2'> 2. AD Inputs 1-16 </td><td> 1 - 2 </td><td> Desk Microphone </td></tr>
+	<tr><td rowspan=''> 3 - 16 </td><td> AD Inputs </td></tr>
+	<tr><td rowspan='1'> 3. AD Inputs 17-32 * </td><td> 1 - 16 </td><td> * N.C </td></tr>
 	<tr><td> 4 </td><td> - </td><td> - </td></tr>
 	<tr><td> 5 </td><td> - </td><td> - </td></tr>
 	<tr><td> 6 </td><td> - </td><td> - </td></tr>
 	<tr><td> 7 </td><td> - </td><td> - </td></tr>
-	<tr><td rowspan='2'> 8 NAME </td><td> 1 </td><td> Talkback </td></tr>
-	<tr><td> 2 - 16 </td><td> - </td></tr>
+	<tr><td rowspan='2'> 8. Talkback * </td><td> 1 </td><td> Talkback </td></tr>
+	<tr><td> 2 - 16 </td><td> * N.C </td></tr>
 	<!-- <tr><td rowspan='2'> 2 </td><td> 1 - 2 </td><td> Rode - NT2-A </td><td> Microphone </td></tr>
 	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> AD Converter </td></tr>
 	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td></tr>
@@ -147,11 +146,11 @@ Each stream is 16 channels.
 <table><tbody>
 	<tr><td colspan='4'><b> Input Streams </b></td></tr>
 	<tr><td style='width: 62px;'><b> Stream </b></td><td style='width: 78px;'><b> Channels </b></td><td><b> Routing </b></td><td style='width: 132px;'><b> Function </b></td></tr>
-	<tr><td rowspan='2'> 1 </td><td> 1 - 12 </td><td> RME - 12 Mic </td><td> Pre-Amp </td></tr>
+	<tr><td rowspan='2'> 1 </td><td> 01 - 12 </td><td> RME - 12 Mic </td><td> Pre-Amp </td></tr>
 	<tr><td> 13 - 16 </td><td colspan='2'> Unused </td></tr>
-	<tr><td rowspan='2'> 2 </td><td> 1 - 2 </td><td> TSL Soundfield - ST450 MKII </td><td> Microphone </td></tr>
+	<tr><td rowspan='2'> 2 </td><td> 01 - 02 </td><td> TSL Soundfield - ST450 MKII </td><td> Microphone </td></tr>
 	<tr><td> 3 - 16 </td><td rowspan='2'> XLR Patch Bay </td><td rowspan='2'> AD Converter </td></tr>
-	<tr><td rowspan='2'> 3 </td><td> 1 - 8 </td></tr>
+	<tr><td rowspan='2'> 3 </td><td> 01 - 08 </td></tr>
 	<tr><td> 9 - 16 </td><td colspan='2'> Unused </td></tr>
 </tbody></table>
 <br/>
@@ -189,6 +188,55 @@ Each stream is 16 channels.
 	<tr><td> 3 </td><td> 1 - 16 </td><td> Behringer - P16-I </td><td> Headphone Controller </td></tr>
 	<tr><td> 4 </td><td> 1 - 16 </td></td><td> Meyer Sound - MM-4XP </td><td> Ambisonic Speakers </td></tr>
 </tbody></table>
+
+### Plant Room
+
+<table><tbody>
+	<tr><td colspan='5'><b> Listener Streams </b></td></tr>
+	<tr><td><b> No. </b></td><td><b> Stream </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
+	<tr><td> 1 </td><td rowspan='1'> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE IN 1-16</td></tr>
+	<tr><td> 2 </td><td rowspan='1'> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE IN 17-32</td></tr>
+	<tr><td> 3 </td><td rowspan='1'> MADIFACE 33-48 </td><td> 1 - 16 </td><td> MADIFACE IN 33-48</td></tr>
+	<tr><td> 4 </td><td rowspan='1'> MADIFACE 49-64 </td><td> 1 - 16 </td><td> MADIFACE IN 49-64</td></tr>
+	<tr><td> 5 </td><td rowspan='1'> DANTE 1-16 </td><td> 1 - 16 </td><td> DANTE IN 1-16</td></tr>
+	<tr><td> 6 </td><td rowspan='1'> DANTE 17-32 </td><td> 1 - 16 </td><td> DANTE IN 17-32</td></tr>
+	<tr><td> 7 </td><td rowspan='1'> DANTE 33-48 </td><td> 1 - 16 </td><td> DANTE IN 33-48</td></tr>
+	<tr><td> 8 </td><td rowspan='1'> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64</td></tr>
+
+</tbody></table>
+<br/>
+<table><tbody>
+	<tr><td colspan='5'><b> Talker Streams </b></td></tr>
+	<tr><td><b> No. </b></td><td><b> Name </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
+	<tr><td> 1 </td><td rowspan='1'> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE OUT 1-16</td></tr>
+	<tr><td> 2 </td><td rowspan='1'> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE OUT 17-32</td></tr>
+	<tr><td> 3 </td><td rowspan='1'> MADIFACE 33-48 </td><td> 1 - 16 </td><td> MADIFACE OUT 33-48</td></tr>
+	<tr><td> 4 </td><td rowspan='1'> MADIFACE 49-64 </td><td> 1 - 16 </td><td> MADIFACE OUT 49-64</td></tr>
+	<tr><td> 5 </td><td rowspan='1'> DANTE 1-16 </td><td> 1 - 16 </td><td> DANTE OUT 1-16</td></tr>
+	<tr><td> 6 </td><td rowspan='1'> DANTE 17-32 </td><td> 1 - 16 </td><td> DANTE OUT 17-32</td></tr>
+	<tr><td> 7 </td><td rowspan='1'> DANTE 33-48 </td><td> 1 - 16 </td><td> DANTE OUT 33-48</td></tr>
+	<tr><td> 8 </td><td rowspan='1'> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE OUT 49-64</td></tr>
+</tbody></table>
+<br/>
+
+DANTE
+
+<table><tbody>
+	<tr><td colspan='4'><b> Device Inputs </b></td></tr>
+	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
+	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB IN 1-64</td></tr>
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> MADIFACE IN 129-192</td></tr>
+
+</tbody></table>
+
+<table><tbody>
+	<tr><td colspan='4'><b> Device Outputs </b></td></tr>
+	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
+	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB OUT 129-192</td></tr>
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> DANTE IN 1-64</td></tr>
+
+</tbody></table>
+<br/>
 
 </details>
 
