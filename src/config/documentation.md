@@ -3,7 +3,7 @@
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
 
-# Overview
+# 1. Overview
 
 <details><summary>Power On/Off Procedures</summary>
 </details>
@@ -26,7 +26,7 @@ It will be deleted...
 
 </details>
 
-# Audio Network (AVB)
+# 2. Audio Network (AVB)
 
 Our audio system is powered by AVB, but hosts both Dante and MADI bridges for maximum flexibility.
 
@@ -275,7 +275,7 @@ If you want to use MADI...
 
 </details>
 
-# Local Access Network (LAN)
+# 3. Local Access Network (LAN)
 
 We operate a local access network across our studios, allowing for interaction and configuration with numerous hardware devices.
 This network is accessible throughout the studios, and can be connected to via ethernet from various wall ports, or using several of our preconfigured devices.
@@ -363,7 +363,7 @@ If you are facing an issue with one on the devices on our network, please contac
 
 </details>
 
-# MIDI
+# 4. MIDI
 
 Throughout our studios, we have integrated RTP-MIDI interfaces which allow for the remote connection of MIDI devices over LAN, supporting both modular session designs and experimental configurations.
 
@@ -418,7 +418,7 @@ These devices have been setup for local connections only, via the [OWC Thunderbo
 
 </details>
 
-# Spatial Audio
+# 5. Spatial Audio
 
 In the Performance Lab, we operate a 16.2 rectangular speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
 These surround sound systems are largely used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
@@ -560,11 +560,11 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 </details>
 -->
 
-# Motion Capture
+# 6. Motion Capture
 
 ...coming soon...
 
-# DMX Lighting
+# 7. DMX Lighting
 
 Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over LAN.
 The power for these lights is controlled using the labelled fuses in the Plant Room, whilst the power for the network hardware is located in the Performance Lab stage rack.
