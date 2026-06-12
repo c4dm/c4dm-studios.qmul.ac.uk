@@ -41,7 +41,7 @@ This audio network is accessible from every modular work station within the stud
 <br>
 </details>
 
-<details><summary>AVB Driver Installation</summary>
+<details><summary>Software Installation</summary>
 
 Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed, connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock) for ease of use.
 These Digiface AVB devices act as hardware endpoints across our audio network, and once connected to, can be used to receive and send audio from anywhere within the studios.
@@ -99,6 +99,10 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 	</a>
 </span>
 <br/> -->
+
+</details>
+
+<details><summary>Milan Manager</summary>
 
 </details>
 
@@ -225,30 +229,49 @@ Each stream is 16 channels.
 </tbody></table>
 <br/>
 
-DANTE
+</details>
+
+<details><summary>AVB-Dante-MADI Bridge </summary>
+
+### Dante Bridge
+
+If you want to use Dante...
 
 <table><tbody>
 	<tr><td colspan='4'><b> Device Inputs </b></td></tr>
 	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
 	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB IN 1-64</td></tr>
 	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> MADIFACE IN 129-192</td></tr>
-
 </tbody></table>
+<br>
 
 <table><tbody>
 	<tr><td colspan='4'><b> Device Outputs </b></td></tr>
 	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
 	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB OUT 129-192</td></tr>
 	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> DANTE IN 1-64</td></tr>
-
 </tbody></table>
 <br/>
 
-</details>
+### MADI Bridge
 
-<details><summary>AVB / Dante / MADI Bridge </summary>
+If you want to use MADI...
 
-...coming soon...
+<table><tbody>
+	<tr><td colspan='4'><b> Device Inputs </b></td></tr>
+	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
+	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB IN 1-64</td></tr>
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> MADIFACE IN 129-192</td></tr>
+</tbody></table>
+<br>
+
+<table><tbody>
+	<tr><td colspan='4'><b> Device Outputs </b></td></tr>
+	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
+	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB OUT 129-192</td></tr>
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> DANTE IN 1-64</td></tr>
+</tbody></table>
+<br/>
 
 </details>
 
