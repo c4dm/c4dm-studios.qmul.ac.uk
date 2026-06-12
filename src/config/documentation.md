@@ -201,61 +201,67 @@ Each stream is 16 channels.
 
 ### Plant Room
 
+The Plant Room hosts 64-channel AVB-MADI, AVB-Dante, and Dante-MADI bridges. The Dante-MADI bridge is not listed below because it is only visable via Dante Controller.
+
 <table><tbody>
 	<tr><td colspan='5'><b> Listener Streams </b></td></tr>
 	<tr><td><b> No. </b></td><td><b> Stream </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
-	<tr><td> 1 </td><td rowspan='1'> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE IN 1-16</td></tr>
-	<tr><td> 2 </td><td rowspan='1'> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE IN 17-32</td></tr>
-	<tr><td> 3 </td><td rowspan='1'> MADIFACE 33-48 </td><td> 1 - 16 </td><td> MADIFACE IN 33-48</td></tr>
-	<tr><td> 4 </td><td rowspan='1'> MADIFACE 49-64 </td><td> 1 - 16 </td><td> MADIFACE IN 49-64</td></tr>
-	<tr><td> 5 </td><td rowspan='1'> DANTE 1-16 </td><td> 1 - 16 </td><td> DANTE IN 1-16</td></tr>
-	<tr><td> 6 </td><td rowspan='1'> DANTE 17-32 </td><td> 1 - 16 </td><td> DANTE IN 17-32</td></tr>
-	<tr><td> 7 </td><td rowspan='1'> DANTE 33-48 </td><td> 1 - 16 </td><td> DANTE IN 33-48</td></tr>
-	<tr><td> 8 </td><td rowspan='1'> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64</td></tr>
+	<tr><td> 1 </td><td rowspan='1'> MADI IN 1-16 </td><td> 1 - 16 </td><td> MADI IN 1-16</td></tr>
+	<tr><td> 2 </td><td rowspan='1'> MADI IN 17-32 </td><td> 1 - 16 </td><td> MADI IN 17-32</td></tr>
+	<tr><td> 3 </td><td rowspan='1'> MADI IN 33-48 </td><td> 1 - 16 </td><td> MADI IN 33-48</td></tr>
+	<tr><td> 4 </td><td rowspan='1'> MADI IN 49-64 </td><td> 1 - 16 </td><td> MADI IN 49-64</td></tr>
+	<tr><td> 5 </td><td rowspan='1'> DANTE IN 1-16 </td><td> 1 - 16 </td><td> DANTE IN 1-16</td></tr>
+	<tr><td> 6 </td><td rowspan='1'> DANTE IN 17-32 </td><td> 1 - 16 </td><td> DANTE IN 17-32</td></tr>
+	<tr><td> 7 </td><td rowspan='1'> DANTE IN 33-48 </td><td> 1 - 16 </td><td> DANTE IN 33-48</td></tr>
+	<tr><td> 8 </td><td rowspan='1'> DANTE IN 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64</td></tr>
 
 </tbody></table>
 <br/>
 <table><tbody>
 	<tr><td colspan='5'><b> Talker Streams </b></td></tr>
 	<tr><td><b> No. </b></td><td><b> Name </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
-	<tr><td> 1 </td><td rowspan='1'> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE OUT 1-16</td></tr>
-	<tr><td> 2 </td><td rowspan='1'> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE OUT 17-32</td></tr>
-	<tr><td> 3 </td><td rowspan='1'> MADIFACE 33-48 </td><td> 1 - 16 </td><td> MADIFACE OUT 33-48</td></tr>
-	<tr><td> 4 </td><td rowspan='1'> MADIFACE 49-64 </td><td> 1 - 16 </td><td> MADIFACE OUT 49-64</td></tr>
-	<tr><td> 5 </td><td rowspan='1'> DANTE 1-16 </td><td> 1 - 16 </td><td> DANTE OUT 1-16</td></tr>
-	<tr><td> 6 </td><td rowspan='1'> DANTE 17-32 </td><td> 1 - 16 </td><td> DANTE OUT 17-32</td></tr>
-	<tr><td> 7 </td><td rowspan='1'> DANTE 33-48 </td><td> 1 - 16 </td><td> DANTE OUT 33-48</td></tr>
-	<tr><td> 8 </td><td rowspan='1'> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE OUT 49-64</td></tr>
+	<tr><td> 1 </td><td rowspan='1'> MADI OUT 1-16 </td><td> 1 - 16 </td><td> MADI OUT 1-16</td></tr>
+	<tr><td> 2 </td><td rowspan='1'> MADI OUT 17-32 </td><td> 1 - 16 </td><td> MADI OUT 17-32</td></tr>
+	<tr><td> 3 </td><td rowspan='1'> MADI OUT 33-48 </td><td> 1 - 16 </td><td> MADI OUT 33-48</td></tr>
+	<tr><td> 4 </td><td rowspan='1'> MADI OUT 49-64 </td><td> 1 - 16 </td><td> MADI OUT 49-64</td></tr>
+	<tr><td> 5 </td><td rowspan='1'> DANTE OUT 1-16 </td><td> 1 - 16 </td><td> DANTE OUT 1-16</td></tr>
+	<tr><td> 6 </td><td rowspan='1'> DANTE OUT 17-32 </td><td> 1 - 16 </td><td> DANTE OUT 17-32</td></tr>
+	<tr><td> 7 </td><td rowspan='1'> DANTE OUT 33-48 </td><td> 1 - 16 </td><td> DANTE OUT 33-48</td></tr>
+	<tr><td> 8 </td><td rowspan='1'> DANTE OUT 49-64 </td><td> 1 - 16 </td><td> DANTE OUT 49-64</td></tr>
 </tbody></table>
 <br/>
 
 </details>
 
+<details><summary>AVB VLAN Management</summary>
+
+To avoid possible consequences of mis-patching, studio rooms are hosted on separate VLANs:
+
+Performance Lab (+ Plant Room) - 100
+Control Room - 200
+Live Room - 300
+
+This means that channels to/from other rooms are hidden by default but can be made available via the steps below:
+
+...
+
+You must notify other studio users before changing the Luminex profile as this will cause momentary AVB downtime.
+
+Please change it back when finished (notifying other users if needed).
+
+</details>
+
 <details><summary>AVB-Dante-MADI Bridge </summary>
 
-### Dante Bridge
+**All bridges are hosted on the Performance Lab VLAN by default. This means that Dante / MADI users situated in the Control Room or Live Room will need to change the Luminex profile accordingly (See previous section).**
 
-If you want to use Dante...
+### AVB-Dante Bridge
 
-<table><tbody>
-	<tr><td colspan='4'><b> Device Inputs </b></td></tr>
-	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
-	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB IN 1-64</td></tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> MADIFACE IN 129-192</td></tr>
-</tbody></table>
-<br>
+You can use all of our audio facilities via DVS or another Dante interface by connecting to the Dante-AVB bridge. You do this like any other Dante device in Dante Controller.
 
-<table><tbody>
-	<tr><td colspan='4'><b> Device Outputs </b></td></tr>
-	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
-	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB OUT 129-192</td></tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> DANTE IN 1-64</td></tr>
-</tbody></table>
-<br/>
+Audio will then be forwarded to/from the 'DANTE' streams available in Milan Manager.
 
-### MADI Bridge
-
-If you want to use MADI...
+Dante requires LAN connection (See LAN)
 
 <table><tbody>
 	<tr><td colspan='4'><b> Device Inputs </b></td></tr>
@@ -272,6 +278,20 @@ If you want to use MADI...
 	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> DANTE IN 1-64</td></tr>
 </tbody></table>
 <br/>
+
+### AVB-MADI Bridge\*
+
+You can use all of our audio facilities via a single optical MADI or paired copper BNC MADI connection. Contact management if your project requires this.
+
+When connected, audio will be forwarded to/from the 'MADI' streams available in Milan Manager.
+
+### Dante-MADI Bridge
+
+Dante signals sent to this bridge will appear in channels 129-192 of the RME MadifaceXT which is hosted by the Performance Lab PC.
+
+This is primarily used to combine the Eigenmike EM64 with other microphone arrays / measurement instruments sent via the AVB-MADI bridge, but can also be used for recording multi-channel performances.
+
+<br>
 
 </details>
 
