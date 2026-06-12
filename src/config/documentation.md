@@ -28,7 +28,7 @@ It will be deleted...
 
 # 2. Audio Network (AVB)
 
-Our audio system is powered by AVB, but hosts both Dante and MADI bridges for maximum flexibility.
+Our audio system is powered by AVB, but hosts Dante and MADI bridges for maximum flexibility.
 
 <!We operate an integrated audio network across our studios, spanning 128 input channels and 128 output channels distributed throughout each of our spaces.
 This audio network is accessible from every modular work station within the studios, and is used to record or stream audio from across all of our hardware devices.>
