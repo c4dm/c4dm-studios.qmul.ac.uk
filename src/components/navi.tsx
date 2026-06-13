@@ -1,4 +1,4 @@
-// biome-ignore-all lint/nursery/noJsxPropsBind : here prop bindings are used alongside Aray.map()
+// biome-ignore-all lint/performance/noJsxPropsBind : here prop bindings are used alongside Aray.map()
 
 // dependencies
 import type { FC } from 'react'

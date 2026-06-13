@@ -4,7 +4,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 // dependencies
-import { type FC, type JSX, useEffect, useRef, useState } from 'react'
+import { type JSX, useEffect, useRef, useState } from 'react'
 
 type GridProperties = {
 	width: string
@@ -12,13 +12,19 @@ type GridProperties = {
 	gridTemplateColumns: string
 }
 
-export const GridFromJSON: FC<{
+export function GridFromJSON({
+	cell,
+	gridSpacer = 20,
+	json,
+	maxWidth = 280,
+	maxHeight = maxWidth,
+}: {
 	cell: (obj: any, i: number) => JSX.Element
 	gridSpacer?: number
 	json: readonly Record<string, any>[] | string[] | string
 	maxHeight?: number
 	maxWidth?: number
-}> = ({ cell, gridSpacer = 20, json, maxWidth = 280, maxHeight = maxWidth }) => {
+}): JSX.Element {
 	const self = useRef<HTMLDivElement>(null)
 	const [content, setContent] = useState<readonly Record<string, any>[] | string[]>([])
 	const [gridState, setGrid] = useState<GridProperties>({
