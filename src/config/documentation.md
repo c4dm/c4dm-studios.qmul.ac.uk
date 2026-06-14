@@ -36,7 +36,7 @@ This audio network is accessible from every modular work station within the stud
 <details><summary>Network Overview</summary>
 <br>
 
-inputs and outputs are confusing... user inputs and user outputs on wrong sides? can this also not be square?
+inputs and outputs are confusing... user inputs and user outputs on wrong sides? can this also not be square? YEAH ITS TERRIBLE INIT SO LET'S NOT DO THIS AND SCREEENSHOT MILAN AND LINK IT OR SOMIN BUT I ONT THINK ANYTHING MEANINGFUL IS GONNA FIT NICELY HERE THAT ISN'T JUST A BASIC FLOW CHART.
 ![diagram of audio matrix representing milan and all network endpoints](/images/documentation/audio-network-overview.png)
 
 <br>
