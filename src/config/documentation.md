@@ -525,8 +525,8 @@ Power for the Meyer subwoofer is located on the wall, whilst the Meyer satellite
 #### MacOS
 
 ```bash
-echo -n "KMS ON2" | nc -u -w1 192.168.0.21 65432
-echo -n "KMS OFF2" | nc -u -w1 192.168.0.21 65432
+echo -n "KMS ON1" | nc -u -w1 192.168.0.21 65432
+echo -n "KMS OFF1" | nc -u -w1 192.168.0.21 65432
 ```
 
 #### Windows
