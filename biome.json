@@ -38,7 +38,7 @@
 			"types": "all"
 		},
 		"rules": {
-			"a11y": "on",
+			"a11y": "error",
 			"complexity": {
 				"noAdjacentSpacesInRegex": "error",
 				"noArguments": "error",
@@ -280,8 +280,8 @@
 				"useVueNextTickPromise": "off",
 				"useVueValidVFor": "off"
 			},
-			"performance": "on",
-			"security": "on",
+			"performance": "error",
+			"security": "error",
 			"style": {
 				"noCommonJs": "error",
 				"noContinue": "error",
