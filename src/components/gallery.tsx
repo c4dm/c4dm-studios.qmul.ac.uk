@@ -68,7 +68,7 @@ function Image({ index }: { index: number }): JSX.Element {
 export const Gallery: FC = () => {
 	// image transition
 	const [transition, setTransition] = useState<boolean>(false)
-	const [imageVisible, setVisible] = useState<number>(0)
+	const [imageVisible, setImageVisible] = useState<number>(0)
 	const changeImage = useCallback(
 		(direction: -1 | 1): void => {
 			if (transition || gallery.length === 0) {
@@ -76,7 +76,7 @@ export const Gallery: FC = () => {
 			}
 			setTransition(true)
 			window.setTimeout(() => {
-				setVisible((current) => (gallery.length + current + direction) % gallery.length)
+				setImageVisible((current) => (gallery.length + current + direction) % gallery.length)
 				setTransition(false)
 			}, transition_duration)
 		},

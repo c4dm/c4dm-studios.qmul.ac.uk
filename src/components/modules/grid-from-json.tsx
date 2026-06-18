@@ -27,7 +27,7 @@ export function GridFromJSON({
 }): JSX.Element {
 	const self = useRef<HTMLDivElement>(null)
 	const [content, setContent] = useState<readonly Record<string, any>[] | string[]>([])
-	const [gridState, setGrid] = useState<GridProperties>({
+	const [gridProps, setGridProps] = useState<GridProperties>({
 		gridAutoRows: '',
 		gridTemplateColumns: '',
 		width: '',
@@ -74,7 +74,7 @@ export function GridFromJSON({
 					(padding_array[0] ?? 0) -
 					(padding_array[1] ?? 0)
 				const largestGrid: number = content.length * (maxWidth + gridSpacer) - gridSpacer
-				setGrid({
+				setGridProps({
 					gridAutoRows: `${(parentWidth > maxWidth ? maxHeight : (maxHeight * parentWidth) / maxWidth).toString()}px`,
 					gridTemplateColumns:
 						parentWidth > maxWidth
@@ -98,15 +98,15 @@ export function GridFromJSON({
 		<div
 			ref={self}
 			style={{
-				alignItems: 'center',
-				display: 'grid',
-				gap: `${gridSpacer.toString()}px`,
-				gridAutoRows: gridState.gridAutoRows,
-				gridTemplateColumns: gridState.gridTemplateColumns,
-				justifyContent: 'space-evenly',
-				justifyItems: 'center',
-				margin: '0 auto',
-				width: gridState.width,
+				...{
+					alignItems: 'center',
+					display: 'grid',
+					gap: `${gridSpacer.toString()}px`,
+					justifyContent: 'space-evenly',
+					justifyItems: 'center',
+					margin: '0 auto',
+				},
+				...gridProps,
 			}}
 		>
 			{content.map((obj: any, i: number): JSX.Element => cell(obj, i))}
