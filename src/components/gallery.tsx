@@ -71,7 +71,7 @@ export const Gallery: FC = () => {
 	const [imageVisible, setImageVisible] = useState<number>(0)
 	const changeImage = useCallback(
 		(direction: -1 | 1): void => {
-			if (transition || gallery.length === 0) {
+			if (transition || gallery.length <= 1) {
 				return
 			}
 			setTransition(true)

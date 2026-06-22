@@ -397,7 +397,6 @@ The Plant Room hosts 64-channel AVB-MADI, AVB-Dante, and Dante-MADI bridges. The
 	<tr><td> 6 </td><td> DANTE IN 17-32 </td><td> 1 - 16 </td><td> DANTE IN 17-32 </td></tr>
 	<tr><td> 7 </td><td> DANTE IN 33-48 </td><td> 1 - 16 </td><td> DANTE IN 33-48 </td></tr>
 	<tr><td> 8 </td><td> DANTE IN 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64 </td></tr>
-
 </tbody></table>
 
 <br/>
@@ -419,7 +418,6 @@ The Plant Room hosts 64-channel AVB-MADI, AVB-Dante, and Dante-MADI bridges. The
 	<tr><td> 7 </td><td> DANTE OUT 33-48 </td><td> 1 - 16 </td><td> DANTE OUT 33-48</td></tr>
 	<tr><td> 8 </td><td> DANTE OUT 49-64 </td><td> 1 - 16 </td><td> DANTE OUT 49-64</td></tr>
 </tbody></table>
-<br/>
 
 </details>
 
