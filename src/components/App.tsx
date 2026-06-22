@@ -22,7 +22,7 @@ import studios from '../config/studios.md?raw'
 // routes - this is an _ordered_ set in the form {path: markdown}
 const pages: Record<string, string> = {
 	'/': home,
-	'/studios': studios,
+	'/equipment': studios,
 	'/members': members,
 	'/documentation': documentation,
 	'/contact': contact,

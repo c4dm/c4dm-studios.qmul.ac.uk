@@ -1,7 +1,7 @@
 <!-- cspell:ignore ALSA Audient Audiotechnik Behringer Digicheck Digiface Disklavier dmXLAN Drawmer Eigenmike IPMSW Korg MADI MADIFace MKII ncat Netgear nmap tmws Soundfield Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
-# Studios
+# Equipment
 
 <table>
   <tbody>
