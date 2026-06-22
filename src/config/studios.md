@@ -3,11 +3,20 @@
 
 # Equipment
 
+<table style="width: 100%; table-layout: fixed;">
+<tr style="font-weight: bold;">
+	<td colspan='2'> Microphones </td>
+</tr>
+  <tr>
+    <td style="width: 50%;">Column 1</td>
+    <td style="width: 50%;">Column 2</td>
+  </tr>
+</table>
+
+Microphones (subject to availability)
+
 <table>
   <tbody>
-    <tr>
-      <td colspan="4"><b>Microphones</b></td>
-    </tr>
     <tr>
       <td><b>Brand</b></td>
       <td><b>Model</b></td>
