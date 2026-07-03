@@ -27,7 +27,6 @@ const pages: Record<string, string> = {
 	'/documentation': documentation,
 	'/contact': contact,
 }
-const NULL: JSX.Element = <></>
 
 export default function App(): JSX.Element {
 	// get current path and redirect to home if !pages[location]
@@ -71,7 +70,7 @@ export default function App(): JSX.Element {
 							</div>
 						),
 						// JSX replacement / insertion
-						script: ({ className }): JSX.Element => {
+						script: ({ className }): JSX.Element | null => {
 							switch (className) {
 								case 'contact-staff':
 									return <Staff />
@@ -80,7 +79,7 @@ export default function App(): JSX.Element {
 								case 'home-gallery':
 									return <Gallery />
 								default:
-									return NULL
+									return null
 							}
 						},
 					}}

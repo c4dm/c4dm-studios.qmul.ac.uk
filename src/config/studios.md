@@ -1,4 +1,4 @@
-<!-- cspell:ignore ALSA Audient Audiotechnik Behringer Digicheck Digiface Disklavier dmXLAN Drawmer Eigenmike IPMSW Korg MADI MADIFace MKII ncat Netgear nmap tmws Soundfield Totalmix usbdk Vicon -->
+<!-- cspell:ignore Sennheiser Shure  -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 # Equipment
@@ -98,8 +98,7 @@ Microphones (subject to availability)
 			<td></td>
 			<td>2</td>
 		</tr>
-			
-			
+
   </tbody>
 </table>
 

@@ -228,6 +228,7 @@
 				"noReactNativeRawText": "off",
 				"noReactStringRefs": "error",
 				"noRestrictedDependencies": "error",
+				"noSvelteUnnecessaryStateWrap": "off",
 				"noTopLevelLiterals": "error",
 				"noUndeclaredClasses": "error",
 				"noUnnecessaryTemplateExpression": "error",

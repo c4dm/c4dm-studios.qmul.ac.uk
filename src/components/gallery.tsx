@@ -20,7 +20,6 @@ import gallery from 'virtual:gallery'
 const gallery_dir = '/images/gallery'
 
 // gloabls
-const NULL: JSX.Element = <></>
 const regex = { file_extension: /\.[^.]*$/u }
 const slideshow_interval = 5000
 const transition_duration = 300
@@ -43,7 +42,7 @@ const Arrow: FC<{ direction: 1 | -1; onClick: (direction: 1 | -1) => void }> = (
 	)
 }
 
-function Image({ index }: { index: number }): JSX.Element {
+function Image({ index }: { index: number }): JSX.Element | null {
 	const file: string | undefined = gallery[index]
 	if (file) {
 		const img_title = file.replace(regex.file_extension, '')
@@ -62,7 +61,7 @@ function Image({ index }: { index: number }): JSX.Element {
 			</>
 		)
 	}
-	return NULL
+	return null
 }
 
 export const Gallery: FC = () => {
@@ -158,5 +157,5 @@ export const Gallery: FC = () => {
 			</div>
 		)
 	}
-	return NULL
+	return null
 }

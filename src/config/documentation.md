@@ -60,7 +60,9 @@ To correctly install the required software, please follow the step by step instr
 - Select Digiface AVB from the left menu, followed by your operating system.
 - Download the latest audio driver (_driver_usbdk_mac_xxx.zip_ for MacOS or _driver_madiface_win_xxx.zip_ for Windows).
 - (MacOS) Download the RME AVB Controller ???. <!-- NEEDS FIXING -->
+- (MacOS) ENABLE YOUR PRIVACY SETTINGS - Driver Extensions / Kernal Extensions/ login items / general privacy, and restart liberally.
 - (Windows) Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
+- (Windows) Download and install [npcap](https://npcap.com).
 - Finally, download and install [Milan Manager](https://milanmanager.com/#downloads).
 
 ### Optional Software
@@ -82,6 +84,8 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 ### RME Digiface AVB
 
 <p style='text-decoration: underline; font-weight: bold;'>The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps.</p>
+
+WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB. I have a screenshot of this on Sim's laptop
 
 ### Milan Manager
 
