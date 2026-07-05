@@ -62,7 +62,7 @@ To correctly install the required software, please follow the step by step instr
 - (MacOS) Download the RME AVB Controller ???. <!-- NEEDS FIXING -->
 - (MacOS) ENABLE YOUR PRIVACY SETTINGS - Driver Extensions / Kernal Extensions/ login items / general privacy, and restart liberally.
 - (Windows) Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
-- (Windows) Download and install [npcap](https://npcap.com).
+- (Windows) Download and install the network packet capture library [npcap](https://npcap.com).
 - Finally, download and install [Milan Manager](https://milanmanager.com/#downloads).
 
 ### Optional Software
@@ -86,6 +86,8 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 <p style='text-decoration: underline; font-weight: bold;'>The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps.</p>
 
 WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB. I have a screenshot of this on Sim's laptop
+
+![digiface windows](/images/documentation/rme-digiface-windows.png)
 
 ### Milan Manager
 
@@ -625,7 +627,7 @@ And for powering down, you do not need to power it down at the wall, but in the 
 
 ### Control Room Keyboards
 
-There are two MIDI keyboard installed in the Control Room - a [MicroKey by Korg](https://www.korg.co.uk/products/microkey-2?variant=41114187006120) and an [Axiom by M-Audio](https://www.m-audio.com/legacy/axiom-61.html).
+There are two MIDI keyboard installed in the Control Room - a [MicroKey by Korg](https://www.korg.co.uk/products/microkey-2?variant=41114187006120) and an [Stage 3 by Nord](https://www.nordkeyboards.com/legacy-products/nord-stage-3/).
 These devices have been setup for local connections only, via the [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), but can easily be connected to the network by switching the USB connection on the desk over to the mioXL.
 
 </details>
