@@ -3,19 +3,72 @@
 
 # Equipment
 
-<table style="width: 100%; table-layout: fixed;">
-<tr style="font-weight: bold;">
-	<td colspan='2'> Microphones </td>
-</tr>
-  <tr>
-    <td style="width: 50%;">Column 1</td>
-    <td style="width: 50%;">Column 2</td>
-  </tr>
-</table>
+Performance Lab: 6.42m x 5.05m
 
-Microphones (subject to availability)
+Control Room: 6.42m x 5.05m
 
-<table>
+Live Room: 9.5m 6.5m
+
+G2/Lounge: 2.9m x 5.69m
+
+<table style="width: 100%">
+  <tbody>
+    <tr>
+      <td><b>Category</b></td>
+      <td><b>Title</b></td>
+	  <td><b>Description</b></td>
+      <td><b>Qty</b></td>
+      <td><b>+48v</b></td>
+    </tr>
+		<tr>
+			<td>Microphone</td>
+			<td>Beyerdynamic - M160</td>
+			<td>Hypercardioid / Ribbon</td>
+			<td>2</td>
+			<td>❌</td>
+		</tr>
+		<tr>
+			<td>Microphone</td>
+			<td>Schoeps - MiniCMIT</td>
+			<td>Hypercardioid / Condenser</td>
+			<td>1</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Microphone</td>
+			<td>Neumann - U87 Ai</td>
+			<td>Multi-Pattern / Condenser</td>
+			<td>1</td>
+			<td>✓</td>
+		</tr>
+		<tr>
+			<td>Microphone</td>
+			<td>DPA - 4006-TL</td>
+			<td>Omnidirectional / Condenser</td>
+			<td>3</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Microphone</td>
+			<td>Coles - 4038</td>
+			<td>Bidirectional / Ribbon</td>
+			<td>2</td>
+			<td>❌</td>
+		</tr><tr>
+			<td>Microphone</td>
+			<td>SM58</td>
+			<td></td>
+			<td>5</td>
+			<td></td>
+		</tr><tr>
+			<td>Microphone</td>
+			<td>SM58</td>
+			<td></td>
+			<td>5</td>
+			<td></td>
+		</tr>
+
+<!-- <table style="width: 100%">
   <tbody>
     <tr>
       <td><b>Brand</b></td>
@@ -89,18 +142,33 @@ Microphones (subject to availability)
 		<tr>
 		<td rowspan='1'>Coles</td>
 			<td>4038</td>
-			<td></td>
+			<td style="color: red; font-weight: bold;">NO PHANTOM</td>
 			<td>2</td>
 		</tr>
 		<tr>
-		<td rowspan='1'>Sennheiser</td>
+		<td rowspan='4'>Sennheiser</td>
 			<td>e906</td>
 			<td></td>
 			<td>2</td>
 		</tr>
+			<tr>
+				<td>e614</td>
+				<td>✓</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>e604</td>
+				<td></td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>e602-II</td>
+				<td></td>
+				<td>1</td>
+			</tr>
 
   </tbody>
-</table>
+</table> -->
 
 <br/>
 
