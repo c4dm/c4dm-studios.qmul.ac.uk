@@ -14,7 +14,7 @@ C4DM Studios is composed of three spaces: the Performance Lab (G2B), the Control
 	<a href='https://forms.office.com/e/zAXZEWdKhJ?origin=lprLink' class='button'>
 		Membership Form
 	</a>
-	<a href='https://qmulprod.sharepoint.com/:l:/r/sites/Studio/Lists/Studio%20Calendar?e=JGvW27' class='button'>
+	<a href='https://qmulprod.sharepoint.com/sites/Studio/Lists/Studio%20Calendar/Control%20Room.aspx?e=JGvW27&CID=14fc976d-c0ec-4bf0-b6d8-fa5c6a253470&env=WebViewList' class='button'>
 		Studio Calendar
 	</a>
 	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JACfKaj-cmSpTbTvK2kdb4abAc4ZHnNh5dZdYbLk4P3csq0?e=w55nzJ' class='button'>
