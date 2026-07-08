@@ -1,13 +1,5 @@
 <div class='markdown'> <!-- for applying scss styling -->
 
-<!-- # Our Services
-
-At C4DM studios, we offer...
-
-C4DM Studios is composed of three spaces: the Performance Lab (G2B), the Control Room (G2C), and the Live Room (G4).
-
-<p style='text-align: center;'>If you are interested in working with us, but are not affiliated with Queen Mary, please get in touch at </p> -->
-
 # Members
 
 <span>
@@ -38,9 +30,6 @@ C4DM Studios is composed of three spaces: the Performance Lab (G2B), the Control
 
 <details><summary>
 What times are you open?
-</summary></details>
-<details><summary>
-Why can I not get through the black door?
 </summary></details>
 <details><summary>
 When I become a member, how soon can I start booking sessions?
