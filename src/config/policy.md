@@ -29,23 +29,6 @@ It is not permitted to leave this door open/unlocked without authorisation from 
 
 </details>
 
-<details><summary>Guests</summary>
-
-We are happy to welcome external participants into our facilities if they are essential to your session.
-**As a studio member however, you are responsible for the actions of guests within the studios, as well as their safety.**
-
-</details>
-
-<details><summary>Capacity</summary>
-
-Each room has a maximum capacity, as determined by the [Queen Mary Health and Safety Directorate](https://www.qmul.ac.uk/hsd/):
-
-- Performance Lab (G2B): 40
-- Control Room (G2C): 8
-- Live/Listening Room (G4): 8
-
-</details>
-
 <!-- <details><summary>Security Cameras}** </summary>
 <!-- ... -->
 
@@ -67,6 +50,13 @@ We expect you to be in attendance during your booking, and are responsible for a
 
 To ensure quiet and undisturbed opportunities for recording, rehearsal, and research, it is important that studio users do not enter spaces that have been booked by others.
 It is your responsibility to check the relevant calendars, book the spaces appropriately, and to not disrupt the work of others.
+
+<details><summary>Guests</summary>
+
+We are happy to welcome external participants into our facilities if they are essential to your session.
+**As a studio member however, you are responsible for the actions of guests within the studios, as well as their safety.**
+
+</details>
 
 <details><summary>Health & Safety</summary>
 
@@ -130,6 +120,16 @@ Users wishing to arrange such an event must first complete a risk assessment, wh
 Users are encouraged to ensure that all individuals involved in the organisation of an event be inducted studio members.
 Studio management is not responsible for the organisation of catering, the installation of peripherals from outside of our facilities, or security - these services are to be arranged through [Queen Mary Venues](https://www.qmul.ac.uk/venues/contactus/), and may incur service charges.
 **Any event that is being hosted outside of normal working hours (Mon-Fri, 9:00-17:00) requires the procurement and notification of security.**
+
+<details><summary>Capacity</summary>
+
+Each room has a maximum capacity, as determined by the [Queen Mary Health and Safety Directorate](https://www.qmul.ac.uk/hsd/):
+
+- Performance Lab (G2B): 40
+- Control Room (G2C): 8
+- Live/Listening Room (G4): 8
+
+</details>
 
 # Equipment Loans
 
