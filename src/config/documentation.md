@@ -1,4 +1,4 @@
-<!-- cspell:ignore ALSA Audient Audiotechnik Behringer Digicheck Digiface Disklavier dmXLAN Drawmer Eigenmike IPMSW Korg MADI MADIFace MKII ncat Netgear nmap tmws Soundfield Totalmix usbdk Vicon -->
+<!-- cspell:ignore ALSA Audient Audiotechnik Auracle Behringer Bonjour Digicheck Digiface Disklavier dmXLAN Drawmer Eigenmike Erichsen IPMSW Korg MADI MADIFace MKII ncat Netgear nmap Nord tmws Soundfield Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
 **All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
@@ -521,14 +521,19 @@ Please note, **these folders are not to be used for permanent storage, and will 
 ### MacOS
 
 To share files between using our NAS, navigate to the `Network` section in a Finder window.
-You should then see a network device called `studio-files`, which will prompt you for a login upon trying to connect to it.
+You should then see a network device called `studio-files`, which will prompt you for our student login credentials upon trying to connect to it.
 Once logged in, your can treat this like any other file system within Finder, as pictured below.
 
-![MacOS Finder window demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas.png)
+![MacOS Finder window demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas-mac.png)
 
 ### Windows
 
-...coming soon...
+To share files on Windows, navigate to: <pre><code>Control Panel > Network and Internet > Network and Sharing Centre > Change Advanced Settings</code></pre>
+Then make sure that `Network Discovery` is switched on.
+Finally, from in the `Network` section of file browser, you should then see a device called `STUDIO-FILES`, which will prompt you for our student login credentials upon trying to connect to it.
+Once logged in, your can treat this like any other file system within File Browser, as pictured below.
+
+![Windows File Browser demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas-windows.png)
 
 </details>
 
@@ -590,6 +595,7 @@ These accessible ports include:
 ![Picture of a mioXL by iConnectivity, showing the preconfigured MIDI ports](/images/documentation/midi-mioXL.png)
 
 Upon connecting a MIDI device to one of these ports, you can then connect to that device over the LAN according to the following the steps, relevant to your computer's operating system.
+If a device refuses to connect, check that it is not connected to another device by using the software [Auracle X](https://www.iconnectivity.com/auracle-x-series), as only one connection per device is allowed at a given time.
 
 ### MacOS
 
@@ -607,9 +613,12 @@ You should now see these named sessions appear in your DAW - for example, you ca
 
 ### Windows
 
-...coming soon...
+To connect to an RTP-MIDI port on a Windows computer, first install [rtpMIDI by Tobias Erichsen](https://www.tobias-erichsen.de/software/rtpmidi.html) and then also manually install [Apple's Bonjour Print Services](https://support.apple.com/en-us/106380).
+To make sure Apple's Bonjour is running, press `Win + R`, type in `services.msc`, and look for 'Bonjour' - if it is not there, restart your computer.
+Upon opening rtpMIDI, your should see something similar to the window pictured image.
+This software serves to match the design of Apple's Network MIDI Settings, such that the remaining setup process on Windows is mostly identical to our previous description of connecting to an RTP-MIDI port using MacOS.
 
-<!-- [rtpMIDI by Tobias Erichsen](https://www.tobias-erichsen.de/software/rtpmidi.html) -->
+![rtpMIDI window, demonstrating how to activate an RTP-MIDI port](/images/documentation/midi-windows-settings.png)
 
 </details>
 
@@ -619,7 +628,7 @@ Throughout our studios, we have various MIDI devices that are permanently instal
 
 ### Yamaha Disklavier
 
-Within the Performance Lab, we have a Yamaha Disklavier HQ300SX permanently connected over RTP-MIDI.
+Within the Performance Lab, we have a Yamaha Disklavier HQ300SX permanently connected over RTP-MIDI, and discoverable by the name 'PL Disklavier'.
 This piano can have MIDI sent to it, and will produce acoustic sound as a response, as well as being able to transmit MIDI whilst being played.
 To power this instrument, typically all you need to do is use the switch underneath the keyboard.
 If it is however turned off at the wall, make sure to turn on the wall switch before turning on the switch underneath the keyboard.
