@@ -17,6 +17,7 @@ import contact from '../config/contact.md?raw'
 import documentation from '../config/documentation.md?raw'
 import home from '../config/home.md?raw'
 import members from '../config/members.md?raw'
+import policy from '../config/policy.md?raw'
 import studios from '../config/studios.md?raw'
 
 // routes - this is an _ordered_ set in the form {path: markdown}
@@ -26,6 +27,7 @@ const pages: Record<string, string> = {
 	'/members': members,
 	'/documentation': documentation,
 	'/contact': contact,
+	'/policy': policy,
 }
 
 export default function App(): JSX.Element {
@@ -44,7 +46,7 @@ export default function App(): JSX.Element {
 			<title>
 				{`C4DM Studios${location === '/' ? '' : ` | ${location.charAt(1).toUpperCase() + location.slice(2)}`}`}
 			</title>
-			<Navi pages={Object.keys(pages)} />
+			<Navi pages={Object.keys(pages).filter((key) => key !== '/policy')} />
 			<main>
 				<Markdown
 					components={{
@@ -52,7 +54,11 @@ export default function App(): JSX.Element {
 						a: ({ ...props }): JSX.Element => (
 							<a
 								{...(props.className && { className: props.className })}
-								{...(props.download ? { download: true } : { rel: 'noopener', target: '_blank' })}
+								{...(props.download
+									? { download: true }
+									: props.target
+										? { target: props.target }
+										: { rel: 'noopener', target: '_blank' })}
 								href={props.href}
 							>
 								{props.children}

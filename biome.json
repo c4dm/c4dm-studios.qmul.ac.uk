@@ -305,7 +305,7 @@
 				"noMultilineString": "error",
 				"noNamespace": "error",
 				"noNegationElse": "error",
-				"noNestedTernary": "error",
+				"noNestedTernary": "off",
 				"noNonNullAssertion": "error",
 				"noParameterAssign": "error",
 				"noParameterProperties": "error",

@@ -21,7 +21,7 @@
 	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JABkrluQ6oZESIof44y9Xrr1AZRq495f-gb83ZJEO91ml3U?nav=NWViZDA2YTMtNTRkYy00OGFlLTkyYzMtMTFkMWU5MmRkODM1' class='button'>
 		Event Hire
 	</a>
-	<a class='button'>
+	<a href='/policy' class='button' target='_self'>
 		Studio Policy
 	</a>
 </span>
@@ -35,7 +35,7 @@ What times are you open?
 When I become a member, how soon can I start booking sessions?
 </summary></details>
 <details><summary>
-Can visiting students use our spaces?
+Can students outside of the Engineering department use our spaces?
 </summary></details>
 <details><summary>
 Can I borrow equipment loan without being inducted?
