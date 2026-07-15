@@ -1,5 +1,4 @@
-<!-- cspell:ignore Sennheiser Shure  -->
-<div class='markdown'> <!-- for applying scss styling -->
+<div class='markdown'> <!-- for scss styling -->
 
 # Equipment
 
@@ -1191,6 +1190,6 @@ G2/Lounge: 2.9m x 5.69m
 	</tr>
 
   </tbody>
-</table>
+</table> -->
 
-</div> for applying scss styling -->
+</div> <!-- for scss styling -->

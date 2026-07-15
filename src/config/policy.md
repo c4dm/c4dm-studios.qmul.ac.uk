@@ -1,4 +1,4 @@
-<div class='markdown'> <!-- for applying scss styling -->
+<div class='markdown'> <!-- for scss styling -->
 
 # Security & Access
 
@@ -152,4 +152,4 @@ Members are encouraged to read all updates to our studio policy, and we similarl
 Members who violate this policy agreement may have their access suspended, technical permissions revoked, and/or future bookings cancelled.
 Under heinous circumstances, these violations will also be reported to other relevant members of staff at Queen Mary.
 
-</div> <!-- for applying scss styling -->
+</div> <!-- for scss styling -->

@@ -1,4 +1,4 @@
-<div class='markdown'> <!-- for applying scss styling -->
+<div class='markdown'> <!-- for scss styling -->
 
 # Members
 
@@ -53,4 +53,4 @@ As with a typical equipment loan request, you will need to provide a supporting 
 
 </details>
 
-</div> <!-- for applying scss styling -->
+</div> <!-- for scss styling -->

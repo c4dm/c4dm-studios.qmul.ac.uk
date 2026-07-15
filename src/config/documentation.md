@@ -1,5 +1,4 @@
-<!-- cspell:ignore ALSA Audient Audiotechnik Auracle Behringer Bonjour Digicheck Digiface Disklavier dmXLAN Drawmer Eigenmike Erichsen IPMSW Korg MADI MADIFace MKII ncat Netgear nmap Nord tmws Soundfield Totalmix usbdk Vicon -->
-<div class='markdown'> <!-- for applying scss styling -->
+<div class='markdown'> <!-- for scss styling -->
 
 # Audio Network (AVB)
 
@@ -938,4 +937,4 @@ https://eigenmike.com/downloads
 
 ## Troubleshooting: EM64 Eigenmike -->
 
-</div> <!-- for applying scss styling -->
+</div> <!-- for scss styling -->

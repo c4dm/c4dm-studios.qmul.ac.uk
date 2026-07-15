@@ -1,4 +1,4 @@
-<div class='markdown'> <!-- for applying scss styling -->
+<div class='markdown'> <!-- for scss styling -->
 
 # Where to Find Us
 
@@ -32,4 +32,4 @@
 <!-- to configure this section, please see `staff.ts` -->
 <script class='contact-staff'></script>
 
-</div> <!-- for applying scss styling -->
+</div> <!-- for scss styling -->
