@@ -51,19 +51,25 @@ export default function App(): JSX.Element {
 				<Markdown
 					components={{
 						// default link behaviour
-						a: ({ ...props }): JSX.Element => (
-							<a
-								{...(props.className && { className: props.className })}
-								{...(props.download
-									? { download: true }
-									: props.target
-										? { target: props.target }
-										: { rel: 'noopener', target: '_blank' })}
-								href={props.href}
-							>
-								{props.children}
-							</a>
-						),
+						a: ({ ...props }): JSX.Element => {
+							let behaviour_props = {}
+							if (props.download) {
+								behaviour_props = { download: true }
+							} else if (props.target) {
+								behaviour_props = { target: props.target }
+							} else {
+								behaviour_props = { rel: 'noopener', target: '_blank' }
+							}
+							return (
+								<a
+									{...(props.className && { className: props.className })}
+									{...behaviour_props}
+									href={props.href}
+								>
+									{props.children}
+								</a>
+							)
+						},
 						// styled headers
 						h1: ({ children }): JSX.Element => (
 							<div className='h1'>
