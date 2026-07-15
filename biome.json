@@ -485,7 +485,7 @@
 				"noUndeclaredEnvVars": "error",
 				"noUnknownAtRules": "error",
 				"noUnknownAttribute": "error",
-				"noUnnecessaryConditions": "error",
+				"noUnnecessaryConditions": "off",
 				"noUnsafeDeclarationMerging": "error",
 				"noUnsafeNegation": "error",
 				"noUnusedExpressions": "error",

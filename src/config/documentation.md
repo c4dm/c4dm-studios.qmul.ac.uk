@@ -1,31 +1,6 @@
 <!-- cspell:ignore ALSA Audient Audiotechnik Auracle Behringer Bonjour Digicheck Digiface Disklavier dmXLAN Drawmer Eigenmike Erichsen IPMSW Korg MADI MADIFace MKII ncat Netgear nmap Nord tmws Soundfield Totalmix usbdk Vicon -->
 <div class='markdown'> <!-- for applying scss styling -->
 
-**All members should read sections 1-3 for a general understanding on how our studios work. Sections 4 and onwards cover specific equipment and use cases.**
-
-# Overview
-
-<details><summary>Power On/Off Procedures</summary>
-</details>
-
-<details><summary>Our Computers</summary>
-
-We have two desktop computers that are pre-configured for a range of studio tasks...
-
-Members who require certain admin privileges to carry out their work on our machines can request this via email.
-
-### Student Login Credentials
-
-Username: student
-
-Password: student
-
-### Saving Your Work
-
-It will be deleted...
-
-</details>
-
 # Audio Network (AVB)
 
 Our audio system is powered by AVB, but hosts Dante and MADI bridges for maximum flexibility.
@@ -90,23 +65,6 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 ![digiface windows](/images/documentation/rme-digiface-windows.png)
 
 ### Milan Manager
-
-<!-- ### RME Total Mix -->
-
-<!-- ### Download the latest versions of our TotalMix templates below!
-
-<span>
-	<a class='button' download href='/resources/Performance Lab (24263718).tmws'>
-		Performance Lab Template
-	</a>
-	<a class='button' download href='/resources/Control Room (24251471).tmws'>
-		Control Room Template
-	</a>
-	<a class='button' download href='/resources/Live Room (24261706).tmws'>
-		Live Room Template
-	</a>
-</span>
-<br/> -->
 
 </details>
 
@@ -648,7 +606,8 @@ These surround sound systems are largely used for research into spatial audio an
 
 <details><summary>Powering our Speaker Systems</summary>
 
-For the most part, the power for our speaker systems is controlled via UDP commands sent over the LAN.
+The easiest way to power the satellite speakers is to log on to the Windows computer in the Performance Lab, and use the Desktop applications `PL-Spat` (Performance Lab) or `LR-Spat` (Live Room) to toggle the power on and off.
+To otherwise control the system from your own laptop, the power for our satellite speakers can be toggled via UDP commands sent over the LAN.
 If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send such commands via UDP.
 And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
 
@@ -709,7 +668,7 @@ Within the Performance Lab, we operate a 16.2 system arranged in a rectangular c
 	<tr><td> 2.92 </td><td> -136.5 </td><td> 0.0 </td><td> -2.01 </td><td> -2.12 </td><td> 0.0 </td></tr>
 	<tr><td> 3.33 </td><td> -174.0 </td><td> 0.0 </td><td> -0.35 </td><td> -3.31 </td><td> 0.0 </td></tr>
 	<tr><td> 3.15 </td><td> 131.8 </td><td> 0.0 </td><td> 2.35 </td><td> -2.1 </td><td> 0.0 </td></tr>
-	<tr><td> 2.34 </td><td> 90.0 </td><td> 0.0 </td><td> 2.34 </td><td> 0. </td><td> 0.0 </td></tr>
+	<tr><td> 2.34 </td><td> 90.0 </td><td> 0.0 </td><td> 2.34 </td><td> 0.0 </td><td> 0.0 </td></tr>
 	<tr><td> 3.2 </td><td> 48.1 </td><td> 0.0 </td><td> 2.38 </td><td> 2.14 </td><td> 0.0 </td></tr>
 	<tr><td> 3.72 </td><td> -22.3 </td><td> 29.2 </td><td> -1.23 </td><td> 3.0 </td><td> 1.81 </td></tr>
 	<tr><td> 2.81 </td><td> -67.0 </td><td> 31.7 </td><td> -2.2 </td><td> 0.93 </td><td> 1.48 </td></tr>
@@ -782,7 +741,28 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 
 # Motion Capture
 
-...coming soon...
+<details><summary>Powering our System</summary>
+
+The easiest way to power on the motion capture is to log on to the Windows computer in the Performance Lab, and use the Desktop application `Vicon Power` to toggle the power on and off.
+To otherwise control the system from your own laptop, the power for our motion capture can be toggled via UDP commands sent over the LAN.
+If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send such commands via UDP.
+And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
+
+#### MacOS
+
+```bash
+$ echo -n "KMS ON1" | nc -u -w1 192.168.0.9 65432
+$ echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 65432
+```
+
+#### Windows
+
+```powershell
+echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 65432
+echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
+```
+
+</details>
 
 # DMX Lighting
 
@@ -859,21 +839,6 @@ We have licenses for Blade, Nexus and Tracker.
 - **2 x** Vicon Bonita 720C Video Cameras
 
 - **1 x** Vicon Lock+
-
-## How to Motion Capture
-
-If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send commands via UDP.
-
-power on commands - macos
-```bash
-$ echo -n "KMS ON1" | nc -u -w1 192.168.0.9 65432
-$ echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 65432
-```
-power on commands - windows
-```powershell
-$ echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 65432
-$ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
-```
 
 ### Basic Operation
 

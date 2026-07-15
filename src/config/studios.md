@@ -847,7 +847,7 @@ G2/Lounge: 2.9m x 5.69m
     	<td>Meyer Sound</td>
     	<td>USW 1P</td>
     	<td>Subwoofer</td>
-    	<td>8</td>
+    	<td>1</td>
     	<td></td>
     </tr>
 	<tr>
