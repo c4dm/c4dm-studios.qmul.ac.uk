@@ -1,6 +1,6 @@
 <div class='markdown'> <!-- for scss styling -->
 
-# Equipment
+# Studios
 
 ## Dimensions
 
@@ -11,6 +11,8 @@ Control Room: 6.42m x 5.05m
 Live Room: 9.5m 6.5m
 
 G2/Lounge: 2.9m x 5.69m
+
+# Equipment
 
 ## Microphones
 

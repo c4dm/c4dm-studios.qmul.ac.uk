@@ -2,10 +2,7 @@
 
 # Audio Network (AVB)
 
-Our audio system is powered by AVB, but hosts Dante and MADI bridges for maximum flexibility.
-
-<!We operate an integrated audio network across our studios, spanning 128 input channels and 128 output channels distributed throughout each of our spaces.
-This audio network is accessible from every modular work station within the studios, and is used to record or stream audio from across all of our hardware devices.>
+Our audio system uses an AVB network, with Dante and MADI bridges for compatibility with other formats. All devices are connected through the network, and audio routes are configured centrally in Milan Manager rather than being defined by fixed physical connections. This section provides documentation on software installation, endpoint configuration, audio channel and stream assignments, audio routing within Milan Manager, and the configuration and operation of the format bridges.
 
 <details><summary>Network Overview</summary>
 <br>
@@ -21,7 +18,7 @@ inputs and outputs are confusing... user inputs and user outputs on wrong sides?
 
 Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed, connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock) for ease of use.
 These Digiface AVB devices act as hardware endpoints across our audio network, and once connected to, can be used to receive and send audio from anywhere within the studios.
-These audio interfaces have been preconfigured on all of our in house computers, and can also be configured for use on a personal laptop.
+These audio interfaces have been preconfigured on all of our in-house computers, and can also be configured for use on a personal laptop.
 
 ### Required Software
 
@@ -69,23 +66,23 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 <details><summary>Milan Manager</summary>
 
+Studio users only need to interact with the Overview tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
+
+If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the default configuration and should remain set to a 48 kHz sample rate.
+
 </details>
 
-<details><summary>AVB Stream Map</summary>
-
-This section acts as a reference for our audio network, describing per room which AVB streams have been connected to our various input and output devices.
-
-Each stream is 16 channels.
+<details><summary>AVB Channel Map</summary>
 
 ### Control Room
 
-<table><tbody>
-	<tr><td colspan='4'><b> Listener Streams </b></td></tr>
-	<tr>
-		<td style='width: 36px;'><b> No. </b></td>
-		<td style='width: 32%'><b> Name </b></td>
-		<td><b> Channels </b></td>
-		<td style='width: 38%'><b> Assignments </b></td>
+## Talker Streams
+
+<table style="width: 100%"><tbody>
+		<td style='width: 25%'><b> Stream </b></td>
+		<td style='width: 25%'><b> Name </b></td>
+		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -129,15 +126,13 @@ Each stream is 16 channels.
 	</tr>
 </tbody></table>
 
-<br/>
+## Listener Streams
 
-<table><tbody>
-	<tr><td colspan='4'><b> Talker Streams </b></td></tr>
-	<tr>
-		<td style='width: 36px;'><b> No. </b></td>
-		<td style='width: 32%'><b> Name </b></td>
-		<td><b> Channels </b></td>
-		<td style='width: 38%'><b> Assignments </b></td>
+<table style="width: 100%"><tbody>
+		<td style='width: 25%'><b> Stream </b></td>
+		<td style='width: 25%'><b> Name </b></td>
+		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -166,15 +161,17 @@ Each stream is 16 channels.
 	<tr><td> 8 </td><td> - </td><td> - </td><td> - </td></tr>
 </tbody></table>
 
+<br/>
+
 ### Live Room
 
-<table><tbody>
-	<tr><td colspan='4'><b> Listener Streams </b></td></tr>
-	<tr>
-		<td style='width: 36px;'><b> No. </b></td>
-		<td style='width: 32%'><b> Name </b></td>
-		<td><b> Channels </b></td>
-		<td style='width: 38%'><b> Assignments </b></td>
+## Talker Streams
+
+<table style="width: 100%"><tbody>
+		<td style='width: 25%'><b> Stream </b></td>
+		<td style='width: 25%'><b> Name </b></td>
+		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -209,15 +206,13 @@ Each stream is 16 channels.
 	<tr><td> 8 </td><td> - </td><td> - </td><td> - </td></tr>
 </tbody></table>
 
-<br/>
+## Listener Streams
 
-<table><tbody>
-	<tr><td colspan='4'><b> Talker Streams </b></td></tr>
-	<tr>
-		<td style='width: 36px;'><b> No. </b></td>
-		<td style='width: 32%'><b> Name </b></td>
-		<td><b> Channels </b></td>
-		<td style='width: 38%'><b> Assignments </b></td>
+<table style="width: 100%"><tbody>
+		<td style='width: 25%'><b> Stream </b></td>
+		<td style='width: 25%'><b> Name </b></td>
+		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -255,15 +250,17 @@ Each stream is 16 channels.
 	</tr>
 </tbody></table>
 
+<br/>
+
 ### Performance Lab
 
-<table><tbody>
-	<tr><td colspan='4'><b> Listener Streams </b></td></tr>
-	<tr>
-		<td style='width: 36px;'><b> No. </b></td>
-		<td style='width: 32%'><b> Name </b></td>
-		<td><b> Channels </b></td>
-		<td style='width: 38%'><b> Assignments </b></td>
+## Talker Streams
+
+<table style="width: 100%"><tbody>
+		<td style='width: 25%'><b> Stream </b></td>
+		<td style='width: 25%'><b> Name </b></td>
+		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -273,7 +270,7 @@ Each stream is 16 channels.
 	</tr>
 	<tr>
 		<td> 13 - 16 </td>
-		<td> - </td>
+		<td> N.C </td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 2 </td>
@@ -298,15 +295,13 @@ Each stream is 16 channels.
 	<tr><td> 8 </td><td> - </td><td> - </td><td> - </td></tr>
 </tbody></table>
 
-<br/>
+## Listener Streams
 
-<table><tbody>
-	<tr><td colspan='4'><b> Talker Streams </b></td></tr>
-	<tr>
-		<td style='width: 36px;'><b> No. </b></td>
-		<td style='width: 32%'><b> Name </b></td>
-		<td><b> Channels </b></td>
-		<td style='width: 38%'><b> Assignments </b></td>
+<table style="width: 100%"><tbody>
+		<td style='width: 25%'><b> Stream </b></td>
+		<td style='width: 25%'><b> Name </b></td>
+		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -340,110 +335,116 @@ Each stream is 16 channels.
 	</tr>
 </tbody></table>
 
+<br/>
+
 ### Plant Room
 
-The Plant Room hosts 64-channel AVB-MADI, AVB-Dante, and Dante-MADI bridges. The Dante-MADI bridge is not listed below because it is only visible via Dante Controller.
+## Talker Streams
 
-<table><tbody>
-	<tr><td colspan='4'><b> Listener Streams </b></td></tr>
-	<tr>
-		<td style='width: 36px;'><b> No. </b></td>
-		<td style='width: 32%'><b> Name </b></td>
-		<td><b> Channels </b></td>
-		<td style='width: 38%'><b> Assignments </b></td>
+<table style="width: 100%"><tbody>
+		<td style='width: 25%'><b> Stream </b></td>
+		<td style='width: 25%'><b> Name </b></td>
+		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
-	<tr><td> 1 </td><td> MADI IN 1-16 </td><td> 1 - 16 </td><td> MADI IN 1-16 </td></tr>
-	<tr><td> 2 </td><td> MADI IN 17-32 </td><td> 1 - 16 </td><td> MADI IN 17-32 </td></tr>
-	<tr><td> 3 </td><td> MADI IN 33-48 </td><td> 1 - 16 </td><td> MADI IN 33-48 </td></tr>
-	<tr><td> 4 </td><td> MADI IN 49-64 </td><td> 1 - 16 </td><td> MADI IN 49-64 </td></tr>
+	<tr><td> 1 </td><td> MADIFACE IN 1-16 </td><td> 1 - 16 </td><td> MADIFACE IN 1-16 </td></tr>
+	<tr><td> 2 </td><td> MADIFACE IN 17-32 </td><td> 1 - 16 </td><td> MADIFACE IN 17-32 </td></tr>
+	<tr><td> 3 </td><td> MADIFACE IN 33-48 </td><td> 1 - 16 </td><td> MADIFACE IN 33-48 </td></tr>
+	<tr><td> 4 </td><td> MADIFACE IN 49-64 </td><td> 1 - 16 </td><td> MADIFACE IN 49-64 </td></tr>
 	<tr><td> 5 </td><td> DANTE IN 1-16 </td><td> 1 - 16 </td><td> DANTE IN 1-16 </td></tr>
 	<tr><td> 6 </td><td> DANTE IN 17-32 </td><td> 1 - 16 </td><td> DANTE IN 17-32 </td></tr>
 	<tr><td> 7 </td><td> DANTE IN 33-48 </td><td> 1 - 16 </td><td> DANTE IN 33-48 </td></tr>
 	<tr><td> 8 </td><td> DANTE IN 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64 </td></tr>
 </tbody></table>
 
-<br/>
+## Listener Streams
 
-<table><tbody>
-	<tr><td colspan='4'><b> Talker Streams </b></td></tr>
-	<tr>
-		<td style='width: 36px;'><b> No. </b></td>
-		<td style='width: 32%'><b> Name </b></td>
-		<td><b> Channels </b></td>
-		<td style='width: 38%'><b> Assignments </b></td>
+<table style="width: 100%"><tbody>
+		<td style='width: 25%'><b> Stream </b></td>
+		<td style='width: 25%'><b> Name </b></td>
+		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
-	<tr><td> 1 </td><td> MADI OUT 1-16 </td><td> 1 - 16 </td><td> MADI OUT 1-16</td></tr>
-	<tr><td> 2 </td><td> MADI OUT 17-32 </td><td> 1 - 16 </td><td> MADI OUT 17-32</td></tr>
-	<tr><td> 3 </td><td> MADI OUT 33-48 </td><td> 1 - 16 </td><td> MADI OUT 33-48</td></tr>
-	<tr><td> 4 </td><td> MADI OUT 49-64 </td><td> 1 - 16 </td><td> MADI OUT 49-64</td></tr>
+	<tr><td> 1 </td><td> MADIFACE OUT 1-16 </td><td> 1 - 16 </td><td> MADIFACE OUT 1-16</td></tr>
+	<tr><td> 2 </td><td> MADIFACE OUT 17-32 </td><td> 1 - 16 </td><td> MADIFACE OUT 17-32</td></tr>
+	<tr><td> 3 </td><td> MADIFACE OUT 33-48 </td><td> 1 - 16 </td><td> MADIFACE OUT 33-48</td></tr>
+	<tr><td> 4 </td><td> MADIFACE OUT 49-64 </td><td> 1 - 16 </td><td> MADIFACE OUT 49-64</td></tr>
 	<tr><td> 5 </td><td> DANTE OUT 1-16 </td><td> 1 - 16 </td><td> DANTE OUT 1-16</td></tr>
 	<tr><td> 6 </td><td> DANTE OUT 17-32 </td><td> 1 - 16 </td><td> DANTE OUT 17-32</td></tr>
 	<tr><td> 7 </td><td> DANTE OUT 33-48 </td><td> 1 - 16 </td><td> DANTE OUT 33-48</td></tr>
 	<tr><td> 8 </td><td> DANTE OUT 49-64 </td><td> 1 - 16 </td><td> DANTE OUT 49-64</td></tr>
 </tbody></table>
 
-</details>
-
-<details><summary>AVB VLAN Management</summary>
-
-To avoid possible consequences of mis-patching, studio rooms are hosted on separate VLANs:
-
-Performance Lab (+ Plant Room) - 100
-Control Room - 200
-Live Room - 300
-
-This means that channels to/from other rooms are hidden by default but can be made available via the steps below:
-
-...
-
-You must notify other studio users before changing the Luminex profile as this will cause momentary AVB downtime.
-
-Please change it back when finished (notifying other users if needed).
+<br>
 
 </details>
 
-<details><summary>AVB-Dante-MADI Bridge </summary>
-
-**All bridges are hosted on the Performance Lab VLAN by default. This means that Dante / MADI users situated in the Control Room or Live Room will need to change the Luminex profile accordingly (See previous section).**
+<details><summary>Dante Bridge </summary>
 
 ### AVB-Dante Bridge
 
 You can use all of our audio facilities via DVS or another Dante interface by connecting to the Dante-AVB bridge. You do this like any other Dante device in Dante Controller.
 
-Audio will then be forwarded to/from the 'DANTE' streams available in Milan Manager.
+Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manager.
 
-Dante requires LAN connection (See LAN)
-
-<table><tbody>
-	<tr><td colspan='4'><b> Device Inputs </b></td></tr>
-	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
-	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB IN 1-64</td></tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> MADIFACE IN 129-192</td></tr>
-</tbody></table>
 <br>
 
-<table><tbody>
-	<tr><td colspan='4'><b> Device Outputs </b></td></tr>
-	<tr><td><b> Device </b></td></td><td><b> Channels </b></td><td><b> Assignments </b></td></tr>
-	<tr><td rowspan='1'> DANTE <-> AVB </td><td> 1 - 64 </td><td> AVB OUT 129-192</td></tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td> DANTE IN 1-64</td></tr>
+## Dante Inputs
+
+<table style="width: 100%"><tbody>
+	<td style='width: 30%'><b> Device </b></td>
+	<td style='width: 30%'><b> Channels </b></td>
+	<td style='width: 30%'><b> Assignment </b></td>
+	</tr>
+	<tr><td rowspan='1'>AVB <-> DANTE</td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
+</tbody></table>
+
+## Dante Outputs
+
+<table style="width: 100%"><tbody>
+	<td style='width: 30%'><b> Device </b></td>
+	<td style='width: 30%'><b> Channels </b></td>
+	<td style='width: 30%'><b> Assignment </b></td>
+	</tr>
+	<tr><td rowspan='1'>AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
 </tbody></table>
 <br/>
 
-### AVB-MADI Bridge\*
-
-You can use all of our audio facilities via a single optical MADI or paired copper BNC MADI connection. Contact management if your project requires this.
-
-When connected, audio will be forwarded to/from the 'MADI' streams available in Milan Manager.
-
 ### Dante-MADI Bridge
 
-Dante signals sent to this bridge will appear in channels 129-192 of the RME MadifaceXT which is hosted by the Performance Lab PC.
+This bridge interfaces with channels 129-192 of the RME MadifaceXT which is hosted by the Performance Lab PC.
 
-This is primarily used to combine the Eigenmike EM64 with other microphone arrays / measurement instruments sent via the AVB-MADI bridge, but can also be used for recording multi-channel performances.
+<br/>
 
+## Dante Inputs
+
+<table style="width: 100%"><tbody>
+	<td style='width: 30%'><b> Device </b></td>
+	<td style='width: 30%'><b> Channels </b></td>
+	<td style='width: 30%'><b> Assignment </b></td>
+	</tr>
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td>MADIFACE OUT 129-192</td></tr>
+</tbody></table>
+
+## Dante Outputs
+
+<table style="width: 100%"><tbody>
+	<td style='width: 30%'><b> Device </b></td>
+	<td style='width: 30%'><b> Channels </b></td>
+	<td style='width: 30%'><b> Assignment </b></td>
+	</tr>
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 - 192 </td><td>MADIFACE IN 129-192</td></tr>
+</tbody></table>
+<br/>
+
+</details>
+
+<details><summary>Other Resources</summary>
 <br>
 
+<a href="https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck">**RME Totalmix Tutorials**</a>
+
+</br>
 </details>
 
 # Local Access Network (LAN)
@@ -603,6 +604,12 @@ These devices have been setup for local connections only, via the [OWC Thunderbo
 In the Performance Lab, we operate a 16.2 rectangular speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
 These surround sound systems are largely used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
+<div style="background-color: #b30000; color: white; padding: 12px; border-radius: 4px;">
+
+Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of Totalmix **before** sending audio to the system. If you are unsure how to control your noise exposure, please request a tutorial from studio management before using the system.
+
+</div>
+
 <details><summary>Powering our Speaker Systems</summary>
 
 The easiest way to power the satellite speakers is to log on to the Windows computer in the Performance Lab, and use the Desktop applications `PL-Spat` (Performance Lab) or `LR-Spat` (Live Room) to toggle the power on and off.
@@ -645,6 +652,8 @@ echo -n "KMS OFF1" | nc -u -w1 192.168.0.21 65432
 echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.21 65432
 echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 ```
+
+<br>
 
 </details>
 
@@ -716,6 +725,8 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 	<tr><td> 2.6 </td><td> 34.0 </td><td> 1.45 </td><td> 2.16 </td></tr>
 </tbody></table>
 
+<br>
+
 </details>
 
 <!--
@@ -761,6 +772,16 @@ echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 65432
 echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
 ```
 
+<br>
+
+</details>
+
+<details><summary>Other Resources</summary>
+<br>
+
+<a href="https://www.youtube.com/watch?v=h4knk15grtw&list=PLxtdgDam3USUSIeuO6UloG3ogPsFNtEJS&index=5">**Vicon Nexus Tutorials**</a>
+
+</br>
 </details>
 
 # DMX Lighting
