@@ -622,9 +622,9 @@ These devices have been setup for local connections only, via the [OWC Thunderbo
 In the Performance Lab, we operate a 16.2 rectangular speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
 These surround sound systems are largely used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
-<div style="background-color: #b30000; color: white; padding: 12px; border-radius: 4px;">
+<div style="background-color: #cc3333; color: white; padding: 12px; border-radius: 4px;">
 
-Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of Totalmix **before** sending audio to the system. If you are unsure how to control your noise exposure, please request a tutorial from studio management before using the system.
+Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of Totalmix **before** sending audio to the system. If you are unsure how to control your noise exposure, please request a tutorial from studio management.
 
 </div>
 
