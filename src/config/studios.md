@@ -32,9 +32,9 @@ G2/Lounge: 2.9m x 5.69m
 	</tr>
 	<tr>
 		<td>AKG</td>
-		<td>C414 B-XL II/ST (Pair)</td>
+		<td>C414 B-XL II/ST</td>
 		<td>Multi-Pattern / Condenser</td>
-		<td>1</td>
+		<td>2</td>
 		<td>✓</td>
 	</tr>
 	<tr>
@@ -102,9 +102,9 @@ G2/Lounge: 2.9m x 5.69m
 	</tr>
 	<tr>
 		<td>Earthworks</td>
-		<td>QCT40 (Pair)</td>
+		<td>QCT40</td>
 		<td>Omnidirectional / Condenser</td>
-		<td>1</td>
+		<td>2</td>
 		<td></td>
 	</tr>
 	<tr>
