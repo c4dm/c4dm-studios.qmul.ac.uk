@@ -2,7 +2,7 @@
 
 # Audio Network (AVB)
 
-Our audio system uses an AVB network, with Dante and MADI bridges for compatibility with other formats. All devices are connected through the network, and audio routes are configured centrally in Milan Manager rather than being defined by fixed physical connections. This section provides documentation on software installation, endpoint configuration, audio channel and stream assignments, audio routing within Milan Manager, and the configuration and operation of the format bridges.
+Our audio system uses an AVB network, with Dante and MADI bridges for compatibility with other formats. All devices are connected through the network, and audio routes are configured centrally in Milan Manager rather than being defined by fixed physical connections. This section provides documentatio on software installation, endpoint configuration, audio channel and stream Assignments, audio routing within Milan Manager, and the configuration and operation of the format bridges.
 
 <details><summary>Software Installation</summary>
 
@@ -58,7 +58,7 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 Studio users only need to interact with the **Overview** tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
 
-If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the default configuration and should remain set to a 48 kHz sample rate.
+If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the Assignment configuration and should remain set to a 48 kHz sample rate.
 
 See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Milan Manager Documentation**</a> for further instruction.
 
@@ -75,14 +75,14 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 <table style="width: 100%"><tbody>
 		<td style='width: 25%'><b> Stream </b></td>
 		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Channel </b></td>
 		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
-		<td rowspan='2'> RME 12MIC </td>
+		<td rowspan='2'> RME 12Mic </td>
 		<td> 1 - 12 </td>
-		<td> 12Mic Inputs </td>
+		<td> RME 12Mic </td>
 	</tr>
 	<tr>
 		<td> 13 - 16 </td>
@@ -91,17 +91,41 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 	<tr>
 		<td rowspan='2'> 2 </td>
 		<td rowspan='2'> AD Inputs 1-16 </td>
-		<td> 1 - 2 </td>
-		<td> Desk Microphone </td>
+		<td> 1 - 8 </td>
+		<td> ISA 828 A </td>
 	</tr>
 	<tr>
-		<td> 3 - 16 </td>
-		<td> AD Inputs </td>
+		<td> 9 - 16 </td>
+		<td> ISA 828 B </td>
 	</tr>
 	<tr>
-		<td rowspan='1'> 3 </td>
-		<td rowspan='1'> AD Inputs 17-32 </td>
-		<td> 1 - 16 </td>
+		<td rowspan='7'> 3 </td>
+		<td rowspan='7'> AD Inputs 17-32 </td>
+		<td> 1 </td>
+		<td> Distressor A</td>
+	</tr>
+	<tr>
+		<td> 2 </td>
+		<td> Distressor B </td>
+	</tr>
+	<tr>
+		<td> 3 - 4 </td>
+		<td> 33609 </td>
+	</tr>
+	<tr>
+		<td> 5 - 6 </td>
+		<td> Smart C2 </td>
+	</tr>
+	<tr>
+		<td> 7 </td>
+		<td> Tube-Tech </td>
+	</tr>
+	<tr>
+		<td> 8 </td>
+		<td> - </td>
+	</tr>
+	<tr>
+		<td> 9 - 16 </td>
 		<td> - </td>
 	</tr>
 	<tr><td> 4 </td><td> - </td><td> - </td><td> - </td></tr>
@@ -125,24 +149,24 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 <table style="width: 100%"><tbody>
 		<td style='width: 25%'><b> Stream </b></td>
 		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Channel </b></td>
 		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
 		<td rowspan='2'> DA Outputs 1-16 </td>
 		<td> 1 - 2 </td>
-		<td> Drawmer Monitor Controller </td>
+		<td> Monitor Controller </td>
 	</tr>
 	<tr>
 		<td> 3 - 16 </td>
-		<td> XLR Patch Bay </td>
+		<td> Patch Bay </td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 2 </td>
 		<td rowspan='2'> DA Outputs 17-32 </td>
 		<td> 1 - 8 </td>
-		<td> XLR Patch Bay </td>
+		<td> Patch Bay </td>
 	</tr>
 	<tr>
 		<td> 9 - 16 </td>
@@ -164,14 +188,14 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 <table style="width: 100%"><tbody>
 		<td style='width: 25%'><b> Stream </b></td>
 		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Channel </b></td>
 		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
-		<td rowspan='2'> RME 12MIC </td>
+		<td rowspan='2'> RME 12Mic </td>
 		<td> 1 - 12 </td>
-		<td> 12Mic Inputs </td>
+		<td> RME 12Mic </td>
 	</tr>
 	<tr>
 		<td> 13 - 16 </td>
@@ -205,7 +229,7 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 <table style="width: 100%"><tbody>
 		<td style='width: 25%'><b> Stream </b></td>
 		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Channel </b></td>
 		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
@@ -253,7 +277,7 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 <table style="width: 100%"><tbody>
 		<td style='width: 25%'><b> Stream </b></td>
 		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Channel </b></td>
 		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
@@ -294,7 +318,7 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 <table style="width: 100%"><tbody>
 		<td style='width: 25%'><b> Stream </b></td>
 		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Channel </b></td>
 		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
 	<tr>
@@ -338,17 +362,17 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 <table style="width: 100%"><tbody>
 		<td style='width: 25%'><b> Stream </b></td>
 		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Channel </b></td>
 		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
-	<tr><td> 1 </td><td> MADIFACE IN 1-16 </td><td> 1 - 16 </td><td> MADIFACE IN 1-16 </td></tr>
-	<tr><td> 2 </td><td> MADIFACE IN 17-32 </td><td> 1 - 16 </td><td> MADIFACE IN 17-32 </td></tr>
-	<tr><td> 3 </td><td> MADIFACE IN 33-48 </td><td> 1 - 16 </td><td> MADIFACE IN 33-48 </td></tr>
-	<tr><td> 4 </td><td> MADIFACE IN 49-64 </td><td> 1 - 16 </td><td> MADIFACE IN 49-64 </td></tr>
-	<tr><td> 5 </td><td> DANTE IN 1-16 </td><td> 1 - 16 </td><td> DANTE IN 1-16 </td></tr>
-	<tr><td> 6 </td><td> DANTE IN 17-32 </td><td> 1 - 16 </td><td> DANTE IN 17-32 </td></tr>
-	<tr><td> 7 </td><td> DANTE IN 33-48 </td><td> 1 - 16 </td><td> DANTE IN 33-48 </td></tr>
-	<tr><td> 8 </td><td> DANTE IN 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64 </td></tr>
+	<tr><td> 1 </td><td> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE OUT 1-16 </td></tr>
+	<tr><td> 2 </td><td> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE OUT 17-32 </td></tr>
+	<tr><td> 3 </td><td> MADIFACE 33-48 </td><td> 1 - 16 </td><td> MADIFACE OUT 33-48 </td></tr>
+	<tr><td> 4 </td><td> MADIFACE 49-64 </td><td> 1 - 16 </td><td> MADIFACE OUT 49-64 </td></tr>
+	<tr><td> 5 </td><td> DANTE 1-16 </td><td> 1 - 16 </td><td> DANTE OUT 1-16 </td></tr>
+	<tr><td> 6 </td><td> DANTE 17-32 </td><td> 1 - 16 </td><td> DANTE OUT 17-32 </td></tr>
+	<tr><td> 7 </td><td> DANTE 33-48 </td><td> 1 - 16 </td><td> DANTE OUT 33-48 </td></tr>
+	<tr><td> 8 </td><td> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE OUT 49-64 </td></tr>
 </tbody></table>
 
 ## Listener Streams
@@ -356,17 +380,17 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 <table style="width: 100%"><tbody>
 		<td style='width: 25%'><b> Stream </b></td>
 		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channels </b></td>
+		<td style='width: 25%'><b> Channel </b></td>
 		<td style='width: 25%'><b> Assignment </b></td>
 	</tr>
-	<tr><td> 1 </td><td> MADIFACE OUT 1-16 </td><td> 1 - 16 </td><td> MADIFACE OUT 1-16</td></tr>
-	<tr><td> 2 </td><td> MADIFACE OUT 17-32 </td><td> 1 - 16 </td><td> MADIFACE OUT 17-32</td></tr>
-	<tr><td> 3 </td><td> MADIFACE OUT 33-48 </td><td> 1 - 16 </td><td> MADIFACE OUT 33-48</td></tr>
-	<tr><td> 4 </td><td> MADIFACE OUT 49-64 </td><td> 1 - 16 </td><td> MADIFACE OUT 49-64</td></tr>
-	<tr><td> 5 </td><td> DANTE OUT 1-16 </td><td> 1 - 16 </td><td> DANTE OUT 1-16</td></tr>
-	<tr><td> 6 </td><td> DANTE OUT 17-32 </td><td> 1 - 16 </td><td> DANTE OUT 17-32</td></tr>
-	<tr><td> 7 </td><td> DANTE OUT 33-48 </td><td> 1 - 16 </td><td> DANTE OUT 33-48</td></tr>
-	<tr><td> 8 </td><td> DANTE OUT 49-64 </td><td> 1 - 16 </td><td> DANTE OUT 49-64</td></tr>
+	<tr><td> 1 </td><td> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE IN 1-16</td></tr>
+	<tr><td> 2 </td><td> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE IN 17-32</td></tr>
+	<tr><td> 3 </td><td> MADIFACE 33-48 </td><td> 1 - 16 </td><td> MADIFACE IN 33-48</td></tr>
+	<tr><td> 4 </td><td> MADIFACE 49-64 </td><td> 1 - 16 </td><td> MADIFACE IN 49-64</td></tr>
+	<tr><td> 5 </td><td> DANTE 1-16 </td><td> 1 - 16 </td><td> DANTE IN 1-16</td></tr>
+	<tr><td> 6 </td><td> DANTE 17-32 </td><td> 1 - 16 </td><td> DANTE IN 17-32</td></tr>
+	<tr><td> 7 </td><td> DANTE 33-48 </td><td> 1 - 16 </td><td> DANTE IN 33-48</td></tr>
+	<tr><td> 8 </td><td> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64</td></tr>
 </tbody></table>
 
 <br>
@@ -387,7 +411,7 @@ Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manage
 
 <table style="width: 100%"><tbody>
 	<td style='width: 30%'><b> Device </b></td>
-	<td style='width: 30%'><b> Channels </b></td>
+	<td style='width: 30%'><b> Channel </b></td>
 	<td style='width: 30%'><b> Assignment </b></td>
 	</tr>
 	<tr><td rowspan='1'>AVB <-> DANTE</td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
@@ -397,7 +421,7 @@ Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manage
 
 <table style="width: 100%"><tbody>
 	<td style='width: 30%'><b> Device </b></td>
-	<td style='width: 30%'><b> Channels </b></td>
+	<td style='width: 30%'><b> Channel </b></td>
 	<td style='width: 30%'><b> Assignment </b></td>
 	</tr>
 	<tr><td rowspan='1'>AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
@@ -414,7 +438,7 @@ This bridge interfaces with channels 129-192 of the RME MadifaceXT which is host
 
 <table style="width: 100%"><tbody>
 	<td style='width: 30%'><b> Device </b></td>
-	<td style='width: 30%'><b> Channels </b></td>
+	<td style='width: 30%'><b> Channel </b></td>
 	<td style='width: 30%'><b> Assignment </b></td>
 	</tr>
 	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td>MADIFACE OUT 129-192</td></tr>
@@ -424,7 +448,7 @@ This bridge interfaces with channels 129-192 of the RME MadifaceXT which is host
 
 <table style="width: 100%"><tbody>
 	<td style='width: 30%'><b> Device </b></td>
-	<td style='width: 30%'><b> Channels </b></td>
+	<td style='width: 30%'><b> Channel </b></td>
 	<td style='width: 30%'><b> Assignment </b></td>
 	</tr>
 	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 - 192 </td><td>MADIFACE IN 129-192</td></tr>
@@ -786,7 +810,7 @@ The power for these lights is controlled using the labelled fuses in the Plant R
 <details><summary>Our System</summary>
 
 The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC Lighting](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
-The Windows computer at the back of the room has been preconfigured for ease of use, and once the software is opened, only the default template for the space needs to be loaded (either click 'yes' when prompted to load the most recent file, or `File > Open Recent`).
+The Windows computer at the back of the room has been preconfigured for ease of use, and once the software is opened, only the Assignment template for the space needs to be loaded (either click 'yes' when prompted to load the most recent file, or `File > Open Recent`).
 Similarly, if you wish to run this software from your own computer, simply install the dmXLAN software and download the Performance Lab template below.
 
 <span>
