@@ -4,16 +4,6 @@
 
 Our audio system uses an AVB network, with Dante and MADI bridges for compatibility with other formats. All devices are connected through the network, and audio routes are configured centrally in Milan Manager rather than being defined by fixed physical connections. This section provides documentation on software installation, endpoint configuration, audio channel and stream assignments, audio routing within Milan Manager, and the configuration and operation of the format bridges.
 
-<details><summary>Network Overview</summary>
-<br>
-
-inputs and outputs are confusing... user inputs and user outputs on wrong sides? can this also not be square? YEAH ITS TERRIBLE INIT SO LET'S NOT DO THIS AND SCREEENSHOT MILAN AND LINK IT OR SOMIN BUT I ONT THINK ANYTHING MEANINGFUL IS GONNA FIT NICELY HERE THAT ISN'T JUST A BASIC FLOW CHART.
-<small>we'll figure it out soon enough dw</small>
-![diagram of audio matrix representing milan and all network endpoints](/images/documentation/audio-network-overview.png)
-
-<br>
-</details>
-
 <details><summary>Software Installation</summary>
 
 Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed, connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock) for ease of use.
@@ -60,15 +50,19 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 ![digiface windows](/images/documentation/rme-digiface-windows.png)
 
-### Milan Manager
+<br>
 
 </details>
 
 <details><summary>Milan Manager</summary>
 
-Studio users only need to interact with the Overview tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
+Studio users only need to interact with the **Overview** tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
 
 If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the default configuration and should remain set to a 48 kHz sample rate.
+
+See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Milan Manager Documentation**</a> for further instruction.
+
+<br>
 
 </details>
 
