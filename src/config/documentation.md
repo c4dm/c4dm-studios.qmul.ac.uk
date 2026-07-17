@@ -19,9 +19,11 @@ To correctly install the required software, please follow the step by step instr
 
 - Navigate to [RME's website](https://rme-audio.de/downloads.html) to download the RME DriverKit.
 - Select Digiface AVB from the left menu, followed by your operating system.
-- Download the latest audio driver (_driver_usbdk_mac_xxx.zip_ for MacOS or _driver_madiface_win_xxx.zip_ for Windows).
-- (MacOS) Download the RME AVB Controller ???. <!-- NEEDS FIXING -->
-- (MacOS) ENABLE YOUR PRIVACY SETTINGS - Driver Extensions / Kernal Extensions/ login items / general privacy, and restart liberally.
+- Download and install the latest audio driver (_driver_usbdk_mac_xxx.zip_ for MacOS or _driver_madiface_win_xxx.zip_ for Windows).
+- (MacOS) Also from the RME downloads page, separately download and install the RME AVB Controller (_rme_avb_package_mac.zip_).
+- (MacOS) <mark>Warning</mark> When installing the RME DriverKit, you must ensure you properly [enable your privacy settings](https://rme-audio.de/rme-macos.html).
+  Depending on the device and operating system, this includes _Kernel Extensions_ and _Login Items_, as well as the more general _Privacy & Security_ permissions which block applications from running.
+  Be patient, read the documentation carefully, and restart your device liberally.
 - (Windows) Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
 - (Windows) Download and install the network packet capture library [npcap](https://npcap.com).
 - Finally, download and install [Milan Manager](https://milanmanager.com/#downloads).
@@ -44,7 +46,7 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 ### RME Digiface AVB
 
-<p style='text-decoration: underline; font-weight: bold;'>The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps.</p>
+The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps.
 
 WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB. I have a screenshot of this on Sim's laptop
 
@@ -751,8 +753,8 @@ And if you are unsure whether you are connected to the LAN correctly, make sure 
 #### MacOS
 
 ```bash
-$ echo -n "KMS ON1" | nc -u -w1 192.168.0.9 65432
-$ echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 65432
+echo -n "KMS ON1" | nc -u -w1 192.168.0.9 65432
+echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 65432
 ```
 
 #### Windows
