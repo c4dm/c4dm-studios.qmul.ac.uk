@@ -15,7 +15,7 @@
 </span>
 <br/>
 <span>
-	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JAB9cp1Iiq2RQbZ5vGqc2CTxAdmuHIrLev4nJ7Qc_OfFg8Q?nav=YTlmYTA5MWEtN2FkNi00YmNhLWEwNmQtYjAyYWU0ODQzMzg2' class='button'>
+	<a href='https://qmulprod.sharepoint.com/sites/Studio/_layouts/15/listforms.aspx?cid=NDg5ZDcyN2QtYWQ4YS00MTkxLWI2NzktYmM2YTljZDgyNGYx&nav=YTlmYTA5MWEtN2FkNi00YmNhLWEwNmQtYjAyYWU0ODQzMzg2' class='button'>
 		Equipment Loans
 	</a>
 	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JABkrluQ6oZESIof44y9Xrr1AZRq495f-gb83ZJEO91ml3U?nav=NWViZDA2YTMtNTRkYy00OGFlLTkyYzMtMTFkMWU5MmRkODM1' class='button'>
