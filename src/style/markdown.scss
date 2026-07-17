@@ -50,6 +50,22 @@
 			margin-block: 10px;
 			border-bottom: 2px solid utils.$qm-white;
 
+			> :nth-child(2) {
+				&::not(table) {
+					display: block;
+				}
+
+				margin-top: 20px !important;
+			}
+
+			> :last-child {
+				&::not(table) {
+					display: block;
+				}
+
+				margin-bottom: 20px !important;
+			}
+
 			&:hover,
 			&:focus-visible {
 				border-bottom: 2px solid utils.$qm-blue;
@@ -125,6 +141,13 @@
 		img {
 			user-select: none;
 			-webkit-user-select: none;
+		}
+
+		mark {
+			background-color: utils.$qm-red;
+			color: utils.$qm-white;
+			font-style: normal;
+			padding-inline: 1px;
 		}
 
 		p {

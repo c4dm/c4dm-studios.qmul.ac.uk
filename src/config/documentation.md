@@ -2,7 +2,7 @@
 
 # Audio Network (AVB)
 
-Our audio system uses an AVB network, with Dante and MADI bridges for compatibility with other formats. All devices are connected through the network, and audio routes are configured centrally in Milan Manager rather than being defined by fixed physical connections. This section provides documentatio on software installation, endpoint configuration, audio channel and stream Assignments, audio routing within Milan Manager, and the configuration and operation of the format bridges.
+Our audio system uses an AVB network, with Dante and MADI bridges for compatibility with other formats. All devices are connected through the network, and audio routes are configured centrally in Milan Manager rather than being defined by fixed physical connections. This section provides documentation on software installation, endpoint configuration, audio channel and stream Assignments, audio routing within Milan Manager, and the configuration and operation of the format bridges.
 
 <details><summary>Software Installation</summary>
 
@@ -50,8 +50,6 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 ![digiface windows](/images/documentation/rme-digiface-windows.png)
 
-<br>
-
 </details>
 
 <details><summary>Milan Manager</summary>
@@ -61,8 +59,6 @@ Studio users only need to interact with the **Overview** tab in Milan Manager to
 If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the Assignment configuration and should remain set to a 48 kHz sample rate.
 
 See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Milan Manager Documentation**</a> for further instruction.
-
-<br>
 
 </details>
 
@@ -179,8 +175,6 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 	<tr><td> 8 </td><td> - </td><td> - </td><td> - </td></tr>
 </tbody></table>
 
-<br/>
-
 ### Live Room
 
 ## Talker Streams
@@ -268,8 +262,6 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 	</tr>
 </tbody></table>
 
-<br/>
-
 ### Performance Lab
 
 ## Talker Streams
@@ -353,8 +345,6 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 	</tr>
 </tbody></table>
 
-<br/>
-
 ### Plant Room
 
 ## Talker Streams
@@ -393,8 +383,6 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 	<tr><td> 8 </td><td> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64</td></tr>
 </tbody></table>
 
-<br>
-
 </details>
 
 <details><summary>Dante Bridge </summary>
@@ -404,8 +392,6 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 You can use all of our audio facilities via DVS or another Dante interface by connecting to the Dante-AVB bridge. You do this like any other Dante device in Dante Controller.
 
 Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manager.
-
-<br>
 
 ## Dante Inputs
 
@@ -426,13 +412,10 @@ Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manage
 	</tr>
 	<tr><td rowspan='1'>AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
 </tbody></table>
-<br/>
 
 ### Dante-MADI Bridge
 
 This bridge interfaces with channels 129-192 of the RME MadifaceXT which is hosted by the Performance Lab PC.
-
-<br/>
 
 ## Dante Inputs
 
@@ -453,16 +436,13 @@ This bridge interfaces with channels 129-192 of the RME MadifaceXT which is host
 	</tr>
 	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 - 192 </td><td>MADIFACE IN 129-192</td></tr>
 </tbody></table>
-<br/>
 
 </details>
 
 <details><summary>Other Resources</summary>
-<br>
 
 <a href="https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck">**RME Totalmix Tutorials**</a>
 
-</br>
 </details>
 
 # Local Access Network (LAN)
@@ -622,11 +602,7 @@ These devices have been setup for local connections only, via the [OWC Thunderbo
 In the Performance Lab, we operate a 16.2 rectangular speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
 These surround sound systems are largely used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
-<div style="background-color: #cc3333; color: white; padding: 12px; border-radius: 4px;">
-
-Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of Totalmix **before** sending audio to the system. If you are unsure how to control your noise exposure, please request a tutorial from studio management.
-
-</div>
+<mark>Warning</mark> Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of Totalmix **before** sending audio to the system. If you are unsure how to control your noise exposure, please request a tutorial from studio management.
 
 <details><summary>Powering our Speaker Systems</summary>
 
@@ -670,8 +646,6 @@ echo -n "KMS OFF1" | nc -u -w1 192.168.0.21 65432
 echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.21 65432
 echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 ```
-
-<br>
 
 </details>
 
@@ -743,8 +717,6 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 	<tr><td> 2.6 </td><td> 34.0 </td><td> 1.45 </td><td> 2.16 </td></tr>
 </tbody></table>
 
-<br>
-
 </details>
 
 <!--
@@ -790,16 +762,12 @@ echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 65432
 echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
 ```
 
-<br>
-
 </details>
 
 <details><summary>Other Resources</summary>
-<br>
 
 <a href="https://www.youtube.com/watch?v=h4knk15grtw&list=PLxtdgDam3USUSIeuO6UloG3ogPsFNtEJS&index=5">**Vicon Nexus Tutorials**</a>
 
-</br>
 </details>
 
 # DMX Lighting
