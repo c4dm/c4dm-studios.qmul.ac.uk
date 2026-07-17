@@ -452,6 +452,9 @@ This bridge interfaces with channels 129-192 of the RME MadifaceXT which is host
 We operate a local access network across our studios, allowing for interaction and configuration with numerous hardware devices.
 This network is accessible throughout the studios, and can be connected to via ethernet from various wall ports, or using several of our preconfigured devices.
 
+<mark>Warning</mark> If you are running MacOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to maintain a simultaneous internet connection via WiFi when using our LAN.
+If you are using our in house Mac Mini, all necessary network settings have been preconfigured, and you should contact staff if you encounter an issue with this machine.
+
 <details><summary>How to LAN</summary>
 
 At C4DM we support a local access network, connecting together and making accessible numerous devices throughout our facility.
@@ -461,11 +464,6 @@ Simply connect a computer to one of the many LAN ethernet ports labelled through
 Upon connecting to the LAN, you should have DHCP enabled in your network settings, and you will be assigned an IP within the range `192.168.0.101` - `192.168.0.254`.
 All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
 Our LAN is **not** connected to the internet in any way, and so all remote connections via this network are unavailable.
-
-### Known Issues
-
-If you are running MacOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to maintain a simultaneous internet connection via WiFi.
-If you are using our in house Mac Mini, all necessary network settings have been preconfigured, and you should contact staff if you encounter an issue with this machine.
 
 </details>
 
