@@ -383,7 +383,7 @@ G2/Lounge: 2.9m x 5.69m
 	<tr>
     	<td>Epiphone</td>
     	<td>Broadway NA</td>
-    	<td>Hollowbody Electric Guitar</td>
+    	<td>Hollow Body Electric Guitar</td>
     	<td>1</td>
     </tr>
 	<tr>
@@ -465,7 +465,7 @@ G2/Lounge: 2.9m x 5.69m
     	<td>1</td>
     </tr>
 	<tr>
-    	<td>Peavy</td>
+    	<td>Peavey</td>
     	<td>Bandit 112</td>
     	<td>Transistor Amp</td>
     	<td>1</td>
