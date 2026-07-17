@@ -6,7 +6,7 @@ Our audio system uses an AVB network, with Dante and MADI bridges for compatibil
 
 <details><summary>Software Installation</summary>
 
-Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed, connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock) for ease of use.
+Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed.
 These Digiface AVB devices act as hardware endpoints across our audio network, and once connected to, can be used to receive and send audio from anywhere within the studios.
 These audio interfaces have been preconfigured on all of our in-house computers, and can also be configured for use on a personal laptop.
 
