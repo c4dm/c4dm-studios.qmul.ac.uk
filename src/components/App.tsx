@@ -52,14 +52,15 @@ export default function App(): JSX.Element {
 					components={{
 						// default link behaviour
 						a: ({ ...props }): JSX.Element => {
-							let behaviour_props = {}
-							if (props.download) {
-								behaviour_props = { download: true }
-							} else if (props.target) {
-								behaviour_props = { target: props.target }
-							} else {
-								behaviour_props = { rel: 'noopener', target: '_blank' }
-							}
+							const behaviour_props = ((): Record<string, string | boolean> => {
+								if (props.download) {
+									return { download: true }
+								}
+								if (props.target) {
+									return { target: props.target }
+								}
+								return { rel: 'noopener', target: '_blank' }
+							})()
 							return (
 								<a
 									{...(props.className && { className: props.className })}
