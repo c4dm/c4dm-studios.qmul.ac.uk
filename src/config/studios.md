@@ -37,14 +37,14 @@ G2/Lounge: 2.9m x 5.69m
 		<td>C414 B-XL II/ST</td>
 		<td>Multi-Pattern / Condenser</td>
 		<td>2</td>
-		<td>✓</td>
+		<td>✅</td>
 	</tr>
 	<tr>
 		<td>AKG</td>
 		<td>C1000S</td>
 		<td>Cardioid / Condenser</td>
 		<td>5</td>
-		<td>✓</td>
+		<td>✅</td>
 	</tr>
 	<tr>
 		<td>Beyerdynamic</td>
@@ -128,21 +128,21 @@ G2/Lounge: 2.9m x 5.69m
 		<td>KM184</td>
 		<td>Cardioid / Condenser</td>
 		<td>2</td>
-		<td>✓</td>
+		<td>✅</td>
 	</tr>
 	<tr>
 		<td>Neumann</td>
 		<td>UA 87 Ai</td>
 		<td>Multi-Pattern / Condenser</td>
 		<td>1</td>
-		<td>✓</td>
+		<td>✅</td>
 	</tr>
 	<tr>
 		<td>Rode</td>
 		<td>NT2-A</td>
 		<td>Multi-Pattern / Condenser</td>
 		<td>2</td>
-		<td>✓</td>
+		<td>✅</td>
 	</tr>
 	<tr>
 		<td>Schoeps</td>
@@ -156,7 +156,7 @@ G2/Lounge: 2.9m x 5.69m
 		<td>MiniCMIT</td>
 		<td>Hypercardioid / Condenser</td>
 		<td>1</td>
-		<td>✓</td>
+		<td>✅</td>
 	</tr>
 	<tr>
 		<td>Sennheiser</td>
@@ -184,7 +184,7 @@ G2/Lounge: 2.9m x 5.69m
 		<td>e614</td>
 		<td>Cardioid / Condenser</td>
 		<td>2</td>
-		<td>✓</td>
+		<td>✅</td>
 	</tr>
 	<tr>
 		<td>Sennheiser</td>
@@ -574,14 +574,14 @@ G2/Lounge: 2.9m x 5.69m
     	<td>AR-113</td>
     	<td>Mono / Active</td>
     	<td>3</td>
-    	<td>✓</td>
+    	<td>✅</td>
     </tr>
 	<tr>
     	<td>Behringer</td>
     	<td>DI-20</td>
     	<td>Stereo / Active</td>
     	<td>2</td>
-    	<td>✓</td>
+    	<td>✅</td>
     </tr>
 </table>
 

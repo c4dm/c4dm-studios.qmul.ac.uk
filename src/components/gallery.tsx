@@ -51,7 +51,9 @@ function Image({ index }: { index: number }): JSX.Element | null {
 				<img
 					alt={img_title}
 					aria-label={`View ${img_title} in full screen gallery mode.`}
+					decoding='async'
 					height={400}
+					loading='eager'
 					src={`${gallery_dir}/${file}`}
 					width={1000}
 				/>
