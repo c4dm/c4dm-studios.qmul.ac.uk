@@ -2,15 +2,31 @@
 
 # Studios
 
-## Dimensions
+<div class="studio-gallery">
+  <figure>
+    <img src="/images/studios/performancelab.jpeg" alt="Performance Lab">
+    <figcaption>
+      <span class="room-name">Performance Lab</span>
+      <span class="room-size">6.42m × 5.05m</span>
+    </figcaption>
+  </figure>
 
-Performance Lab: 6.42m x 5.05m
+  <figure>
+    <img src="/images/studios/controlroom.jpeg" alt="Control Room">
+    <figcaption>
+      <span class="room-name">Control Room</span>
+      <span class="room-size">6.42m × 5.05m</span>
+    </figcaption>
+  </figure>
 
-Control Room: 6.42m x 5.05m
-
-Live Room: 9.5m 6.5m
-
-G2/Lounge: 2.9m x 5.69m
+  <figure>
+    <img src="/images/studios/liveroom.jpeg" alt="Live Room">
+    <figcaption>
+      <span class="room-name">Live Room</span>
+      <span class="room-size">9.5m × 6.5m</span>
+    </figcaption>
+  </figure>
+</div>
 
 # Equipment
 
