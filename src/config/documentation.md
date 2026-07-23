@@ -554,25 +554,24 @@ If you are facing an issue with one on the devices on our network, please contac
 
 # MIDI
 
-Throughout our studios, we have integrated RTP-MIDI interfaces which allow for the remote connection of MIDI devices over LAN, supporting both modular session designs and experimental configurations.
+Each room is equipped with an RTP-MIDI interface, allowing all MIDI devices to be connected over the LAN.
 
 <details><summary>Connecting a MIDI Device</summary>
 
-We have installed the RTP-MIDI interface [mioXL by iConnectivity](https://www.iconnectivity.com/s/mio-X-Series-User-Guide-v20220503-g9g8.pdf) in each of our studio rooms, and all front ports of the devices have been preconfigured and made accessible.
-The power for these devices is located in the Performance Lab System Rack, the Control Room main switch, and the Live Room System Rack.
-These accessible ports include:
+We have installed a [mioXL](https://www.iconnectivity.com/s/mio-X-Series-User-Guide-v20220503-g9g8.pdf) RTP-MIDI interface in each of our studio rooms, and all front ports of the devices have been preconfigured and made discoverable over the LAN.
 
 ![Picture of a mioXL by iConnectivity, showing the preconfigured MIDI ports](/images/documentation/midi-mioXL.png)
 
-Upon connecting a MIDI device to one of these ports, you can then connect to that device over the LAN according to the following the steps, relevant to your computer's operating system.
-If a device refuses to connect, check that it is not connected to another device by using the software [Auracle X](https://www.iconnectivity.com/auracle-x-series), as only one connection per device is allowed at a given time.
+A device connected to one of these ports can send and receive MIDI data with other devices on the LAN.
+RTP-MIDI requires one device to act as a host. To host an RTP session on your computer, follow the steps below relevant to your operating system.
+<!-- If a device refuses to connect, check that it is not connected to another device by using the software [Auracle X](https://www.iconnectivity.com/auracle-x-series), as only one connection per device is allowed at a given time. -->
 
 ### MacOS
 
-To connect to an RTP-MIDI port on a MacOS computer, simply navigate to [the MIDI Network Settings within the Audio MIDI Setup application](https://support.apple.com/en-gb/guide/audio-midi-setup/ams1012/mac).
-Here you should see a list of available devices and MIDI ports, labelled according to their room and function - simply create a `Session`, and add the MIDI ports you wish to use by pressing `Connect`.
-If you use this session to connect to multiple MIDI ports, this will collapse all of these ports down to a single MIDI bus.
-If you wish to use multiple devices independently within your work, you should create multiple sessions, one for each MIDI port.
+To connect to an RTP-MIDI port on a MacOS computer, navigate to [MIDI Network Setup (via Audio MIDI Setup)](https://support.apple.com/en-gb/guide/audio-midi-setup/ams1012/mac).
+Here you should see a list of available devices and MIDI ports, labelled according to their room and function. Create a `Session` to become a host device, and add the MIDI ports you wish to use by pressing `Connect`.
+If you use this session to connect to multiple MIDI ports, this will collapse all of these ports down to a single 16-channel MIDI bus.
+If you wish to use multiple devices independently within your work, you can also create multiple sessions and assign one for each MIDI device.
 
 ![Audio MIDI Setup window, demonstrating how to activate an RTP-MIDI port](/images/documentation/midi-mac-settings.png)
 
@@ -583,31 +582,25 @@ You should now see these named sessions appear in your DAW - for example, you ca
 
 ### Windows
 
-To connect to an RTP-MIDI port on a Windows computer, first install [rtpMIDI by Tobias Erichsen](https://www.tobias-erichsen.de/software/rtpmidi.html) and then also manually install [Apple's Bonjour Print Services](https://support.apple.com/en-us/106380).
-To make sure Apple's Bonjour is running, press `Win + R`, type in `services.msc`, and look for 'Bonjour' - if it is not there, restart your computer.
-Upon opening rtpMIDI, your should see something similar to the window pictured image.
-This software serves to match the design of Apple's Network MIDI Settings, such that the remaining setup process on Windows is mostly identical to our previous description of connecting to an RTP-MIDI port using MacOS.
+To connect to an RTP-MIDI port on a Windows computer, users must first install [rtpMIDI by Tobias Erichsen](https://www.tobias-erichsen.de/software/rtpmidi.html), and then also manually install [Apple's Bonjour Print Services](https://support.apple.com/en-us/106380).
+This software is identical to Apple's Network MIDI Setup, and the method of hosting MIDI devices is also the same as described above.
+<!-- To ensure Apple's Bonjour is properly running, press `Win + R`, type in `services.msc`, and look for 'Bonjour' - if it is not there, restart your computer. -->
 
 ![rtpMIDI window, demonstrating how to activate an RTP-MIDI port](/images/documentation/midi-windows-settings.png)
 
 </details>
 
-<details><summary>Installed MIDI Devices</summary>
+<details><summary>Yamaha Disklavier (Player Piano)</summary>
 
-Throughout our studios, we have various MIDI devices that are permanently installed, and made accessible to use throughout the studios by connecting to the LAN.
+The Performance Lab features a Yamaha Disklavier HQ300SX player piano.
 
-### Yamaha Disklavier
-
-Within the Performance Lab, we have a Yamaha Disklavier HQ300SX permanently connected over RTP-MIDI, and discoverable by the name 'PL Disklavier'.
-This piano can have MIDI sent to it, and will produce acoustic sound as a response, as well as being able to transmit MIDI whilst being played.
-To power this instrument, typically all you need to do is use the switch underneath the keyboard.
-If it is however turned off at the wall, make sure to turn on the wall switch before turning on the switch underneath the keyboard.
+To power this instrument, use the switch underneath the keyboard and the standby switch on the control panel.
+If the mains is turned off at the wall, make sure to turn on the wall switch before turning on the switch underneath the keyboard.
 And for powering down, you do not need to power it down at the wall, but in the event that this is necessary, the power switch under the keyboard should be switched off before turning off power at the wall.
 
-### Control Room Keyboards
+The Disklavier is permanently connected to the Performance Lab RTP-MIDI interface and is discoverable by the name 'PL Disklavier'.
 
-There are two MIDI keyboard installed in the Control Room - a [MicroKey by Korg](https://www.korg.co.uk/products/microkey-2?variant=41114187006120) and an [Stage 3 by Nord](https://www.nordkeyboards.com/legacy-products/nord-stage-3/).
-These devices have been setup for local connections only, via the [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), but can easily be connected to the network by switching the USB connection on the desk over to the mioXL.
+![/images/documentation/disklavier.png](Performance Lab Disklavier power switch)
 
 </details>
 
