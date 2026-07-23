@@ -453,7 +453,7 @@ This bridge interfaces with channels 129-192 of the RME MADIface XT which is hos
 
 </details>
 
-<details><summary>Other Resources</summary>
+<details><summary>Tutorials & Resources</summary>
 
 <a href="https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck">**RME Totalmix Tutorials**</a>
 
@@ -476,6 +476,8 @@ Simply connect a computer to one of the many LAN ethernet ports labelled through
 Upon connecting to the LAN, you should have DHCP enabled in your network settings, and you will be assigned an IP within the range `192.168.0.101` - `192.168.0.254`.
 All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
 Our LAN is **not** connected to the internet in any way, and so all remote connections via this network are unavailable.
+
+And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
 
 </details>
 
@@ -611,21 +613,21 @@ These devices have been setup for local connections only, via the [OWC Thunderbo
 
 # Spatial Audio
 
-In the Performance Lab, we operate a 16.2 rectangular speaker array, and in the Live Room, we operate a 12.1 hemispherical speaker array.
-These surround sound systems are largely used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
+The Performance Lab features a 16.2 rectangular speaker array, and the Live Room features a 12.1 hemispherical speaker array.
+These speaker systems are used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
-<mark>Warning</mark> Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of Totalmix **before** sending audio to the system. If you are unsure how to control your noise exposure, please request a tutorial from studio management.
+<mark>Warning</mark> Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of RME Totalmix **before** sending audio to the system. If you are unsure how to control your noise exposure, please request a tutorial from studio management.
 
 <details><summary>Powering our Speaker Systems</summary>
 
-The easiest way to power the satellite speakers is to log on to the Windows computer in the Performance Lab, and use the Desktop applications `PL-Spat` (Performance Lab) or `LR-Spat` (Live Room) to toggle the power on and off.
-To otherwise control the system from your own laptop, the power for our satellite speakers can be toggled via UDP commands sent over the LAN.
-If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send such commands via UDP.
-And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
+The power for the satellite speakers is controlled via UDP commands over LAN.
+The easiest way to power on these is to log on to the Performance Lab PC and run the applications `PL-Spat` (Performance Lab) or `LR-Spat` (Live Room) from the Desktop.
+To power the speakers from your own laptop, use the UDP commands below.
+If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send these commands.
 
 ### Performance Lab (16.2)
 
-To power the d&b subwoofers, switch on the [d&b D20](https://www.dbaudio.com/global/en/products/amplifiers/d20/) located in the Performance Lab System Rack, whilst the Meyer satellites can be powered on or off with the following terminal commands.
+The d&b subwoofers are powered by the [d&b D20](https://www.dbaudio.com/global/en/products/amplifiers/d20/) located in the Performance Lab System Rack, whilst the Meyer satellites can be powered on or off with the following terminal commands.
 
 #### MacOS
 
@@ -731,34 +733,16 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 
 </details>
 
-<!--
-<details><summary>Project Templates</summary>
-
-### Ableton Live
-
-...coming soon...
-
-### Cycling '74 Max
-
-...coming soon...
-
-[Spat~ by IRCAM Forum]()
-
-### Dolby Atmos
-
-...coming soon...
-
-</details>
--->
-
 # Motion Capture
+
+The Performance Lab features a [Vicon motion capture system](https://help.vicon.com/space/LegacyCamDoc/11108354/Legacy+cameras+documentation?attachment=https://help.vicon.com/rest/api/content/11108354/child/attachment/att11108355/download&type=application/pdf&filename=T-Series_GoFurther_Rev1.3_2010Aug.pdf) with 12 fixed Bonita 10 optical cameras, 2 Bonita 720c video cameras, and a [Lock Studio+](<https://help.vicon.com/space/Vantage/15057687/Vicon+Lock++(legacy)+rear+panel>) for capturing generic analog signals and/or syncing to external devices.
 
 <details><summary>Powering our System</summary>
 
-The easiest way to power on the motion capture is to log on to the Windows computer in the Performance Lab, and use the Desktop application `Vicon Power` to toggle the power on and off.
-To otherwise control the system from your own laptop, the power for our motion capture can be toggled via UDP commands sent over the LAN.
+The power for the motion capture system is controlled via UDP commands over LAN.
+The easiest way to power on the motion capture is to log on to the Performance Lab PC and run the `Vicon Power` application from the Desktop.
+To power the system from your own laptop, use the UDP commands below.
 If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send such commands via UDP.
-And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
 
 #### MacOS
 
@@ -776,57 +760,9 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
 
 </details>
 
-<details><summary>Other Resources</summary>
+<details><summary>Tutorials & Resources</summary>
 
 <a href="https://www.youtube.com/watch?v=h4knk15grtw&list=PLxtdgDam3USUSIeuO6UloG3ogPsFNtEJS&index=5">**Vicon Nexus Tutorials**</a>
-
-</details>
-
-# DMX Lighting
-
-The Performance Lab features an array of stage lights that are controlled via DMX over LAN.
-The power for these lights is controlled using the labelled fuses in the Plant Room.
-
-<details><summary>Our System</summary>
-
-The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC Lighting](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
-This Performance Lab PC has been preconfigured with this software, and only requires a user to open the `Performance-Lab.dxl` template (`File > Open Recent`).
-To control the lights from your own computer, install the dmXLAN software and download the Performance Lab template below.
-
-<span>
-	<a class='button' download href='/resources/dmx/Performance-Lab.dxl'>
-		Performance Lab Template
-	</a>
-</span>
-
-As a basic overview of the software, each light is defined as a virtually positioned **Fixture**, and has been made addressable as part of a single DMX universe.
-These fixtures are controlled in the bottom right of the screen, where general brightness is controlled in the _Basic_ tab, whilst the rest of the controls are distributed across _Colour_, _Beam_, and _Extra_.
-Multiple lights can be controlled simultaneously by selecting items from the **Groups** tab in the top left of the screen, and similarly presets can be stored and recalled via the **Scenes** tab.
-
-![dmXLAN screenshot showing the Performance Lab template](/images/documentation/dmx-dmXLAN.png)
-
-</details>
-
-<details><summary>Advanced</summary>
-
-If you wish to experiment with other lighting designs, such as those using floor lighting, or lights for special effect, our custom Fixture Library can be downloaded below.
-This library contains all of our most common lighting equipment, and can be used either alongside the dmXLAN software, or ported to another piece of DMX compatible software.
-
-<span>
-	<a class='button' download href='/resources/dmx/C4DM-Fixture-Library.zip'>
-		C4DM Fixture Library
-	</a>
-</span>
-
-When using this fixture library with dmXLAN, you will need to manually set the library path, as in the preferences window pictured below.
-
-![dmXLAN screenshot showing the Fixture Library path in preferences.](/images/documentation/dmx-fixture-library.png)
-
-<!--
-still to learn!
-- time code (an alternative software to dmXLAN is needed for this)
-- max msp
--->
 
 </details>
 
@@ -847,14 +783,6 @@ We have licenses for Blade, Nexus and Tracker.
 - **Tracker 2:** For simple object tracking.
 
 - **Datastream SDK:** A free developer kit to send/receive live motion data with OSC(?).
-
-## Equipment List
-
-- **12 x** Vicon Bonita 10 Optical Cameras
-
-- **2 x** Vicon Bonita 720C Video Cameras
-
-- **1 x** Vicon Lock+
 
 ### Basic Operation
 
@@ -903,5 +831,47 @@ Each connector allows for up to 8 channels. The top row of the connector is GND.
 ### Advanced: Timecode, Genlock & Video Sync
 
 ### Advanced: Bonita 720C Video Cameras -->
+
+# DMX Lighting
+
+The Performance Lab features an array of stage lights that are controlled via DMX over LAN.
+The power for these lights is controlled using the labelled fuses in the Plant Room.
+
+<details><summary>Our System</summary>
+
+The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC Lighting](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
+This Performance Lab PC has been preconfigured with this software, and only requires a user to open the `Performance-Lab.dxl` template (`File > Open Recent`).
+To control the lights from your own computer, install the dmXLAN software and download the Performance Lab template below.
+
+<span>
+	<a class='button' download href='/resources/dmx/Performance-Lab.dxl'>
+		Performance Lab Template
+	</a>
+</span>
+
+As a basic overview of the software, each light is defined as a virtually positioned **Fixture**, and has been made addressable as part of a single DMX universe.
+These fixtures are controlled in the bottom right of the screen, where general brightness is controlled in the _Basic_ tab, whilst the rest of the controls are distributed across _Colour_, _Beam_, and _Extra_.
+Multiple lights can be controlled simultaneously by selecting items from the **Groups** tab in the top left of the screen, and similarly presets can be stored and recalled via the **Scenes** tab.
+
+![dmXLAN screenshot showing the Performance Lab template](/images/documentation/dmx-dmXLAN.png)
+
+</details>
+
+<details><summary>Advanced</summary>
+
+If you wish to experiment with other lighting designs, such as those using floor lighting, or lights for special effect, our custom Fixture Library can be downloaded below.
+This library contains all of our most common lighting equipment, and can be used either alongside the dmXLAN software, or ported to another piece of DMX compatible software.
+
+<span>
+	<a class='button' download href='/resources/dmx/C4DM-Fixture-Library.zip'>
+		C4DM Fixture Library
+	</a>
+</span>
+
+When using this fixture library with dmXLAN, you will need to manually set the library path, as in the preferences window pictured below.
+
+![dmXLAN screenshot showing the Fixture Library path in preferences.](/images/documentation/dmx-fixture-library.png)
+
+</details>
 
 </div> <!-- for scss styling -->
