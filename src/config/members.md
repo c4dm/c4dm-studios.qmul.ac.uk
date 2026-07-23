@@ -28,17 +28,13 @@
 
 # FAQs
 
-<details><summary>
-How do I gain access to the studios?
-</summary>
+<details><summary> How do I gain access to the studios? </summary>
 
 Studio access is available to members only. To become a member, submit the membership form linked above. After your application is reviewed, you will be invited to complete a studio induction and policy agreement form. Please allow up to 48 hours for card activation after submitting the policy agreement, although occasional delays may occur.
 
 </details>
 
-<details><summary>
-When and how often can I book the studios?
-</summary>
+<details><summary> When and how often can I book the studios? </summary>
 
 Access times vary depending on your membership level:
 
@@ -50,33 +46,25 @@ Always book using the studio calendar linked above. Studio time is prioritised i
 We ask that all attendance, including walk-ins, are documented on the calendar. Please do not book the studios for more than three consecutive days without prior approval. All bookings are monitored.
 </details>
 
-<details><summary>
-Can I bring collaborators or guests to the studios?
-</summary>
+<details><summary> Can I bring collaborators or guests to the studios? </summary>
 
 External collaborators and guests are welcome, but remain the responsibility of the member who booked the session, and are to be accompanied by them at all times. Large out-of-hours gatherings are not permitted unless an event request has been submitted and approved.
 
 </details>
 
-<details><summary>
-Can I leave equipment or a project setup between sessions?
-</summary>
+<details><summary> Can I leave equipment or a project setup between sessions? </summary>
 
 Studios should generally be packed down after each session, and all equipment returned to storage. If your project requires equipment to be left in place, please arrange this first with studio management to ensure that it does not obstruct or impact any other studio users.
 
 </details>
 
-<details><summary>
-What should I do if something is not working?
-</summary>
+<details><summary> What should I do if something is not working? </summary>
 
 If you encounter any technical issues, please check your work against the studio documentation first. If the issues persist or pose any hazard, stop using the affected equipment and contact studio management.
 
 </details>
 
-<details><summary>
-How do I get help or training?
-</summary>
+<details><summary> How do I get help or training? </summary>
 
 Studio members can request supervision or guidance via email. We also host drop-in sessions for training and equipment demonstrations, and members are notified of these automatically. Grey calendar entries titled 'Management' are also used to indicate our presence and availability in the studios.
 
