@@ -5,10 +5,9 @@
 Entry to our facilities is monitored through card access, and applies to all members as follows.
 **If you leave our facility outside of your access time, you will not be able to re-enter.**
 
-- Academic Staff: 8am - 8pm (Mon – Sun)
-- PhD / Postdoc: 8am – 8pm (Mon – Sun)
-- Postgraduate: 8am – 5pm (Mon – Fri, not including bank holidays)
-- Undergraduate: 8am – 5pm (Mon – Fri, not including bank holidays)
+- Research Supervisors: 8am - 10pm (Mon – Sun)
+- PhD Students & Staff: 8am – 8pm (Mon – Sun)
+- Undergraduates & Postgraduate: 8am – 5pm (Mon – Fri)
 
 <details><summary>Card Access</summary>
 
@@ -50,6 +49,8 @@ We expect you to be in attendance during your booking, and are responsible for a
 
 To ensure quiet and undisturbed opportunities for recording, rehearsal, and research, it is important that studio users do not enter spaces that have been booked by others.
 It is your responsibility to check the relevant calendars, book the spaces appropriately, and to not disrupt the work of others.
+
+**Grey** calendar entries titled 'Management' are used to indicate our presence and availability in the building.
 
 <details><summary>Guests</summary>
 
