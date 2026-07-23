@@ -52,6 +52,12 @@ External collaborators and guests are welcome, but remain the responsibility of 
 
 </details>
 
+<details><summary> Do I need to be a member to loan equipment? </summary>
+
+Anyone can request to loan equipment with approval from a research supervisor. Non-members will be prompted to name their supervisor when filling out the equipment loans form above.
+
+</details>
+
 <details><summary> Can I leave equipment or a project setup between sessions? </summary>
 
 Studios should generally be packed down after each session, and all equipment returned to storage. If your project requires equipment to be left in place, please arrange this first with studio management to ensure that it does not obstruct or impact any other studio users.
