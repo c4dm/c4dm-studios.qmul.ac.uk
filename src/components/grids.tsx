@@ -15,11 +15,13 @@ import { type C4DMEmployee, staff } from '../config/staff.ts'
 export function Affiliations(): JSX.Element {
 	return (
 		<div className='home-affiliations'>
-			{affiliations.map((obj: Affiliation): JSX.Element => (
-				<a href={obj.link.href} key={obj.name} rel='noopener' target='_blank'>
-					<img alt={obj.name} height={100} src={obj.image} width={150} />
-				</a>
-			))}
+			{affiliations.map(
+				(obj: Affiliation): JSX.Element => (
+					<a href={obj.link.href} key={obj.name} rel='noopener' target='_blank'>
+						<img alt={obj.name} height={100} src={obj.image} width={150} />
+					</a>
+				),
+			)}
 		</div>
 	)
 }
