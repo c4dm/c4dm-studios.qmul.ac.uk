@@ -3,44 +3,41 @@
 # Studios
 
 <div class="studio-gallery">
-  <figure>
-    <img src="/images/studios/performancelab.jpeg" alt="Performance Lab">
-    <figcaption>
-      <span class="room-name">Performance Lab</span>
-      <span class="room-size">6.42m × 5.05m</span>
-    </figcaption>
-  </figure>
-
-  <figure>
-    <img src="/images/studios/controlroom.jpeg" alt="Control Room">
-    <figcaption>
-      <span class="room-name">Control Room</span>
-      <span class="room-size">6.42m × 5.05m</span>
-    </figcaption>
-  </figure>
-
-  <figure>
-    <img src="/images/studios/liveroom.jpeg" alt="Live Room">
-    <figcaption>
-      <span class="room-name">Live Room</span>
-      <span class="room-size">9.5m × 6.5m</span>
-    </figcaption>
-  </figure>
+	<figure>
+		<img src="/images/studios/performancelab.jpeg" alt="Performance Lab">
+		<figcaption>
+			<span>Performance Lab</span>
+			<span>6.42m × 5.05m</span>
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="/images/studios/controlroom.jpeg" alt="Control Room">
+		<figcaption>
+			<span>Control Room</span>
+			<span>6.42m × 5.05m</span>
+		</figcaption>
+	</figure>
+	<figure>
+		<img src="/images/studios/liveroom.jpeg" alt="Live Room">
+		<figcaption>
+			<span>Live Room</span>
+			<span>9.5m × 6.5m</span>
+		</figcaption>
+	</figure>
 </div>
 
 # Equipment
 
 ## Microphones
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 5%;"><b>Qty</b></td>
-      <td style="width: 5%;"><b>+48v</b></td>
-    </tr>
+<table style="width: 100%"><tbody>
+	<tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 5%;"><b>Qty</b></td>
+		<td style="width: 5%;"><b>+48v</b></td>
+	</tr>
 	<tr>
 		<td>AKG</td>
 		<td>411 (?)</td>
@@ -265,20 +262,17 @@
 		<td>1</td>
 		<td></td>
 	</tr>
-
-  </tbody>
-</table>
+</tbody></table>
 
 ## Preamps
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
+<table style="width: 100%"><tbody>
+	<tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
 		<td>SSL</td>
 		<td>Alpha Channel</td>
@@ -316,30 +310,28 @@
 		<td>3</td>
 	</tr>
 	<tr>
-    	<td>Focusrite</td>
-    	<td>Red</td>
-    	<td>4-Channel Preamp</td>
-    	<td>1</td>
-    </tr>
+		<td>Focusrite</td>
+		<td>Red</td>
+		<td>4-Channel Preamp</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>TLA</td>
-    	<td>Ivory 5001</td>
-    	<td>4-Channel Preamp</td>
-    	<td>1</td>
-    </tr>
-  </tbody>
-</table>
+		<td>TLA</td>
+		<td>Ivory 5001</td>
+		<td>4-Channel Preamp</td>
+		<td>1</td>
+	</tr>
+</tbody></table>
 
 ## Outboard
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
+<table style="width: 100%"><tbody>
+	<tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
 		<td>Empirical Labs</td>
 		<td>Distressor EL8-X</td>
@@ -364,502 +356,485 @@
 		<td>Compressor</td>
 		<td>1</td>
 	</tr>
-
-  </tbody>
-</table>
+</tbody></table>
 
 ## Instruments
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Yamaha</td>
-    	<td>GC1</td>
-    	<td>5ft Grand Piano</td>
-    	<td>1</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Yamaha</td>
-    	<td>Disklavier HQ300SX</td>
-    	<td>Upright Player Piano</td>
-    	<td>1</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
-    	<td>DW Drums (?)</td>
-    	<td>Full Kit</td>
-    	<td>14", 12", 20" etc.</td>
-    	<td>1</td>
-    </tr>
+		<td>Yamaha</td>
+		<td>GC1</td>
+		<td>5ft Grand Piano</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Epiphone</td>
-    	<td>Broadway NA</td>
-    	<td>Hollow Body Electric Guitar</td>
-    	<td>1</td>
-    </tr>
+		<td>Yamaha</td>
+		<td>Disklavier HQ300SX</td>
+		<td>Upright Player Piano</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Fender</td>
-    	<td>Stratocaster (USA)</td>
-    	<td>Electric Guitar (with mods)</td>
-    	<td>1</td>
-    </tr>
+		<td>DW Drums (?)</td>
+		<td>Full Kit</td>
+		<td>14", 12", 20" etc.</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Ibanez</td>
-    	<td>TR70</td>
-    	<td>4-String Bass Guitar</td>
-    	<td>1</td>
-    </tr>
+		<td>Epiphone</td>
+		<td>Broadway NA</td>
+		<td>Hollow Body Electric Guitar</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Lag</td>
-    	<td>THV-10DCE</td>
-    	<td>Acoustic Guitar with HyVibe FX Unit</td>
-    	<td>1</td>
-    </tr>
+		<td>Fender</td>
+		<td>Stratocaster (USA)</td>
+		<td>Electric Guitar (with mods)</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Nord</td>
-    	<td>Stage 3</td>
-    	<td>88 Key Electric Piano</td>
-    	<td>1</td>
-    </tr>
+		<td>Ibanez</td>
+		<td>TR70</td>
+		<td>4-String Bass Guitar</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Framus</td>
-    	<td>Legacy Series, Grand Auditorium</td>
-    	<td>Acoustic Guitar</td>
-    	<td>1</td>
-    </tr>
+		<td>Lag</td>
+		<td>THV-10DCE</td>
+		<td>Acoustic Guitar with HyVibe FX Unit</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>KORG</td>
-    	<td>Triton Rack</td>
-    	<td>Sampler</td>
-    	<td>1</td>
-    </tr>
+		<td>Nord</td>
+		<td>Stage 3</td>
+		<td>88 Key Electric Piano</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>KORG</td>
-    	<td>microKORG</td>
-    	<td>37 Key Synth / Vocoder</td>
-    	<td>1</td>
-    </tr>
-</table>
+		<td>Framus</td>
+		<td>Legacy Series, Grand Auditorium</td>
+		<td>Acoustic Guitar</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>KORG</td>
+		<td>Triton Rack</td>
+		<td>Sampler</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>KORG</td>
+		<td>microKORG</td>
+		<td>37 Key Synth / Vocoder</td>
+		<td>1</td>
+	</tr>
+</tbody></table>
 
 ## Amps & Pedals
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Roland</td>
-    	<td>Micro Cube</td>
-    	<td>Portable Amp</td>
-    	<td>1</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Zoom</td>
-    	<td>3030</td>
-    	<td>Multi-FX Pedal</td>
-    	<td>1</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
-    	<td>Supro</td>
-    	<td>Statesman 1699RC</td>
-    	<td>50W Valve Amp</td>
-    	<td>1</td>
-    </tr>
+		<td>Roland</td>
+		<td>Micro Cube</td>
+		<td>Portable Amp</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Markbass</td>
-    	<td>Mini CMD 151P</td>
-    	<td>50W Bass Amp</td>
-    	<td>1</td>
-    </tr>
+		<td>Zoom</td>
+		<td>3030</td>
+		<td>Multi-FX Pedal</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Peavey</td>
-    	<td>Bandit 112</td>
-    	<td>Transistor Amp</td>
-    	<td>1</td>
-    </tr>
+		<td>Supro</td>
+		<td>Statesman 1699RC</td>
+		<td>50W Valve Amp</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Line 6</td>
-    	<td>Unknown</td>
-    	<td>Transistor Amp</td>
-    	<td>1</td>
-    </tr>
+		<td>Markbass</td>
+		<td>Mini CMD 151P</td>
+		<td>50W Bass Amp</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Dunlop</td>
-    	<td>Cry Baby Wah</td>
-    	<td>Wah Pedal</td>
-    	<td>1</td>
-    </tr>
-</table>
+		<td>Peavey</td>
+		<td>Bandit 112</td>
+		<td>Transistor Amp</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Line 6</td>
+		<td>Unknown</td>
+		<td>Transistor Amp</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Dunlop</td>
+		<td>Cry Baby Wah</td>
+		<td>Wah Pedal</td>
+		<td>1</td>
+	</tr>
+</tbody></table>
 
 ## Software
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Ableton</td>
-    	<td>Live Suite 12</td>
-    	<td>Portable Licenses</td>
-    	<td>15</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Cycling74</td>
-    	<td>Max 9 / RNBO</td>
-    	<td>Portable Licenses</td>
-    	<td>15</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
-    	<td>Apple</td>
-    	<td>Logic Pro X</td>
-    	<td></td>
-    	<td>1</td>
-    </tr>
-</table>
+		<td>Ableton</td>
+		<td>Live Suite 12</td>
+		<td>Portable Licenses</td>
+		<td>15</td>
+	</tr>
+	<tr>
+		<td>Cycling74</td>
+		<td>Max 9 / RNBO</td>
+		<td>Portable Licenses</td>
+		<td>15</td>
+	</tr>
+	<tr>
+		<td>Apple</td>
+		<td>Logic Pro X</td>
+		<td></td>
+		<td>1</td>
+	</tr>
+</tbody></table>
 
 ## MIDI
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>iConnectivity</td>
-    	<td>MioXL</td>
-    	<td>MIDI Interface / USB, DIN, RTP</td>
-    	<td>3</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>M-Audio</td>
-    	<td>Axiom 61</td>
-    	<td>61 Key MIDI Keyboard / USB, DIN</td>
-    	<td>5</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
+	<tr>
+		<td>iConnectivity</td>
+		<td>MioXL</td>
+		<td>MIDI Interface / USB, DIN, RTP</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>M-Audio</td>
+		<td>Axiom 61</td>
+		<td>61 Key MIDI Keyboard / USB, DIN</td>
+		<td>5</td>
+	</tr>
 	<!-- <tr>
-    	<td>Oberheim</td>
-    	<td>MC-1000</td>
-    	<td>88 Key MIDI Keyboard / DIN</td>
-    	<td>1</td>
-    </tr> -->
-</table>
+		<td>Oberheim</td>
+		<td>MC-1000</td>
+		<td>88 Key MIDI Keyboard / DIN</td>
+		<td>1</td>
+	</tr> -->
+</tbody></table>
 
 ## DI Boxes
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 5%;"><b>Qty</b></td>
-      <td style="width: 5%;"><b>+48v</b></td>
-    </tr>
-    <tr>
-    	<td>Radial</td>
-    	<td>Pro-DI</td>
-    	<td>Mono / Passive</td>
-    	<td>3</td>
-    	<td></td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Radial</td>
-    	<td>Pro-D2</td>
-    	<td>Stereo / Passive</td>
-    	<td>1</td>
-    	<td></td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 5%;"><b>Qty</b></td>
+		<td style="width: 5%;"><b>+48v</b></td>
+	</tr>
 	<tr>
-    	<td>BSS</td>
-    	<td>AR-113</td>
-    	<td>Mono / Active</td>
-    	<td>3</td>
-    	<td>✅</td>
-    </tr>
+		<td>Radial</td>
+		<td>Pro-DI</td>
+		<td>Mono / Passive</td>
+		<td>3</td>
+		<td></td>
+	</tr>
 	<tr>
-    	<td>Behringer</td>
-    	<td>DI-20</td>
-    	<td>Stereo / Active</td>
-    	<td>2</td>
-    	<td>✅</td>
-    </tr>
-</table>
+		<td>Radial</td>
+		<td>Pro-D2</td>
+		<td>Stereo / Passive</td>
+		<td>1</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>BSS</td>
+		<td>AR-113</td>
+		<td>Mono / Active</td>
+		<td>3</td>
+		<td>✅</td>
+	</tr>
+	<tr>
+		<td>Behringer</td>
+		<td>DI-20</td>
+		<td>Stereo / Active</td>
+		<td>2</td>
+		<td>✅</td>
+	</tr>
+</tbody></table>
 
 ## Headphones
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Audio-Technica</td>
-    	<td>ATH-M20X</td>
-    	<td>Closed-Back</td>
-    	<td>29</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Sennheiser</td>
-    	<td>HD820</td>
-    	<td>Open-Back / Pro-Audio</td>
-    	<td>1</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
+	<tr>
+		<td>Audio-Technica</td>
+		<td>ATH-M20X</td>
+		<td>Closed-Back</td>
+		<td>29</td>
+	</tr>
+	<tr>
+		<td>Sennheiser</td>
+		<td>HD820</td>
+		<td>Open-Back / Pro-Audio</td>
+		<td>1</td>
+	</tr>
 	 <tr>
-    	<td>Behringer</td>
-    	<td>PowerPlay</td>
-    	<td>Wired IEM System / Multichannel</td>
-    	<td>3</td>
-    </tr>
-</table>
+		<td>Behringer</td>
+		<td>PowerPlay</td>
+		<td>Wired IEM System / Multichannel</td>
+		<td>3</td>
+	</tr>
+</tbody></table>
 
 ## Computers
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Apple</td>
-    	<td>Mac Mini (2024)</td>
-    	<td>Control Room / Apple M4</td>
-    	<td>1</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Dell</td>
-    	<td>PowerEdge T630</td>
-    	<td>Performance Lab / Windows 11 VM</td>
-    	<td>1</td>
-    </tr>
-</table>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
+	<tr>
+		<td>Apple</td>
+		<td>Mac Mini (2024)</td>
+		<td>Control Room / Apple M4</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Dell</td>
+		<td>PowerEdge T630</td>
+		<td>Performance Lab / Windows 11 VM</td>
+		<td>1</td>
+	</tr>
+</tbody></table>
 
 ## Field Recorders
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Zoom</td>
-    	<td>F8</td>
-    	<td>8-Channel Field Recorder</td>
-    	<td>1</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Zoom</td>
-    	<td>H5</td>
-    	<td>4-Channel Field Recorder with Stereo Mic</td>
-    	<td>1</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
-    	<td>Zoom</td>
-    	<td>H4n Pro</td>
-    	<td>2-Channel Recorder with Stereo Mic</td>
-    	<td>1</td>
-    </tr>
-</table>
+		<td>Zoom</td>
+		<td>F8</td>
+		<td>8-Channel Field Recorder</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Zoom</td>
+		<td>H5</td>
+		<td>4-Channel Field Recorder with Stereo Mic</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Zoom</td>
+		<td>H4n Pro</td>
+		<td>2-Channel Recorder with Stereo Mic</td>
+		<td>1</td>
+	</tr>
+</tbody></table>
 
 ## Motion Capture
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Vicon</td>
-    	<td>Lock+</td>
-    	<td></td>
-    	<td>1</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Vicon</td>
-    	<td>Bonita 10</td>
-    	<td>Optical Camera</td>
-    	<td>12</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
-    	<td>Vicon</td>
-    	<td>Bonita 720C</td>
-    	<td></td>
-    	<td>2</td>
-    </tr>
+		<td>Vicon</td>
+		<td>Lock+</td>
+		<td></td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Vicon</td>
-    	<td>Calibration Wand</td>
-    	<td>L-Frame 5-Marker</td>
-    	<td>1</td>
-    </tr>
+		<td>Vicon</td>
+		<td>Bonita 10</td>
+		<td>Optical Camera</td>
+		<td>12</td>
+	</tr>
 	<tr>
-    	<td>BlackMagic Design</td>
-    	<td>Genlock Sync Generator</td>
-    	<td></td>
-    	<td>1</td>
-    </tr>
-</table>
+		<td>Vicon</td>
+		<td>Bonita 720C</td>
+		<td></td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>Vicon</td>
+		<td>Calibration Wand</td>
+		<td>L-Frame 5-Marker</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>BlackMagic Design</td>
+		<td>Genlock Sync Generator</td>
+		<td></td>
+		<td>1</td>
+	</tr>
+</tbody></table>
 
 ## Speakers
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>PMC</td>
-    	<td>AML2</td>
-    	<td>2-Way / Near-field</td>
-    	<td>4</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>PMC</td>
-    	<td>SB100-A</td>
-    	<td>Subwoofer</td>
-    	<td>1</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
-    	<td>Yamaha</td>
-    	<td>HS50M</td>
-    	<td>2-Way / Near-field</td>
-    	<td>2</td>
-    </tr>
+		<td>PMC</td>
+		<td>AML2</td>
+		<td>2-Way / Near-field</td>
+		<td>4</td>
+	</tr>
 	<tr>
-    	<td>Quested</td>
-    	<td>VS2205</td>
-    	<td>3-Way / Near-field</td>
-    	<td>2</td>
-    </tr>
+		<td>PMC</td>
+		<td>SB100-A</td>
+		<td>Subwoofer</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>d&b Audio</td>
-    	<td>E14</td>
-    	<td>PA Tops</td>
-    	<td>2</td>
-    </tr>
+		<td>Yamaha</td>
+		<td>HS50M</td>
+		<td>2-Way / Near-field</td>
+		<td>2</td>
+	</tr>
 	<tr>
-    	<td>d&b Audio</td>
-    	<td>B4</td>
-    	<td>PA Subs</td>
-    	<td>2</td>
-    </tr>
+		<td>Quested</td>
+		<td>VS2205</td>
+		<td>3-Way / Near-field</td>
+		<td>2</td>
+	</tr>
 	<tr>
-    	<td>Yamaha</td>
-    	<td>MSP5A</td>
-    	<td>2-Way / Near-field</td>
-    	<td>7 (?)</td>
-    </tr>
+		<td>d&b Audio</td>
+		<td>E14</td>
+		<td>PA Tops</td>
+		<td>2</td>
+	</tr>
 	<tr>
-    	<td>Meyer Sound</td>
-    	<td>MM-4XP</td>
-    	<td>Performance Lab Spatial</td>
-    	<td>16</td>
-    </tr>
+		<td>d&b Audio</td>
+		<td>B4</td>
+		<td>PA Subs</td>
+		<td>2</td>
+	</tr>
 	<tr>
-    	<td>Meyer Sound</td>
-    	<td>MM-4XP</td>
-    	<td>Live Room Spatial</td>
-    	<td>12</td>
-    </tr>
+		<td>Yamaha</td>
+		<td>MSP5A</td>
+		<td>2-Way / Near-field</td>
+		<td>7 (?)</td>
+	</tr>
 	<tr>
-    	<td>Meyer Sound</td>
-    	<td>USW 1P</td>
-    	<td>Subwoofer</td>
-    	<td>1</td>
-    </tr>
+		<td>Meyer Sound</td>
+		<td>MM-4XP</td>
+		<td>Performance Lab Spatial</td>
+		<td>16</td>
+	</tr>
 	<tr>
-    	<td>Meyer Sound</td>
-    	<td>MM-4XP</td>
-    	<td>Portable Line Array</td>
-    	<td>8</td>
-    </tr>
-
-</table>
+		<td>Meyer Sound</td>
+		<td>MM-4XP</td>
+		<td>Live Room Spatial</td>
+		<td>12</td>
+	</tr>
+	<tr>
+		<td>Meyer Sound</td>
+		<td>USW 1P</td>
+		<td>Subwoofer</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Meyer Sound</td>
+		<td>MM-4XP</td>
+		<td>Portable Line Array</td>
+		<td>8</td>
+	</tr>
+</tbody></table>
 
 ## Measurement
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Lutron</td>
-    	<td>SL-4022</td>
-    	<td>SPL Meter</td>
-    	<td>1</td>
-    </tr>
+<table style="width: 100%"><tbody>
 	<tr>
-    	<td>Velleman</td>
-    	<td>DVM805</td>
-    	<td>SPL Meter</td>
-    	<td>1</td>
-    </tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
 	<tr>
-    	<td>Leica</td>
-    	<td>Disto X3</td>
-    	<td>Laser Distance Meter</td>
-    	<td>1</td>
-    </tr>
+		<td>Lutron</td>
+		<td>SL-4022</td>
+		<td>SPL Meter</td>
+		<td>1</td>
+	</tr>
 	<tr>
-    	<td>Polar</td>
-    	<td>H10</td>
-    	<td>Heart Rate Monitor</td>
-    	<td>20</td>
-    </tr>
-
-</table>
+		<td>Velleman</td>
+		<td>DVM805</td>
+		<td>SPL Meter</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Leica</td>
+		<td>Disto X3</td>
+		<td>Laser Distance Meter</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Polar</td>
+		<td>H10</td>
+		<td>Heart Rate Monitor</td>
+		<td>20</td>
+	</tr>
+</tbody></table>
 
 ## Utility
 
-<table style="width: 100%">
-  <tbody>
-    <tr>
-      <td style="width: 30%;"><b>Manufacturer</b></td>
-	  <td style="width: 30%;"><b>Model</b></td>
-	  <td style="width: 30%;"><b>Description</b></td>
-      <td style="width: 10%;"><b>Qty</b></td>
-    </tr>
-    <tr>
-    	<td>Behringer</td>
-    	<td>P-16</td>
-    	<td>Wired IEM System</td>
-    	<td>3</td>
-    </tr>
-
-</table>
+<table style="width: 100%"><tbody>
+	<tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
+	<tr>
+		<td>Behringer</td>
+		<td>P-16</td>
+		<td>Wired IEM System</td>
+		<td>3</td>
+	</tr>
+</tbody></table>
 
 </div> <!-- for scss styling -->

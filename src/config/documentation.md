@@ -60,7 +60,7 @@ Studio users only need to interact with the **Overview** tab in Milan Manager to
 
 If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the Assignment configuration and should remain set to a 48 kHz sample rate.
 
-See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Milan Manager Documentation**</a> for further instruction.
+See the official [**Milan Manager Documentation**](https://docs.milanmanager.com/ui-overview.html) for further instruction.
 
 </details>
 
@@ -70,11 +70,12 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 
 ## Talker Streams
 
-<table style="width: 100%"><tbody>
-		<td style='width: 25%'><b> Stream </b></td>
-		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channel </b></td>
-		<td style='width: 25%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Stream </b></td>
+		<td><b> Name </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -144,11 +145,12 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 
 ## Listener Streams
 
-<table style="width: 100%"><tbody>
-		<td style='width: 25%'><b> Stream </b></td>
-		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channel </b></td>
-		<td style='width: 25%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Stream </b></td>
+		<td><b> Name </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -181,11 +183,12 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 
 ## Talker Streams
 
-<table style="width: 100%"><tbody>
-		<td style='width: 25%'><b> Stream </b></td>
-		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channel </b></td>
-		<td style='width: 25%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Stream </b></td>
+		<td><b> Name </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -222,11 +225,12 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 
 ## Listener Streams
 
-<table style="width: 100%"><tbody>
-		<td style='width: 25%'><b> Stream </b></td>
-		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channel </b></td>
-		<td style='width: 25%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Stream </b></td>
+		<td><b> Name </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -268,11 +272,12 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 
 ## Talker Streams
 
-<table style="width: 100%"><tbody>
-		<td style='width: 25%'><b> Stream </b></td>
-		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channel </b></td>
-		<td style='width: 25%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Stream </b></td>
+		<td><b> Name </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -309,11 +314,12 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 
 ## Listener Streams
 
-<table style="width: 100%"><tbody>
-		<td style='width: 25%'><b> Stream </b></td>
-		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channel </b></td>
-		<td style='width: 25%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Stream </b></td>
+		<td><b> Name </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr>
 		<td rowspan='2'> 1 </td>
@@ -351,11 +357,12 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 
 ## Talker Streams
 
-<table style="width: 100%"><tbody>
-		<td style='width: 25%'><b> Stream </b></td>
-		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channel </b></td>
-		<td style='width: 25%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Stream </b></td>
+		<td><b> Name </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr><td> 1 </td><td> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE OUT 1-16 </td></tr>
 	<tr><td> 2 </td><td> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE OUT 17-32 </td></tr>
@@ -369,11 +376,12 @@ See the official <a href="https://docs.milanmanager.com/ui-overview.html">**Mila
 
 ## Listener Streams
 
-<table style="width: 100%"><tbody>
-		<td style='width: 25%'><b> Stream </b></td>
-		<td style='width: 25%'><b> Name </b></td>
-		<td style='width: 25%'><b> Channel </b></td>
-		<td style='width: 25%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Stream </b></td>
+		<td><b> Name </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr><td> 1 </td><td> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE IN 1-16</td></tr>
 	<tr><td> 2 </td><td> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE IN 17-32</td></tr>
@@ -397,44 +405,48 @@ Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manage
 
 ## Dante Inputs
 
-<table style="width: 100%"><tbody>
-	<td style='width: 30%'><b> Device </b></td>
-	<td style='width: 30%'><b> Channel </b></td>
-	<td style='width: 30%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Device </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr><td rowspan='1'>AVB <-> DANTE</td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
 </tbody></table>
 
 ## Dante Outputs
 
-<table style="width: 100%"><tbody>
-	<td style='width: 30%'><b> Device </b></td>
-	<td style='width: 30%'><b> Channel </b></td>
-	<td style='width: 30%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Device </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr><td rowspan='1'>AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
 </tbody></table>
 
 ### Dante-MADI Bridge
 
-This bridge interfaces with channels 129-192 of the RME MadifaceXT which is hosted by the Performance Lab PC.
+This bridge interfaces with channels 129-192 of the RME MADIface XT which is hosted by the Performance Lab PC.
 
 ## Dante Inputs
 
-<table style="width: 100%"><tbody>
-	<td style='width: 30%'><b> Device </b></td>
-	<td style='width: 30%'><b> Channel </b></td>
-	<td style='width: 30%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Device </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td>MADIFACE OUT 129-192</td></tr>
 </tbody></table>
 
 ## Dante Outputs
 
-<table style="width: 100%"><tbody>
-	<td style='width: 30%'><b> Device </b></td>
-	<td style='width: 30%'><b> Channel </b></td>
-	<td style='width: 30%'><b> Assignment </b></td>
+<table><tbody>
+	<tr>
+		<td><b> Device </b></td>
+		<td><b> Channel </b></td>
+		<td><b> Assignment </b></td>
 	</tr>
 	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 - 192 </td><td>MADIFACE IN 129-192</td></tr>
 </tbody></table>
@@ -684,7 +696,7 @@ Within the Performance Lab, we operate a 16.2 system arranged in a rectangular c
 
 <table><tbody>
 	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> x </b></td><td><b> y </b></td></tr>
-    <tr><td> 2.14 </td><td> -85.0 </td><td> -2.132 </td><td> 0.187 </td></tr>
+	<tr><td> 2.14 </td><td> -85.0 </td><td> -2.132 </td><td> 0.187 </td></tr>
 	<tr><td> 2.14 </td><td> 85.0 </td><td> 2.132 </td><td> 0.187 </td></tr>
 </tbody></table>
 
@@ -696,18 +708,18 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 
 <table><tbody>
 	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> ϕ </b></td><td><b> x </b></td><td><b> y </b></td><td><b> z </b></td></tr>
-    <tr><td> 2.47 </td><td> 0.0 </td><td> 0.0 </td><td> 0.0 </td><td> 2.47 </td><td> 0.0 </td></tr>
-    <tr><td> 2.68 </td><td> 42.5 </td><td> 0.0 </td><td> 1.81 </td><td> 1.98 </td><td> 0.0 </td></tr>
-    <tr><td> 1.76 </td><td> 96.5 </td><td> 0.0 </td><td> 1.75 </td><td> -0.2 </td><td> 0.0 </td></tr>
-    <tr><td> 2.26 </td><td> 152.5 </td><td> 0.0 </td><td> 1.04 </td><td> -2.0 </td><td> 0.0 </td></tr>
-    <tr><td> 2.14 </td><td> -149.0 </td><td> 0.0 </td><td> -1.1 </td><td> -1.83 </td><td> 0.0 </td></tr>
-    <tr><td> 1.78 </td><td> -93.5 </td><td> 0.0 </td><td> -1.78 </td><td> -0.11 </td><td> 0.0 </td></tr>
-    <tr><td> 2.61 </td><td> -44.0 </td><td> 0.0 </td><td> -1.81 </td><td> 1.88 </td><td> 0.0 </td></tr>
-    <tr><td> 2.2 </td><td> 0.0 </td><td> 27.5 </td><td> 0.0 </td><td> 1.95 </td><td> 1.02 </td></tr>
-    <tr><td> 2.03 </td><td> 93.0 </td><td> 27.5 </td><td> 1.8 </td><td> -0.09 </td><td> 0.94 </td></tr>
-    <tr><td> 2.0 </td><td> -177.0 </td><td> 27.5 </td><td> -0.09 </td><td> -1.77 </td><td> 0.92 </td></tr>
-    <tr><td> 2.05 </td><td> -88.5 </td><td> 27.5 </td><td> -1.82 </td><td> 0.05 </td><td> 0.95 </td></tr>
-    <tr><td> 0.93 </td><td> 0.0 </td><td> 90.0 </td><td> 0.0 </td><td> 0.0 </td><td> 0.93 </td></tr>
+	<tr><td> 2.47 </td><td> 0.0 </td><td> 0.0 </td><td> 0.0 </td><td> 2.47 </td><td> 0.0 </td></tr>
+	<tr><td> 2.68 </td><td> 42.5 </td><td> 0.0 </td><td> 1.81 </td><td> 1.98 </td><td> 0.0 </td></tr>
+	<tr><td> 1.76 </td><td> 96.5 </td><td> 0.0 </td><td> 1.75 </td><td> -0.2 </td><td> 0.0 </td></tr>
+	<tr><td> 2.26 </td><td> 152.5 </td><td> 0.0 </td><td> 1.04 </td><td> -2.0 </td><td> 0.0 </td></tr>
+	<tr><td> 2.14 </td><td> -149.0 </td><td> 0.0 </td><td> -1.1 </td><td> -1.83 </td><td> 0.0 </td></tr>
+	<tr><td> 1.78 </td><td> -93.5 </td><td> 0.0 </td><td> -1.78 </td><td> -0.11 </td><td> 0.0 </td></tr>
+	<tr><td> 2.61 </td><td> -44.0 </td><td> 0.0 </td><td> -1.81 </td><td> 1.88 </td><td> 0.0 </td></tr>
+	<tr><td> 2.2 </td><td> 0.0 </td><td> 27.5 </td><td> 0.0 </td><td> 1.95 </td><td> 1.02 </td></tr>
+	<tr><td> 2.03 </td><td> 93.0 </td><td> 27.5 </td><td> 1.8 </td><td> -0.09 </td><td> 0.94 </td></tr>
+	<tr><td> 2.0 </td><td> -177.0 </td><td> 27.5 </td><td> -0.09 </td><td> -1.77 </td><td> 0.92 </td></tr>
+	<tr><td> 2.05 </td><td> -88.5 </td><td> 27.5 </td><td> -1.82 </td><td> 0.05 </td><td> 0.95 </td></tr>
+	<tr><td> 0.93 </td><td> 0.0 </td><td> 90.0 </td><td> 0.0 </td><td> 0.0 </td><td> 0.93 </td></tr>
 </tbody></table>
 
 #### Subwoofer - [USW 1P by Meyer Sound](http://www.sotsound.com/fileserver/Equipment%20Information/usw-1p_resources/usw-1p_ds_c.pdf)
@@ -796,8 +808,6 @@ Multiple lights can be controlled simultaneously by selecting items from the **G
 </details>
 
 <details><summary>Advanced</summary>
-
-<!-- I think you can stream DMX over the audio network also to put lights wherever -->
 
 If you wish to experiment with other lighting designs, such as those using floor lighting, or lights for special effect, our custom Fixture Library can be downloaded below.
 This library contains all of our most common lighting equipment, and can be used either alongside the dmXLAN software, or ported to another piece of DMX compatible software.
@@ -892,56 +902,6 @@ Each connector allows for up to 8 channels. The top row of the connector is GND.
 
 ### Advanced: Timecode, Genlock & Video Sync
 
-### Advanced: Bonita 720C Video Cameras
-
-## Vicon Tutorials & Other Resources
-
-# Misc Research Equipment
-
-## GRAS Acoustics: Kemar Head
-
-## mh Acoustics: EM64 Eigenmike
-
-https://eigenmike.com/downloads
-
-## Meyer Sound: Speaker Line Array
-
-## Prism Sound: dScope III Signal Analyser
-
-## Zoom H8: Multi-channel / B-Format Field Recorder
-
-## TSL B-Format Microphone...
-
-# Other Equipment (by Studio Room)
-
-## G2B Performance Lab
-
-### Yamaha: Disklavier Upright
-
-### d&b audiotechnik: PA System
-
-## G2C Control Room
-
-### Camera Feeds
-
-### Talkback System
-
-## G4 Live Room
-
-### Yamaha Mixer & RCF PA System
-
-# Troubleshooting
-
-## Troubleshooting: Audio
-
-## Troubleshooting: LAN
-
-## Troubleshooting: Spatial Audio
-
-## Troubleshooting: Motion Capture
-
-## Troubleshooting: GRAS Acoustics
-
-## Troubleshooting: EM64 Eigenmike -->
+### Advanced: Bonita 720C Video Cameras -->
 
 </div> <!-- for scss styling -->

@@ -1,66 +1,57 @@
+@use './utils.scss' as utils;
+
 .studio-gallery {
 	display: flex;
 	gap: 1.5rem;
 	width: 100%;
+	flex-direction: row;
+
+	@media (width < utils.$iphone) {
+		flex-direction: column;
+	}
 
 	figure {
-		flex: 1;
 		margin-inline: 0;
+		flex: 1;
 		position: relative;
 		overflow: hidden;
-		border-radius: 8px;
-	}
 
-	img {
-		width: 100%;
-		display: block;
-		aspect-ratio: 4 / 3;
-		object-fit: cover;
-		transition: transform 0.3s ease;
-	}
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
 
-	figcaption {
-		position: absolute;
-		inset: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-
-		text-align: center;
-
-		background: rgba(0, 0, 0, 0.55);
-		color: white;
-
-		opacity: 0;
-		transition: opacity 0.3s ease;
-
-		.room-name {
-			font-size: 1.3rem;
-			font-weight: 500;
-			letter-spacing: 0.05em;
+			figcaption {
+				opacity: 1;
+			}
 		}
 
-		.room-size {
-			margin-top: 0.4rem;
-			font-size: 0.9rem;
-			opacity: 0.8;
-		}
-	}
-
-	figure:hover {
 		img {
-			transform: scale(1.05);
+			width: 100%;
+			display: block;
+			aspect-ratio: 4 / 3;
+			object-fit: cover;
+			transition: transform 0.3s ease;
 		}
 
 		figcaption {
-			opacity: 1;
-		}
-	}
-}
+			position: absolute;
+			inset: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			background: rgba(0, 0, 0, 0.55);
+			color: utils.$qm-white;
+			opacity: 0;
+			transition: opacity 0.3s ease;
 
-@media (max-width: 800px) {
-	.studio-gallery {
-		flex-direction: column;
+			span {
+				font-size: 1.2rem;
+				font-weight: 500;
+				letter-spacing: 0.05em;
+			}
+		}
 	}
 }
