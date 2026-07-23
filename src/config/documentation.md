@@ -593,12 +593,11 @@ This software is identical to Apple's Network MIDI Setup, and the method of host
 <details><summary>Yamaha Disklavier (Player Piano)</summary>
 
 The Performance Lab features a Yamaha Disklavier HQ300SX player piano.
+The Disklavier is permanently connected to the Performance Lab RTP-MIDI interface and is discoverable by the name 'PL Disklavier'.
 
 To power this instrument, use the switch underneath the keyboard and the standby switch on the control panel.
 If the mains is turned off at the wall, make sure to turn on the wall switch before turning on the switch underneath the keyboard.
 And for powering down, you do not need to power it down at the wall, but in the event that this is necessary, the power switch under the keyboard should be switched off before turning off power at the wall.
-
-The Disklavier is permanently connected to the Performance Lab RTP-MIDI interface and is discoverable by the name 'PL Disklavier'.
 
 ![/images/documentation/disklavier.png](Performance Lab Disklavier power switch)
 
