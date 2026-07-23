@@ -784,14 +784,14 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
 
 # DMX Lighting
 
-Within the Performance Lab, we have installed a series of stage lights that can be controlled using DMX over LAN.
-The power for these lights is controlled using the labelled fuses in the Plant Room, whilst the power for the network hardware is located in the Performance Lab stage rack.
+The Performance Lab features an array of stage lights that are controlled via DMX over LAN.
+The power for these lights is controlled using the labelled fuses in the Plant Room.
 
 <details><summary>Our System</summary>
 
 The stage lighting in the Performance Lab is connected to the LAN via a [dmXLAN node3 by ELC Lighting](https://www.elclighting.com/products/node3t), and can be controlled using the [dmXLAN](https://www.elclighting.com/software-products/dmxlan-v4) software.
-The Windows computer at the back of the room has been preconfigured for ease of use, and once the software is opened, only the Assignment template for the space needs to be loaded (either click 'yes' when prompted to load the most recent file, or `File > Open Recent`).
-Similarly, if you wish to run this software from your own computer, simply install the dmXLAN software and download the Performance Lab template below.
+This Performance Lab PC has been preconfigured with this software, and only requires a user to open the `Performance-Lab.dxl` template (`File > Open Recent`).
+To control the lights from your own computer, install the dmXLAN software and download the Performance Lab template below.
 
 <span>
 	<a class='button' download href='/resources/dmx/Performance-Lab.dxl'>

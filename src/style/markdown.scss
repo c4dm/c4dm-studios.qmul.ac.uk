@@ -153,6 +153,10 @@
 		p {
 			margin-block: 10px;
 
+			&:has(img) {
+				margin-block: 20px;
+			}
+
 			> img {
 				max-width: 60%;
 				margin: 0 20%;
