@@ -554,7 +554,7 @@ If you are facing an issue with one on the devices on our network, please contac
 
 # MIDI
 
-Each room is equipped with an RTP-MIDI interface, allowing all MIDI devices to be connected over the LAN.
+Each studio is equipped with an RTP-MIDI interface, allowing all MIDI devices to be connected over the LAN.
 
 <details><summary>Connecting a MIDI Device</summary>
 
@@ -597,9 +597,9 @@ The Disklavier is permanently connected to the Performance Lab RTP-MIDI interfac
 
 To power this instrument, use the switch underneath the keyboard and the standby switch on the control panel.
 If the mains is turned off at the wall, make sure to turn on the wall switch before turning on the switch underneath the keyboard.
-And for powering down, you do not need to power it down at the wall, but in the event that this is necessary, the power switch under the keyboard should be switched off before turning off power at the wall.
+<!-- And for powering down, you do not need to power it down at the wall, but in the event that this is necessary, the power switch under the keyboard should be switched off before turning off power at the wall. -->
 
-![/images/documentation/disklavier.png](Performance Lab Disklavier power switch)
+<!-- ![/images/documentation/disklavier.png](Performance Lab Disklavier power switch) -->
 
 </details>
 
