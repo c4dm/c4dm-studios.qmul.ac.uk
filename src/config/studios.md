@@ -7,26 +7,28 @@
 		<img src="/images/studios/performancelab.jpeg" alt="Performance Lab">
 		<figcaption>
 			<span>Performance Lab</span>
-			<span>6.42m × 5.05m</span>
+			<span>9m × 8m</span>
 		</figcaption>
 	</figure>
 	<figure>
 		<img src="/images/studios/controlroom.jpeg" alt="Control Room">
 		<figcaption>
 			<span>Control Room</span>
-			<span>6.42m × 5.05m</span>
+			<span>5m × 5m</span>
 		</figcaption>
 	</figure>
 	<figure>
 		<img src="/images/studios/liveroom.jpeg" alt="Live Room">
 		<figcaption>
 			<span>Live Room</span>
-			<span>9.5m × 6.5m</span>
+			<span>6m × 5m</span>
 		</figcaption>
 	</figure>
 </div>
 
 # Equipment
+
+[View Complete Inventory (requires Queen Mary login)](https://qmulprod.sharepoint.com/sites/Studio/Lists/MGMT%20%20Inventory/Inventory.aspx?env=WebViewList)
 
 ## Microphones
 
