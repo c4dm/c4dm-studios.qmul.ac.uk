@@ -427,7 +427,7 @@ Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manage
 
 ### Dante-MADI Bridge
 
-This bridge interfaces with channels 129-192 of the RME MADIface XT which is hosted by the Performance Lab PC.
+This bridge interfaces with channels 129<code> 192 of the R </code>E MADIface XT which is hosted by the Performance Lab PC.
 
 ## Dante Inputs
 
@@ -437,7 +437,7 @@ This bridge interfaces with channels 129-192 of the RME MADIface XT which is hos
 		<td><b> Channel </b></td>
 		<td><b> Assignment </b></td>
 	</tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td>MADIFACE OUT 129-192</td></tr>
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td>MADIFACE OUT 129<code> 192</td></tr </code>
 </tbody></table>
 
 ## Dante Outputs
@@ -448,7 +448,7 @@ This bridge interfaces with channels 129-192 of the RME MADIface XT which is hos
 		<td><b> Channel </b></td>
 		<td><b> Assignment </b></td>
 	</tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 - 192 </td><td>MADIFACE IN 129-192</td></tr>
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 -<code> 192 </td><td </code>MADIFACE IN 129<code> 192</td></tr </code>
 </tbody></table>
 
 </details>
@@ -459,49 +459,50 @@ This bridge interfaces with channels 129-192 of the RME MADIface XT which is hos
 
 </details>
 
-# Local Access Network (LAN)
+# Local Area Network (LAN)
 
-We operate a local access network across our studios, allowing for interaction and configuration with numerous hardware devices.
-This network is accessible throughout the studios, and can be connected to via ethernet from various wall ports, or using several of our preconfigured devices.
+Our local area network ([LAN](https://en.wikipedia.org/wiki/Local_area_network)) provides a dedicated network for connecting and managing devices across the studios. It supports remote power management, RTP-MIDI connectivity, centralised file storage via our NAS, device configuration, and automatic discovery of DHCP-enabled devices. The network is accessible throughout the studios via Ethernet wall ports or by using one of our desktop computers.
 
-<mark>Warning</mark> If you are running MacOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to maintain a simultaneous internet connection via WiFi when using our LAN.
-If you are using our in house Mac Mini, all necessary network settings have been preconfigured, and you should contact staff if you encounter an issue with this machine.
+<details>
+<summary>Connecting to the LAN</summary>
 
-<details><summary>How to LAN</summary>
+Our local area network (LAN) allows connected devices to be automatically discovered and accessed from compatible applications or through a web browser.
 
-At C4DM we support a local access network, connecting together and making accessible numerous devices throughout our facility.
-This network has been preconfigured by our staff, so that all devices on our network may be easily accessed from within supported applications or a web browser.
-Simply connect a computer to one of the many LAN ethernet ports labelled throughout our facility, or use one of the thunderbolt cables connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), located at every studio desk / modular workstation.
+To connect, plug your computer into any Ethernet wall port labelled **LAN**, or use one of the Thunderbolt cables connected to an <a href="https://www.owc.com/solutions/thunderbolt-dock">OWC Thunderbolt Dock</a> at each studio desk.
 
-Upon connecting to the LAN, you should have DHCP enabled in your network settings, and you will be assigned an IP within the range `192.168.0.101` - `192.168.0.254`.
-All static pieces of hardware installed throughout our spaces have been given a fixed IP within the range `192.168.0.1` - `192.168.0.100`, with the total network size limited by the subnet mask `255.255.255.0`.
-Our LAN is **not** connected to the internet in any way, and so all remote connections via this network are unavailable.
+Once connected, your device will be assigned an IP address within the range <code<code> 192.168.0.10 </code></code> - <code<code> 192.168.0.25 </code></code> and gain access to available network devices.
 
-And if you are unsure whether you are connected to the LAN correctly, make sure to `ping` any relevant IP addresses before sending any further commands.
+<mark>Warning</mark> The LAN is isolated from the internet and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually <a href="https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26">change the network order in your system settings</a> to prevent the LAN from overriding your Wi-Fi connection.
+
+If you are unsure whether you are connected correctly, verify your connection by pinging the relevant IP address before attempting to send further commands.
 
 </details>
 
 <details><summary>File Sharing</summary>
 
-Within the studios, we maintain a Network Attached Storage ([NAS](https://en.wikipedia.org/wiki/Network-attached_storage)), which can be
-accessed over the LAN using the studio wide student login credentials.
-This filer server is also accessible from both the Windows PC in the Performance Lab and the Apple Mac Mini in the Control Room, which have been preconfigured for simple file sharing.
-Please note, **these folders are not to be used for permanent storage, and will on occasion be purged without warning**.
+We maintain a Network Attached Storage ([NAS](https://en.wikipedia.org/wiki/Network-attached_storage)) system, which is accessible over the LAN using the student login credentials.
+
+The file server can also be accessed from the Performance Lab PC and the Control Room Mac. The NAS provides the most efficient way to transfer files to and from the Performance Lab PC, as this computer is physically located in the Plant Room.
+
+<mark>Warning</mark> These drives are intended for temporary storage only and may be periodically erased with prior notice.
 
 ### MacOS
 
-To share files between using our NAS, navigate to the `Network` section in a Finder window.
-You should then see a network device called `studio-files`, which will prompt you for our student login credentials upon trying to connect to it.
-Once logged in, your can treat this like any other file system within Finder, as pictured below.
+To share files using our NAS, navigate to the **Network** section in a Finder window.
+
+You should see a network location named `studio-files`, which will prompt you for the student login credentials when you attempt to connect.
+
+Once connected, you can use this location like any other file system within Finder, as shown below.
 
 ![MacOS Finder window demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas-mac.png)
 
 ### Windows
 
 To share files on Windows, navigate to: <pre><code>Control Panel > Network and Internet > Network and Sharing Centre > Change Advanced Settings</code></pre>
-Then make sure that `Network Discovery` is switched on.
-Finally, from in the `Network` section of file browser, you should then see a device called `STUDIO-FILES`, which will prompt you for our student login credentials upon trying to connect to it.
-Once logged in, your can treat this like any other file system within File Browser, as pictured below.
+
+Make sure that **Network Discovery** is enabled. From the **Network** section of File Explorer, you should see a device named `STUDIO-FILES`, which will prompt you for the student login credentials when you attempt to connect.
+
+Once connected, you can use this location like any other file system within File Explorer, as shown below.
 
 ![Windows File Browser demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas-windows.png)
 
@@ -509,45 +510,47 @@ Once logged in, your can treat this like any other file system within File Brows
 
 <details><summary>Device Address Book</summary>
 
-This section acts as a reference for our network enabled devices, with all pieces of hardware listed here having been preconfigured by our staff.
-Many of these device addresses are only accessible through dedicated software, and in the case of our network infrastructure, are also password protected.
-If you are facing an issue with one on the devices on our network, please contact a member of staff.
+This section provides a reference for our network-enabled devices. Many of these addresses are only accessible through dedicated software, and some devices are password protected and restricted to management access. Members can use this list to assist with network troubleshooting, including verifying connections using ping.
+
+If you encounter an issue with any device on our network, please contact a member of staff.
 
 ### Plant Room
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> TP Link - TL-R480T+ </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Extreme Networks - X440-G2-24P </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.3 </td><td> D-Link - DGS-3120-24PC </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.9 </td><td> Keene Electronics - IPMSW1 Plus </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.1 </code></td><td> TP Link - TL-R480T+ </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.2 </code></td><td> Extreme Networks - X440-G2-24P </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.3 </code></td><td> D-Link - DGS-3120-24PC </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.5 </code></td><td> Dell - PowerEdge T630 </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.6 </code></td><td> NAS </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.9 </code></td><td> Keene Electronics - IPMSW1 Plus </td></tr>
 </tbody></table>
 
 ### Control Room
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.10 </td><td> Netgear - GS305E </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.11 </td><td> Apple - Mac Mini </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.12 </td><td> iConnectivity - mioXL </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.13 </td><td> dbx - DriverRack PA 2 </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.10 </code></td><td> Netgear - GS305E </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.11 </code></td><td> Apple - Mac Mini </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.12 </code></td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.13 </code></td><td> dbx - DriverRack PA 2 </td></tr>
 </tbody></table>
 
 ### Live Room
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.20 </td><td> Netgear - GS305E </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.21 </td><td> Keene Electronics - IPMSW1 Plus (Undercroft) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.22 </td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.20 </code></td><td> Netgear - GS305E </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.21 </code></td><td> Keene Electronics - IPMSW1 Plus (Undercroft) </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.22 </code></td><td> iConnectivity - mioXL </td></tr>
 </tbody></table>
 
 ### Performance Lab
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.30 </td><td> Netgear - GS305E (Desk) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.31 </td><td> Netgear - GS305E (System Rack) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.32 </td><td> iConnectivity - mioXL </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.33 </td><td> d&b Audiotechnik - D20 </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.34 </td><td> ELC Lighting - dmXLAN node3 </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.35 </td><td> Dell - PowerEdge T630 </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.30 </code></td><td> Netgear - GS305E (Desk) </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.31 </code></td><td> Netgear - GS305E (System Rack) </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.32 </code></td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.33 </code></td><td> d&b Audiotechnik - D20 </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.34 </code></td><td> ELC Lighting - dmXLAN node3 </td></tr>
+	<tr><td style='width: 130px;'><code> 192.168.0.35 </code></td><td> Dell - PowerEdge T630 </td></tr>
 </tbody></table>
 
 </details>
@@ -624,15 +627,15 @@ The d&b subwoofers are powered by the [d&b D20](https://www.dbaudio.com/global/e
 #### MacOS
 
 ```bash
-echo -n "KMS ON2" | nc -u -w1 192.168.0.9 65432
-echo -n "KMS OFF2" | nc -u -w1 192.168.0.9 65432
+echo -n "KMS ON2" | nc -u -w1<code> 192.168.0.9  </code>5432
+echo -n "KMS OFF2" | nc -u -w1<code> 192.168.0.9  </code>5432
 ```
 
 #### Windows
 
 ```powershell
-echo|set /p="KMS ON2" | ncat -u -w1 192.168.0.9 65432
-echo|set /p="KMS OFF2" | ncat -u -w1 192.168.0.9 65432
+echo|set /p="KMS ON2" | ncat -u -w1<code> 192.168.0.9  </code>5432
+echo|set /p="KMS OFF2" | ncat -u -w1<code> 192.168.0.9  </code>5432
 ```
 
 ### Live Room (12.1)
@@ -642,15 +645,15 @@ Power for the Meyer subwoofer is located on the wall, whilst the Meyer satellite
 #### MacOS
 
 ```bash
-echo -n "KMS ON1" | nc -u -w1 192.168.0.21 65432
-echo -n "KMS OFF1" | nc -u -w1 192.168.0.21 65432
+echo -n "KMS ON1" | nc -u -w1<code> 192.168.0.21 </code>65432
+echo -n "KMS OFF1" | nc -u -w1<code> 192.168.0.21 </code>65432
 ```
 
 #### Windows
 
 ```powershell
-echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.21 65432
-echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
+echo|set /p="KMS ON1" | ncat -u -w1<code> 192.168.0.21 </code>65432
+echo|set /p="KMS OFF1" | ncat -u -w1<code> 192.168.0.21 </code>65432
 ```
 
 </details>
@@ -727,7 +730,7 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 
 # Motion Capture
 
-The Performance Lab features a [Vicon motion capture system](https://help.vicon.com/space/LegacyCamDoc/11108354/Legacy+cameras+documentation?attachment=https://help.vicon.com/rest/api/content/11108354/child/attachment/att11108355/download&type=application/pdf&filename=T-Series_GoFurther_Rev1.3_2010Aug.pdf) with 12 fixed Bonita 10 optical cameras, 2 Bonita 720c video cameras, and a [Lock Studio+](<https://help.vicon.com/space/Vantage/15057687/Vicon+Lock++(legacy)+rear+panel>) for capturing generic analog signals and/or syncing to external devices.
+The Performance Lab features a [Vicon MX motion capture system](https://help.vicon.com/space/LegacyCamDoc/11108354/Legacy+cameras+documentation?attachment=https://help.vicon.com/rest/api/content/11108354/child/attachment/att11108355/download&type=application/pdf&filename=T-Series_GoFurther_Rev1.3_2010Aug.pdf) with 12 fixed Bonita 10 optical cameras, 2 Bonita 720c video cameras, and a [Lock Studio+](<https://help.vicon.com/space/Vantage/15057687/Vicon+Lock++(legacy)+rear+panel>) for capturing generic analog signals and/or syncing to external devices.
 
 <details><summary>Powering our System</summary>
 
@@ -739,15 +742,15 @@ If you are a Windows user, you will need to first install [nmap](https://nmap.or
 #### MacOS
 
 ```bash
-echo -n "KMS ON1" | nc -u -w1 192.168.0.9 65432
-echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 65432
+echo -n "KMS ON1" | nc -u -w1<code> 192.168.0.9  </code>5432
+echo -n "KMS OFF1" | nc -u -w1<code> 192.168.0.9  </code>5432
 ```
 
 #### Windows
 
 ```powershell
-echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 65432
-echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
+echo|set /p="KMS ON1" | ncat -u -w1<code> 192.168.0.9  </code>5432
+echo|set /p="KMS OFF1" | ncat -u -w1<code> 192.168.0.9  </code>5432
 ```
 
 </details>
