@@ -427,7 +427,7 @@ Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manage
 
 ### Dante-MADI Bridge
 
-This bridge interfaces with channels 129 192 of the RE MADIface XT which is hosted by the Performance Lab PC.
+This bridge interfaces with channels 129-192 of the RME MADIface XT which is hosted by the Performance Lab PC.
 
 ## Dante Inputs
 
@@ -437,7 +437,7 @@ This bridge interfaces with channels 129 192 of the RE MADIface XT which is host
 		<td><b> Channel </b></td>
 		<td><b> Assignment </b></td>
 	</tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td>MADIFACE OUT 129 192</td></tr
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td>MADIFACE OUT 129-192</td></tr>
 </tbody></table>
 
 ## Dante Outputs
@@ -448,7 +448,7 @@ This bridge interfaces with channels 129 192 of the RE MADIface XT which is host
 		<td><b> Channel </b></td>
 		<td><b> Assignment </b></td>
 	</tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 - 192 </td><tdMADIFACE IN 129 192</td></tr
+	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 - 192 </td><td>MADIFACE IN 129-192</td></tr>
 </tbody></table>
 
 </details>
@@ -517,40 +517,40 @@ If you encounter an issue with any device on our network, please contact a membe
 ### Plant Room
 
 <table><tbody>
-	<tr><td style='width: 130px;'>192.168.0.1</td><td> TP Link - TL-R480T+ </td></tr>
-	<tr><td style='width: 130px;'>192.168.0.2</td><td> Extreme Networks - X440-G2-24P </td></tr>
-	<tr><td style='width: 130px;'>192.168.0.3</td><td> D-Link - DGS-3120-24PC </td></tr>
-	<tr><td style='width: 130px;'>192.168.0.5</td><td> Dell - PowerEdge T630 </td></tr>
-	<tr><td style='width: 130px;'>192.168.0.6</td><td> NAS </td></tr>
-	<tr><td style='width: 130px;'>192.168.0.9</td><td> Keene Electronics - IPMSW1 Plus </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.1 </td><td> TP Link - TL-R480T+ </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.2 </td><td> Extreme Networks - X440-G2-24P </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.3 </td><td> D-Link - DGS-3120-24PC </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.5 </td><td> Dell - PowerEdge T630 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.6 </td><td> NAS </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.9 </td><td> Keene Electronics - IPMSW1 Plus </td></tr>
 </tbody></table>
 
 ### Control Room
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.10</td><td> Netgear - GS305E </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.11</td><td> Apple - Mac Mini </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.12</td><td> iConnectivity - mioXL </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.13</td><td> dbx - DriverRack PA 2 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.10 </td><td> Netgear - GS305E </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.11 </td><td> Apple - Mac Mini </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.12 </td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.13 </td><td> dbx - DriverRack PA 2 </td></tr>
 </tbody></table>
 
 ### Live Room
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.20</td><td> Netgear - GS305E </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.21</td><td> Keene Electronics - IPMSW1 Plus (Undercroft) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.22</td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.20 </td><td> Netgear - GS305E </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.21 </td><td> Keene Electronics - IPMSW1 Plus (Undercroft) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.22 </td><td> iConnectivity - mioXL </td></tr>
 </tbody></table>
 
 ### Performance Lab
 
 <table><tbody>
-	<tr><td style='width: 130px;'> 192.168.0.30</td><td> Netgear - GS305E (Desk) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.31</td><td> Netgear - GS305E (System Rack) </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.32</td><td> iConnectivity - mioXL </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.33</td><td> d&b Audiotechnik - D20 </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.34</td><td> ELC Lighting - dmXLAN node3 </td></tr>
-	<tr><td style='width: 130px;'> 192.168.0.35</td><td> Dell - PowerEdge T630 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.30 </td><td> Netgear - GS305E (Desk) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.31 </td><td> Netgear - GS305E (System Rack) </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.32 </td><td> iConnectivity - mioXL </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.33 </td><td> d&b Audiotechnik - D20 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.34 </td><td> ELC Lighting - dmXLAN node3 </td></tr>
+	<tr><td style='width: 130px;'> 192.168.0.35 </td><td> Dell - PowerEdge T630 </td></tr>
 </tbody></table>
 
 </details>
@@ -627,15 +627,15 @@ The d&b subwoofers are powered by the [d&b D20](https://www.dbaudio.com/global/e
 #### MacOS
 
 ```bash
-echo -n "KMS ON2" | nc -u -w1 192.168.0.9 5432
-echo -n "KMS OFF2" | nc -u -w1 192.168.0.9 5432
+echo -n "KMS ON2" | nc -u -w1 192.168.0.9 65432
+echo -n "KMS OFF2" | nc -u -w1 192.168.0.9 65432
 ```
 
 #### Windows
 
 ```powershell
-echo|set /p="KMS ON2" | ncat -u -w1 192.168.0.9 5432
-echo|set /p="KMS OFF2" | ncat -u -w1 192.168.0.9 5432
+echo|set /p="KMS ON2" | ncat -u -w1 192.168.0.9 65432
+echo|set /p="KMS OFF2" | ncat -u -w1 192.168.0.9 65432
 ```
 
 ### Live Room (12.1)
@@ -645,15 +645,15 @@ Power for the Meyer subwoofer is located on the wall, whilst the Meyer satellite
 #### MacOS
 
 ```bash
-echo -n "KMS ON1" | nc -u -w1 192.168.0.2165432
-echo -n "KMS OFF1" | nc -u -w1 192.168.0.2165432
+echo -n "KMS ON1" | nc -u -w1 192.168.0.21 65432
+echo -n "KMS OFF1" | nc -u -w1 192.168.0.21 65432
 ```
 
 #### Windows
 
 ```powershell
-echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.2165432
-echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.2165432
+echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.21 65432
+echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.21 65432
 ```
 
 </details>
@@ -742,15 +742,15 @@ If you are a Windows user, you will need to first install [nmap](https://nmap.or
 #### MacOS
 
 ```bash
-echo -n "KMS ON1" | nc -u -w1 192.168.0.9 5432
-echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 5432
+echo -n "KMS ON1" | nc -u -w1 192.168.0.9 65432
+echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 65432
 ```
 
 #### Windows
 
 ```powershell
-echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 5432
-echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 5432
+echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 65432
+echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
 ```
 
 </details>
