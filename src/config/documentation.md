@@ -461,7 +461,7 @@ We maintain a Network Attached Storage ([NAS](https://en.wikipedia.org/wiki/Netw
 This file server can also be accessed from the Performance Lab PC and the Control Room Mac.
 This NAS provides the most efficient way to transfer files to and from the Performance Lab PC, as this computer is physically located in the Plant Room.
 
-<mark>Warning</mark> The NAS is intended for temporary storage only and may be periodically erased without prior notice.
+<mark>Warning</mark> The NAS is intended for temporary storage only and may be periodically erased with prior notice.
 
 ### MacOS
 
