@@ -445,19 +445,13 @@ This bridge interfaces with channels 129-192 of the RME MADIface XT which is hos
 
 # Local Area Network (LAN)
 
-Our local area network ([LAN](https://en.wikipedia.org/wiki/Local_area_network)) provides a dedicated network for connecting and managing devices across the studios. It supports remote power management, RTP-MIDI connectivity, centralised file storage via our NAS, device configuration, and automatic discovery of DHCP-enabled devices. The network is accessible throughout the studios via Ethernet wall ports or by using one of our desktop computers.
+Our studios feature a dedicated network for connecting to and managing hardware devices. It supports remote power management, RTP-MIDI connectivity, centralised file storage via our NAS, device configuration, and automatic discovery of other DHCP-enabled devices. The network is accessible throughout the studios via Ethernet wall ports or by using one of our desktop computers.
 
 <details><summary>Connecting to the LAN</summary>
 
-Our local area network (LAN) allows connected devices to be automatically discovered and accessed from compatible applications or through a web browser.
+Our Local Area Network ([LAN](https://en.wikipedia.org/wiki/Local_area_network)) allows connected devices to be automatically discovered and accessed through compatible applications, a web browser, or when using a terminal. To connect to this network, plug your computer into any Ethernet wall port labelled **LAN**, or use one of the thunderbolt cables connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), located at each studio desk.When connecting to the network, you should make sure you have DHCP enabled in your network settings, and then your device will be assigned an IP address within the range `192.168.0.101` - `192.168.0.254`. Once connected, you will the gain access to all available network devices. If you are unsure whether you are connected correctly, verify your connection by pinging the relevant IP address before attempting to send further commands.
 
-To connect, plug your computer into any Ethernet wall port labelled **LAN**, or use one of the Thunderbolt cables connected to an <a href="https://www.owc.com/solutions/thunderbolt-dock">OWC Thunderbolt Dock</a> at each studio desk.
-
-Once connected, your device will be assigned an IP address within the range <code> 192.168.0.10 - 192.168.0.25 </code> and gain access to available network devices.
-
-<mark>Warning</mark> The LAN is isolated from the internet and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually <a href="https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26">change the network order in your system settings</a> to prevent the LAN from overriding your Wi-Fi connection.
-
-If you are unsure whether you are connected correctly, verify your connection by pinging the relevant IP address before attempting to send further commands.
+<mark>Warning</mark> This LAN is isolated from the internet, and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to prevent the LAN from overriding your Wi-Fi connection.
 
 </details>
 
