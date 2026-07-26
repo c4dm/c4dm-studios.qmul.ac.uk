@@ -406,23 +406,15 @@ Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manage
 ## Dante Inputs
 
 <table><tbody>
-	<tr>
-		<td><b> Device </b></td>
-		<td><b> Channel </b></td>
-		<td><b> Assignment </b></td>
-	</tr>
-	<tr><td rowspan='1'>AVB <-> DANTE</td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
+	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
+	<tr><td> AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign) </td></tr>
 </tbody></table>
 
 ## Dante Outputs
 
 <table><tbody>
-	<tr>
-		<td><b> Device </b></td>
-		<td><b> Channel </b></td>
-		<td><b> Assignment </b></td>
-	</tr>
-	<tr><td rowspan='1'>AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign)</td></tr>
+	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
+	<tr><td> AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign) </td></tr>
 </tbody></table>
 
 ### Dante-MADI Bridge
@@ -432,30 +424,22 @@ This bridge interfaces with channels 129-192 of the RME MADIface XT which is hos
 ## Dante Inputs
 
 <table><tbody>
-	<tr>
-		<td><b> Device </b></td>
-		<td><b> Channel </b></td>
-		<td><b> Assignment </b></td>
-	</tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 1 - 64 </td><td>MADIFACE OUT 129-192</td></tr>
+	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
+	<tr><td> DANTE <-> MADI </td><td> 1 - 64 </td><td> MADIFACE OUT 129-192 </td></tr>
 </tbody></table>
 
 ## Dante Outputs
 
 <table><tbody>
-	<tr>
-		<td><b> Device </b></td>
-		<td><b> Channel </b></td>
-		<td><b> Assignment </b></td>
-	</tr>
-	<tr><td rowspan='1'> DANTE <-> MADI </td><td> 129 - 192 </td><td>MADIFACE IN 129-192</td></tr>
+	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
+	<tr><td> DANTE <-> MADI </td><td> 129 - 192 </td><td> MADIFACE IN 129-192 </td></tr>
 </tbody></table>
 
 </details>
 
 <details><summary>Tutorials & Resources</summary>
 
-<a href="https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck">**RME Totalmix Tutorials**</a>
+[**RME Totalmix Tutorials**](https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck)
 
 </details>
 
@@ -463,8 +447,7 @@ This bridge interfaces with channels 129-192 of the RME MADIface XT which is hos
 
 Our local area network ([LAN](https://en.wikipedia.org/wiki/Local_area_network)) provides a dedicated network for connecting and managing devices across the studios. It supports remote power management, RTP-MIDI connectivity, centralised file storage via our NAS, device configuration, and automatic discovery of DHCP-enabled devices. The network is accessible throughout the studios via Ethernet wall ports or by using one of our desktop computers.
 
-<details>
-<summary>Connecting to the LAN</summary>
+<details><summary>Connecting to the LAN</summary>
 
 Our local area network (LAN) allows connected devices to be automatically discovered and accessed from compatible applications or through a web browser.
 
@@ -481,28 +464,24 @@ If you are unsure whether you are connected correctly, verify your connection by
 <details><summary>File Sharing</summary>
 
 We maintain a Network Attached Storage ([NAS](https://en.wikipedia.org/wiki/Network-attached_storage)) system, which is accessible over the LAN using the student login credentials.
+This file server can also be accessed from the Performance Lab PC and the Control Room Mac.
+This NAS provides the most efficient way to transfer files to and from the Performance Lab PC, as this computer is physically located in the Plant Room.
 
-The file server can also be accessed from the Performance Lab PC and the Control Room Mac. The NAS provides the most efficient way to transfer files to and from the Performance Lab PC, as this computer is physically located in the Plant Room.
-
-<mark>Warning</mark> These drives are intended for temporary storage only and may be periodically erased with prior notice.
+<mark>Warning</mark> The NAS is intended for temporary storage only and may be periodically erased without prior notice.
 
 ### MacOS
 
 To share files using our NAS, navigate to the **Network** section in a Finder window.
-
-You should see a network location named `studio-files`, which will prompt you for the student login credentials when you attempt to connect.
-
-Once connected, you can use this location like any other file system within Finder, as shown below.
+You should then see a network device called `studio-files`, which will prompt you for the student login credentials when you attempt to connect to it.
+Once connected, you can use this location like any other file system within Finder, as pictured below.
 
 ![MacOS Finder window demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas-mac.png)
 
 ### Windows
 
-To share files on Windows, navigate to: <pre>Control Panel > Network and Internet > Network and Sharing Centre > Change Advanced Setting</pre>
-
+To share files on Windows, navigate to: <pre><code>Control Panel > Network and Internet > Network and Sharing Centre > Change Advanced Settings</code></pre>
 Make sure that **Network Discovery** is enabled. From the **Network** section of File Explorer, you should see a device named `STUDIO-FILES`, which will prompt you for the student login credentials when you attempt to connect.
-
-Once connected, you can use this location like any other file system within File Explorer, as shown below.
+Once connected, you can use this location like any other file system within File Explorer, as pictured below.
 
 ![Windows File Browser demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas-windows.png)
 
@@ -510,8 +489,9 @@ Once connected, you can use this location like any other file system within File
 
 <details><summary>Device Address Book</summary>
 
-This section provides a reference for our network-enabled devices. Many of these addresses are only accessible through dedicated software, and some devices are password protected and restricted to management access. Members can use this list to assist with network troubleshooting, including verifying connections using ping.
-
+This section provides a reference for our network-enabled devices.
+Many of these addresses are only accessible through dedicated software, whilst some devices are password protected and restricted to management access.
+Members can use this list to assist with network troubleshooting, including verifying connections using ping.
 If you encounter an issue with any device on our network, please contact a member of staff.
 
 ### Plant Room
@@ -757,7 +737,7 @@ echo|set /p="KMS OFF1" | ncat -u -w1 192.168.0.9 65432
 
 <details><summary>Tutorials & Resources</summary>
 
-<a href="https://www.youtube.com/watch?v=h4knk15grtw&list=PLxtdgDam3USUSIeuO6UloG3ogPsFNtEJS&index=5">**Vicon Nexus Tutorials**</a>
+[**Vicon Nexus Tutorials**](https://www.youtube.com/watch?v=h4knk15grtw&list=PLxtdgDam3USUSIeuO6UloG3ogPsFNtEJS&index=5)
 
 </details>
 
