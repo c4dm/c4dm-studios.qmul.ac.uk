@@ -94,7 +94,7 @@
 			height: fit-content;
 			width: fit-content;
 			display: grid;
-			transform: skew(-20deg);
+			transform: skew(calc(-1 * utils.$paralellogram));
 
 			> * {
 				width: fit-content;
@@ -103,7 +103,7 @@
 				place-self: center;
 				text-align: center;
 				font-size: inherit;
-				transform: skew(20deg);
+				transform: skew(utils.$paralellogram);
 			}
 
 			&:is(.h1) {

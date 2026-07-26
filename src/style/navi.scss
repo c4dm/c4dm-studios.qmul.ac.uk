@@ -32,13 +32,13 @@ nav {
 			height: 100%;
 			display: grid;
 			align-items: center;
-			transform: skew(-20deg);
+			transform: skew(calc(-1 * utils.$paralellogram));
 
 			p {
 				margin: 0;
 				padding-inline: 8px;
 				color: inherit;
-				transform: skew(20deg);
+				transform: skew(utils.$paralellogram);
 			}
 
 			&:first-of-type {
@@ -85,7 +85,7 @@ nav {
 			border-right: solid 2px utils.$qm-blue;
 			place-self: center;
 			font-size: large;
-			transform: skew(-20deg);
+			transform: skew(calc(-1 * utils.$paralellogram));
 
 			@include utils.focus;
 
@@ -95,7 +95,7 @@ nav {
 
 			p {
 				margin: 0;
-				transform: skew(20deg);
+				transform: skew(utils.$paralellogram);
 			}
 		}
 	}
