@@ -471,7 +471,7 @@ This NAS provides the most efficient way to transfer files to and from the Perfo
 
 ### MacOS
 
-To share files using our NAS, navigate to the **Network** section in a Finder window.
+To share files using our NAS, navigate to the `Network` section in a Finder window.
 You should then see a network device called `studio-files`, which will prompt you for the student login credentials when you attempt to connect to it.
 Once connected, you can use this location like any other file system within Finder, as pictured below.
 
@@ -480,7 +480,7 @@ Once connected, you can use this location like any other file system within Find
 ### Windows
 
 To share files on Windows, navigate to: <pre><code>Control Panel > Network and Internet > Network and Sharing Centre > Change Advanced Settings</code></pre>
-Make sure that **Network Discovery** is enabled. From the **Network** section of File Explorer, you should see a device named `STUDIO-FILES`, which will prompt you for the student login credentials when you attempt to connect.
+Make sure that `Network Discovery` is enabled. From the `Network` section of File Explorer, you should see a device named `STUDIO-FILES`, which will prompt you for the student login credentials when you attempt to connect.
 Once connected, you can use this location like any other file system within File Explorer, as pictured below.
 
 ![Windows File Browser demonstrating how to connect to our NAS filesystem](/images/documentation/lan-nas-windows.png)
