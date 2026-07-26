@@ -5,21 +5,21 @@
 <div class="studio-gallery">
 	<figure>
 		<img src="/images/studios/performancelab.jpeg" alt="Performance Lab">
-		<figcaption>
+		<figcaption tabindex=1>
 			<span>Performance Lab</span>
 			<span>9m × 8m</span>
 		</figcaption>
 	</figure>
 	<figure>
 		<img src="/images/studios/controlroom.jpeg" alt="Control Room">
-		<figcaption>
+		<figcaption tabindex=1>
 			<span>Control Room</span>
 			<span>5m × 5m</span>
 		</figcaption>
 	</figure>
 	<figure>
 		<img src="/images/studios/liveroom.jpeg" alt="Live Room">
-		<figcaption>
+		<figcaption tabindex=1>
 			<span>Live Room</span>
 			<span>6m × 5m</span>
 		</figcaption>
