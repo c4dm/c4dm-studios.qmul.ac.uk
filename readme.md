@@ -28,5 +28,5 @@ npm run format	# format the codebase (please run before committing)
 npm run test	# lint the codebase (please run before publishing)
 npm run build 	# build the website to /dist
 npm run preview	# run a website from /dist
-npm run deploy	# build locally and then make public (gh-pages)
+npm run deploy	# build to /dist and then make public (gh-pages)
 ```
