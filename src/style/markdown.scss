@@ -200,6 +200,7 @@
 			align-items: center;
 
 			&:has(a) {
+				width: calc(100% - 6px);
 				padding-inline: 6px;
 			}
 
