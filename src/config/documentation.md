@@ -395,44 +395,29 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 
 </details>
 
-<details><summary>Dante Bridge </summary>
+<details><summary> Dante Support</summary>
 
-### AVB-Dante Bridge
+We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audio networking via a Dante-AVB bridge, allowing users to interface with our AVB network using [Dante Virtual Soundcard](https://www.getdante.com/products/software-essentials/dante-virtual-soundcard/) or other Dante compatible devices such as the [Eigenmike EM64](https://eigenmike.com/eigenmike-64). In addition, a dedicated Dante-MADI bridge is connected directly to the Performance Lab PC, to specifically to support interfacing with these Dante devices via this machine.
 
-You can use all of our audio facilities via DVS or another Dante interface by connecting to the Dante-AVB bridge. You do this like any other Dante device in Dante Controller.
+Devices can be connected to our Dante network via any **LAN** wall port, or using the dedicated Dante ports in the Performance Lab.
+These connected devices and their associated routings are then managed in [Dante Controller](https://www.getdante.com/products/software-essentials/dante-controller/).
 
-Audio will then be forwarded to/from the 'DANTE' streams visible in Milan Manager.
+![Dante Controller screenshot showing AVB and MADI bridges](<>)
 
-## Dante Inputs
+#### Dante Outputs
 
 <table><tbody>
 	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
-	<tr><td> AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign) </td></tr>
+	<tr><td> DANTE-AVB </td><td> 1 - 64 </td><td> Plant Room AVB Streams 5-8 </td></tr>
+	<tr><td> DANTE-MADI </td><td> 1 - 64 </td><td> Performance Lab PC In 129-192 </td></tr>
 </tbody></table>
 
-## Dante Outputs
+#### Dante Inputs
 
 <table><tbody>
 	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
-	<tr><td> AVB <-> DANTE </td><td> 1 - 64 </td><td> Milan (User Assign) </td></tr>
-</tbody></table>
-
-### Dante-MADI Bridge
-
-This bridge interfaces with channels 129-192 of the RME MADIface XT which is hosted by the Performance Lab PC.
-
-## Dante Inputs
-
-<table><tbody>
-	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
-	<tr><td> DANTE <-> MADI </td><td> 1 - 64 </td><td> MADIFACE OUT 129-192 </td></tr>
-</tbody></table>
-
-## Dante Outputs
-
-<table><tbody>
-	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
-	<tr><td> DANTE <-> MADI </td><td> 129 - 192 </td><td> MADIFACE IN 129-192 </td></tr>
+	<tr><td> DANTE-AVB </td><td> 1 - 64 </td><td> Plant Room AVB Streams 5-8 </td></tr>
+	<tr><td> DANTE-MADI </td><td> 1 - 64 </td><td> Performance Lab PC Out 129-192 </td></tr>
 </tbody></table>
 
 </details>
@@ -451,7 +436,7 @@ Our studios feature a dedicated network for connecting to and managing hardware 
 
 Our Local Area Network ([LAN](https://en.wikipedia.org/wiki/Local_area_network)) allows connected devices to be automatically discovered and accessed through compatible applications, a web browser, or when using a terminal. To connect to this network, plug your computer into any Ethernet wall port labelled **LAN**, or use one of the thunderbolt cables connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), located at each studio desk.When connecting to the network, you should make sure you have DHCP enabled in your network settings, and then your device will be assigned an IP address within the range `192.168.0.101` - `192.168.0.254`. Once connected, you will the gain access to all available network devices. If you are unsure whether you are connected correctly, verify your connection by pinging the relevant IP address before attempting to send further commands.
 
-<mark>Warning</mark> This LAN is isolated from the internet, and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to prevent the LAN from overriding your Wi-Fi connection.
+<mark>Warning</mark> Our LAN is isolated from the internet, and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to prevent the LAN from overriding your Wi-Fi connection.
 
 </details>
 
