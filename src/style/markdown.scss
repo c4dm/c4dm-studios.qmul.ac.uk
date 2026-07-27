@@ -199,6 +199,10 @@
 			gap: 20px;
 			align-items: center;
 
+			&:has(a) {
+				padding-inline: 6px;
+			}
+
 			@media (width < utils.$iphone) {
 				grid-auto-flow: row;
 				grid-template: unset !important;
