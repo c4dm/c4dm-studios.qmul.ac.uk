@@ -4,7 +4,7 @@
 
 Our audio system uses an AVB network, with Dante and MADI bridges for compatibility with other formats. All devices are connected through the network, and audio routes are configured centrally in Milan Manager rather than being defined by fixed physical connections. This section provides documentation on software installation, endpoint configuration, audio channel and stream Assignments, audio routing within Milan Manager, and the configuration and operation of the format bridges.
 
-<details><summary>Step 1:  Software Installation</summary>
+<details><summary>Software Installation</summary>
 
 Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed.
 These Digiface AVB devices act as hardware endpoints across our audio network, and once connected to, can be used to receive and send audio from anywhere within the studios.
@@ -42,7 +42,7 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 </details>
 
-<details><summary>Step 2: Digiface Configuration</summary>
+<details><summary>Digiface AVB Configuration</summary>
 
 ### RME Digiface AVB
 
@@ -54,7 +54,7 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 </details>
 
-<details><summary>Step 3: Audio Routing in Milan Manager</summary>
+<details><summary>Milan Manager</summary>
 
 Studio users only need to interact with the **Overview** tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
 
@@ -64,7 +64,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 
 </details>
 
-<details><summary> AVB Channel Map</summary>
+<details><summary>AVB Channel Map</summary>
 
 ### Control Room
 
@@ -473,7 +473,12 @@ Once connected, you can use this location like any other file system within Find
 
 ### Windows
 
-To share files on Windows, navigate to: <pre><code>Control Panel > Network and Internet > Network and Sharing Centre > Change Advanced Settings</code></pre>
+To share files on Windows, navigate to:
+
+```
+Control Panel > Network and Internet > Network and Sharing Centre > Change Advanced Settings
+```
+
 Make sure that `Network Discovery` is enabled. From the `Network` section of File Explorer, you should see a device named `STUDIO-FILES`, which will prompt you for the student login credentials when you attempt to connect.
 Once connected, you can use this location like any other file system within File Explorer, as pictured below.
 
@@ -576,7 +581,7 @@ To power this instrument, use the switch underneath the keyboard and the standby
 If the mains is turned off at the wall, make sure to turn on the wall switch before turning on the switch underneath the keyboard.
 <!-- And for powering down, you do not need to power it down at the wall, but in the event that this is necessary, the power switch under the keyboard should be switched off before turning off power at the wall. -->
 
-<!-- ![/images/documentation/disklavier.png](Performance Lab Disklavier power switch) -->
+![/images/documentation/disklavier.png](Performance Lab Disklavier power switch)
 
 </details>
 
