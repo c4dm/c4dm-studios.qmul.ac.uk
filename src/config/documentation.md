@@ -614,7 +614,7 @@ These speaker systems are used for research into spatial audio and immersive com
 <details><summary>Powering our Speaker Systems</summary>
 
 The power for the satellite speakers is controlled via UDP commands over LAN.
-The easiest way to power on these is to log on to the Performance Lab PC and run the applications `PL-Spat` (Performance Lab) or `LR-Spat` (Live Room) from the Desktop.
+The easiest way to power on these speakers is to log on to the Performance Lab PC and run the applications `PL-Spat` (Performance Lab) or `LR-Spat` (Live Room) from the Desktop.
 To power the speakers from your own laptop, use the UDP commands below.
 If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send these commands.
 
