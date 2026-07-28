@@ -4,15 +4,27 @@
 
 Our audio system is built around a [Milan AVB network](https://milanav.com/) that connects all audio devices throughout the studios. [Milan Manager](https://milanmanager.com) is used for network configuration and audio routing, while our Dante and MADI bridges extend AVB connectivity to external audio systems.
 
-This section provides documentation on software installation, endpoint configuration, and audio routing.
+This section provides documentation on driver installation, endpoint configuration, and audio routing.
 
-<details><summary>Software Installation</summary>
+The Performance Lab PC + Control Room Mac are preconfigured, skip to step 3.
 
-Within each of our studio spaces, we have an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) installed.
-These Digiface AVB devices act as hardware endpoints across our audio network, and once connected to, can be used to receive and send audio from anywhere within the studios.
-These audio interfaces have been preconfigured on all of our in-house computers, and can also be configured for use on a personal laptop.
+Steps 1-3 are essential for all users wanting to connect their own computer. How long does it take, can I do this before I arrive? Mac, windows, linux?
 
-### Required Software
+<details><summary>Step 1: Driver Installation - RME Digiface</summary>
+
+![tst](./images/documentation/testgif.gif)
+
+<!-- <video width='320' height='240' controls>
+  <source src='./images/documentation/tst.mov' type='video/mp4'>x
+</video> -->
+
+PHOTO OF AVB (USB) CABLE?
+
+Each studio uses an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) audio interface to transfer networked audio over USB.
+
+These audio interfaces have been preconfigured on both of our in-house computers, and can also be configured for use on a personal computer.
+
+### Driver Installation
 
 - [RME USB Series DriverKit Driver](https://rme-audio.de/downloads.html)
 - [RME AVB Controller](https://rme-audio.de/downloads.html)
@@ -37,26 +49,19 @@ To correctly install the required software, please follow the step by step instr
 
 - Finally, download and install [Milan Manager](https://milanmanager.com/#downloads).
 
-### Optional Software
-
-<!-- - [RME TotalMix](https://rme-audio.de/totalmix-fx.html) - Virtual Mixing Console -->
-
-- [RME Connector](https://rme-audio.de/rme-connector.html) - Remote Hardware Control
-- [RME DigiCheck NG](https://rme-audio.de/digicheck.html) - Real-Time Signal Analyser
-
-### Linux Support
+<!-- ### Linux Support
 
 Unfortunately, our audio network has limited software compatibility on Linux.
 An operable framework can however be configured using [ALSA](https://www.alsa-project.org/wiki/Main_Page) to interface directly with our AVB hardware devices, by declaring your Linux machine as a [Milan compatible](https://avnu.org/resource/milan-specification/) AVB endpoint.
-You can then use the software [Hive](https://github.com/christophe-calmejane/Hive) to configure our AVB audio matrix.
+You can then use the software [Hive](https://github.com/christophe-calmejane/Hive) to configure our AVB audio matrix. -->
 
 </details>
 
-<details><summary>Endpoint Configuration - RME AVB Controller</summary>
+<details><summary>Step 2: Endpoint Configuration - RME AVB Controller</summary>
+
+The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps. (not quite?)
 
 ### RME Digiface AVB
-
-The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps.
 
 `Entity`
 
@@ -69,7 +74,7 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 </details>
 
-<details><summary>Audio Routing - Milan Manager</summary>
+<details><summary>Step 3: Audio Routing - Milan Manager</summary>
 
 Studio users only need to interact with the **Overview** tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
 
@@ -79,13 +84,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 
 </details>
 
-<details><summary>Optional Software</summary>
-
-hey
-
-</details>
-
-<details><summary>AVB Channel Map</summary>
+<details><summary>Audio Routing Table</summary>
 
 ### Control Room
 
@@ -457,9 +456,22 @@ Optical and BNC copper MADI connections are available between each studio, and c
 
 </details>
 
+<!-- <details><summary>Optional Software</summary>
+
+hey
+
+</details> -->
+
 <details><summary>Tutorials & Resources</summary>
 
 [**RME Totalmix Tutorials**](https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck)
+
+### Optional Software
+
+<!-- - [RME TotalMix](https://rme-audio.de/totalmix-fx.html) - Virtual Mixing Console -->
+
+- [RME Connector](https://rme-audio.de/rme-connector.html) - Remote Hardware Control
+- [RME DigiCheck NG](https://rme-audio.de/digicheck.html) - Real-Time Signal Analyser
 
 </details>
 
