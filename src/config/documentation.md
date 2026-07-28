@@ -2,7 +2,9 @@
 
 # Audio Network (AVB)
 
-Our audio system uses an AVB network, with Dante and MADI bridges for compatibility with other formats. All devices are connected through the network, and audio routes are configured centrally in Milan Manager rather than being defined by fixed physical connections. This section provides documentation on software installation, endpoint configuration, audio channel and stream Assignments, audio routing within Milan Manager, and the configuration and operation of the format bridges.
+Our audio system is built around a [Milan AVB network](https://milanav.com/) that connects all audio devices throughout the studios. [Milan Manager](https://milanmanager.com) is used for network configuration and audio routing, while our Dante and MADI bridges extend AVB connectivity to external audio systems.
+
+This section provides documentation on software installation, endpoint configuration, and audio routing.
 
 <details><summary>Software Installation</summary>
 
@@ -419,6 +421,16 @@ These connected devices and their associated routings are then managed in [Dante
 	<tr><td> DANTE-AVB </td><td> 1 - 64 </td><td> Plant Room AVB Streams 5-8 </td></tr>
 	<tr><td> DANTE-MADI </td><td> 1 - 64 </td><td> Performance Lab PC Out 129-192 </td></tr>
 </tbody></table>
+
+### MADI
+
+Optical and BNC copper MADI connections are available between each studio, and can be physically patched in the Plant Room. Users can also load the following TotalMix template on the Performance Lab PC to bridge a single optical MADI connection to the AVB network via Plant Room AVB streams 1-4.
+
+<span>
+	<a class='button' download href='/resources/avb/madi-bridge-template'>
+		MADI Bridge TotalMix Template
+	</a>
+</span>
 
 </details>
 
