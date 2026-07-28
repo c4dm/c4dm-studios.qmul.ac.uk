@@ -14,25 +14,33 @@ These audio interfaces have been preconfigured on all of our in-house computers,
 
 ### Required Software
 
-- [RME DriverKit for Digiface AVB](https://rme-audio.de/downloads.html) - Audio Interface Driver & AVB Protocol Support
-- [Milan Manager](https://milanmanager.com/#downloads) - Audio Matrix Control
+- [RME USB Series DriverKit Driver](https://rme-audio.de/downloads.html)
+- [RME AVB Controller](https://rme-audio.de/downloads.html)
+- [Milan Manager](https://milanmanager.com/#downloads)
 
 To correctly install the required software, please follow the step by step instructions below.
 
 - Navigate to [RME's website](https://rme-audio.de/downloads.html) to download the RME DriverKit.
+
 - Select Digiface AVB from the left menu, followed by your operating system.
+
 - Download and install the latest audio driver (_driver_usbdk_mac_xxx.zip_ for MacOS or _driver_madiface_win_xxx.zip_ for Windows).
+
 - (MacOS) Also from the RME downloads page, separately download and install the RME AVB Controller (_rme_avb_package_mac.zip_).
+
 - (MacOS) <mark>Warning</mark> When installing the RME DriverKit, you must ensure you properly [enable your privacy settings](https://rme-audio.de/rme-macos.html).
   Depending on the device and operating system, this includes _Kernel Extensions_ and _Login Items_, as well as the more general _Privacy & Security_ permissions which block applications from running.
-  Be patient, read the documentation carefully, and restart your device liberally.
+
 - (Windows) Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
+
 - (Windows) Download and install the network packet capture library [npcap](https://npcap.com).
+
 - Finally, download and install [Milan Manager](https://milanmanager.com/#downloads).
 
 ### Optional Software
 
-- [RME TotalMix](https://rme-audio.de/totalmix-fx.html) - Virtual Mixing Console
+<!-- - [RME TotalMix](https://rme-audio.de/totalmix-fx.html) - Virtual Mixing Console -->
+
 - [RME Connector](https://rme-audio.de/rme-connector.html) - Remote Hardware Control
 - [RME DigiCheck NG](https://rme-audio.de/digicheck.html) - Real-Time Signal Analyser
 
@@ -44,11 +52,15 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 </details>
 
-<details><summary>Digiface AVB Configuration</summary>
+<details><summary>Endpoint Configuration - RME AVB Controller</summary>
 
 ### RME Digiface AVB
 
 The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps.
+
+`Entity`
+
+`Configure`
 
 WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB. I have a screenshot of this on Sim's laptop
 
@@ -56,13 +68,19 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 </details>
 
-<details><summary>Milan Manager</summary>
+<details><summary>Audio Routing - Milan Manager</summary>
 
 Studio users only need to interact with the **Overview** tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
 
 If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the Assignment configuration and should remain set to a 48 kHz sample rate.
 
 See the official [**Milan Manager Documentation**](https://docs.milanmanager.com/ui-overview.html) for further instruction.
+
+</details>
+
+<details><summary>Optional Software</summary>
+
+hey
 
 </details>
 
@@ -366,14 +384,14 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 		<td><b> Channel </b></td>
 		<td><b> Assignment </b></td>
 	</tr>
-	<tr><td> 1 </td><td> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE OUT 1-16 </td></tr>
-	<tr><td> 2 </td><td> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE OUT 17-32 </td></tr>
-	<tr><td> 3 </td><td> MADIFACE 33-48 </td><td> 1 - 16 </td><td> MADIFACE OUT 33-48 </td></tr>
-	<tr><td> 4 </td><td> MADIFACE 49-64 </td><td> 1 - 16 </td><td> MADIFACE OUT 49-64 </td></tr>
-	<tr><td> 5 </td><td> DANTE 1-16 </td><td> 1 - 16 </td><td> DANTE OUT 1-16 </td></tr>
-	<tr><td> 6 </td><td> DANTE 17-32 </td><td> 1 - 16 </td><td> DANTE OUT 17-32 </td></tr>
-	<tr><td> 7 </td><td> DANTE 33-48 </td><td> 1 - 16 </td><td> DANTE OUT 33-48 </td></tr>
-	<tr><td> 8 </td><td> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE OUT 49-64 </td></tr>
+	<tr><td> 1 </td><td> Performance Lab PC 1-16 </td><td> 1 - 16 </td><td> Performance Lab PC Out 1-16 </td></tr>
+	<tr><td> 2 </td><td> Performance Lab PC 17-32 </td><td> 1 - 16 </td><td> Performance Lab PC Out 17-32 </td></tr>
+	<tr><td> 3 </td><td> Performance Lab PC 33-48 </td><td> 1 - 16 </td><td> Performance Lab PC Out 33-48 </td></tr>
+	<tr><td> 4 </td><td> Performance Lab PC 49-64 </td><td> 1 - 16 </td><td> Performance Lab PC Out 49-64 </td></tr>
+	<tr><td> 5 </td><td> Dante 1-16 </td><td> 1 - 16 </td><td> Dante Out 1-16 </td></tr>
+	<tr><td> 6 </td><td> Dante 17-32 </td><td> 1 - 16 </td><td> Dante Out 17-32 </td></tr>
+	<tr><td> 7 </td><td> Dante 33-48 </td><td> 1 - 16 </td><td> Dante Out 33-48 </td></tr>
+	<tr><td> 8 </td><td> Dante 49-64 </td><td> 1 - 16 </td><td> Dante Out 49-64 </td></tr>
 </tbody></table>
 
 ## Listener Streams
@@ -385,19 +403,23 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 		<td><b> Channel </b></td>
 		<td><b> Assignment </b></td>
 	</tr>
-	<tr><td> 1 </td><td> MADIFACE 1-16 </td><td> 1 - 16 </td><td> MADIFACE IN 1-16</td></tr>
-	<tr><td> 2 </td><td> MADIFACE 17-32 </td><td> 1 - 16 </td><td> MADIFACE IN 17-32</td></tr>
-	<tr><td> 3 </td><td> MADIFACE 33-48 </td><td> 1 - 16 </td><td> MADIFACE IN 33-48</td></tr>
-	<tr><td> 4 </td><td> MADIFACE 49-64 </td><td> 1 - 16 </td><td> MADIFACE IN 49-64</td></tr>
-	<tr><td> 5 </td><td> DANTE 1-16 </td><td> 1 - 16 </td><td> DANTE IN 1-16</td></tr>
-	<tr><td> 6 </td><td> DANTE 17-32 </td><td> 1 - 16 </td><td> DANTE IN 17-32</td></tr>
-	<tr><td> 7 </td><td> DANTE 33-48 </td><td> 1 - 16 </td><td> DANTE IN 33-48</td></tr>
-	<tr><td> 8 </td><td> DANTE 49-64 </td><td> 1 - 16 </td><td> DANTE IN 49-64</td></tr>
+	<tr><td> 1 </td><td> Performance Lab PC 1-16 </td><td> 1 - 16 </td><td> Performance Lab PC In 1-16</td></tr>
+	<tr><td> 2 </td><td> Performance Lab PC 17-32 </td><td> 1 - 16 </td><td> Performance Lab PC In 17-32</td></tr>
+	<tr><td> 3 </td><td> Performance Lab PC 33-48 </td><td> 1 - 16 </td><td> Performance Lab PC In 33-48</td></tr>
+	<tr><td> 4 </td><td> Performance Lab PC 49-64 </td><td> 1 - 16 </td><td> Performance Lab PC In 49-64</td></tr>
+	<tr><td> 5 </td><td> Dante 1-16 </td><td> 1 - 16 </td><td> Dante In 1-16</td></tr>
+	<tr><td> 6 </td><td> Dante 17-32 </td><td> 1 - 16 </td><td> Dante In 17-32</td></tr>
+	<tr><td> 7 </td><td> Dante 33-48 </td><td> 1 - 16 </td><td> Dante In 33-48</td></tr>
+	<tr><td> 8 </td><td> Dante 49-64 </td><td> 1 - 16 </td><td> Dante In 49-64</td></tr>
 </tbody></table>
 
 </details>
 
-<details><summary> Dante Support</summary>
+<details><summary> Dante/MADI Support</summary>
+
+### Dante
+
+BUT YOU NEED MILAN STILL.
 
 We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audio networking via a Dante-AVB bridge, allowing users to interface with our AVB network using [Dante Virtual Soundcard](https://www.getdante.com/products/software-essentials/dante-virtual-soundcard/) or other Dante compatible devices such as the [Eigenmike EM64](https://eigenmike.com/eigenmike-64). In addition, a dedicated Dante-MADI bridge is connected directly to the Performance Lab PC, to specifically to support interfacing with these Dante devices via this machine.
 
