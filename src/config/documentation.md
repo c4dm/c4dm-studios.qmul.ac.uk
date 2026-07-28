@@ -61,6 +61,7 @@ The first time you connect to an RME Digiface AVB, even if you have connected to
 `Entity`
 
 `Configure`
+![digiface windows](/images/documentation/rme-avb-controller-windows.png)
 
 WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB. I have a screenshot of this on Sim's laptop
 
