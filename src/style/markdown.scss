@@ -73,7 +73,7 @@
 			}
 
 			> :nth-child(2) {
-				&:not(table) {
+				&:not(table, span) {
 					display: block;
 				}
 
@@ -81,7 +81,7 @@
 			}
 
 			> :last-child {
-				&:not(table) {
+				&:not(table, span) {
 					display: block;
 				}
 
