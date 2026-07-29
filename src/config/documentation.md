@@ -485,6 +485,12 @@ hey
 
 </details> -->
 
+<details><summary>Technical Specification</summary>
+
+network latency etc. deterministic.
+
+</details>
+
 <details><summary>Tutorials & Resources</summary>
 
 [**RME Totalmix Tutorials**](https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck)
