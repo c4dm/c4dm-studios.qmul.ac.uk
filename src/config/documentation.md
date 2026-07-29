@@ -21,19 +21,29 @@ Steps 2–3 require connection to the studio hardware and network, and must be c
 
 The RME Digiface AVB interfaces are connected using the USB-C cable labelled **AVB** provided at each workstation. Users without a USB-C port can instead use one of the **USB-A to USB 3 Type-B** cables stored in the drawer labelled **USB** in each room. Please return the original AVB-labelled USB-C cable after use so it remains available for other users. -->
 
-<details><summary>Step 1: Install RME DriverKit </summary>
+<details><summary>Step 1: Install RME USB & Network Drivers </summary>
 
-This step covers installation of the USB series DriverKit driver by RME, which is required for communication between your computer and an RME audio interface, such as a Digiface AVB.
-This step can be completed before arriving to the studios. If you already have the RME DriverKit installed, you should ensure that the driver is up to date if you encounter any issues when using a Digiface AVB.
+This step covers installation of the **USB series** driver by RME, which is required for communication between your computer and an RME audio interface.
+If you already have the RME DriverKit installed, you should ensure that the driver is up to date if you encounter any issues when using a Digiface AVB.
 
-- Navigate to [RME's Downloads page](https://rme-audio.de/downloads.html) to download the DriverKit.
-- Select Digiface AVB from the left menu, followed by your operating system.
-- Download and install the latest audio driver (_driver_usbdk_mac_xxx.zip_ for MacOS or _driver_madiface_win_xxx.zip_ for Windows).
+#### MacOS
 
-<mark>Warning</mark> When installing the RME DriverKit on MacOS, you must ensure you properly [enable your privacy settings](https://rme-audio.de/rme-macos.html).
-Depending on the device and operating system, this includes _Kernel Extensions_ and _Login Items_, as well as the more general _Privacy & Security_ permissions which block applications from running.
+- Navigate to the [RME Downloads page](https://rme-audio.de/downloads.html).
+- Select Digiface AVB from the **left** menu, followed by 'MacOS' and 'Driver'.
+- Download and install the latest DriverKit driver (_driver_usbdk_mac_xxx.zip_).
+- [Allow all RME system extensions, DriverKit extensions and background processes](https://rme-audio.de/rme-macos.html).
+- Restart your computer.
+- Navigate again to the [RME Downloads page](https://rme-audio.de/downloads.html).
+- Select RME AVB Package from the **right** menu.
+- Download and install the RME AVB Package (_rme_avb_package_mac.zip_).
 
-ARE WE STILL GONNA USE KERNAL?
+#### Windows
+
+- Navigate to the [RME Downloads page](https://rme-audio.de/downloads.html).
+- Select Digiface AVB from the left menu, followed by 'Windows' and 'Driver'.
+- Download and install the latest audio driver (_driver_madiface_win_xxx.zip_).
+- Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
+- [Configure a WDM Device in RME Fireface USB Settings](/images/documentation/rme-digiface-windows.png) to enable system audio output.
 
 <!-- ### Linux Support
 Our audio network has limited software compatibility on Linux.
@@ -42,31 +52,42 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 </details>
 
-<details><summary>Step 2: Install RME AVB Controller</summary>
+<details><summary>Step 2: Configure RME Digiface AVB</summary>
 
-The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps. (not quite?)
+This step must be completed before connecting to our AVB network via a Digiface AVB, as it replaces the default Digiface AVB configuration created by RME AVB Controller with the configuration required for our network.
 
-- [RME AVB Controller](https://rme-audio.de/downloads.html)
-- (MacOS) Also from the RME downloads page, separately download and install the RME AVB Controller (_rme_avb_package_mac.zip_).
-- (Windows) Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
-- (Windows) Download and install the network packet capture library [npcap](https://npcap.com).
+<!-- RME AVB Controller should open automatically upon successful USB connection to a Digiface AVB and must remain running while the interface is in use. Closing the application will interrupt AVB audio routing. -->
 
-### RME Digiface AVB
+<!-- This step must be completed before you can connect to our AVB network via a Digiface AVB, as it ensures that your computer will be correctly configured alongside the network.
 
-`Entity`
+RME AVB Controller, TotalMix and RME Fireface USB Settings, should all open automatically upon successful USB connection to a Digiface AVB. RME AVB Controller must be running at all times for the Digiface to maintain a network connection, and will only show a blank window by default.
 
-`Configure`
-![digiface windows](/images/documentation/rme-avb-controller-windows.png)
+Upon successful connection to a Digiface AVB via USB, RME AVB Controller should open automatically. This application must remain running while the Digiface is in use.
 
-WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB. I have a screenshot of this on Sim's laptop
+the software RME AVB Controller, Totalmix and Fireface USB settings should all open automatically. RME AVB Controller must remain running while the audio interface is in use, and will only show a blank window by default. -->
 
-![digiface windows](/images/documentation/rme-digiface-windows.png)
+#### MacOS
+
+- Download and unzip our [Digiface AVB Template](<>).
+- Copy the MacOS preferences file (.plist) to the Preferences folder and replace existing.
+
+<mark>Warning</mark> Quitting RME AVB Controller on MacOS will interrupt AVB audio routing.
+
+#### Windows
+
+- Download and unzip our [Digiface AVB Template](<>).
+- Open the registry file (.reg) and choose 'Yes' to merge the settings.
 
 </details>
 
 <details><summary>Step 3: Audio Routes & Clocking</summary>
 
 Install [Milan Manager](https://milanmanager.com/#downloads).
+<!-- - (Windows) Download and install the network packet capture library [npcap](https://npcap.com). -->
+
+Rename your **computer**
+
+Input output streams are 16 channels each, and now correspond to the audio i/o on your computer / DAW.
 
 ## Audio Routing / AVB Streams
 
