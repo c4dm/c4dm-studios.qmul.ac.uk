@@ -61,7 +61,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 - Download and unzip our [Digiface AVB Template](<>).
 - Copy the MacOS preferences file (.plist) to the Preferences folder and replace existing.
 
-    <mark>Warning</mark> RME AVB Controller must be running at all times on MacOS for the Digiface AVB to maintain a network connection. By default, the application will only display a blank window. Quitting the application will cause AVB audio communication to cease.
+<p style='margin-left: 40px;'><mark>Warning</mark> RME AVB Controller must be running at all times on MacOS for the Digiface AVB to maintain a network connection. By default, the application will only display a blank window. Quitting the application will cause AVB audio communication to cease.</p>
 
 #### Windows
 
