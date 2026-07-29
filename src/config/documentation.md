@@ -3,10 +3,9 @@
 # Audio Network (AVB)
 
 Our audio system is built around a [Milan AVB network](https://milanav.com/) that connects all audio devices throughout the studios. [Milan Manager](https://milanmanager.com) is used for network configuration and audio routing, while our Dante and MADI bridges extend AVB connectivity to other audio systems.
+Each studio workstation is equipped with a [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) audio interface, which provides the connection between our AVB audio network and a computer via USB. This device makes networked audio channels available to the computer for recording, playback, and other audio applications.
 
-Each studio workstation is equipped with a [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) audio interface, which provides the connection between our AVB audio network and the workstation computer via USB. This device makes networked audio channels available to the computer for recording, playback, and other audio applications.
-
-Users connecting their own computer should follow the steps below to install the required drivers, configure the RME Digiface AVB, and assign audio routes. This process takes approximately 10–15 minutes. The Performance Lab PC and Control Room Mac are preconfigured, so users working on these computers can skip directly to step 3.
+Users connecting their own computer should follow the steps below to install the required drivers, configure the RME Digiface AVB, and assign audio routes. This installation process takes approximately 15-20 minutes, and supports both MacOS and Windows. The Performance Lab PC and Control Room Mac are preconfigured, so users working on these computers can skip directly to step 3.
 
 <!-- Our audio system is built around a [Milan AVB network](https://milanav.com/) that connects all audio devices throughout the studios. [Milan Manager](https://milanmanager.com) is used for network configuration and audio routing, while our Dante and MADI bridges provide interoperability with external audio systems.
 
@@ -22,48 +21,35 @@ Steps 2–3 require connection to the studio hardware and network, and must be c
 
 The RME Digiface AVB interfaces are connected using the USB-C cable labelled **AVB** provided at each workstation. Users without a USB-C port can instead use one of the **USB-A to USB 3 Type-B** cables stored in the drawer labelled **USB** in each room. Please return the original AVB-labelled USB-C cable after use so it remains available for other users. -->
 
-<details><summary>Step 1: Install RME USB Driver</summary>
+<details><summary>Step 1: Install RME DriverKit </summary>
 
-This step covers installation of the RME USB DriverKit driver, which is required for communication between your computer and the RME Digiface AVB. This step can be completed before arriving at the studios.
+This step covers installation of the USB series DriverKit driver by RME, which is required for communication between your computer and an RME audio interface, such as a Digiface AVB.
+This step can be completed before arriving to the studios. If you already have the RME DriverKit installed, you should ensure that the driver is up to date if you encounter any issues when using a Digiface AVB.
 
-### Driver Installation
-
-- [RME USB Series DriverKit Driver](https://rme-audio.de/downloads.html)
-- [RME AVB Controller](https://rme-audio.de/downloads.html)
-- [Milan Manager](https://milanmanager.com/#downloads)
-
-To correctly install the required software, please follow the step by step instructions below.
-
-- Navigate to [RME's website](https://rme-audio.de/downloads.html) to download the RME DriverKit.
-
+- Navigate to [RME's Downloads page](https://rme-audio.de/downloads.html) to download the DriverKit.
 - Select Digiface AVB from the left menu, followed by your operating system.
-
 - Download and install the latest audio driver (_driver_usbdk_mac_xxx.zip_ for MacOS or _driver_madiface_win_xxx.zip_ for Windows).
 
-- (MacOS) Also from the RME downloads page, separately download and install the RME AVB Controller (_rme_avb_package_mac.zip_).
+<mark>Warning</mark> When installing the RME DriverKit on MacOS, you must ensure you properly [enable your privacy settings](https://rme-audio.de/rme-macos.html).
+Depending on the device and operating system, this includes _Kernel Extensions_ and _Login Items_, as well as the more general _Privacy & Security_ permissions which block applications from running.
 
-- (MacOS) <mark>Warning</mark> When installing the RME DriverKit, you must ensure you properly [enable your privacy settings](https://rme-audio.de/rme-macos.html).
-  Depending on the device and operating system, this includes _Kernel Extensions_ and _Login Items_, as well as the more general _Privacy & Security_ permissions which block applications from running.
-
-- (Windows) Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
-
-- (Windows) Download and install the network packet capture library [npcap](https://npcap.com).
-
-- Finally, download and install [Milan Manager](https://milanmanager.com/#downloads).
+ARE WE STILL GONNA USE KERNAL?
 
 <!-- ### Linux Support
-
-Unfortunately, our audio network has limited software compatibility on Linux.
-An operable framework can however be configured using [ALSA](https://www.alsa-project.org/wiki/Main_Page) to interface directly with our AVB hardware devices, by declaring your Linux machine as a [Milan compatible](https://avnu.org/resource/milan-specification/) AVB endpoint.
+Our audio network has limited software compatibility on Linux.
+An operable framework can however be configured using [ALSA](https://www.alsa-project.org/wiki/Main_Page) to interface directly with the audio network, by declaring your Linux machine as a [Milan compatible](https://avnu.org/resource/milan-specification/) AVB endpoint.
 You can then use the software [Hive](https://github.com/christophe-calmejane/Hive) to configure our AVB audio matrix. -->
 
 </details>
 
-<details><summary>Step 2: Install RME Network Driver</summary>
-
-PHOTO OF AVB (USB) CABLE?
+<details><summary>Step 2: Install RME AVB Controller</summary>
 
 The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps. (not quite?)
+
+- [RME AVB Controller](https://rme-audio.de/downloads.html)
+- (MacOS) Also from the RME downloads page, separately download and install the RME AVB Controller (_rme_avb_package_mac.zip_).
+- (Windows) Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
+- (Windows) Download and install the network packet capture library [npcap](https://npcap.com).
 
 ### RME Digiface AVB
 
@@ -80,7 +66,7 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 <details><summary>Step 3: Audio Routes & Clocking</summary>
 
-Install Milan Manager -
+Install [Milan Manager](https://milanmanager.com/#downloads).
 
 ## Audio Routing / AVB Streams
 
