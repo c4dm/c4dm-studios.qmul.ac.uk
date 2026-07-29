@@ -2,31 +2,29 @@
 
 # Audio Network (AVB)
 
-Our audio system is built around a [Milan AVB network](https://milanav.com/) that connects all audio devices throughout the studios. [Milan Manager](https://milanmanager.com) is used for network configuration and audio routing, while our Dante and MADI bridges extend AVB connectivity to external audio systems.
+Our audio system is built around a [Milan AVB network](https://milanav.com/) that connects all audio devices throughout the studios. [Milan Manager](https://milanmanager.com) is used for network configuration and audio routing, while our Dante and MADI bridges extend AVB connectivity to other audio systems.
 
-This section provides documentation on driver installation, endpoint configuration, and audio routing.
+Each studio workstation is equipped with a [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) audio interface, which provides the connection between our AVB audio network and the workstation computer via USB. This device makes networked audio channels available to the computer for recording, playback, and other audio applications.
 
-The Performance Lab PC + Control Room Mac are preconfigured, skip to step 3.
+Users connecting their own computer should follow the steps below to install the required drivers, configure the RME Digiface AVB, and assign audio routes. This process takes approximately 10–15 minutes. The Performance Lab PC and Control Room Mac are preconfigured, so users working on these computers can skip directly to step 3.
 
-Steps 1-3 are essential for all users wanting to connect their own computer.
+<!-- Our audio system is built around a [Milan AVB network](https://milanav.com/) that connects all audio devices throughout the studios. [Milan Manager](https://milanmanager.com) is used for network configuration and audio routing, while our Dante and MADI bridges provide interoperability with external audio systems.
 
-How long does it take, can I do this before I arrive? Mac, windows, linux?
+This section provides documentation for installing the required drivers, configuring your computer, and setting up audio routing.
 
-USB Type-A Solutions??
+Each studio workstation is equipped with an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) audio interface, which provides a USB connection between your computer and the Milan AVB network. Users connecting their own computer will need to complete steps 1–3 to configure their system.
 
-<details><summary>Step 1: Driver Installation - RME Digiface</summary>
+The Performance Lab PC and Control Room Mac are preconfigured. If you are using one of these computers, skip directly to step 3 to configure your audio routing.
 
-![tst](./images/documentation/testgif.gif)
+This step covers installation of the RME USB driverkit, which is required to connect to the RME Digiface, and can be completed before arriving at the studios.
 
-<!-- <video width='320' height='240' controls>
-  <source src='./images/documentation/tst.mov' type='video/mp4'>x
-</video> -->
+Steps 2–3 require connection to the studio hardware and network, and must be completed on site.
 
-PHOTO OF AVB (USB) CABLE?
+The RME Digiface AVB interfaces are connected using the USB-C cable labelled **AVB** provided at each workstation. Users without a USB-C port can instead use one of the **USB-A to USB 3 Type-B** cables stored in the drawer labelled **USB** in each room. Please return the original AVB-labelled USB-C cable after use so it remains available for other users. -->
 
-Each studio uses an [RME Digiface AVB](https://rme-audio.de/digiface-avb.html) audio interface to transfer networked audio over USB.
+<details><summary>Step 1: Install RME USB Driver</summary>
 
-These audio interfaces have been preconfigured on both of our in-house computers, and can also be configured for use on a personal computer.
+This step covers installation of the RME USB DriverKit driver, which is required for communication between your computer and the RME Digiface AVB. This step can be completed before arriving at the studios.
 
 ### Driver Installation
 
@@ -61,7 +59,9 @@ You can then use the software [Hive](https://github.com/christophe-calmejane/Hiv
 
 </details>
 
-<details><summary>Step 2: Endpoint Configuration - RME AVB Controller</summary>
+<details><summary>Step 2: Install RME Network Driver</summary>
+
+PHOTO OF AVB (USB) CABLE?
 
 The first time you connect to an RME Digiface AVB, even if you have connected to one in a different studio room, you must follow these steps. (not quite?)
 
@@ -78,11 +78,31 @@ WINDOWS - you have to enable WDM devices each time you connect to a Digiface AVB
 
 </details>
 
-<details><summary>Step 3: Audio Routing - Milan Manager</summary>
+<details><summary>Step 3: Audio Routes & Clocking</summary>
 
-Studio users only need to interact with the **Overview** tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
+Install Milan Manager -
 
-If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the Assignment configuration and should remain set to a 48 kHz sample rate.
+## Audio Routing / AVB Streams
+
+Users only need to interact with the **Overview** tab in Milan Manager to manage their audio routes. If multiple users are working in different rooms simultaneously, their connections will also be displayed in this window. Users should ensure that they do not alter any connections unrelated to their work, as this may disrupt other users’ sessions.
+
+![milanaudio](./images/documentation/milanaudio.gif)
+
+## Audio Clocking
+
+Clocking issues can manifest as audio dropouts, glitches, distortion, audible tearing, intermittent noise, or complete loss of audio.
+
+If clocking issues occur, open the **Devices** tab in Milan Manager and check the network clock configuration. Under normal operation, the Plant Room’s internal clock should be assigned as the master clock source for the entire network. The system should operate within a single clock domain.
+
+If multiple clock domains are displayed, this indicates a clocking issue. The only expected clock configuration for this system is the Plant Room assigned as the master clock source with a 48 kHz sample rate.
+
+The 48 kHz sample rate is not a system limitation, but the default configuration chosen to ensure compatibility across all connected equipment.
+
+<!-- Clocking issues can manifest as audio dropouts, glitches, distortion, audible tearing, intermittent noise, or complete loss of audio.
+
+If users experience clocking issues, they can navigate to the Devices tab to reassign the Plant Room’s internal clock source as the master clock for the entire network. This is the Assignment configuration and should remain set to a 48 kHz sample rate. -->
+
+![milanclock](./images/documentation/milanclock.gif)
 
 See the official [**Milan Manager Documentation**](https://docs.milanmanager.com/ui-overview.html) for further instruction.
 
@@ -92,7 +112,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 
 ### Control Room
 
-## Talker Streams
+#### Talker Streams
 
 <table><tbody>
 	<tr>
@@ -167,7 +187,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 	</tr>
 </tbody></table>
 
-## Listener Streams
+#### Listener Streams
 
 <table><tbody>
 	<tr>
@@ -205,7 +225,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 
 ### Live Room
 
-## Talker Streams
+#### Talker Streams
 
 <table><tbody>
 	<tr>
@@ -247,7 +267,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 	<tr><td> 8 </td><td> - </td><td> - </td><td> - </td></tr>
 </tbody></table>
 
-## Listener Streams
+#### Listener Streams
 
 <table><tbody>
 	<tr>
@@ -294,7 +314,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 
 ### Performance Lab
 
-## Talker Streams
+#### Talker Streams
 
 <table><tbody>
 	<tr>
@@ -336,7 +356,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 	<tr><td> 8 </td><td> - </td><td> - </td><td> - </td></tr>
 </tbody></table>
 
-## Listener Streams
+#### Listener Streams
 
 <table><tbody>
 	<tr>
@@ -379,7 +399,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 
 ### Plant Room
 
-## Talker Streams
+#### Talker Streams
 
 <table><tbody>
 	<tr>
@@ -398,7 +418,7 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 	<tr><td> 8 </td><td> Dante 49-64 </td><td> 1 - 16 </td><td> Dante Out 49-64 </td></tr>
 </tbody></table>
 
-## Listener Streams
+#### Listener Streams
 
 <table><tbody>
 	<tr>
@@ -423,12 +443,11 @@ See the official [**Milan Manager Documentation**](https://docs.milanmanager.com
 
 ### Dante
 
-BUT YOU NEED MILAN STILL.
-
 We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audio networking via a Dante-AVB bridge, allowing users to interface with our AVB network using [Dante Virtual Soundcard](https://www.getdante.com/products/software-essentials/dante-virtual-soundcard/) or other Dante compatible devices such as the [Eigenmike EM64](https://eigenmike.com/eigenmike-64). In addition, a dedicated Dante-MADI bridge is connected directly to the Performance Lab PC, to specifically to support interfacing with these Dante devices via this machine.
 
 Devices can be connected to our Dante network via any **LAN** wall port, or using the dedicated Dante ports in the Performance Lab.
-These connected devices and their associated routings are then managed in [Dante Controller](https://www.getdante.com/products/software-essentials/dante-controller/).
+
+These connected devices and their associated routings are managed in [Dante Controller](https://www.getdante.com/products/software-essentials/dante-controller/). Users connecting through the Dante-AVB bridge should route their Dante streams to this bridge in Dante Controller, and then complete the corresponding AVB routing in Milan Manager (see Step 3). The Dante-MADI bridge is routed entirely within Dante Controller and does not require Milan Manager routing.
 
 ![Dante Controller screenshot showing AVB and MADI bridges](<>)
 
