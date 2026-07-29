@@ -8,7 +8,11 @@ This section provides documentation on driver installation, endpoint configurati
 
 The Performance Lab PC + Control Room Mac are preconfigured, skip to step 3.
 
-Steps 1-3 are essential for all users wanting to connect their own computer. How long does it take, can I do this before I arrive? Mac, windows, linux?
+Steps 1-3 are essential for all users wanting to connect their own computer.
+
+How long does it take, can I do this before I arrive? Mac, windows, linux?
+
+USB Type-A Solutions??
 
 <details><summary>Step 1: Driver Installation - RME Digiface</summary>
 
