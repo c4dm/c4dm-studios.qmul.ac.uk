@@ -446,7 +446,7 @@ Devices can be connected to our Dante network via any **LAN** wall port, or usin
 
 These connected devices and their associated routings are managed in [Dante Controller](https://www.getdante.com/products/software-essentials/dante-controller/). Users connecting through the Dante-AVB bridge should route their Dante streams to this bridge in Dante Controller, and then complete the corresponding AVB routing in Milan Manager (see Step 3). The Dante-MADI bridge is routed entirely within Dante Controller and does not require Milan Manager routing.
 
-![Dante Controller screenshot showing AVB and MADI bridges](<>)
+![Dante Controller screenshot showing AVB and MADI bridges](/images/documentation/dante-avb.png)
 
 #### Dante Outputs
 
