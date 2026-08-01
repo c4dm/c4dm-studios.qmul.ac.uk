@@ -9,20 +9,32 @@
 	<a href='https://qmulprod.sharepoint.com/sites/Studio/Lists/Studio%20Calendar/Control%20Room.aspx?e=JGvW27&CID=14fc976d-c0ec-4bf0-b6d8-fa5c6a253470&env=WebViewList' class='button'>
 		Studio Calendar
 	</a>
-	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JACfKaj-cmSpTbTvK2kdb4abAc4ZHnNh5dZdYbLk4P3csq0?e=w55nzJ' class='button'>
-		Inventory
+	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JABkrluQ6oZESIof44y9Xrr1AZRq495f-gb83ZJEO91ml3U?nav=NWViZDA2YTMtNTRkYy00OGFlLTkyYzMtMTFkMWU5MmRkODM1' class='button'>
+		Event Hire
 	</a>
 </span>
 <br/>
 <span>
+	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JACfKaj-cmSpTbTvK2kdb4abAc4ZHnNh5dZdYbLk4P3csq0?e=w55nzJ' class='button'>
+		Inventory
+	</a>
 	<a href='https://qmulprod.sharepoint.com/sites/Studio/_layouts/15/listforms.aspx?cid=NDg5ZDcyN2QtYWQ4YS00MTkxLWI2NzktYmM2YTljZDgyNGYx&nav=YTlmYTA5MWEtN2FkNi00YmNhLWEwNmQtYjAyYWU0ODQzMzg2' class='button'>
-		Equipment Loans
+		Equipment Loan
 	</a>
 	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JABkrluQ6oZESIof44y9Xrr1AZRq495f-gb83ZJEO91ml3U?nav=NWViZDA2YTMtNTRkYy00OGFlLTkyYzMtMTFkMWU5MmRkODM1' class='button'>
-		Event Hire
+		Equipment Return
+	</a>
+</span>
+<br/>
+<span>
+	<a href='' class='button'>
+		Request a Tutorial
 	</a>
 	<a href='/policy' class='button' target='_self'>
 		Studio Policy
+	</a>
+	<a href='https://qmulprod.sharepoint.com/sites/Studio/SitePages/Management.aspx' class='button'>
+		Management
 	</a>
 </span>
 
@@ -72,7 +84,7 @@ If you encounter any technical issues, please check your work against the studio
 
 <details><summary> How do I get help or training? </summary>
 
-Studio members can request supervision or guidance via email. We also host drop-in sessions for training and equipment demonstrations, and members are notified of these automatically. Grey calendar entries titled 'Management' are also used to indicate our presence and availability in the studios.
+Studio members can request a tutorial by submitting the form above. We also host drop-in sessions for training and equipment demonstrations, and members are notified of these automatically.
 
 </details>
 
