@@ -259,6 +259,75 @@
 	</tr>
 </tbody></table>
 
+## Transducers
+
+<table style="width: 100%"><tbody>
+	<tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
+	<tr>
+		<td>AKG</td>
+		<td>C411</td>
+		<td>Contact Microphone</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Roland</td>
+		<td>RT-10K</td>
+		<td>Kick Drum Trigger</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Roland</td>
+		<td>RT-10S</td>
+		<td>Snare Drum Trigger</td>
+		<td>5</td>
+	</tr>
+</tbody></table>
+
+## DI Boxes
+
+<table style="width: 100%"><tbody>
+	<tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 5%;"><b>Qty</b></td>
+		<td style="width: 5%;"><b>+48v</b></td>
+	</tr>
+	<tr>
+		<td>Behringer</td>
+		<td>DI-20</td>
+		<td>Stereo / Active</td>
+		<td>2</td>
+		<td>✅</td>
+	</tr>
+	<tr>
+		<td>BSS</td>
+		<td>AR-113</td>
+		<td>Mono / Active</td>
+		<td>3</td>
+		<td>✅</td>
+	</tr>
+	<tr>
+		<td>Radial</td>
+		<td>Pro-D2</td>
+		<td>Stereo / Passive</td>
+		<td>1</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Radial</td>
+		<td>Pro-DI</td>
+		<td>Mono / Passive</td>
+		<td>3</td>
+		<td></td>
+	</tr>
+</tbody></table>
+
 ## Preamps
 
 <table style="width: 100%"><tbody>
@@ -349,6 +418,41 @@
 		<td>Smart Research</td>
 		<td>C2</td>
 		<td>Compressor</td>
+		<td>1</td>
+	</tr>
+</tbody></table>
+
+## Field Recorders
+
+<table style="width: 100%"><tbody>
+	<tr>
+		<td style="width: 30%;"><b>Manufacturer</b></td>
+		<td style="width: 30%;"><b>Model</b></td>
+		<td style="width: 30%;"><b>Description</b></td>
+		<td style="width: 10%;"><b>Qty</b></td>
+	</tr>
+	<tr>
+		<td>Zoom</td>
+		<td>F8</td>
+		<td>8-Channel Field Recorder</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Zoom</td>
+		<td>H4n Pro</td>
+		<td>2-Channel Recorder with Stereo Mic</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Zoom</td>
+		<td>H5</td>
+		<td>4-Channel Field Recorder with Stereo Mic</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Zoom</td>
+		<td>H6</td>
+		<td>4-Channel Field Recorder with Stereo Mic</td>
 		<td>1</td>
 	</tr>
 </tbody></table>
@@ -518,35 +622,6 @@
 	</tr>
 </tbody></table>
 
-## Transducers
-
-<table style="width: 100%"><tbody>
-	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
-	</tr>
-	<tr>
-		<td>AKG</td>
-		<td>C411</td>
-		<td>Contact Microphone</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>Roland</td>
-		<td>RT-10K</td>
-		<td>Kick Drum Trigger</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>Roland</td>
-		<td>RT-10S</td>
-		<td>Snare Drum Trigger</td>
-		<td>5</td>
-	</tr>
-</tbody></table>
-
 ## MIDI
 
 <table style="width: 100%"><tbody>
@@ -567,46 +642,6 @@
 		<td>Axiom 61</td>
 		<td>61 Key MIDI Keyboard / USB, DIN</td>
 		<td>5</td>
-	</tr>
-</tbody></table>
-
-## DI Boxes
-
-<table style="width: 100%"><tbody>
-	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 5%;"><b>Qty</b></td>
-		<td style="width: 5%;"><b>+48v</b></td>
-	</tr>
-	<tr>
-		<td>Behringer</td>
-		<td>DI-20</td>
-		<td>Stereo / Active</td>
-		<td>2</td>
-		<td>✅</td>
-	</tr>
-	<tr>
-		<td>BSS</td>
-		<td>AR-113</td>
-		<td>Mono / Active</td>
-		<td>3</td>
-		<td>✅</td>
-	</tr>
-	<tr>
-		<td>Radial</td>
-		<td>Pro-D2</td>
-		<td>Stereo / Passive</td>
-		<td>1</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Radial</td>
-		<td>Pro-DI</td>
-		<td>Mono / Passive</td>
-		<td>3</td>
-		<td></td>
 	</tr>
 </tbody></table>
 
@@ -658,41 +693,6 @@
 		<td>Dell</td>
 		<td>PowerEdge T630</td>
 		<td>Performance Lab / Windows 11 VM</td>
-		<td>1</td>
-	</tr>
-</tbody></table>
-
-## Field Recorders
-
-<table style="width: 100%"><tbody>
-	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
-	</tr>
-	<tr>
-		<td>Zoom</td>
-		<td>F8</td>
-		<td>8-Channel Field Recorder</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>Zoom</td>
-		<td>H4n Pro</td>
-		<td>2-Channel Recorder with Stereo Mic</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>Zoom</td>
-		<td>H5</td>
-		<td>4-Channel Field Recorder with Stereo Mic</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>Zoom</td>
-		<td>H6</td>
-		<td>4-Channel Field Recorder with Stereo Mic</td>
 		<td>1</td>
 	</tr>
 </tbody></table>
@@ -811,7 +811,7 @@
 		<td>Yamaha</td>
 		<td>MSP5A</td>
 		<td>2-Way / Near-field</td>
-		<td>7 (?)</td>
+		<td>6</td>
 	</tr>
 </tbody></table>
 
@@ -861,10 +861,17 @@
 	</tr>
 	<tr>
 		<td>Behringer</td>
-		<td>P-16</td>
+		<td>P16-HQ</td>
 		<td>Wired IEM System</td>
 		<td>3</td>
 	</tr>
+	<tr>
+		<td>Behringer</td>
+		<td>P16-I</td>
+		<td>Wired IEM System</td>
+		<td>3</td>
+	</tr>
+
 </tbody></table>
 
 </div> <!-- for scss styling -->
