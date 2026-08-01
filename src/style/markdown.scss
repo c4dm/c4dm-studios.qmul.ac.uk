@@ -127,6 +127,11 @@
 			}
 		}
 
+		h2 {
+			font-size: larger;
+			border-bottom: 2px solid utils.$qm-white;
+		}
+
 		h5 {
 			margin: 10px 0;
 		}
@@ -235,6 +240,14 @@
 				padding: 4px 0;
 				outline: 2px solid utils.$qm-compliment;
 			}
+		}
+
+		.warning {
+			width: calc(100% - 8px);
+			font-size: 14px;
+			background-color: utils.$qm-red;
+			color: utils.$qm-white;
+			padding: 4px;
 		}
 
 		> :first-child {
