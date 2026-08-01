@@ -208,7 +208,6 @@
 				"noIdenticalTestTitle": "error",
 				"noImpliedEval": "error",
 				"noInlineStyles": "error",
-				"noJsRestrictedProperties": "error",
 				"noJsxLeakedDollar": "error",
 				"noJsxNamespace": "error",
 				"noLoopFunc": "error",
