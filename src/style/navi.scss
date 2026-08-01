@@ -1,0 +1,115 @@
+@use './utils.scss' as utils;
+
+nav {
+	height: utils.$navi-height;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	background-color: utils.$qm-white;
+	color: utils.$qm-blue;
+	user-select: none;
+	-webkit-user-select: none;
+
+	button {
+		width: fit-content;
+		outline: 0;
+		border: 0;
+		background: inherit;
+		color: inherit;
+		cursor: pointer;
+	}
+
+	.logo {
+		height: calc(utils.$navi-height * 0.6);
+		padding-inline: 20px;
+		display: grid;
+		grid-auto-flow: column;
+		align-self: center;
+		font-weight: 600;
+		font-size: large;
+
+		div {
+			height: 100%;
+			display: grid;
+			align-items: center;
+			transform: skew(calc(-1 * utils.$paralellogram));
+
+			p {
+				margin: 0;
+				padding-inline: 8px;
+				color: inherit;
+				transform: skew(utils.$paralellogram);
+			}
+
+			&:first-of-type {
+				justify-self: right;
+				background: utils.$qm-blue;
+				color: utils.$qm-white;
+			}
+
+			&:last-of-type {
+				justify-self: left;
+				background: inherit;
+				color: utils.$qm-blue;
+
+				p {
+					margin-left: -2px;
+				}
+			}
+		}
+
+		&:hover,
+		&:focus-visible {
+			div:first-of-type {
+				color: utils.$qm-compliment;
+			}
+
+			div:last-of-type {
+				background: utils.$qm-compliment;
+			}
+		}
+	}
+
+	.navi {
+		height: fit-content;
+		width: fit-content;
+		padding-right: 20px;
+		grid-column: 3;
+		display: grid;
+		grid-auto-flow: column;
+		align-self: center;
+
+		button {
+			height: fit-content;
+			padding-inline: 7px;
+			border-right: solid 2px utils.$qm-blue;
+			place-self: center;
+			font-size: large;
+			transform: skew(calc(-1 * utils.$paralellogram));
+
+			@include utils.focus;
+
+			&:last-of-type {
+				border: 0;
+			}
+
+			p {
+				margin: 0;
+				transform: skew(utils.$paralellogram);
+			}
+		}
+	}
+
+	@media (width < utils.$iphone) {
+		height: fit-content;
+
+		.navi {
+			margin-block: 8px;
+			grid-auto-flow: row;
+
+			button {
+				border: 0;
+			}
+		}
+	}
+}

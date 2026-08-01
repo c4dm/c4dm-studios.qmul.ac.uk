@@ -16,8 +16,9 @@ Additionally, if you use VSCode, you will be prompted to install helpful plugins
 
 ## Contribute
 
-Studios resources are located in `/public/resources`.
-Dynamic markdown content is located in `/src/config`.
+- Markdown content is located in `/src/config`.
+- Images are stored in `/public/images`.
+- Studio resources are located in `/public/resources`.
 
 ## Develop
 
@@ -27,5 +28,5 @@ npm run format	# format the codebase (please run before committing)
 npm run test	# lint the codebase (please run before publishing)
 npm run build 	# build the website to /dist
 npm run preview	# run a website from /dist
-npm run deploy	# build locally and then make public (gh-pages)
+npm run deploy	# build to /dist and then make public (gh-pages)
 ```

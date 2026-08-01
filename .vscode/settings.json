@@ -10,8 +10,7 @@
 	"editor.formatOnType": false,
 	"editor.insertSpaces": false,
 	// javascript linting and formatting
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"typescript.updateImportsOnFileMove.enabled": "always",
+	"js/ts.updateImportsOnFileMove.enabled": "always",
 	"[javascript]": {
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"

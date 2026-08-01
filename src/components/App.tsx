@@ -1,23 +1,106 @@
+/* eslint-disable sort-keys */
+
 // dependencies
-import type { JSX } from 'react'
+import { type JSX, useEffect } from 'react'
+import Markdown from 'react-markdown'
+import { useLocation, useNavigate } from 'react-router-dom'
+import rehype from 'rehype-raw'
 
-// components
-// import Gallery from './gallery.tsx'
-// import Navi from './navi.tsx'
-
-// scss
+// components & scss
+import { Navi } from './navi.tsx'
+import { Gallery } from './gallery.tsx'
+import { Affiliations, Staff } from './grids.tsx'
 import '../style/App.scss'
 
+// config - markdown
+import contact from '../config/contact.md?raw'
+import documentation from '../config/documentation.md?raw'
+import home from '../config/home.md?raw'
+import members from '../config/members.md?raw'
+import policy from '../config/policy.md?raw'
+import studios from '../config/studios.md?raw'
+
+// routes - this is an _ordered_ set in the form {path: markdown}
+const pages: Record<string, string> = {
+	'/': home,
+	'/studios': studios,
+	'/members': members,
+	'/documentation': documentation,
+	'/contact': contact,
+	'/policy': policy,
+}
+
 export default function App(): JSX.Element {
+	// get current path and redirect to home if !pages[location]
+	const location = useLocation().pathname
+	const navigate = useNavigate()
+	useEffect((): void => {
+		if (!Object.keys(pages).includes(location)) {
+			void navigate('')
+		}
+	}, [location, navigate])
+
+	// render dynamic content
 	return (
 		<>
-			<header>
-				<p>C4DM Studios</p>
-			</header>
-			{/* <Navi /> */}
-			{/* <main>
-				<Gallery />
-			</main> */}
+			<title>
+				{`C4DM Studios${location === '/' ? '' : ` | ${location.charAt(1).toUpperCase() + location.slice(2)}`}`}
+			</title>
+			<Navi pages={Object.keys(pages).filter((key) => key !== '/policy')} />
+			<main>
+				<Markdown
+					components={{
+						// default link behaviour
+						a: ({ ...props }): JSX.Element => {
+							const behaviour_props = ((): Record<string, string | boolean> => {
+								if (props.download) {
+									return { download: true }
+								}
+								if (props.target) {
+									return { target: props.target }
+								}
+								return { rel: 'noopener', target: '_blank' }
+							})()
+							return (
+								<a
+									{...(props.className && { className: props.className })}
+									{...behaviour_props}
+									href={props.href}
+								>
+									{props.children}
+								</a>
+							)
+						},
+						// styled headers
+						h1: ({ children }): JSX.Element => (
+							<div className='h1'>
+								<h1>{children}</h1>
+							</div>
+						),
+						h3: ({ children }): JSX.Element => (
+							<div className='h3'>
+								<h3>{children}</h3>
+							</div>
+						),
+						// JSX replacement / insertion
+						script: ({ className }): JSX.Element | null => {
+							switch (className) {
+								case 'contact-staff':
+									return <Staff />
+								case 'home-affiliations':
+									return <Affiliations />
+								case 'home-gallery':
+									return <Gallery />
+								default:
+									return null
+							}
+						},
+					}}
+					rehypePlugins={[rehype]}
+				>
+					{pages[location]}
+				</Markdown>
+			</main>
 		</>
 	)
 }

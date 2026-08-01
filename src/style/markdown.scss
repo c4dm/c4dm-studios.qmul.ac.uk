@@ -1,0 +1,261 @@
+@use './studios.scss' as studios;
+@use './utils.scss' as utils;
+
+@mixin markdown() {
+	.markdown {
+		width: 1000px;
+		max-width: calc(100vw - 40px);
+		margin-inline: auto;
+		display: grid;
+		text-align: inherit;
+
+		> * {
+			min-width: 0;
+		}
+
+		a {
+			width: fit-content;
+			outline: 0;
+			color: utils.$qm-compliment;
+			text-decoration: none;
+
+			@include utils.focus;
+
+			&.button {
+				height: 40px;
+				width: 100%;
+				max-width: 400px;
+				margin-block: 5px;
+				background: utils.$qm-blue;
+				color: utils.$qm-white;
+				border: 3px solid utils.$qm-white;
+				border-radius: 4px;
+				outline: 3px solid utils.$qm-blue;
+				outline-offset: -6px;
+				place-self: center;
+				place-content: center;
+				text-align: center;
+				text-decoration: none;
+				font-size: large;
+
+				&:hover,
+				&:focus-visible {
+					background-color: utils.$qm-compliment;
+					border: 3px solid utils.$qm-compliment;
+					color: utils.$qm-blue;
+				}
+			}
+		}
+
+		details {
+			margin-block: 10px;
+			border-bottom: 2px solid utils.$qm-white;
+
+			&:hover,
+			&:focus-visible {
+				border-bottom: 2px solid utils.$qm-blue;
+
+				summary {
+					background: utils.$qm-compliment;
+					color: utils.$qm-blue;
+				}
+			}
+
+			&[open] {
+				border-bottom: 2px solid utils.$qm-white;
+
+				summary {
+					background: utils.$qm-white;
+					color: utils.$qm-blue;
+
+					@include utils.focus;
+				}
+			}
+
+			> :nth-child(2) {
+				&:not(table, span) {
+					display: block;
+				}
+
+				margin-top: 20px !important;
+			}
+
+			> :last-child {
+				&:not(table, span) {
+					display: block;
+				}
+
+				margin-bottom: 20px !important;
+			}
+		}
+
+		.h1,
+		.h3 {
+			height: fit-content;
+			width: fit-content;
+			display: grid;
+			transform: skew(calc(-1 * utils.$paralellogram));
+
+			> * {
+				width: fit-content;
+				margin: 0;
+				padding-inline: 7px;
+				place-self: center;
+				text-align: center;
+				font-size: inherit;
+				transform: skew(utils.$paralellogram);
+			}
+
+			&:is(.h1) {
+				margin: 60px 8px 20px;
+				font-size: xx-large;
+				background-color: utils.$qm-white;
+				color: utils.$qm-blue;
+
+				@media (width < utils.$iphone) {
+					font-size: x-large;
+				}
+			}
+
+			&:is(.h3) {
+				margin: 20px 8px;
+				padding-block: 2px;
+				font-size: large;
+				background-color: utils.$qm-blue;
+				color: utils.$qm-white;
+				border: 2px solid utils.$qm-white;
+			}
+		}
+
+		h2 {
+			font-size: larger;
+			border-bottom: 2px solid utils.$qm-white;
+		}
+
+		h5 {
+			margin: 10px 0;
+		}
+
+		iframe {
+			width: 100%;
+			border: 0;
+			place-self: center;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		img {
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		mark {
+			background-color: utils.$qm-red;
+			color: utils.$qm-white;
+			font-style: normal;
+			padding-inline: 1px;
+		}
+
+		p {
+			margin-block: 10px;
+
+			&:has(img) {
+				margin-block: 20px;
+			}
+
+			> img {
+				max-width: 60%;
+				margin: 0 20%;
+
+				@media (width < utils.$iphone) {
+					max-width: 100%;
+					margin: 0;
+				}
+			}
+		}
+
+		pre {
+			width: max-content;
+			max-width: 100%;
+			padding: 8px;
+			box-sizing: border-box;
+			overflow-x: auto;
+			border: solid utils.$qm-compliment 2px;
+			border-radius: 4px;
+			background: utils.$qm-black;
+
+			code {
+				display: block;
+				width: fit-content;
+				min-width: 100%;
+			}
+
+			code::selection {
+				background-color: utils.$qm-white;
+				color: utils.$qm-black;
+			}
+		}
+
+		span {
+			width: 100%;
+			display: grid;
+			grid-auto-flow: column;
+			grid-auto-columns: 1fr;
+			gap: 20px;
+			align-items: center;
+
+			&:has(a) {
+				width: calc(100% - 6px);
+				padding-inline: 6px;
+			}
+
+			@media (width < utils.$iphone) {
+				grid-auto-flow: row;
+				grid-template: unset !important;
+				place-items: initial;
+			}
+		}
+
+		summary {
+			font-size: larger;
+			padding-block: 4px;
+			outline: 0;
+			cursor: pointer;
+
+			@include utils.focus;
+		}
+
+		table {
+			width: 60%;
+			min-width: fit-content;
+			margin: 10px auto;
+			text-align: center;
+
+			@media (width < utils.$iphone) {
+				width: 100%;
+				margin: 20px 0;
+			}
+
+			td {
+				padding: 4px 0;
+				outline: 2px solid utils.$qm-compliment;
+			}
+		}
+
+		.warning {
+			width: calc(100% - 8px);
+			font-size: 14px;
+			background-color: utils.$qm-red;
+			color: utils.$qm-white;
+			padding: 4px;
+		}
+
+		> :first-child {
+			margin-top: 0 !important;
+		}
+
+		> :last-child {
+			margin-bottom: 0 !important;
+		}
+	}
+}

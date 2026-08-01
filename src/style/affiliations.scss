@@ -1,0 +1,31 @@
+.home-affiliations {
+	height: fit-content;
+	width: fit-content;
+	max-width: 100%;
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+
+	a {
+		height: 60px;
+		width: fit-content;
+		margin: 0;
+		padding: 2px;
+
+		img {
+			height: 60px;
+			width: auto;
+			filter: invert(100%);
+		}
+
+		&:hover,
+		&:focus-visible {
+			img {
+				filter: none;
+			}
+		}
+	}
+}
