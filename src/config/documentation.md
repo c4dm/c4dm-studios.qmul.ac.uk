@@ -644,7 +644,7 @@ To power this instrument, use the switch underneath the keyboard and the standby
 If the mains is turned off at the wall, make sure to turn on the wall switch before turning on the switch underneath the keyboard.
 <!-- And for powering down, you do not need to power it down at the wall, but in the event that this is necessary, the power switch under the keyboard should be switched off before turning off power at the wall. -->
 
-![/images/documentation/disklavier.png](Performance Lab Disklavier power switch)
+![Performance Lab Disklavier power switches](/images/documentation/disklavier-power.png)
 
 </details>
 
