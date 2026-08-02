@@ -30,7 +30,7 @@
 	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JAClNLfeAmFXRpf34Z__J0o9AUt8i7RFOkUY4yXcaTct0m8?nav=YzhhYTBjMDQtODUyZC00MmM3LThkZWMtYTY3ZDg0MzI1NmQ2' class='button'>
 		Request a Tutorial
 	</a>
-	<a href='/policy' class='button' target='_self'>
+	<a href='/#/policy' class='button' target='_self'>
 		Studio Policy
 	</a>
 	<a href='https://qmulprod.sharepoint.com/sites/Studio/SitePages/Management.aspx' class='button'>
