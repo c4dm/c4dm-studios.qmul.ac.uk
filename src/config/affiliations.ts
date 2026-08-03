@@ -11,6 +11,16 @@ export const affiliations: readonly Affiliation[] = [
 		name: 'Artificial Intelligence & Music CDT',
 	},
 	{
+		image: '/images/affiliations/ail.png',
+		link: new URL('https://instrumentslab.org/'),
+		name: 'Augmented Instruments Lab',
+	},
+	{
+		image: '/images/affiliations/bela.png',
+		link: new URL('https://bela.io/'),
+		name: 'Bela',
+	},
+	{
 		image: '/images/affiliations/c4dm.png',
 		link: new URL('https://c4dm.eecs.qmul.ac.uk/'),
 		name: 'Centre for Digital Music',
