@@ -248,6 +248,11 @@
 			background-color: utils.$qm-red;
 			color: utils.$qm-white;
 			padding: 4px;
+
+			a {
+				color: white;
+				text-decoration: underline;
+			}
 		}
 
 		> :first-child {

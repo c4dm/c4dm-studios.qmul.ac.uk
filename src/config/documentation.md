@@ -143,7 +143,7 @@ Optical and BNC copper MADI connections are available between each studio, and c
 
 <details><summary>Tutorials & Resources</summary>
 
-[**RME Totalmix Tutorials**](https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck)
+[**RME TotalMix Tutorials**](https://www.youtube.com/playlist?list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck)
 
 </details>
 
@@ -292,7 +292,7 @@ To power this instrument, use the switch underneath the keyboard followed by the
 The Performance Lab features a 16.2 rectangular speaker array, and the Live Room features a 12.1 hemispherical speaker array.
 These speaker systems are used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
-<p classname='warning'>Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of RME Totalmix <b>before</b> sending audio to the system. If you are unsure how to control your noise exposure, please request a tutorial from studio management.</p>
+<p classname='warning'>Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of RME TotalMix <b>before</b> sending audio to the system. We highly recommend using <a href="https://www.youtube.com/watch?v=mHQxdZT800A&list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck&index=12">Mute and Fader Groups</a> to control multiple output channels simultaneously. If you are unsure how to control your noise exposure, please request a tutorial from studio management.</p>
 
 <details><summary>Powering our Speaker Systems</summary>
 
