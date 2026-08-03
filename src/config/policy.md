@@ -61,24 +61,24 @@ We are happy to welcome external participants into our facilities if they are es
 
 <details><summary>Health & Safety</summary>
 
-### Working at Heights
+## Working at Heights
 
 Only members of staff with the relevant training are permitted to work at heights within our facilities.
 This includes all activities relating to the placement and movement of lights, ambisonic speakers and motion capture cameras.
 
-### Ventilation
+## Ventilation
 
 **If the ventilation is off when you arrive for a session, you must turn it on**, as working in the studios without ventilation can make you light headed.
 
 The ventilation controls for the Control Room (G2C) and the Live/Listening Room (G4) are located in the Plant Room (G6).
 The ventilation controls for the Performance Lab (G2B) are on a wall inside the Performance Lab, as one walks in from the Bancroft Road side of the building.
 
-### Hearing Protection
+## Hearing Protection
 
 Studio equipment can cause significant hearing damage if used improperly, and so caution towards excessive loudness must always be exercised.
 If you are unsure how to properly manage the loudness of a relevant piece of equipment, postpone your session and/or seek assistance from staff.
 
-### Emergency Equipment
+## Emergency Equipment
 
 In the event of a fire alarm or power outage, users must abandon their sessions.
 If necessary to evacuate the building, users should convene at Geography Square to await further instruction.
@@ -91,19 +91,19 @@ If necessary to evacuate the building, users should convene at Geography Square 
 
 <details><summary>Responsibilities During Your Session</summary>
 
-### Damages
+## Damages
 
 Studio users are expected to treat the studios and its equipment with care and respect.
 If a piece of equipment is found to be damaged or defective during a session, then studio management must be notified immediately.
 Any damages caused throughout our facilities that are the result of negligence will not be tolerated.
 
-### Hygiene & Cleanliness
+## Hygiene & Cleanliness
 
 Studio users are responsible for maintaining high standards of cleanliness and hygiene throughout the studio spaces.
 Users are expected to clean up after themselves and must take responsibility for any mess that they create when using our facilities.
 As a result, it is strongly advised that all food be consumed in communal areas outside of the studios, and any drinks be stored in sealable containers when inside the studios.
 
-### Storing Equipment
+## Storing Equipment
 
 Studio users are responsible for clearing the spaces after their session has concluded.
 Any equipment that has been retrieved from storage should be returned to that storage _in the way that it was found_.
