@@ -70,7 +70,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 
 <details><summary>Step 3: Assign Audio Routes in Milan Manager</summary>
 
-This step covers audio routing with [**Milan Manager**](https://milanmanager.com/), which is used to route AVB streams between devices across the studio network. AVB streams are multichannel audio connections; in our system, each stream contains 16 channels of audio, and users can route up to eight input and eight output streams to and from their computer.
+This step covers audio routing with [Milan Manager](https://milanmanager.com/), which is used to route AVB streams between devices across the studio network. AVB streams are multichannel audio connections; in our system, each stream contains 16 channels of audio, and users can route up to eight input and eight output streams to and from their computer.
 
 ## Audio Routing / AVB Streams
 
@@ -84,7 +84,7 @@ This configuration allows a user to record into and monitor their project, and c
 
 ![Front Panel of an RME 12Mic](./images/documentation/rme-12mic.jpeg)
 
-AD/DA streams correspond to the patchbays in each room's system rack. These connections are normalled to provide default routing between analogue devices and the AVB network, while allowing users to override these paths using patch cables. This enables the network integration of analog equipment, such as monitor controllers, FX processors and channel strips, into the audio network.
+AD/DA streams correspond to the patchbays in each room's system rack. These connections are normalled to provide default routing between analogue devices and the AVB network, while allowing users to override these paths using patch cables. This enables the integration of analog equipment, such as monitor controllers, FX processors and channel strips, into the audio network.
 
 In each room, DA Outputs 1–16 are mirrored to the [Behringer P16-I](./resources/behringer/P16-I.pdf) personal monitoring interfaces. Users can then connect up to three [P16-HQ](./resources/behringer/P16-HQ.pdf) personal mixers to access these channels and create their own headphone mix.
 
@@ -93,11 +93,11 @@ In each room, DA Outputs 1–16 are mirrored to the [Behringer P16-I](./resource
 ## Sample Rate & Media Clock
 
 The 48kHz sample rate is not a system limitation, but the default configuration chosen to ensure compatibility across all connected equipment.
-If a project requires a higher sampling rate, please contact studio management for further instruction.
+If a project requires a higher sample rate, please contact studio management for further instruction.
 
 Under normal operation, the Plant Room’s internal clock should be assigned as the master clock source for the entire network, and the system should operate within a single media clock domain.
 Clocking issues can manifest as audio dropouts, glitches, distortion, audible tearing, intermittent noise, or complete loss of audio.
-If clocking issues occur, open the **Devices** tab in Milan Manager and [check the network clock configuration](./images/documentation/milanclock.gif).
+If clocking issues occur, open the 'Devices' tab in Milan Manager and [check the network clock configuration](./images/documentation/milanclock.gif).
 
 </details>
 
@@ -109,7 +109,7 @@ We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audi
 
 Devices can be connected to our Dante network via any **LAN** wall port, or using the dedicated Dante ports in the Performance Lab.
 
-These connected devices and their associated routings are managed in [Dante Controller](https://www.getdante.com/products/software-essentials/dante-controller/). Users connecting through the Dante-AVB bridge should route their Dante streams to this bridge in Dante Controller, and then complete the corresponding AVB routing in [Milan Manager](https://milanmanager.com/#downloads) (see Step 3). The Dante-MADI bridge is routed entirely within Dante Controller and does not require Milan Manager routing.
+These connected devices and their associated routings are managed in [Dante Controller](https://www.getdante.com/products/software-essentials/dante-controller/). Users connecting through the Dante-AVB bridge should route their Dante streams to this bridge in Dante Controller, and then complete the corresponding AVB routing in [Milan Manager](https://milanmanager.com/#downloads) (see Step 3). The Dante-MADI bridge is routed entirely within Dante Controller and does not require routing in Milan Manager.
 
 ![Dante Controller screenshot showing AVB and MADI bridges](/images/documentation/dante-avb.png)
 
