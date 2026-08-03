@@ -267,25 +267,29 @@
 		<td style="width: 30%;"><b>Manufacturer</b></td>
 		<td style="width: 30%;"><b>Model</b></td>
 		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td style="width: 5%;"><b>Qty</b></td>
+		<td style="width: 5%;"><b>+48v</b></td>
 	</tr>
 	<tr>
 		<td>AKG</td>
 		<td>C411</td>
 		<td>Contact Microphone</td>
 		<td>1</td>
+		<td>✅</td>
 	</tr>
 	<tr>
 		<td>Roland</td>
 		<td>RT-10K</td>
 		<td>Kick Drum Trigger</td>
 		<td>1</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Roland</td>
 		<td>RT-10S</td>
 		<td>Snare Drum Trigger</td>
 		<td>5</td>
+		<td></td>
 	</tr>
 </tbody></table>
 
