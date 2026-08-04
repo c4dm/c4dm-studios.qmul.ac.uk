@@ -29,7 +29,6 @@ If you already have the RME DriverKit installed, you should ensure that the driv
 - Select Digiface AVB from the left menu, followed by 'Windows' and 'Driver'.
 - Download and install the latest audio driver (_driver_madiface_win_xxx.zip_).
 - Download and install the RME Windows Network Driver (_driver_win_net_xxx.zip_).
-- [Configure a WDM Device in RME Fireface USB Settings](/images/documentation/rme-digiface-windows.png) to enable system audio output.
 
 <!-- ### Linux Support
 Our audio network has limited software compatibility on Linux.
@@ -59,6 +58,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 - Disconnect the Digiface AVB (if already connected).
 - Open the registry file (.reg) and choose 'Yes' to merge the settings.
 - Reconnect the Digiface AVB.
+- [Configure a WDM Device in RME Fireface USB Settings](/images/documentation/rme-digiface-windows.png) to enable system audio output.
 
 ## MacOS / Windows
 
