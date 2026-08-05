@@ -107,7 +107,7 @@ If clocking issues occur, open the 'Devices' tab in Milan Manager and [check the
 
 We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audio networking via a Dante-AVB bridge, allowing users to interface with our AVB network using [Dante Virtual Soundcard](https://www.getdante.com/products/software-essentials/dante-virtual-soundcard/) or other Dante compatible devices such as the [Eigenmike EM64](https://eigenmike.com/eigenmike-64). In addition, a dedicated Dante-MADI bridge is connected directly to the Performance Lab PC, to specifically to support interfacing with these Dante devices via this machine.
 
-Devices can be connected to our Dante network via any **LAN** wall port, or using the dedicated Dante ports in the Performance Lab.
+Devices can be connected to our Dante network via any **LAN** port.
 
 These connected devices and their associated routings are managed in [Dante Controller](https://www.getdante.com/products/software-essentials/dante-controller/). Users connecting through the Dante-AVB bridge should route their Dante streams to this bridge in Dante Controller, and then complete the corresponding AVB routing in [Milan Manager](https://milanmanager.com/#downloads) (see Step 3). The Dante-MADI bridge is routed entirely within Dante Controller and does not require routing in Milan Manager.
 
@@ -206,6 +206,7 @@ If you encounter an issue with any device on our network, please contact a membe
 	<tr><td style='width: 130px;'> 192.168.0.5 </td><td> Dell - PowerEdge T630 </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.6 </td><td> NAS </td></tr>
 	<tr><td style='width: 130px;'> 192.168.0.9 </td><td> Keene Electronics - IPMSW1 Plus </td></tr>
+	<tr><td style='width: 130px;'> 192.168.233.136 </td><td> Luminex - Gigacore 10i </td></tr>
 </tbody></table>
 
 ## Control Room
