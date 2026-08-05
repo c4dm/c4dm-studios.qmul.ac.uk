@@ -3,7 +3,7 @@
 // dependencies
 import { type JSX, useEffect } from 'react'
 import Markdown from 'react-markdown'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router'
 import rehype from 'rehype-raw'
 
 // components & scss

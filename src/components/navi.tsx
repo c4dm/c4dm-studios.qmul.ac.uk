@@ -2,7 +2,7 @@
 
 // dependencies
 import type { FC } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router'
 
 // src
 import '../style/navi.scss'

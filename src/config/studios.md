@@ -4,21 +4,21 @@
 
 <div class="studio-gallery">
 	<figure>
-		<img src="/images/studios/performancelab.jpeg" alt="Performance Lab">
+		<img src="/images/studios/performance-lab.jpeg" alt="Performance Lab">
 		<figcaption tabindex=0>
 			<span>Performance Lab</span>
 			<span>9m × 8m</span>
 		</figcaption>
 	</figure>
 	<figure>
-		<img src="/images/studios/controlroom.jpeg" alt="Control Room">
+		<img src="/images/studios/control-room.jpeg" alt="Control Room">
 		<figcaption tabindex=0>
 			<span>Control Room</span>
 			<span>5m × 5m</span>
 		</figcaption>
 	</figure>
 	<figure>
-		<img src="/images/studios/liveroom.jpeg" alt="Live Room">
+		<img src="/images/studios/live-room.jpeg" alt="Live Room">
 		<figcaption tabindex=0>
 			<span>Live Room</span>
 			<span>6m × 5m</span>

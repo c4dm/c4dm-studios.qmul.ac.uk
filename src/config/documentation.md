@@ -496,7 +496,7 @@ We have licenses for Blade, Nexus and Tracker.
 ## Advanced: Adding Analog Devices
 
 - Vicon Lock+
-- Weidmuller Connectors **8**
+- Weidmüller Connectors **8**
 
 Bottom row channels: 1-32
 
