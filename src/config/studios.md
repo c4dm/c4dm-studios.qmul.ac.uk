@@ -25,7 +25,6 @@
 		</figcaption>
 	</figure>
 </div>
-(more photos coming soon)
 
 # Equipment
 
