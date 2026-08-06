@@ -86,7 +86,7 @@ export const Gallery: FC = () => {
 
 	// preload
 	useEffect(() => {
-		if (gallery.length < 1) {
+		if (gallery.length < 2) {
 			return
 		}
 		for (const file of gallery) {
