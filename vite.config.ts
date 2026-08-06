@@ -42,6 +42,7 @@ const galleryManifestPlugin = (): Plugin => ({
 // https://vitejs.dev/config/
 export default defineConfig({
 	build: {
+		chunkSizeWarningLimit: 750,
 		rolldownOptions: {
 			output: {
 				comments: {
