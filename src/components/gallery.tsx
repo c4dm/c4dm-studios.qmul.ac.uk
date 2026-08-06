@@ -84,6 +84,18 @@ export const Gallery: FC = () => {
 		[transition],
 	)
 
+	// preload
+	useEffect(() => {
+		if (gallery.length < 1) {
+			return
+		}
+		for (const file of gallery) {
+			const img = new window.Image()
+			img.decoding = 'async'
+			img.src = `${gallery_dir}/${file}`
+		}
+	}, [])
+
 	// slideshow
 	const [slideshow, setSlideshow] = useState<boolean>(true)
 	useEffect((): (() => void) | undefined => {
