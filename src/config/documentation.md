@@ -293,8 +293,6 @@ To power this instrument, use the switch underneath the keyboard followed by the
 The Performance Lab features a 16.2 rectangular speaker array, and the Live Room features a 12.1 hemispherical speaker array.
 These speaker systems are used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
-[Example Project + Stems](https://qmulprod.sharepoint.com/:u:/r/sites/Studio/MGMT%20%20Documents/Resources/spatial/c4dm-spat.zip?d=w5b598b4e7ce949988350a437263fe4a6&csf=1&web=1&e=Ywr1gE)
-
 <p classname='warning'>Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of RME TotalMix <b>before</b> sending audio to the system. We highly recommend using <a href="https://www.youtube.com/watch?v=mHQxdZT800A&list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck&index=12">Mute and Fader Groups</a> to control multiple output channels simultaneously. If you are unsure how to control your noise exposure, please request a tutorial from studio management.</p>
 
 <details><summary>Powering our Speaker Systems</summary>
@@ -409,6 +407,14 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> x </b></td><td><b> y </b></td></tr>
 	<tr><td> 2.6 </td><td> 34.0 </td><td> 1.45 </td><td> 2.16 </td></tr>
 </tbody></table>
+
+</details>
+
+<details><summary>Resources</summary>
+
+[**Example Project + Stems**](https://qmulprod.sharepoint.com/:u:/r/sites/Studio/MGMT%20%20Documents/Resources/spatial/c4dm-spat.zip?d=w5b598b4e7ce949988350a437263fe4a6&csf=1&web=1&e=Ywr1gE)
+
+[**Spat by IRCAM**](https://forum.ircam.fr/projects/detail/spat/)
 
 </details>
 
