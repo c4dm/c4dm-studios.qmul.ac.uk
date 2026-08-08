@@ -1,4 +1,4 @@
-<div class='markdown'> <!-- for scss styling -->
+<div class='markdown studios'> <!-- for scss styling -->
 
 # Studios
 
@@ -32,13 +32,13 @@
 
 ## Microphones
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 5%;"><b>Qty</b></td>
-		<td style="width: 5%;"><b>+48v</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
+		<td><b>+48v</b></td>
 	</tr>
 	<tr>
 		<td>3Dio</td>
@@ -261,13 +261,13 @@
 
 ## Transducers
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 5%;"><b>Qty</b></td>
-		<td style="width: 5%;"><b>+48v</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
+		<td><b>+48v</b></td>
 	</tr>
 	<tr>
 		<td>AKG</td>
@@ -294,13 +294,13 @@
 
 ## DI Boxes
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 5%;"><b>Qty</b></td>
-		<td style="width: 5%;"><b>+48v</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
+		<td><b>+48v</b></td>
 	</tr>
 	<tr>
 		<td>Behringer</td>
@@ -334,12 +334,12 @@
 
 ## Preamps
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Focusrite</td>
@@ -393,12 +393,12 @@
 
 ## Outboard
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Empirical Labs</td>
@@ -428,12 +428,12 @@
 
 ## Field Recorders
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Zoom</td>
@@ -463,12 +463,12 @@
 
 ## Instruments
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>DW Drums</td>
@@ -540,12 +540,12 @@
 
 ## Amps & Pedals
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Dunlop</td>
@@ -599,12 +599,12 @@
 
 ## Software
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Ableton</td>
@@ -628,12 +628,12 @@
 
 ## MIDI
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>iConnectivity</td>
@@ -651,12 +651,12 @@
 
 ## Headphones
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Audio-Technica</td>
@@ -680,12 +680,12 @@
 
 ## Computers
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Apple</td>
@@ -703,12 +703,12 @@
 
 ## Motion Capture
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>BlackMagic Design</td>
@@ -744,12 +744,12 @@
 
 ## Speakers
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>d&b Audio</td>
@@ -821,12 +821,12 @@
 
 ## Measurement
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Leica</td>
@@ -856,12 +856,12 @@
 
 ## Utility
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Behringer</td>
