@@ -1,0 +1,45 @@
+{
+	"background_color": "#092350",
+	"description": "C4DM Studios is a sound and movement production facility, supporting both scientific and artistic research.",
+	"developer": [
+		{
+			"name": "Lewis Wolstanholme",
+			"url": "https://lewiswolstanholme.co.uk"
+		},
+		{
+			"name": "Ciarán Corr"
+		},
+		{
+			"name": "Anna Xambo"
+		},
+		{
+			"name": "Joahn Pauwels"
+		},
+		{
+			"name": "Mark Sandler"
+		}
+	],
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "favicon.ico",
+			"sizes": "64x64",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "images/favicon192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "images/favicon512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"manifest_version": 3,
+	"name": "C4DM Studios",
+	"short_name": "c4dm-studios",
+	"start_url": ".",
+	"theme_color": "#092350"
+}
