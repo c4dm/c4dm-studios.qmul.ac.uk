@@ -105,7 +105,7 @@ If clocking issues occur, open the 'Devices' tab in Milan Manager and [check the
 
 ## Dante
 
-We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audio networking via a Dante-AVB bridge, allowing users to interface with our AVB network using [Dante Virtual Soundcard](https://www.getdante.com/products/software-essentials/dante-virtual-soundcard/) or other Dante compatible devices such as the [Eigenmike EM64](https://eigenmike.com/eigenmike-64). In addition, a dedicated Dante-MADI bridge is connected directly to the Performance Lab PC, to specifically to support interfacing with these Dante devices via this machine.
+We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audio networking via a Dante-AVB bridge, allowing users to interface with our AVB network using [Dante Virtual Soundcard](https://www.getdante.com/products/software-essentials/dante-virtual-soundcard/) or other Dante compatible devices such as the [Eigenmike em64](https://eigenmike.com/eigenmike-64). In addition, a dedicated Dante-MADI bridge is connected directly to the Performance Lab PC, to specifically support interfacing with these Dante devices via this machine.
 
 Devices can be connected to our Dante network via any **LAN** port.
 

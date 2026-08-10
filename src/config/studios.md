@@ -112,7 +112,7 @@
 	</tr>
 	<tr>
 		<td>mH Acoustics</td>
-		<td>Eigenmike EM64</td>
+		<td>Eigenmike em64</td>
 		<td>64-Capsule / 6th Order</td>
 		<td>1</td>
 		<td></td>
