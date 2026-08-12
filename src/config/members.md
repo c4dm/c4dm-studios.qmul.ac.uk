@@ -78,7 +78,7 @@ Loan requests are only required for equipment taken outside the studios. As staf
 
 <details><summary> I cannot find a specific item of equipment. Where has it gone? </summary>
 
-Our inventory shows the current location and availability of all equipment. If an item has been moved or is on loan, this will be reflected in the inventory. If an item is listed as available but cannot be found in its designated location, please notify us by email.
+Our inventory shows the current location and availability of all equipment. If an item has been moved or is on loan, this will be reflected in the inventory. If you require an item that is currently inaccessible, or an item is listed as available but cannot be found in its designated location, please notify us by email.
 
 </details>
 
