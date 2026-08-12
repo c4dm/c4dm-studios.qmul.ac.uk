@@ -39,7 +39,7 @@ We also offer our facilities for hire to external clients, such as recording art
 <script class='home-affiliations'><\/script>
 
 </div> <!-- for scss styling -->
-`,"/studios":`<div class='markdown'> <!-- for scss styling -->
+`,"/studios":`<div class='markdown studios'> <!-- for scss styling -->
 
 # Studios
 
@@ -73,13 +73,13 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Microphones
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 5%;"><b>Qty</b></td>
-		<td style="width: 5%;"><b>+48v</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
+		<td><b>+48v</b></td>
 	</tr>
 	<tr>
 		<td>3Dio</td>
@@ -153,7 +153,7 @@ We also offer our facilities for hire to external clients, such as recording art
 	</tr>
 	<tr>
 		<td>mH Acoustics</td>
-		<td>Eigenmike EM64</td>
+		<td>Eigenmike em64</td>
 		<td>64-Capsule / 6th Order</td>
 		<td>1</td>
 		<td></td>
@@ -302,13 +302,13 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Transducers
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 5%;"><b>Qty</b></td>
-		<td style="width: 5%;"><b>+48v</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
+		<td><b>+48v</b></td>
 	</tr>
 	<tr>
 		<td>AKG</td>
@@ -335,13 +335,13 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## DI Boxes
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 5%;"><b>Qty</b></td>
-		<td style="width: 5%;"><b>+48v</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
+		<td><b>+48v</b></td>
 	</tr>
 	<tr>
 		<td>Behringer</td>
@@ -375,12 +375,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Preamps
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Focusrite</td>
@@ -434,12 +434,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Outboard
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Empirical Labs</td>
@@ -469,12 +469,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Field Recorders
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Zoom</td>
@@ -504,12 +504,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Instruments
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>DW Drums</td>
@@ -581,12 +581,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Amps & Pedals
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Dunlop</td>
@@ -640,12 +640,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Software
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Ableton</td>
@@ -669,12 +669,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## MIDI
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>iConnectivity</td>
@@ -692,12 +692,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Headphones
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Audio-Technica</td>
@@ -721,12 +721,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Computers
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Apple</td>
@@ -744,12 +744,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Motion Capture
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>BlackMagic Design</td>
@@ -785,12 +785,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Speakers
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>d&b Audio</td>
@@ -862,12 +862,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Measurement
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Leica</td>
@@ -897,12 +897,12 @@ We also offer our facilities for hire to external clients, such as recording art
 
 ## Utility
 
-<table style="width: 100%"><tbody>
+<table><tbody>
 	<tr>
-		<td style="width: 30%;"><b>Manufacturer</b></td>
-		<td style="width: 30%;"><b>Model</b></td>
-		<td style="width: 30%;"><b>Description</b></td>
-		<td style="width: 10%;"><b>Qty</b></td>
+		<td><b>Manufacturer</b></td>
+		<td><b>Model</b></td>
+		<td><b>Description</b></td>
+		<td><b>Qty</b></td>
 	</tr>
 	<tr>
 		<td>Behringer</td>
@@ -1124,7 +1124,7 @@ If clocking issues occur, open the 'Devices' tab in Milan Manager and [check the
 
 ## Dante
 
-We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audio networking via a Dante-AVB bridge, allowing users to interface with our AVB network using [Dante Virtual Soundcard](https://www.getdante.com/products/software-essentials/dante-virtual-soundcard/) or other Dante compatible devices such as the [Eigenmike EM64](https://eigenmike.com/eigenmike-64). In addition, a dedicated Dante-MADI bridge is connected directly to the Performance Lab PC, to specifically to support interfacing with these Dante devices via this machine.
+We also support [Dante](https://www.getdante.com/meet-dante/what-is-dante/) audio networking via a Dante-AVB bridge, allowing users to interface with our AVB network using [Dante Virtual Soundcard](https://www.getdante.com/products/software-essentials/dante-virtual-soundcard/) or other Dante compatible devices such as the [Eigenmike em64](https://eigenmike.com/eigenmike-64). In addition, a dedicated Dante-MADI bridge is connected directly to the Performance Lab PC, to specifically support interfacing with these Dante devices via this machine.
 
 Devices can be connected to our Dante network via any **LAN** port.
 
@@ -1312,8 +1312,6 @@ To power this instrument, use the switch underneath the keyboard followed by the
 The Performance Lab features a 16.2 rectangular speaker array, and the Live Room features a 12.1 hemispherical speaker array.
 These speaker systems are used for research into spatial audio and immersive composition, and can be used alongside many contemporary technologies that perform spatial audio decoding and encoding.
 
-[Example Project + Stems](https://qmulprod.sharepoint.com/:u:/r/sites/Studio/MGMT%20%20Documents/Resources/spatial/c4dm-spat.zip?d=w5b598b4e7ce949988350a437263fe4a6&csf=1&web=1&e=Ywr1gE)
-
 <p classname='warning'>Please note that neither spatial system provides a universal volume control. Output levels must therefore be set in the output section of RME TotalMix <b>before</b> sending audio to the system. We highly recommend using <a href="https://www.youtube.com/watch?v=mHQxdZT800A&list=PL0QKeSpeDQwHGxAhD-cJSIBZC7_en5rck&index=12">Mute and Fader Groups</a> to control multiple output channels simultaneously. If you are unsure how to control your noise exposure, please request a tutorial from studio management.</p>
 
 <details><summary>Powering our Speaker Systems</summary>
@@ -1428,6 +1426,14 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> x </b></td><td><b> y </b></td></tr>
 	<tr><td> 2.6 </td><td> 34.0 </td><td> 1.45 </td><td> 2.16 </td></tr>
 </tbody></table>
+
+</details>
+
+<details><summary>Resources</summary>
+
+[**Example Project + Stems**](https://qmulprod.sharepoint.com/:u:/r/sites/Studio/MGMT%20%20Documents/Resources/spatial/c4dm-spat.zip?d=w5b598b4e7ce949988350a437263fe4a6&csf=1&web=1&e=Ywr1gE)
+
+[**Spat by IRCAM**](https://forum.ircam.fr/projects/detail/spat/)
 
 </details>
 
