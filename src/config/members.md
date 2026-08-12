@@ -76,6 +76,12 @@ Loan requests are only required for equipment taken outside the studios. As staf
 
 </details>
 
+<details><summary> I cannot find a specific item of equipment. Where has it gone? </summary>
+
+Our inventory shows the current location and availability of all equipment. If an item has been moved or is on loan, this will be reflected in the inventory. If an item is listed as available but cannot be found in its designated location, please notify us by email.
+
+</details>
+
 <details><summary> Can I leave equipment or a project setup between sessions? </summary>
 
 Studios should generally be packed down after each session, and all equipment returned to storage. If your project requires equipment to be left in place, please arrange this first with studio management to ensure that it does not obstruct or impact any other studio users.
