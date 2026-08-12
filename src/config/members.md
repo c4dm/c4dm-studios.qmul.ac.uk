@@ -70,6 +70,12 @@ Anyone can request to loan equipment with approval from a research supervisor. N
 
 </details>
 
+<details><summary> When should I submit an equipment loan request? </summary>
+
+Loan requests are only required for equipment taken outside the studios. As staff are part-time, requests cannot be reviewed daily or processed same-day, and some equipment requires staff to be on site before a loan can be approved. Please submit requests at least one week in advance. If this is not possible, equipment must be used within the studios.
+
+</details>
+
 <details><summary> Can I leave equipment or a project setup between sessions? </summary>
 
 Studios should generally be packed down after each session, and all equipment returned to storage. If your project requires equipment to be left in place, please arrange this first with studio management to ensure that it does not obstruct or impact any other studio users.
