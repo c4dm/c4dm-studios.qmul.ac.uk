@@ -45,7 +45,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 
 ## MacOS
 
-- Download and unzip our [Digiface AVB Template](/public/resources/audio/Digiface%20AVB%20Template.zip).
+- Download and unzip our [Digiface AVB Template](/resources/audio/Digiface%20AVB%20Template.zip).
 - Disconnect the Digiface AVB (if already connected).
 - Copy the MacOS preferences file (.plist) to the Preferences folder and replace existing. (See Readme).
 - Restart your computer.
@@ -55,7 +55,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 
 ## Windows
 
-- Download and unzip our [Digiface AVB Template](/public/resources/audio/Digiface%20AVB%20Template.zip).
+- Download and unzip our [Digiface AVB Template](/resources/audio/Digiface%20AVB%20Template.zip).
 - Disconnect the Digiface AVB (if already connected).
 - Open the registry file (.reg) and choose 'Yes' to merge the settings.
 - Restart your computer.
