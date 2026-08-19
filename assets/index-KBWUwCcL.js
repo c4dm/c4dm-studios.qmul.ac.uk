@@ -1072,7 +1072,8 @@ This step must be completed before connecting to our AVB network via a Digiface 
 
 - Download and unzip our [Digiface AVB Template](/public/resources/audio/Digiface%20AVB%20Template.zip).
 - Disconnect the Digiface AVB (if already connected).
-- Copy the MacOS preferences file (.plist) to the Preferences folder and replace existing.
+- Copy the MacOS preferences file (.plist) to the Preferences folder and replace existing. (See Readme).
+- Restart your computer.
 - Reconnect the Digiface AVB.
 
 <p style='margin-left: 40px;'><mark>Warning</mark> RME AVB Controller must be running at all times on MacOS for the Digiface AVB to maintain a network connection. By default, the application will only display a blank window. Quitting the application will cause AVB audio communication to cease.</p>
@@ -1082,6 +1083,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 - Download and unzip our [Digiface AVB Template](/public/resources/audio/Digiface%20AVB%20Template.zip).
 - Disconnect the Digiface AVB (if already connected).
 - Open the registry file (.reg) and choose 'Yes' to merge the settings.
+- Restart your computer.
 - Reconnect the Digiface AVB.
 - [Configure a WDM Device in RME Fireface USB Settings](/images/documentation/rme-digiface-windows.png) to enable system audio output.
 
