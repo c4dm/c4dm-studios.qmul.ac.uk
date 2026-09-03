@@ -6,10 +6,13 @@ import { HashRouter } from 'react-router'
 // src
 import App from './components/App.tsx'
 
-createRoot(document.querySelector('#root') as NonNullable<HTMLDivElement>).render(
-	<StrictMode>
-		<HashRouter>
-			<App />
-		</HashRouter>
-	</StrictMode>,
-)
+const root = document.querySelector('#root')
+if (root) {
+	createRoot(root).render(
+		<StrictMode>
+			<HashRouter>
+				<App />
+			</HashRouter>
+		</StrictMode>,
+	)
+}
