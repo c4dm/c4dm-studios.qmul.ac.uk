@@ -30,6 +30,8 @@
 
 [View Complete Inventory (requires Queen Mary login)](https://qmulprod.sharepoint.com/sites/Studio/Lists/MGMT%20%20Inventory/Inventory.aspx?env=WebViewList)
 
+[View Equipment Manuals (requires Queen Mary login)](https://qmulprod.sharepoint.com/:f:/s/Studio/IgDgxFG4ey_nRa5pmWsxK7vEAYycRlsFKYop0xw11iuaCbQ?e=iPwNK4)
+
 ## Microphones
 
 <table><tbody>
