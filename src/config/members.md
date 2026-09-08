@@ -21,7 +21,7 @@
 	<a href='https://qmulprod.sharepoint.com/sites/Studio/_layouts/15/listforms.aspx?cid=NDg5ZDcyN2QtYWQ4YS00MTkxLWI2NzktYmM2YTljZDgyNGYx&nav=YTlmYTA5MWEtN2FkNi00YmNhLWEwNmQtYjAyYWU0ODQzMzg2' class='button'>
 		Equipment Loan
 	</a>
-	<a href='https://qmulprod.sharepoint.com/:l:/s/Studio/JABkrluQ6oZESIof44y9Xrr1AZRq495f-gb83ZJEO91ml3U?nav=NWViZDA2YTMtNTRkYy00OGFlLTkyYzMtMTFkMWU5MmRkODM1' class='button'>
+	<a href='https://qmulprod.sharepoint.com/sites/Studio/_layouts/15/listforms.aspx?cid=ZGRhOTE3YjMtNTQyMC00YjEyLTg3NTItMjQ0ZDQ5MzhlZWFi&nav=ZGMwMTg5NTgtYzAwNS00NzQyLTkyNjktNDU2YTA1ZjkxNTQ2' class='button'>
 		Equipment Return
 	</a>
 </span>
