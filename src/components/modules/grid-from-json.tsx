@@ -13,7 +13,7 @@ type GridProperties = {
 	gridTemplateColumns: string
 }
 
-export function GridFromJSON({
+export const GridFromJSON = ({
 	cell,
 	gridSpacer = 20,
 	json,
@@ -25,7 +25,7 @@ export function GridFromJSON({
 	json: readonly Record<string, any>[] | string[] | string
 	maxHeight?: number
 	maxWidth?: number
-}): JSX.Element {
+}): JSX.Element => {
 	const self = useRef<HTMLDivElement>(null)
 	const [content, setContent] = useState<readonly Record<string, any>[] | string[]>([])
 	const [gridProps, setGridProps] = useState<GridProperties>({

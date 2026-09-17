@@ -42,7 +42,7 @@ const Arrow: FC<{ direction: 1 | -1; onClick: (direction: 1 | -1) => void }> = (
 	)
 }
 
-function Image({ index }: { index: number }): JSX.Element | null {
+const Image = ({ index }: { index: number }): JSX.Element | null => {
 	const file: string | undefined = gallery[index]
 	if (file) {
 		const img_title = file.replace(regex.file_extension, '')

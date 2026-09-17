@@ -96,6 +96,7 @@ export default function App(): JSX.Element {
 							}
 						},
 					}}
+					key={location}
 					rehypePlugins={[rehype]}
 				>
 					{pages[location]}

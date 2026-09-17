@@ -621,7 +621,7 @@
 		<td>1</td>
 	</tr>
 	<tr>
-		<td>Cycling74</td>
+		<td>Cycling '74</td>
 		<td>Max 9 / RNBO</td>
 		<td>Portable Licenses</td>
 		<td>15</td>
