@@ -32,7 +32,7 @@ export const staff: readonly C4DMEmployee[] = [
 	{
 		image: '/images/staff/anna-xambo.jpeg',
 		link: new URL('https://annaxambo.me/'),
-		name: 'Anna Xambo Sedo',
+		name: 'Anna Xambó Sedó',
 		role: 'Technical Director',
 	},
 	{
