@@ -1,13 +1,29 @@
 <div class='markdown'> <!-- for scss styling -->
 
+# Sharing Model
+
+C4DM Studios operate under the following three-tier sharing model:
+
+- Tier 1: EECS AIM & MAT CDTs, C4DM, CogSci, Audio engineering modules
+- Tier 2: Non-Tier 1 EECS research groups and teaching
+- Tier 3: External to EECS
+
+<details><summary>Research Grants</summary>
+
+The C4DM Studios are mainly supported by research grants. If you plan to make significant use the Studios on a research grant, this needs to be planned at application time. Assuming this is possible with the funding body, you will need to cost the use of the Studios in your application. Contributions from research grants support the running costs of the Studios which include consumables, maintenance, depreciation costs, and staff technical time. Please discuss your needs with the team (Studio Manager, Technical Director, and Director).
+
+</details>
+
 # Security & Access
 
 Entry to our facilities is monitored through card access, and applies to all members as follows.
 **If you leave our facility outside of your access time, you will not be able to re-enter.**
 
-- Research Supervisors: 8am - 10pm (Mon – Sun)
-- PhD Students & Staff: 8am – 8pm (Mon – Sun)
-- Undergraduates & Postgraduate: 8am – 5pm (Mon – Fri)
+- Tier 1 Staff: 8am - 10pm (Mon – Sun)
+- Tier 1 Students: 8am – 8pm (Mon – Sun)
+- Tier 2 Students & Staff: 8am – 8pm (Mon – Fri)
+
+<!-- **Please Note** out of hours access (after 6pm) must be documented using the QR Code form distributed throughout the studios - LINK A PHOTO-->
 
 <details><summary>Card Access</summary>
 
@@ -15,6 +31,7 @@ Members are provided with card access corresponding to the following doors.
 
 <!-- - ME ENG Front of Performance Lab G2B -->
 
+- ME ENG Front of Performance Lab G2B
 - ME ENG Rear of Performance Lab G2B
 - ME ENG Control Room G2C
 - ME ENG Live Room G4
@@ -23,8 +40,7 @@ Members are provided with card access corresponding to the following doors.
 - ME ENG BRE.out
 - ME ENG Centre Stairs to G2
 
-**The doors between G2A and the G2B Performance Lab (ME ENG Front of Performance Lab G2B) are currently restricted access.**
-It is not permitted to leave this door open/unlocked without authorisation from studio management, and studio users should never be using the emergency door release to gain access through this entry way.
+**Members are not permitted to use the Performance Lab as a throughway when a booking is in place. Repeated disruption to research and/or teaching activities will result in a temporary ban.**
 
 </details>
 
