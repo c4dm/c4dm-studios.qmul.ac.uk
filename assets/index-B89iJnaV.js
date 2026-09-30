@@ -667,6 +667,12 @@ We also offer our facilities for hire to external clients, such as recording art
 		<td>Portable Licenses</td>
 		<td>15</td>
 	</tr>
+		<tr>
+		<td>Modartt</td>
+		<td>Pianoteq Studio Bundle</td>
+		<td>Portable Licenses</td>
+		<td>3</td>
+	</tr>
 </tbody></table>
 
 ## MIDI
@@ -1780,7 +1786,9 @@ Users are permitted to loan studio equipment for use outside of our facility, an
 For all prospective equipment loans, members must supply an adequate supporting statement, and demonstrate that they have received the correct training where necessary.
 Equipment that is installed as part of a permanent fixture within the studios is not available for loan or external use, except for sessions/events organised by the studios.
 
-**Any equipment taken without prior consent from studio management will by default have its absence raised with Queen Mary security.**
+All inventory items marked with **\\*Protected\\*** on the studio inventory require additional training or permission from staff.
+
+Any equipment taken without prior consent from studio management will by default have its absence raised with Queen Mary security.
 
 # Agreement
 
