@@ -626,6 +626,12 @@
 		<td>Portable Licenses</td>
 		<td>15</td>
 	</tr>
+		<tr>
+		<td>Modartt</td>
+		<td>Pianoteq Studio Bundle</td>
+		<td>Portable Licenses</td>
+		<td>3</td>
+	</tr>
 </tbody></table>
 
 ## MIDI
