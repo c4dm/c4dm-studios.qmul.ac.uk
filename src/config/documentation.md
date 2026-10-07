@@ -7,6 +7,8 @@ Each studio workstation is equipped with a [RME Digiface AVB](https://rme-audio.
 
 Users connecting their own computer should follow the steps below to install the required drivers, configure the RME Digiface AVB, and assign audio routes. This installation process takes approximately 15-20 minutes, and supports both MacOS and Windows. The Performance Lab PC and Control Room Mac are preconfigured, so users working on these computers can skip directly to step 3.
 
+<mark>Please Note</mark> To save time in the studio, complete all setup steps at home until instructed to connect to the Digiface AVB using a studio AVB cable.
+
 <details><summary>Step 1: Install RME USB & Network Drivers </summary>
 
 This step covers installation of the **USB series** driver by RME, which is required for communication between your computer and an RME audio interface.
@@ -17,7 +19,7 @@ If you already have the RME DriverKit installed, you should ensure that the driv
 - Navigate to the [RME Downloads page](https://rme-audio.de/downloads.html).
 - Select Digiface AVB from the **left** menu, followed by 'MacOS' and 'Driver'.
 - Download and install the latest DriverKit driver (_driver_usbdk_mac_xxx.zip_).
-- [Allow all RME system extensions, DriverKit extensions and background processes](https://rme-audio.de/rme-macos.html).
+- [Allow all RME system extensions, DriverKit extensions and background processes](https://rme-audio.de/rme-macos.html). <mark>Frequently Missed</mark>
 - Restart your computer.
 - Navigate again to the [RME Downloads page](https://rme-audio.de/downloads.html).
 - Select RME AVB Package from the **right** menu.
@@ -49,9 +51,11 @@ This step must be completed before connecting to our AVB network via a Digiface 
 - Disconnect the Digiface AVB (if already connected).
 - Copy the MacOS preferences file (.plist) to the Preferences folder and replace existing. (See Readme).
 - Restart your computer.
-- Reconnect the Digiface AVB.
+- [Connect to the Digiface AVB using one of the studio AVB Cables](/public/images/documentation/avb-lan.jpeg)
 
-<p style='margin-left: 40px;'><mark>Warning</mark> RME AVB Controller must be running at all times on MacOS for the Digiface AVB to maintain a network connection. By default, the application will only display a blank window. Quitting the application will cause AVB audio communication to cease.</p>
+<p style='margin-left: 40px;'><mark>Warning</mark> Our AVB network is isolated from the internet, and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually <a href="https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26">change the network service order in your settings</a>.</p>
+
+<p style='margin-left: 40px;'><mark>Warning</mark> RME AVB Controller must be running at all times on MacOS for the Digiface AVB to maintain a network connection. By default, the application will only display a blank window. Users do not need to interact with this application, but terminating the process will cause AVB audio communication to cease.</p>
 
 ## Windows
 
@@ -59,7 +63,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 - Disconnect the Digiface AVB (if already connected).
 - Open the registry file (.reg) and choose 'Yes' to merge the settings.
 - Restart your computer.
-- Reconnect the Digiface AVB.
+- [Connect to the Digiface AVB using one of the studio AVB Cables](/public/images/documentation/avb-lan.jpeg)
 - [Configure a WDM Device in RME Fireface USB Settings](/images/documentation/rme-digiface-windows.png) to enable system audio output.
 
 ## MacOS / Windows
@@ -157,7 +161,7 @@ Our studios feature a dedicated network for connecting to and managing hardware 
 
 Our Local Area Network ([LAN](https://en.wikipedia.org/wiki/Local_area_network)) allows connected devices to be automatically discovered and accessed through compatible applications, a web browser, or when using a terminal. To connect to this network, plug your computer into any Ethernet wall port labelled **LAN**, or use one of the thunderbolt cables connected to an [OWC Thunderbolt Dock](https://www.owc.com/solutions/thunderbolt-dock), located at each studio desk.When connecting to the network, you should make sure you have DHCP enabled in your network settings, and then your device will be assigned an IP address within the range `192.168.0.101` - `192.168.0.254`. Once connected, you will the gain access to all available network devices. If you are unsure whether you are connected correctly, verify your connection by pinging the relevant IP address before attempting to send further commands.
 
-<mark>Warning</mark> Our LAN is isolated from the internet, and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually [change the network order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to prevent the LAN from overriding your Wi-Fi connection.
+<mark>Warning</mark> Our LAN is isolated from the internet, and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually [change the network service order in your system settings](https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26) to prevent the LAN from overriding your Wi-Fi connection.
 
 </details>
 
