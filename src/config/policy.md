@@ -44,7 +44,7 @@ Members are provided with card access corresponding to the following doors.
 
 ## Out-of-Hours Access
 
-If you have been assigned access after 6pm and/or at weekends, you will need to visit Mile End Security in person to obtain your 4-digit PIN. All members are required to sign in and out using the [mandatory out-of-hours working record form](http://localhost:5173/public/images/policy/outofhours.png) posted around the department.
+If you have been assigned access after 6pm and/or at weekends, you will need to visit Mile End Security in person to obtain your 4-digit PIN. All members are required to sign in and out using the [mandatory out-of-hours working record form](/images/policy/outofhours.png) posted around the department.
 
 Use the following information to complete the sign-in process:
 
