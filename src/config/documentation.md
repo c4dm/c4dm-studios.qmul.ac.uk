@@ -51,7 +51,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 - Disconnect the Digiface AVB (if already connected).
 - Copy the MacOS preferences file (.plist) to the Preferences folder and replace existing. (See Readme).
 - Restart your computer.
-- [Connect to the Digiface AVB using one of the studio AVB Cables](/public/images/documentation/avb-lan.jpeg)
+- [Connect to the Digiface AVB using one of the studio AVB Cables](/images/documentation/avb-lan.jpeg)
 
 <p style='margin-left: 40px;'><mark>Warning</mark> Our AVB network is isolated from the internet, and only provides connectivity between devices within the studios. External access and internet-based services are therefore unavailable. If you are using macOS on a personal computer, you must manually <a href="https://support.apple.com/en-gb/guide/mac-help/mchlp2711/26/mac/26">change the network service order in your settings</a>.</p>
 
@@ -63,7 +63,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 - Disconnect the Digiface AVB (if already connected).
 - Open the registry file (.reg) and choose 'Yes' to merge the settings.
 - Restart your computer.
-- [Connect to the Digiface AVB using one of the studio AVB Cables](/public/images/documentation/avb-lan.jpeg)
+- [Connect to the Digiface AVB using one of the studio AVB Cables](/images/documentation/avb-lan.jpeg)
 - [Configure a WDM Device in RME Fireface USB Settings](/images/documentation/rme-digiface-windows.png) to enable system audio output.
 
 ## MacOS / Windows
