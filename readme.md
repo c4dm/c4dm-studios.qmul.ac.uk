@@ -6,10 +6,10 @@ Public facing, with additional support for internal users.
 
 ## Install
 
-Dependencies: [NodeJS](https://nodejs.org)
+Dependencies: [bun](https://bun.sh/)
 
 ```bash
-npm install --include=dev
+bun install
 ```
 
 Additionally, if you use VSCode, you will be prompted to install helpful plugins when first opening the project.
@@ -23,10 +23,10 @@ Additionally, if you use VSCode, you will be prompted to install helpful plugins
 ## Develop
 
 ```bash
-npm run dev 	# run the website locally with hot refresh
-npm run format	# format the codebase (please run before committing)
-npm run test	# lint the codebase (please run before publishing)
-npm run build 	# build the website to /dist
-npm run preview	# run a website from /dist
-npm run deploy	# build to /dist and then make public (gh-pages)
+bun run dev 	# run the website locally with hot refresh
+bun run format	# format the codebase (please run before committing)
+bun run test	# lint the codebase (please run before publishing)
+bun run build 	# build the website to /dist
+bun run preview	# run a website from /dist
+bun run deploy	# build to /dist and then make public (gh-pages)
 ```
