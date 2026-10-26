@@ -487,7 +487,7 @@
 	<tr>
 		<td>Fender</td>
 		<td>Stratocaster (USA)</td>
-		<td>Electric Guitar (with mods)</td>
+		<td>Electric Guitar (with Roland GK-3 hexaphonic pickup)</td>
 		<td>1</td>
 	</tr>
 	<tr>
