@@ -44,7 +44,7 @@ export default function App(): JSX.Element {
 	return (
 		<>
 			<title>
-				{`C4DM Studios${location === '/' ? '' : ` | ${location.charAt(1).toUpperCase() + location.slice(2)}`}`}
+				{`C4DM Studios${location === '/' ? '' : ` | ${location.charAt(1).toUpperCase()}${location.slice(2)}`}`}
 			</title>
 			<Navi pages={Object.keys(pages).filter((key) => key !== '/policy')} />
 			<main>

@@ -76,7 +76,7 @@ export const Gallery: FC = () => {
 				return
 			}
 			setTransition(true)
-			window.setTimeout(() => {
+			window.setTimeout((): void => {
 				setImageVisible((current) => (gallery.length + current + direction) % gallery.length)
 				setTransition(false)
 			}, transition_duration)
@@ -85,7 +85,7 @@ export const Gallery: FC = () => {
 	)
 
 	// preload
-	useEffect(() => {
+	useEffect((): void => {
 		if (gallery.length < 2) {
 			return
 		}
@@ -98,7 +98,7 @@ export const Gallery: FC = () => {
 
 	// slideshow
 	const [slideshow, setSlideshow] = useState<boolean>(true)
-	useEffect((): (() => void) | undefined => {
+	useEffect((): (() => void) => {
 		if (gallery.length === 0) {
 			return (): void => {
 				/* */
@@ -106,7 +106,7 @@ export const Gallery: FC = () => {
 		}
 		let interval: number | null = null
 		if (slideshow) {
-			interval = window.setInterval(() => {
+			interval = window.setInterval((): void => {
 				changeImage(1)
 			}, slideshow_interval)
 		}
