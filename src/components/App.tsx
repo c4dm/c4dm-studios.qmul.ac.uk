@@ -1,5 +1,3 @@
-/* eslint-disable sort-keys */
-
 // dependencies
 import { type JSX, useEffect } from 'react'
 import Markdown from 'react-markdown'
@@ -21,6 +19,7 @@ import policy from '../config/policy.md?raw'
 import studios from '../config/studios.md?raw'
 
 // routes - this is an _ordered_ set in the form {path: markdown}
+/* eslint-disable sort-keys */
 const pages: Record<string, string> = {
 	'/': home,
 	'/studios': studios,
@@ -29,6 +28,7 @@ const pages: Record<string, string> = {
 	'/contact': contact,
 	'/policy': policy,
 }
+/* eslint-enable sort-keys */
 
 export default function App(): JSX.Element {
 	// get current path and redirect to home if !pages[location]

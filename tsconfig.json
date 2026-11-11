@@ -40,7 +40,7 @@
 		"jsx": "react-jsx",
 		"lib": ["DOM", "ESNext"],
 		"target": "ESNext",
-		"types": ["node", "react", "react-dom", "react-router"],
+		"types": ["react", "react-dom", "react-router"],
 		// compilation
 		"module": "ESNext",
 		"moduleDetection": "force",
@@ -51,6 +51,6 @@
 		"skipLibCheck": true,
 		"verbatimModuleSyntax": true
 	},
-	"include": ["src", "eslint.config.ts"],
+	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

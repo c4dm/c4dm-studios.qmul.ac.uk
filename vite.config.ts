@@ -1,5 +1,6 @@
 // biome-ignore-all lint/complexity/noUselessUndefined : this use of undefined is consistent with the typing of the vite plugin API
 // biome-ignore-all lint/correctness/noNodejsModules : this script is ran by nodejs at build time
+// biome-ignore-all lint/nursery/noSyncMethods : synchronous runtime code is expected during compilation
 // biome-ignore-all lint/nursery/useExplicitReturnType : vite plugin methods are typed internally, and cannot be imported
 /* eslint-disable no-undefined */
 
