@@ -13,14 +13,14 @@
 		height: 100%;
 		width: 100%;
 		grid-area: image;
-		aspect-ratio: 1/2;
+		aspect-ratio: 1 / 2;
 		object-fit: cover;
 	}
 
 	a,
 	i,
 	p {
-		margin: 0 !important;
+		margin: 0;
 		align-self: flex-end;
 		font-size: small;
 

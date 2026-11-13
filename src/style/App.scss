@@ -1,4 +1,3 @@
-@use './markdown.scss' as markdown;
 @use './utils.scss' as utils;
 
 // structure
@@ -22,11 +21,8 @@ body {
 	color: inherit;
 	background-color: inherit;
 	text-size-adjust: 100%;
-}
-
-#root {
-	height: 100%;
-	width: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 main {
@@ -42,7 +38,6 @@ main {
 	white-space: normal;
 
 	@include utils.highlight-text;
-	@include markdown.markdown;
 
 	@media (width < utils.$iphone) {
 		height: fit-content;
@@ -50,4 +45,9 @@ main {
 		overflow: unset;
 		text-align: left;
 	}
+}
+
+#root {
+	height: 100%;
+	width: 100%;
 }

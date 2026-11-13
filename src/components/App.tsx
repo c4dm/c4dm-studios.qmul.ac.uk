@@ -4,11 +4,15 @@ import Markdown from 'react-markdown'
 import { useLocation, useNavigate } from 'react-router'
 import rehype from 'rehype-raw'
 
-// components & scss
+//  scss
+import '../style/App.scss'
+import '../style/markdown.scss'
+import '../style/studios.scss'
+
+// components
 import { Navi } from './navi.tsx'
 import { Gallery } from './gallery.tsx'
 import { Affiliations, Staff } from './grids.tsx'
-import '../style/App.scss'
 
 // config - markdown
 import contact from '../config/contact.md?raw'
