@@ -70,7 +70,7 @@ This step must be completed before connecting to our AVB network via a Digiface 
 
 - Download and install [Milan Manager](https://milanmanager.com/#downloads).
 - Open Milan Manager and select your network interface. This can be any online Digiface AVB or a LAN device.
-- Navigate to the 'Devices' tab, and rename your computer (_YOUR_NAME_HERE). We recommend adding an underscore before your name so that users are displayed first on the matrix overview.
+- Navigate to the 'Devices' tab, and rename your computer (\_YOUR_NAME_HERE). We recommend adding an underscore before your name so that users are displayed first on the matrix overview.
 
 </details>
 
@@ -119,7 +119,7 @@ These connected devices and their associated routings are managed in [Dante Cont
 
 ![Dante Controller screenshot showing AVB and MADI bridges](/images/documentation/dante-avb.png)
 
-#### Dante Outputs
+### Dante Outputs
 
 <table><tbody>
 	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
@@ -127,7 +127,7 @@ These connected devices and their associated routings are managed in [Dante Cont
 	<tr><td> DANTE-MADI </td><td> 1 - 64 </td><td> Performance Lab PC In 129-192 </td></tr>
 </tbody></table>
 
-#### Dante Inputs
+### Dante Inputs
 
 <table><tbody>
 	<tr><td><b> Device </b></td><td><b> Channel </b></td><td><b> Assignment </b></td></tr>
@@ -185,7 +185,7 @@ Once connected, you can use this location like any other file system within Find
 
 To share files on Windows, navigate to:
 
-```
+```text
 Control Panel > Network and Internet > Network and Sharing Centre > Change Advanced Settings
 ```
 
@@ -312,14 +312,14 @@ If you are a Windows user, you will need to first install [nmap](https://nmap.or
 
 The d&b subwoofers are powered by the [d&b D20](https://www.dbaudio.com/global/en/products/amplifiers/d20/) located in the Performance Lab System Rack, whilst the Meyer satellites can be powered on or off with the following terminal commands.
 
-#### MacOS
+### MacOS
 
 ```bash
 echo -n "KMS ON2" | nc -u -w1 192.168.0.9 65432
 echo -n "KMS OFF2" | nc -u -w1 192.168.0.9 65432
 ```
 
-#### Windows
+### Windows
 
 ```powershell
 echo|set /p="KMS ON2" | ncat -u -w1 192.168.0.9 65432
@@ -330,14 +330,14 @@ echo|set /p="KMS OFF2" | ncat -u -w1 192.168.0.9 65432
 
 Power for the Meyer subwoofer is located on the wall, whilst the Meyer satellites can be powered on or off with the following terminal commands.
 
-#### MacOS
+### MacOS
 
 ```bash
 echo -n "KMS ON1" | nc -u -w1 192.168.0.21 65432
 echo -n "KMS OFF1" | nc -u -w1 192.168.0.21 65432
 ```
 
-#### Windows
+### Windows
 
 ```powershell
 echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.21 65432
@@ -355,7 +355,7 @@ For all spherical coordinates, the radius r is specified in meters, whilst the a
 
 Within the Performance Lab, we operate a 16.2 system arranged in a rectangular cuboid, consisting of two rings of 8 speakers.
 
-#### Satellites - [MM-4XP by Meyer Sound](https://meyersound.com/product/mm-4xp/)
+### Satellites - [MM-4XP by Meyer Sound](https://meyersound.com/product/mm-4xp/)
 
 <table><tbody>
 	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> ϕ </b></td><td><b> x </b></td><td><b> y </b></td><td><b> z </b></td></tr>
@@ -377,7 +377,7 @@ Within the Performance Lab, we operate a 16.2 system arranged in a rectangular c
 	<tr><td> 3.7 </td><td> 22.5 </td><td> 29.3 </td><td> 1.23 </td><td> 2.98 </td><td> 1.81 </td></tr>
 </tbody></table>
 
-#### Subwoofers - [B4 by d&b Audiotechnik](https://www.dbaudio.com/global/en/products/series/t-series/b4-sub/)
+### Subwoofers - [B4 by d&b Audiotechnik](https://www.dbaudio.com/global/en/products/series/t-series/b4-sub/)
 
 <table><tbody>
 	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> x </b></td><td><b> y </b></td></tr>
@@ -389,7 +389,7 @@ Within the Performance Lab, we operate a 16.2 system arranged in a rectangular c
 
 Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere, comprising of a lower ring of 7 speakers, an upper ring of 4 speakers, and a speaker at the zenith.
 
-#### Satellites - [MM-4XP by Meyer Sound](https://meyersound.com/product/mm-4xp/)
+### Satellites - [MM-4XP by Meyer Sound](https://meyersound.com/product/mm-4xp/)
 
 <table><tbody>
 	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> ϕ </b></td><td><b> x </b></td><td><b> y </b></td><td><b> z </b></td></tr>
@@ -407,7 +407,7 @@ Within the Live Room, we operate a 12.1 speaker system arranged in a hemisphere,
 	<tr><td> 0.93 </td><td> 0.0 </td><td> 90.0 </td><td> 0.0 </td><td> 0.0 </td><td> 0.93 </td></tr>
 </tbody></table>
 
-#### Subwoofer - [USW 1P by Meyer Sound](http://www.sotsound.com/fileserver/Equipment%20Information/usw-1p_resources/usw-1p_ds_c.pdf)
+### Subwoofer - [USW 1P by Meyer Sound](http://www.sotsound.com/fileserver/Equipment%20Information/usw-1p_resources/usw-1p_ds_c.pdf)
 
 <table><tbody>
 	<tr><td><b> r </b></td><td><b> θ </b></td><td><b> x </b></td><td><b> y </b></td></tr>
@@ -435,14 +435,16 @@ The easiest way to power on the motion capture is to log on to the Performance L
 To power the system from your own laptop, use the UDP commands below.
 If you are a Windows user, you will need to first install [nmap](https://nmap.org/download.html) to send such commands via UDP.
 
-#### MacOS
+## Performance Lab (12 Camera System)
+
+### MacOS
 
 ```bash
 echo -n "KMS ON1" | nc -u -w1 192.168.0.9 65432
 echo -n "KMS OFF1" | nc -u -w1 192.168.0.9 65432
 ```
 
-#### Windows
+### Windows
 
 ```powershell
 echo|set /p="KMS ON1" | ncat -u -w1 192.168.0.9 65432

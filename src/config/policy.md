@@ -40,7 +40,7 @@ Members are provided with card access corresponding to the following doors.
 - ME ENG BRE.out
 - ME ENG Centre Stairs to G2
 
-**Members are not permitted to use the Performance Lab as a throughway when a booking is in place. Repeated disruption to research and/or teaching activities will result in a temporary ban.**
+**Members are not permitted to use the Performance Lab as a thoroughfare when a booking is in place. Repeated disruption to research and/or teaching activities will result in a temporary ban.**
 
 ## Out-of-Hours Access
 

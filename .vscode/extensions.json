@@ -1,4 +1,4 @@
 {
 	// List of extensions which should be recommended for users of this workspace.
-	"recommendations": ["esbenp.prettier-vscode", "streetsidesoftware.code-spell-checker"]
+	"recommendations": ["biomejs.biome", "streetsidesoftware.code-spell-checker"]
 }
