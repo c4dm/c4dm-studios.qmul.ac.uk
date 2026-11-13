@@ -219,7 +219,7 @@
 	}
 
 	span {
-		width: 100%;
+		inline-size: 100%;
 		display: grid;
 		grid-auto-flow: column;
 		grid-auto-columns: 1fr;
@@ -227,8 +227,8 @@
 		align-items: center;
 
 		&:has(a) {
-			width: calc(100% - 6px);
-			padding: 0 6px;
+			inline-size: calc(100% - 6px);
+			padding-inline: 6px;
 		}
 
 		@media (width < utils.$iphone) {
